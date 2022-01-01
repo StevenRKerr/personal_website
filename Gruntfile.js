@@ -30,7 +30,7 @@
 
     build: {
 
-    cwd: 'public',
+    cwd: '_site',
 
     src: '**',
 
@@ -46,7 +46,7 @@
 
     port: 8080,
 
-    base: 'public',
+    base: '_site',
 
     keepalive: true,
 
@@ -63,3 +63,4 @@
     grunt.registerTask('default', ['connect'])
 
     }
+    

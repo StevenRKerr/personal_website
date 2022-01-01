@@ -1,0 +1,5 @@
+exclude:
+    - aws-keys.json
+    - Gruntfile.js
+    - package.json
+    - package-lock.json

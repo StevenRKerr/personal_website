@@ -1,0 +1,36 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Steven Kerr | {{ page.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+
+{% if page.page_type == 'homepage' %}
+	<body class="homepage is-preload">
+{% endif %}
+
+{% if page.page_type == 'no-sidebar' %}
+	<body class="no-sidebar is-preload">
+{% endif %}
+
+{% if page.page_type == 'left-sidebar' %}
+	<body class="left-sidebar is-preload">
+{% endif %}
+
+		<div id="page-wrapper">
+
+			{{ content }}
+
+		{% include footer.html %}
+
+		</div>
+
+	{% include scripts.html %}
+
+	</body>
+
+</html>

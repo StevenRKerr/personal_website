@@ -1,0 +1,78 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Steven Kerr | {{ page.title }}</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+	</head>
+
+    <body class="left-sidebar is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+                <div id="header">
+
+                    <!-- Inner -->
+                        <div class="inner">
+                            <header>
+                                <h1>Blog</h1>
+                            </header>
+                        </div>
+
+                    <!-- Nav -->
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="../../../index.html">Home</a></li>
+                                <li><a href="../../../bio.html">Bio</a></li>
+                                <li><a href="../../../epi.html">Publications</a></li>
+                                <li><a href="../../../blog.html">Blog</a></li>
+                            </ul>
+                        </nav>
+
+                </div>
+
+            <!-- Main -->
+                <div class="wrapper style1">
+
+                    <div class="container">
+                        <div class="row gtr-200">
+                            <div class="col-3 col-12-mobile" id="sidebar">
+                                <hr class="first" />
+                                
+                                {% for post in site.posts %}
+                                <section>
+                                    <header>
+                                        <a href="../../..{{ post.url }}"> {{ post.title }} </a>
+                                    </header>
+                                </section>
+
+                                {% endfor %}
+
+
+                            </div>
+
+                            <div class="col-8 col-12-mobile imp-mobile" id="content">
+                                <article id="main">
+                                    <header>
+                                        <h2><a href="#">{{ page.title }}</a></h2>
+
+                                    {{ content }}
+
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                {% include footer.html %}
+
+    </div>
+        
+    {% include scripts.html %}
+        
+    </body>
+</html>
