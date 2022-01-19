@@ -1,0 +1,67 @@
+I"�<p>16 Jan 2022</p>
+
+<p>There have been interesting reports from Public Health Scotland (PHS) that COVID infection rates amongst the unvaccinated have been consistently lower amongst the unvaccinated compared to those with one or two doses of vaccine since December 2021, though higher compared to those with a booster dose. See a news story <a href="https://www.heraldscotland.com/news/19843315.covid-scotland-case-rates-lowest-unvaccinated-double-jabbed-elderly-drive-rise-hospital-admissions/" target="_blank">here</a>, based on the original report <a href="https://publichealthscotland.scot/media/11089/22-01-12-covid19-winter_publication_report.pdf" target="_blank">here</a>. I believe this has led many people to question vaccine effectiveness.</p>
+
+<h3>  What is vaccine effectiveness? </h3>
+
+<p>If you’re maths averse, you might want to skip this section. It’s not that bad though, I promise.</p>
+
+<p>There are many quantities that get called “vaccine effectiveness” that are mathematically and conceptually distinct. This is a little bit unfortunate, because it makes it diffucult to compare them. Throughout this article, I will assume we are talking about vaccine effectiveness against infection, but people are also interested in effectiveness against hospitalistion, death and other outcomes.</p>
+
+<h4>  Risk ratio </h4>
+
+<p>Risk ratios are perhaps the most intuitive way  of defining vaccine effectiveness. It really is just the probability of a vaccinated person being infected with COVID, divided by the probability of an unvaccinated person being infected with COVID. A rate ratio less than one indicates some vaccine effectiveness against infection. This motivates our first definition of vaccine effectiveness,</p>
+
+\[\mathrm{VE} = 1-  \mathrm{Risk \; ratio}.\]
+
+<h4>  Rate ratio </h4>
+
+<p>The rate at which vaccinated/unvaccinated people get infected can be estimated using <a href="https://en.wikipedia.org/wiki/Poisson_regression" target="_blank">Poisson regression</a>. Dividing the rate for vaccinated people by the rate for unvaccinated people gives the rate ratio, which gives our second definition of vaccine effectiveness,</p>
+
+\[\mathrm{VE} = 1-  \mathrm{Rate \; ratio}.\]
+
+<p>Rate ratios and risk ratios should be aproximately equivalent over the same time horizons.</p>
+
+<h4>  Odds ratio </h4>
+
+<p>The odds of an event is the probability of it occurring \( p \), divided by the probability of it not occurring \(1- p \),</p>
+
+\[\mathrm{Odds} = \frac{p}{1-p}.\]
+
+<p>An odds ratio is dividing two odds of one event, by the odds of a second event,</p>
+
+\[\mathrm{OR} = \frac{ \mathrm{Odds}_1 }{ \mathrm{Odds}_2 }.\]
+
+<p>So, we might divide the odds of being infected with COVID if you have recived the vaccine, by the odds of being infected with COVID if you haven’t received the vaccine. If this quantity is less than one, it indicates that those who received the vaccine are less likely to be infected than those who didn’t. This gives our third definition of vaccine effectiveness,</p>
+
+\[\mathrm{VE} = 1- \mathrm{OR}.\]
+
+<p>This may seem like an awfully convoluted way to measure vaccine effectiveness, especially compared with, say, risk ratios. And in fact, risk ratios can be calculated from odds ratios, which begs the question of why we don’t just use risk ratios. That’s an excellent question, to which I don’t really have an answer except that it’s a tiny bit less mathematically demanding to calculate an odds ratio than a risk ratio from a <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank">logistic regression</a>, which is one of the main statistical techniques that is used for predicting a yes/no outcome variable.</p>
+
+<p>Odds ratios are approximately equal to risk ratios for low probability events. This follows from the first order Taylor expansion of the odds ratio,</p>
+
+\[\mathrm{OR} = \frac{ \mathrm{Odds_1} }{ \mathrm{Odds_2} } \simeq p .\]
+
+<h3>  What does it mean? </h3>
+
+<p>That’s a fine question. I believe that many people, when reading a headline of e.g. 95% effectiveness, will take that to mean something like “there is a 95% chance the vaccine will prevent me from getting COVID”. Which is of course, not at all what it means.</p>
+
+<p>A more sophisticated take would be “The vaccine will reduce my chances of catching COVID by a factor of 20”. This is better, but still not quite right. The main issue is that it lacks a time horizon. What period of time does this statement apply to?</p>
+
+<p>News reports on studies have vaccine effectiveness have tended to report peak effectiveness over a certain unit of time. For example, in our <a href="hhttps://www.thelancet.com/journals/lancet/article/PIIS0140-6736(21)00677-2/fulltext" target="_blank">study of vaccine effectiveness</a>, we calculated vaccine effectiveness by week, and the media widely reported the maximum value. This can cause confusion.</p>
+
+<h3>  An example </h3>
+
+<p>Let’s say that the probability of a vaccinated person being infected with COVID in a given week is \( 0.1 \) times the probability of an unvaccinated person being infected in the same week. This is actually close to the peak effectiveness that we found in our paper. Let’s assume this level of protection is maintained for 12 weeks. What is the probability of a vaccinated person catching COVID relative to an unvaccinated person?</p>
+
+<p>This is like flipping a biased coin each week, with the probability of not being infected equal to \( 0.9 \). In order to stay infection-free for 12 weeks, you have to flip 12 “not infected” in a row. The probability of this happening is</p>
+
+<p>\(0.9^{12} = 0.28\).</p>
+
+<p>Thus a sustained weekly vaccine effectiveness of 90% is equivalent to vaccine effectiveness of 28% over 12 weeks.</p>
+
+<p>Now consider that 90% is not at all sustained over the course of three months. If we assume that vaccine effectiveness decreases modestly by 2.5% each week, then vaccine effectiveness over 12 weeks is just <strong>2%</strong>.</p>
+
+<p>I believe many people will find that quite a stark number.</p>
+
+:ET

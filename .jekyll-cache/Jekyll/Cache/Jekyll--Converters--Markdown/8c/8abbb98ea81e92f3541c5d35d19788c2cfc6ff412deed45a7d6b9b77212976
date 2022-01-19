@@ -1,0 +1,34 @@
+I"V<p>05 Jan 2022</p>
+
+<h3>  What is the efficient market hypothesis? </h3>
+
+<p>The efficient market hypothesis is, roughly speaking, the idea that asset prices ‘reflect all available information’. This means that the only way to consistently outperform the market is to have access to information that isn’t widely known, or to get lucky.</p>
+
+<p>In particular, it implies that even the fanciest of funds, managed by very smart people with fancy degrees from even fancier universities, will on average fare no better than a monkey throwing darts at a list of stocks.</p>
+
+<h3>  Is it true? </h3>
+
+<p>There’s definitely some interesting evidence in its favour. Burton Makiel’s 1973 book <em>A random walk down Wall street</em> gives a very nice, readable account of the theory and supporting evidence. It appears that a lot of professionally managed funds would have been about as well off as if they had gone for the dart-throwing-monkey strategy.</p>
+
+<p>On the other hand, there does seem to be some interesting counterpoints. Warren Buffet, for example, is a legendary investor who subscribes to <a href="https://en.wikipedia.org/wiki/Value_investing" target="_blank">value investing</a>, which probably should not consistently result in returns greater than the market average if the efficient market hypothesis is true. So, maybe he got lucky? Or maybe he was reliably producing information that was not widely known?</p>
+
+<h3>  Is it falsifiable? </h3>
+
+<p>That brings us to the next question. Isn’t it the case that any set of returns to any set of strategies can be viewed as consistent with the efficient market hypothesis, if we just say the unusually high returns were either due to luck, or we take a suitable definition of ‘all available information’?</p>
+
+<p>On the former point, in principle it should be possible to figure out how many overwhelming success stories and unmitigated failures are likely to be seen assuming some form of the efficient market hypothesis is true, and compare that to what actually happens. On the latter point, I do believe there are limits on how much one can bend the definition of ‘all available information’ before it starts to look like a nonsense.</p>
+
+<p>If we really wanted to, we could do a controlled experiment with the dart-throwing-monkies in one group, and the maths PhDs/professional fund managers in the other, give them access to only publicly available information, and observe over time so see how they get along. That might be very impractical, but it’s definitely within the realm of possibility.</p>
+
+<h3>  Is it tautologous? </h3>
+
+<p>It’s kind of amusing that there is a theory which a large contingent of people consider unfalsifiable, and another large contingent of people consider it tautologous. Like, what’s it going to be guys? Is it \1 + 1 = 2\), or is it the existence of god?</p>
+
+<p>Anyway, I get ahead of myself. There are people who consider the efficient market hypothesis to be tautologous because they believe it amounts to the statement that “on average, the returns that investors get is equal to the average of investor returns”.</p>
+
+<p>I definitely get what they’re saying. I just don’t think that’s all the efficient market hypothesis amounts to. It is not just a statement about the mean of returns; it is a statement about the whole distribution of returns. For example, if it really was possible to consistently beat the market using publicly availalable information, then you would expect certain individuals who have figured out how to do this to <em> consistently</em> outperform the market, in a way that is unlikely to be a fluke, instead of having their performance randomly drawn from the same lottery as everyone else. That is not a trivial statement.</p>
+
+<h3>  Is it hilarious? </h3>
+
+<p>Definitely. Some people have set up comedy investment strategies to illustrate the point. For example, <a href="https://www.bbc.co.uk/news/technology-58707641" target="_blank">Mr Goxx, the crypto trading hamster</a>, who chooses cryptocurrency investments by using his hamster wheel as a wheel of fortune. Or the <a href="https://www.dailymail.co.uk/sciencetech/article-7922601/Cows-match-performance-human-stock-analysts-Norwegian-experiment.html" target="_blank">cows who chose investments by crapping on a grid of stocks</a>, equalling the performance of the human stock analysts they were pitted against.</p>
+:ET

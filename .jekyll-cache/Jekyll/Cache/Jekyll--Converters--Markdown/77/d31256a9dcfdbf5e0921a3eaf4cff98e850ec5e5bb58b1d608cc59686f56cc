@@ -1,0 +1,13 @@
+I"n<p>05 Jan 2022</p>
+
+<h3>  The holy grail of theoretical physics </h3>
+
+<p>For many decades now, physicsists have been trying to ‘unite’ quantum mechanics and Einstein’s general relativity into a quantum theory of gravity. Achieving such a unification is one of the major outstanding problems in theoretical physics.</p>
+
+<h3>  Why don't quantum mechanics and general relativity play together nicely? </h3>
+
+<p>Modern physics theories tend to be defined in terms of the <a href="https://en.wikipedia.org/wiki/Stationary-action_principles" target="_blank"> principle of least action</a>. What this means is that the laws of nature (at least classically) are derived from the minimisation of a quantity we call the action. The action in turn is an integral over spacetime over a quantity called the Lagrangian (or sometimes Lagrangian density)</p>
+
+\[S = \int \mathcal{L}\]
+
+:ET

@@ -1,0 +1,51 @@
+I"<p>05 Jan 2022</p>
+
+<h3>  What is the efficient market hypothesis? </h3>
+
+<p>The efficient market hypothesis is, roughly speaking, the idea that asset prices ‘reflect all available information’. This means that the only way to consistently outperform the market is to have access to information that isn’t widely known, or to get lucky.</p>
+
+<p>In particular, it implies that even the fanciest of funds, managed by very smart people with fancy degrees from even fancier universities, will on average fare no better than a monkey throwing darts at a list of stocks.</p>
+
+<h3>  Is it true? </h3>
+
+<p>There’s definitely some interesting evidence in its favour. Burton Makiel’s 1973 book <em>A random walk down Wall street</em> gives a very nice, readable account of the theory and supporting evidence. It appears that a lot of professionally managed funds would have been about as well off as if they had gone for the dart-throwing-monkey strategy.</p>
+
+<p>On the other hand, there does seem to be some interesting counterpoints. Warren Buffet, for example, is a legendary investor who subscribes to <a href="https://en.wikipedia.org/wiki/Value_investing" target="_blank">value investing</a>, which probably should not consistently result in returns greater than the market average if the efficient market hypothesis is true. So, maybe he got lucky? Or maybe he was reliably producing information that was not widely known?</p>
+
+<h3>  Is it falsifiable? </h3>
+
+<p>That brings us to the next question. Isn’t it the case that any set of returns to any set of strategies can be viewed as consistent with the efficient market hypothesis, if we just say the unusually high returns were either due to luck, or we take a suitable definition of ‘all available information’?</p>
+
+<p>On the former point, in principle it should be possible to test the theory by figuring out the pattern of overwhelming success stories and unmitigated failures that is likely to be seen assuming some form of the efficient market hypothesis is true, and compare that to what actually happens. On the latter point, I do believe there are limits on how much one can bend the definition of ‘all available information’ before it starts to look like a nonsense.</p>
+
+<p>If we really wanted to, we could do a controlled experiment with the dart-throwing-monkies in one group, and the maths PhDs/professional fund managers in the other, give them access to only publicly available information, and observe over time so see how they get along. That might be very impractical, but it’s definitely within the realm of possibility.</p>
+
+<h3>  Is it tautologous? </h3>
+
+<p>It’s kind of amusing that there is a theory which a large contingent of people consider unfalsifiable, while simultaneously another large contingent of people consider it tautologous. Like, what’s it going to be guys? Is it \(1 + 1 = 2\), or is it the existence of god?</p>
+
+<p>Anyway, I get ahead of myself. There are people who consider the efficient market hypothesis to be tautologous because they believe it amounts to the statement that “on average, the returns that investors get is equal to the average of investor returns”.</p>
+
+<p>I definitely get what they’re saying. I just don’t think that’s all the efficient market hypothesis amounts to. It is not just a statement about the mean of returns; it is a statement about the whole distribution of returns. For example, if it really was possible to consistently beat the market using publicly availalable information, then you would expect certain individuals who have figured out how to do this to <em> consistently</em> outperform the market, in a way that is unlikely to be a fluke, instead of having their performance randomly drawn from the same tombola as everyone else and fluctuating completely unpredictably. This is not a trivial statement.</p>
+
+<h3>  Is it hilarious? </h3>
+
+<p>Definitely. Some people have set up comedy investment strategies to illustrate the point. For example, <a href="https://www.bbc.co.uk/news/technology-58707641" target="_blank">Mr Goxx, the crypto trading hamster</a>, who beats human investors by using his hamster wheel as a wheel of fortune. Or the <a href="https://www.dailymail.co.uk/sciencetech/article-7922601/Cows-match-performance-human-stock-analysts-Norwegian-experiment.html" target="_blank">cows who chose investments by crapping on a grid of stocks</a>, and in doing so matched the performance of the professional stock analysts they were pitted against.</p>
+
+<h3>  My take </h3>
+
+<p>It is a striking fact that on average, the dart-throwing-monkies do about as well as professionally managed funds. I used to be fond of making the following analogy with boxing: Imagine if we randomly chose people off the street to fight the world heavyweight champion, and about half the time the champ lost. Amazingly, something like that seems to be going on in speculative markets.</p>
+
+<p>This seems to suggest that there isn’t really any skill in investing, but I don’t think that’s true. Clearly it is possible to discern information about an asset that can be used to reasonably update one’s beliefs about it in a way that more accurately reflects reality. If a company is haemorrhaging cash and no one is interested in buying their product, it’s probably not wise to go long on it. Ok that’s an extreme example, but I definitely do think there are more subtle indicators that take some work/savvy to understand.</p>
+
+<p>Where the analogy fails is as follows: when I go to a gym and get good at boxing, this does not make anyone else better at boxing. This is not true in the world of speculative investment. If the market participants use their information to buy underpriced assets and sell overpriced ones, they move the price closer to what it ‘should’ be, which in turn ensures that most of the time the dart-throwing-monkies aren’t going to be doing anything particularly egregious or particularly awesome compared to everyone else.</p>
+
+<p>In this sense, the dart-throwing-monkies are essentially free-riding on the genuine work of other people. It’s worth noting that we could get to the point where there are too many free-riders and too few people doing the work of acquiring genuine information about markets. That’s something to bear in mind as index funds have recently had a surge in popularity.</p>
+
+<p>On the other hand, I think there is a very hard limit on what it is possible to do. We can glean a little bit of information that can be used to predict prices better, but for the most part it’s just too complex for anyone really to get much of a handle on (except in the case where one has access to some very specific inside information).</p>
+
+<p>I used to find it hard to have much truck with the efficient market hypothesis. Can it really be the case that trillions of dollars of transactions and god knows how many millions of hours of man hours are directed towards activities that are, approximately, a waste of time? When I was a young, bright-eyed lad I wouldn’t have been able to stomach that. A decade or two interlude with human nature made me change my tune. I mean, imagine for a moment that you’re a high net worth individual, and you want to manage your wealth. Are you going to choose the dart-throwing monkies, or are you going to choose the fancy investment firm that hires all the ivy league maths PhDs? And if you are a maths PhD getting a ridiculous pay check for tinkering with an algorithm all day, are you going to convince yourself that in fact you and your coworkers have the singular ability to beat the market despite all the evidence to the contrary, or are you going to see the world as it truly is?</p>
+
+<p>I more or less believe the efficient market hypothesis to be true. If you want to beat the market, you’re either going to need luck or insider information, and the latter is not easy to come by.</p>
+
+:ET

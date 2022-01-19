@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-01-19T09:23:08+00:00</updated><id>/feed.xml</id><entry><title type="html">What is vaccine effectiveness?</title><link href="/2022/01/17/What-is-vaccine-effectiveness.html" rel="alternate" type="text/html" title="What is vaccine effectiveness?" /><published>2022-01-17T00:00:00+00:00</published><updated>2022-01-17T00:00:00+00:00</updated><id>/2022/01/17/What%20is%20vaccine%20effectiveness</id><content type="html" xml:base="/2022/01/17/What-is-vaccine-effectiveness.html"><![CDATA[<p>17 Jan 2022</p>
+
+<p>There have been interesting reports from Public Health Scotland that COVID infection rates amongst the unvaccinated have been consistently lower compared to those who have had one or two doses of vaccine since early December 2021, though higher compared to those with a booster dose. See a news story <a href="https://www.heraldscotland.com/news/19843315.covid-scotland-case-rates-lowest-unvaccinated-double-jabbed-elderly-drive-rise-hospital-admissions/" target="_blank">here</a>, based on the original report <a href="https://publichealthscotland.scot/media/11089/22-01-12-covid19-winter_publication_report.pdf" target="_blank">here</a>. I believe this has led many people to question vaccine effectiveness.</p>
+
+<h3>  What is vaccine effectiveness? </h3>
+
+<p>If you’re maths averse, you might want to scroll straight down to the “What does it mean?” section. It’s not that bad though, I promise.</p>
+
+<p>There are many quantities that get called “vaccine effectiveness” that are mathematically and conceptually distinct. This is a little bit unfortunate, because it makes it diffucult to compare them. Throughout this article, I will assume we are talking about vaccine effectiveness against infection, but we may also be interested in effectiveness against hospitalistion, death and other outcomes.</p>
+
+<h4>  Risk ratio </h4>
+
+<p>Risk ratios are perhaps the most intuitive way  of defining vaccine effectiveness. It really is just the probability of a vaccinated person being infected with COVID, divided by the probability of an unvaccinated person being infected with COVID. A rate ratio less than one indicates some vaccine effectiveness against infection. This motivates our first definition of vaccine effectiveness,</p>
+
+\[\mathrm{VE} = 1-  \mathrm{Risk \; ratio}.\]
+
+<h4>  Rate ratio </h4>
+
+<p>The rate at which vaccinated/unvaccinated people get infected can be estimated using <a href="https://en.wikipedia.org/wiki/Poisson_regression" target="_blank">Poisson regression</a>. Dividing the rate for vaccinated people by the rate for unvaccinated people gives the rate ratio, which leads to our second definition of vaccine effectiveness,</p>
+
+\[\mathrm{VE} = 1-  \mathrm{Rate \; ratio}.\]
+
+<p>Rate ratios and risk ratios should be approximately equivalent over the same time horizon.</p>
+
+<h4>  Hazard ratio </h4>
+
+<p>The hazard ratio is similar to the rate ratio, except that it takes into account the number of people who are susceptible to an event at any given time. So the rate ratio just compares the event rate in all the vaccinated and unvaccinated, whereas the hazard ratio compares the event rate amongst only those who are susceptible to an event in the vaccinated and unvaccinated. A key difference is that, for example, people who die during the observation period are removed from the calculation of hazard ratios, but not rate ratios. Hazard ratios can be estimated using <a href="https://en.wikipedia.org/wiki/Proportional_hazards_model" target="_blank">proportional hazards models</a>. This gives our third definition of vaccine effectiveness,</p>
+
+\[\mathrm{VE} = 1-  \mathrm{Hazard \; ratio}.\]
+
+<p>Hazard ratios and risk ratios should be aproximately equivalent if there aren’t many people who cease being susceptible to an event in the observation period.</p>
+
+<h4>  Odds ratio </h4>
+
+<p>The odds of an event is the probability of it occurring \( p \), divided by the probability of it not occurring \(1- p \),</p>
+
+\[\mathrm{Odds} = \frac{p}{1-p}.\]
+
+<p>An odds ratio is dividing the odds of one event, by the odds of a second event,</p>
+
+\[\mathrm{OR} = \frac{ \mathrm{Odds}_1 }{ \mathrm{Odds}_2 }.\]
+
+<p>So, we might divide the odds of being infected with COVID if you have recived the vaccine, by the odds of being infected with COVID if you haven’t received the vaccine. If this quantity is less than one, it indicates that those who received the vaccine are less likely to be infected than those who didn’t. Odds ratios can be calculated using <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank">logistic regression</a>. This gives our fourth definition of vaccine effectiveness,</p>
+
+\[\mathrm{VE} = 1- \mathrm{OR}.\]
+
+<p>Odds ratios are approximately equal to risk ratios for low probability events. This follows from the first order Taylor expansion of the odds,</p>
+
+\[\mathrm{Odds} = \frac{p}{1-p} \simeq p.\]
+
+<h3>  Why so many different measures of vaccine effectiveness? </h3>
+
+<p>At first glance, it might seem odd that we use so many different measures of vaccine effectivenss, especially given that under many circumstances they are approximately equal. Why not just one? The answer that there are a number of statistical models/techniques that can be used to try and estimate vaccine effectiveness, and they each have various merits depending on the assumptions one thinks are reasonable to make, and the data that one has available.</p>
+
+<h3>  What does it mean? </h3>
+
+<p>That’s a fine question. I believe that many people, when reading a headline of e.g. 90% effectiveness, will take that to mean something like “there is a 90% chance the vaccine will prevent me from getting COVID”. Which is of course, not at all what it means.</p>
+
+<p>A more sophisticated take would be “The vaccine will reduce my chances of catching COVID by a factor of 20”. This is better, but still not quite right. The main issue is that it lacks a time horizon. What period of time does this statement apply to?</p>
+
+<p>News reports on studies have vaccine effectiveness have tended to report peak effectiveness over a certain unit of time. For example, in our <a href="https://doi.org/10.1016/S0140-6736(21)00677-2 " target="_blank">study of vaccine effectiveness</a>, we calculated vaccine effectiveness by week, and the media widely reported the maximum value. This can cause confusion.</p>
+
+<h3>  An example </h3>
+
+<p>Let’s assume that the probbility of an unvaccinated person being infected with COVID in a given week is 0.1 and constant. Let’s assume vaccine effectiveness stays at roughly the peak level that we found in our paper of 90%.  What is probability of being infected with COVID relative to an unvaccinated person over, say, a 12 week period?</p>
+
+<p>This is like flipping a biased coin each week, and calculating the probability of flipping 12 “not infected” in a row. Doing this calculation (I’ll spare you the details), you get a reduction in risk of \( 84 \% \).</p>
+
+<p>Pretty good. However, we know that COVID vaccines wane in effectiveness relatively quickly. What happens if we take that into account?</p>
+
+<p>Let’s assume that vaccine effectiveness starts out at 90% and decreases by 5% each week (this is a decent approximation to what we actually see with COVID vaccines). Then you get a reduction in risk of \(49 \% \). Doing the same calculation over 16 weeks, you get a reduction in risk of \(33 \% \).</p>
+
+<p>This is very much a ‘back of the envelope’ calculation, and does not take account of the fact that background infection rates are dynamic and dependent upon levels of immunity amongst the population. Nonetheless I do think it hints at some interesting questions about what the proper aim of vaccination is in the midst of a pandemic.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[17 Jan 2022]]></summary></entry><entry><title type="html">The efficient market hypothesis</title><link href="/2022/01/06/The-efficient-market-hypothesis.html" rel="alternate" type="text/html" title="The efficient market hypothesis" /><published>2022-01-06T00:00:00+00:00</published><updated>2022-01-06T00:00:00+00:00</updated><id>/2022/01/06/The%20efficient%20market%20hypothesis</id><content type="html" xml:base="/2022/01/06/The-efficient-market-hypothesis.html"><![CDATA[<p>06 Jan 2022</p>
+
+<h3>  What is the efficient market hypothesis? </h3>
+
+<p>The efficient market hypothesis is, roughly speaking, the idea that asset prices ‘reflect all available information’. This means that the only way to consistently outperform the market is to have access to information that isn’t widely known, or to get lucky.</p>
+
+<p>In particular, it implies that even the fanciest of funds, managed by very smart people with fancy degrees from even fancier universities, will on average fare no better than a monkey throwing darts at a list of stocks.</p>
+
+<h3>  Is it true? </h3>
+
+<p>There’s definitely some interesting evidence in its favour. Burton Makiel’s 1973 book <em>A random walk down Wall street</em> gives a very nice, readable account of the theory and supporting evidence. It appears that a lot of professionally managed funds would have been about as well off as if they had gone for the dart-throwing-monkey strategy.</p>
+
+<p>On the other hand, there does seem to be some interesting counterpoints. Warren Buffet, for example, is a legendary investor who subscribes to <a href="https://en.wikipedia.org/wiki/Value_investing" target="_blank">value investing</a>, which probably should not consistently result in returns greater than the market average if the efficient market hypothesis is true. So, maybe he got lucky? Or maybe he was reliably producing information that was not widely known?</p>
+
+<h3>  Is it falsifiable? </h3>
+
+<p>That brings us to the next question. Isn’t it the case that any set of returns to any set of strategies can be viewed as consistent with the efficient market hypothesis, if we just say the unusually high returns were either due to luck, or we take a suitable definition of ‘all available information’?</p>
+
+<p>On the former point, in principle it should be possible to test the theory by figuring out the pattern of overwhelming success stories/unmitigated failures that is likely to be seen assuming some form of the efficient market hypothesis is true, and compare that to what actually happens. On the latter point, I do believe there are limits on how much one can bend the definition of ‘all available information’ before it starts to look like a nonsense.</p>
+
+<p>If we really wanted to, we could do a controlled experiment with the dart-throwing-monkies in one group, and the maths PhDs/professional fund managers in the other, give them access to only publicly available information, and observe over time so see how they get along. That might be very impractical, but it’s definitely within the realm of possibility.</p>
+
+<h3>  Is it tautologous? </h3>
+
+<p>It’s kind of amusing that there is a theory which a large contingent of people consider unfalsifiable, while simultaneously another large contingent of people consider it tautologous. Like, what’s it going to be guys? Is it \(1 + 1 = 2\), or is it the existence of god?</p>
+
+<p>Anyway, I get ahead of myself. There are people who consider the efficient market hypothesis to be tautologous because they believe it amounts to the statement that “on average, the returns that investors get is equal to the average of investor returns”.</p>
+
+<p>I definitely get what they’re saying. I just don’t think that’s all the efficient market hypothesis amounts to. It is not just a statement about the mean of returns; it is a statement about the whole distribution of returns. For example, if it really was possible to consistently beat the market using publicly availalable information, then you would expect certain individuals who have figured out how to do this to <em> consistently</em> outperform the market, in a way that is unlikely to be a fluke, instead of having their performance randomly drawn from the same hat as everyone else and fluctuating completely unpredictably. This is not a trivial statement.</p>
+
+<h3>  Is it hilarious? </h3>
+
+<p>Definitely. Some people have set up comedy investment strategies to illustrate the point. For example, <a href="https://www.bbc.co.uk/news/technology-58707641" target="_blank">Mr Goxx, the crypto trading hamster</a>, who beats human investors by using his hamster wheel as a wheel of fortune. Or the <a href="https://www.dailymail.co.uk/sciencetech/article-7922601/Cows-match-performance-human-stock-analysts-Norwegian-experiment.html" target="_blank">cows who chose investments by crapping on a grid of stocks</a>, and in doing so matched the performance of the professional stock analysts they were pitted against.</p>
+
+<h3>  My take </h3>
+
+<p>It is a striking fact that on average, the dart-throwing-monkies do about as well as professionally managed funds. I used to be fond of making the following analogy with boxing: Imagine if we randomly chose people off the street to fight the world heavyweight champion, and about half the time the champ lost. Amazingly, something like that seems to be going on in speculative markets.</p>
+
+<p>This seems to suggest that there isn’t really any skill in investing, but I don’t think that’s true. Clearly it is possible to discern information about an asset that can be used to reasonably update one’s beliefs about in a way that more accurately reflects reality. If a company is haemorrhaging cash and no one is interested in buying their product, it’s probably not wise to go long on it. Ok that’s an extreme example, but I definitely do think there are more subtle indicators that take some work/savvy to understand.</p>
+
+<p>Where the analogy fails is as follows: when I perform well at boxing, this does not make anyone else better at boxing. This is not true in the world of speculative investment. If the market participants use their information to buy underpriced assets and sell overpriced ones, they move the price closer to what it ‘should’ be, which in turn ensures that most of the time the dart-throwing-monkies aren’t going to be doing anything particularly egregious or particularly awesome compared to everyone else.</p>
+
+<p>In this sense, the dart-throwing-monkies are essentially free-riding on the genuine work of other people. It’s worth noting that we could get to the point where there are too many free-riders and too few people doing the actual work of acquiring real information. That’s something to bear in mind, especially as index funds and passive investing have had a large surge in popularity in recent years.</p>
+
+<p>On the other hand, I think there is a very hard limit on what it is possible to do. We can glean a little bit of information that can be used to predict prices better, but for the most part it’s just too complex for anyone really to get much of a handle on (except in the case where one has access to some very specific inside information).</p>
+
+<p>I used to find it hard to have much truck with the efficient market hypothesis. Can it really be the case that trillions of dollars of transactions and god knows how many millions of man hours are directed towards activities that are, approximately, a waste of time? When I was a young, bright-eyed lad I wouldn’t have been able to stomach that. A decade or two interlude with human nature has made me change my tune. I mean, imagine for a moment that you’re a high net worth individual, and you have to manage your wealth somehow. Are you going to choose the dart-throwing monkies, or are you going to choose the fancy investment firm that hires all the ivy league maths PhDs? And if you are a maths PhD getting a ridiculous pay check for tinkering with an algorithm all day, are you going to convince yourself that in fact you and your coworkers have the singular ability to beat the market despite all the evidence to the contrary, or are you going to see the world as it truly is?</p>
+
+<p>I more or less believe the efficient market hypothesis to be true. If you want to beat the market, you’re either going to need luck or insider information, and neither are easy to come by.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[06 Jan 2022]]></summary></entry><entry><title type="html">Counting COVID-19 deaths</title><link href="/2022/01/06/Counting-COVID-deaths.html" rel="alternate" type="text/html" title="Counting COVID-19 deaths" /><published>2022-01-06T00:00:00+00:00</published><updated>2022-01-06T00:00:00+00:00</updated><id>/2022/01/06/Counting%20COVID%20deaths</id><content type="html" xml:base="/2022/01/06/Counting-COVID-deaths.html"><![CDATA[<p>06 Jan 2022</p>
+
+<p>There has been a great deal of controversy over the way COVID-19 deaths are calculated. Initially in the UK, the count that was most widely reported consisted of all who died within 60 days of a positive PCR test, or who died more than 60 days after a positive test but had COVID-19 listed as a cause of death on their death certificate.</p>
+
+<p>The main objection to this is that, for example, someone could test positive for COVID-19, recover fully, then die in e.g. a car crash and still be counted as a COVID-19 death.</p>
+
+<h3> What are we trying to do when we count COVID-19 deaths anyway? </h3>
+
+<p>It’s important to be clear what we’re trying to achieve with the COVID-19 death count. I think most people agree that we should be aiming to count the number of deaths caused by COVID-19. But what does that mean exactly? In the Scottish data, the average number of comorbidities in people who died from COVID-19 is upwards of 3. How do we assign causation when there are multiple contributing factors?</p>
+
+<p>Ideally, what we would like to do is a controlled experiment. We would ‘run’ a parallel version of the world that is completely identical, except SARS-CoV-2 is non-existent. And when I say identical, I really mean it. Everyone believes just as much in the reality of SARS-CoV-2 as they do now, people are furloughed from work en masse, governments impose social distancing and lockdown measures etc. Everything the same, it’s just that there ain’t no such thing as SARS-CoV-2.</p>
+
+<p>The point is that we only changed one thing in our experiment. Therefore any difference in outcome can definitively be attributed to that one change.</p>
+
+<p>Of course this wouldn’t really be feasible (not to mention ethical), but at least now we know what we’re aiming for.</p>
+
+<h3> Hasn't someone spent a lot of time thinking about this problem before? </h3>
+
+<p>Yes. There is a large literature on, for example, how to define deaths due to influenza. The proximate cause of death in most people who die as a result of influenza is pneumonia. But they also often have several comorbidities. One might typically see a flu death defined as death after a hospital admission with flu recorded as the reason for admission. However, the question is far from being settled.</p>
+
+<h3> What should we do with COVID-19 then? </h3>
+
+<p>On August 12 2020, <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/916035/RA_Technical_Summary_-_PHE_Data_Series_COVID_19_Deaths_20200812.pdf" target="_blank">Public Health England changed their main definition of a COVID-19 death to be a death within 28 days of a PCR positive test.</a> This led to the primary COVID-19 death count dropping by about 13% overnight. Still, it remains possible for car crash victims to be counted as COVID-19 deaths, and there is the unfortunate fact that the rate of COVID-19 deaths increases as we do more testing, even if the rate of deaths actually caused by COVID-19 remains constant.</p>
+
+<p>This is also quite different from how a flu death is usually defined. Perhaps there’s a defensible rationale for that; COVID-19 and flu are different diseases, and there is a world of difference in how we have reacted to them. For example, it might be reasonable not to require a positive PCR test in the definition of a flu death because PCR testing is quite rare in a typical flu season, which would likely lead to a significant under-count. On the other hand, in the UK we have ramped up PCR testing for COVID extraordinarily rapidly, <a href="https://coronavirus.data.gov.uk/details/testing" target="_blank"> from 10s of thousands per day in April 2020, to well over half a million per day at the time of writing</a>. In my eyes, the more pertinent danger with our current definition of a COVID-19 death is over-counting. I think there is a reasonable case for further modifying the defintion of a COVID-19 death, to be death within 28 days of a postive PCR test <strong>and </strong> COVID-19 listed as the main cause of death on the death certificate, or something similar.</p>
+
+<p>I really wouldn’t want to be the PR person who deals with the reaction to that, though.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[06 Jan 2022]]></summary></entry><entry><title type="html">Do we already have the quantum theory of gravity?</title><link href="/2022/01/05/Quantum-gravity.html" rel="alternate" type="text/html" title="Do we already have the quantum theory of gravity?" /><published>2022-01-05T00:00:00+00:00</published><updated>2022-01-05T00:00:00+00:00</updated><id>/2022/01/05/Quantum%20gravity</id><content type="html" xml:base="/2022/01/05/Quantum-gravity.html"><![CDATA[<p>05 Jan 2022</p>
+
+<h3>  The holy grail of theoretical physics </h3>
+
+<p>For many decades now, physicists have been trying to ‘unify’ quantum mechanics and Einstein’s general relativity into a quantum theory of gravity. This has proven to be very difficult, and achieving such a unification is one of the major outstanding problems in theoretical physics. To understand why, let me first give you a whistlestop tour of some topics in physics.</p>
+
+<h3>  The principle of least action </h3>
+
+<p>Classically, modern physics theories tend to be defined in terms of the <a href="https://en.wikipedia.org/wiki/Stationary-action_principles" target="_blank"> principle of least action</a>. What this means is that the laws of nature are derived from the minimisation of a quantity we call the action. It turns out that a wide range of dynamical laws can be derived this way, including for example Newton’s laws.</p>
+
+<p>When various mathematicians/physicists worked all of this out in the 1700s, some were inclined to attach mystical significance to it. After all, if the workings of the entire universe are described by a minimisation principle, then there must be a <em>minimiser</em>, whom some identified as god.</p>
+
+<h3>  Symmetry </h3>
+
+<p>The action is in turn is an integral over spacetime of a quantity called the Lagrangian (or sometimes Lagrangian density)</p>
+
+\[S = \int \mathcal{L} \tag{1}\]
+
+<p>In principle, the Lagrangian can be just about anything we want, and there is a hell of a lot of choice to be had. So how do we pick a Lagrangian that desribes our universe?</p>
+
+<p>Well one thing that helps to narrow down the choice significantly is symmetry, which plays a very important role in modern physics. It turns out that once you know what symmetries the universe has, you are well on your way to having a theory that describes it.</p>
+
+<p>As an example of a symmetry, think about coordinate systems. The behaviour of a physical system should not change depending on the system of coordinates we use to describe it. This is a symmetry that puts significant constraints on the space of theories. These sort of considerations were important in leading Einstein to develop special and general relativity, for example.</p>
+
+<h3> The length cutoff </h3>
+
+<p>Ok but we haven’t completely nailed down the Lagrangian yet. In fact, there are typically an infinite number of terms that could appears in the Lagrangian that are consistent with a given set of symmetries. How do we narrow it down further?</p>
+
+<p>If we reckon the Lagrangian is an analytic function of the fields (which I will just call \( \phi \) ), then we can approximate it as accurately as we want with a Taylor series,</p>
+
+\[\mathcal{L} = \alpha_0 + \alpha_1 f_1(\phi) + \alpha_2 f_2(\phi) + ...  \label{lagrangian} \tag{2}\]
+
+<p>The numbers \( \alpha_0, \; \alpha_1, … \) are constants that need to be determined by experiment, and \( f_n(\cdot) \) are some functions.</p>
+
+<p>We can also treat spacetime as if it is discrete. In fact, not only can we, but it seems like it <a href="https://en.wikipedia.org/wiki/Wightman_axioms#Existence_of_theories_which_satisfy_the_axioms" target="_blank">may be forced upon us in order for the theory to be mathematically well-defined</a>. Note that this is not to say that spacetime ‘really is’ discrete; rather treating it as if it is provides an approximation that is good enough for us to calculate whatever quantities we want.</p>
+
+<p>Discrete theories come with a length scale called a cutoff that defines the smallest length it is possible to sensibly ‘talk about’ within the theory. The point here is that we can arrange the above Taylor expansion so that the higher order terms are suppressed by powers of the cutoff. This means that at any desired degree of accuracy, we need only include a finite number of terms in the theory.</p>
+
+<h3>  Why don't quantum mechanics and general relativity play well together? </h3>
+
+<p>Now it seems like we’re all set. We believe the universe has symmetry under certain coordinate transformations, and for any desired degree of accuracy we can do a finite number of experiments to determine the parameters that fully specify the theory. So what’s the problem?</p>
+
+<p>Well, the way I have presented things here is quite contrary to the way things unfolded historically. In the 60s and 70s, there was a belief among many physicists that as the length cutoff goes to zero, it better be the case that only a finite number of terms have a non-zero coefficient in equation \(\ref{lagrangian}\). They were many good reasons to believe this at the time, and many still maintain the belief today. The main argument in favour is that if it weren’t true, then as the cutoff is taken to zero, and barring some ‘special’ circumstances, there would be an infinite number of parameters, each of which has to be determined by experiment. I don’t know about you, but I don’t really have time to do an infinite number of experiments.</p>
+
+<p>When this is the case, the theory is called ‘non-renormalisable’. It turns out that Einstein’s general relativity is non-renormalisable, and this the heart of the problem of ‘unifying’ quantum mechanics and general relativity into a quantum theory of gravity.</p>
+
+<h3>  What's wrong with a never-ending series of increasingly accurate approximations? </h3>
+
+<p>I am, however, not at all convinced that non-renormalisability is that big an issue. We already have a theory that in principle can be used to calculate any quantity we want, to any desired degree of accuracy we want. Am I missing something here?</p>
+
+<p>Fundamentally, I think the desire to have a theory that is determined by a finite set of parameters at all length scales is driven by what the physics community thinks an aesthetically-pleasing theory is. I don’t really think that’s the greatest guide to scientific truth. Physicists are quite fickle in their aesthetic tastes - there was a time when quantum mechanics was considered quite ugly, for example. For what it’s worth, I personally quite enjoy the idea that nature isn’t so simple that it can be described by a finite number of experimentally determinable quantities at all length scales. We have to work harder the more we want to know. There is no cosmic free lunch.</p>
+
+<h3>  Don't expect this point of view to catch on any time soon </h3>
+
+<p>The other problem with this view is that it would kind of leave a whole bunch of high energy theoretical physicists without much to do. If we already have the quantum theory of gravity, then they are out of a job. Thus they collectively have a very strong incentive to convince themselves that non-renormalisability is a big problem, and so of course that’s exactly what they do.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[05 Jan 2022]]></summary></entry><entry><title type="html">Imputation - the respectable face of p-hacking?</title><link href="/2022/01/04/Imputation.html" rel="alternate" type="text/html" title="Imputation - the respectable face of p-hacking?" /><published>2022-01-04T00:00:00+00:00</published><updated>2022-01-04T00:00:00+00:00</updated><id>/2022/01/04/Imputation</id><content type="html" xml:base="/2022/01/04/Imputation.html"><![CDATA[<p>04 Jan 2022</p>
+
+<h3>  What is imputation? </h3>
+
+<p>Imputation is ‘filling in’ missing values in a dataset. So, for example, say I have a dataset consisting of the name, age, sex and height of some individuals as follows:</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: center"><u><strong>Name </strong></u></th>
+      <th style="text-align: center"><u><strong>Sex </strong></u></th>
+      <th style="text-align: center"><u><strong>Age </strong></u></th>
+      <th style="text-align: center"><u><strong>Height </strong></u></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: center">Alice</td>
+      <td style="text-align: center">Female</td>
+      <td style="text-align: center">25</td>
+      <td style="text-align: center">165cm</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Bob</td>
+      <td style="text-align: center">Male</td>
+      <td style="text-align: center">_</td>
+      <td style="text-align: center">180cm</td>
+    </tr>
+    <tr>
+      <td style="text-align: center">Carol</td>
+      <td style="text-align: center">_</td>
+      <td style="text-align: center">55</td>
+      <td style="text-align: center">_</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>Notice however that some of the entries are blanks - their values are not recorded. There are many reasons why this might be the case - maybe the person who collected the data forgot to fill it in, or some information was accidentally deleted, etc.</p>
+
+<p>Imputation consists of filling in the blank spaces, hopefully in a way that is sensible. The main reason to do this is that often when we train a model using data, we can only use rows in the data that are complete, i.e. no blank spaces. It can seem ‘wasteful’ to discard an entire row because it contains a missing value.</p>
+
+<p>Another important reason we may wish to impute is because the values that are missing could be statistically distinct from the values that are not missing. For example, imagine that for whatever reason, younger people are less likely to have their age recorded in the data than older people. Then the missing values are statistically distinct from the non-missing values, and if we do some statistical analysis using this data we risk introducing bias.</p>
+
+<p>This is all well and good as a motivation for imputation, but the waters can quickly get muddy.</p>
+
+<h3> How is imputation done? </h3>
+
+<p>There are a number of methods that are commonly used for imputation:</p>
+
+<ul>
+  <li>
+    <p><strong>Mean substitution</strong> <br />
+Replace missing values with the mean of the non-missing values in that column.</p>
+  </li>
+  <li>
+    <p><strong> Modal substition</strong> <br />
+Replace missing values with the mode (most commonly occurring) of the non-mising values in that column.</p>
+  </li>
+  <li>
+    <p><strong>Regression</strong> <br />
+Train a model that predicts the missing values from the non-missing values.</p>
+  </li>
+  <li>
+    <p><strong>Imputation by chained equations</strong> <br />
+This one is a little more complicated, and is something like applying a regression model iteratively. I won’t go into it in detail here, but <a href="https://stats.stackexchange.com/questions/421545/multiple-imputation-by-chained-equations-mice-explained" target="_blank"> this answer</a> on stack exchange gives a nice, simplified explanation of the procedure.</p>
+  </li>
+</ul>
+
+<h3> How much imputation is too much? </h3>
+
+<p>Let’s say that now instead of the above dataset, I have a larger dataset that has <em>a lot</em> of missing values. Let’s make it 1 million rows and 20 columns, and there is only one 
+non-missing value in each row. Would it be reasonable to impute all of the missing values?</p>
+
+<p>That idea understandably makes many people uneasy. Can we really be confident that our imputed values are sensible, especially since we started out with so little actual information? Surely this cannot always be ‘kosher’.</p>
+
+<p>Taking the rationale behind imputation to its conclusion, we might even impute an arbitrary number of rows for which we have no data at all - effectively magicking new data into existence! If the non-missing values are indeed statistically distinct from the missing values in a way that can be ‘accounted for’ by the non-missing values, then it might be argued that not only is this ‘OK’, it’s thoroughly commendable statistical practice.</p>
+
+<h3> Imputation by chained equations - an example </h3>
+<p>Imputation by chained equations has emerged as a sort of ‘best practice’ for imputation in many areas of academia. Here is the result of imputing age in this way on a dummy dataset that I created:</p>
+
+<p><img src="../../../images/age_imputation.jpg" width="600" height="500" class="center" /></p>
+
+<p>Original values are in blue, imputed values in red. This graph shows the distribution of age, so values where the graph is at a peak are more common, and values where the graph dips are less common.</p>
+
+<p>Your first reaction might be “Well there’s a pretty good match between observed values and imputed values. Seems sensible”. And that might be reasonable as a first reaction.</p>
+
+<p>But then if you work with imputation for a little while and start thinking about it a little more, maybe you start to have some doubts.</p>
+
+<h3> Reasons for pause </h3>
+
+<p>Graphs of the type above, showing the distribution of observed and imputed values, are often used as a post-imputation diagnostic tool. We do the imputation, and then use those plots to decide whether the imputation is ‘acceptable’. But how do we tell the difference between ‘acceptable’ and ‘unacceptable’ imputations?</p>
+
+<p>Well, things get a little vague here. My experience of the literature on imputation is that it is a bit cagey on this point. See, the problem is as follows: If the observed and imputed values are obviously statistically distinct, is that because the imputation is bad, or is it because the imputation is doing its job and correctly telling us that the missing values are indeed statistically distinct from the non-missing values?</p>
+
+<h3> How much do you trust the computer? </h3>
+
+<p>In practice, I don’t think statisticians place much trust in imputations that produce values that are clearly statistically distinct from non-missing values in the original dataset. They just don’t really think the computer is <em>that smart</em>, and I’m more or less in agreement. If they put their faith in their computer, they would also have the non-trivial problem of convincing a peer-reviewer why the odd looking imputation results are actually A-OK.</p>
+
+<p>If the imputed values and the observed values are in conflict, then so much the worse for the imputed values, it seems.</p>
+
+<h3> What is the real purpose that imputation serves? </h3>
+
+<p>The algorithm behind imputation by chained equations is sometimes described as containing a pinch of magic. It has a remarkable tendency to produce graphs like the one above, with excellent agreement between the maginal distributions of the observed and imputed values, thus conveniently avoiding the above issues. This is despite the fact that one of the main justifications for imputation is that it is supposed to be used when the non-missing values are statistically distinct from the missing values, and to fill in the missing values appropriately. I have to think that this is not an accident.</p>
+
+<p>Whenever I see humans behaving in ways that appear to contradict their stated principles, I am increasingly inclined to pay little attention to the rationalisations they offer, and instead look at what benefit they derive from the behaviour in question. In this case, the obvious useful purpose imputation by chained equations serves is allowing researchers to jack up their sample size, thus reducing their p-values, narrowing their confidence intervals and increasing their chances of getting a statistically significant, publishable result, without raising the hackles of the reviewers. Normally this sort of thing is called p-hacking.</p>
+
+<h3> What is p-hacking? </h3>
+
+<p>Researchers try to assess how confident they can be that their results are correct and not a ‘fluke’. The way this is typically done is by calculating a p-value, which is essentially the probability of seeing the result the researchers saw assuming their hypothesis is incorrect. We tend to take a low p-value as indicating a low probability that the hypothesis is incorrect. Low p-values are widely coveted by researchers the world over.</p>
+
+<p>p-hacking is a suite of dubious techniques that researchers can use to artifically lower their p-values. While there is a clear personal incentive for them to do this (advancing their career, getting tenured etc), it has the unfortunate effect of <a href="https://journals.plos.org/plosmedicine/article/file?type=printable&amp;id=10.1371/journal.pmed.0020124" target="_blank"> causing the scientific literature to be populated with findings that are false</a>. Then we have the embarrassment that is the <a href="https://en.wikipedia.org/wiki/Replication_crisis" target="_blank"> replication crisis</a> in medicine and the social sciences - a shamefully large fraction of results in the literature fail to be reproduced when someone else repeats the analysis.</p>
+
+<h3> The bottom line </h3>
+
+<p>If I simply took a real dataset and copy-pasted it to create an artifical dataset that was twice the size and with every entry duplicated, I would likely not get very far in publishing the results of any analysis. However, if I instead took a dataset where half the rows have missing values and do an imputation by chained equations, I doubt it would get much critical scrutiny, despite the fact that the end results are probably similar. Imputation by chained equations is complex enough that it is at least within the realm of possibility that it is doing something statistically sound, while not being <em>obviously</em> wrong. I find it hard to understand its primary purpose as anything except putting a respectable face on p-hacking.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[04 Jan 2022]]></summary></entry><entry><title type="html">Vaccine safety webinar with HDRUK</title><link href="/2021/12/13/Vaccine-safety-webinar-with-HDRUK.html" rel="alternate" type="text/html" title="Vaccine safety webinar with HDRUK" /><published>2021-12-13T00:00:00+00:00</published><updated>2021-12-13T00:00:00+00:00</updated><id>/2021/12/13/Vaccine%20safety%20webinar%20with%20HDRUK</id><content type="html" xml:base="/2021/12/13/Vaccine-safety-webinar-with-HDRUK.html"><![CDATA[<p>13 Dec 2021</p>
+
+<p>I was an invited speaker to the HDRUK COVID-19 vaccine safety research webinar that took place on 11th November, 2021. You can see a video of my talk below. In it, I briefly outline the main findings from studies of vaccine safety that I worked on using the <a href="https://www.ed.ac.uk/usher/eave-ii" target="_blank">EAVE II</a> platform, which consists of clinical and demographic information for the entire population of Scotland.</p>
+
+<p>Our main findings were that vaccination with Oxford-AstraZeneca was associated with an elevated risk of cerebral venous sinus thrombosis (a type of blood clot in the brain that can potentially be fatal), and idiopathic thrombocytopenic purpura (low platelet count in blood which can lead to bleeding - sometimes in the brain, which can be very serious).</p>
+
+<p>I also give a quick outline of the main costs and benefits of vaccination, and suggest that given it is likely that SARS-CoV-2 will become endemic, we may have to move away from mass-vaccination towards a strategy that is much smaller in scope and targeted at the elderly and the vulnerable.</p>
+
+<p><br /></p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/gyMNwFQrTOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>]]></content><author><name></name></author><summary type="html"><![CDATA[13 Dec 2021]]></summary></entry></feed>

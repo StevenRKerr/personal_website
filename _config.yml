@@ -3,3 +3,10 @@ exclude:
     - Gruntfile.js
     - package.json
     - package-lock.json
+    - Gemfile
+    - Gemfile.lock
+
+plugins:
+  - jekyll-feed
+  - jekyll-sitemap
+  - jekyll-seo-tag

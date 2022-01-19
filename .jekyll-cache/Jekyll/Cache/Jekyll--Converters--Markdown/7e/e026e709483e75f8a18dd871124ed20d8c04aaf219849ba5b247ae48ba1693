@@ -1,0 +1,56 @@
+I"�<p>05 Jan 2022</p>
+
+<h3>  The holy grail of theoretical physics </h3>
+
+<p>For many decades now, physicists have been trying to ‘unify’ quantum mechanics and Einstein’s general relativity into a quantum theory of gravity. This has proven to be very difficult, and achieving such a unification is one of the major outstanding problems in theoretical physics. To understand why, let me first give you a whistlestop tour of some topics in physics.</p>
+
+<h3>  The principle of least action </h3>
+
+<p>Classically, modern physics theories tend to be defined in terms of the <a href="https://en.wikipedia.org/wiki/Stationary-action_principles" target="_blank"> principle of least action</a>. What this means is that the laws of nature are derived from the minimisation of a quantity we call the action. It turns out that a wide range of dynamical laws can be derived this way, including for example Newton’s laws.</p>
+
+<p>When various mathematicians/physicists worked all of this out in the 1700s, some were inclined to attach mystical significance to it. After all, if the workings of the entire universe are described by a minimisation principle, then there must be a <em>minimiser</em>, whom some identified as god.</p>
+
+<h3>  Symmetry </h3>
+
+<p>The action is in turn is an integral over spacetime of a quantity called the Lagrangian (or sometimes Lagrangian density)</p>
+
+\[S = \int \mathcal{L} \tag{1}\]
+
+<p>In principle, the Lagrangian can be just about anything we want, and there is a hell of a lot of choice to be had. So how do we pick a Lagrangian that desribes our universe?</p>
+
+<p>Well one thing that helps to narrow down the choice significantly is symmetry, which plays a very important role in modern physics. It turns out that once you know what symmetries the universe has, you are well on your way to having a theory that describes it.</p>
+
+<p>As an example of a symmetry, think about coordinate systems. The behaviour of a physical system should not change depending on the system of coordinates we use to describe it. This is a symmetry that puts significant constraints on the space of theories. These sort of considerations were important in leading Einstein to develop special and general relativity, for example.</p>
+
+<h3> The length cutoff </h3>
+
+<p>Ok but we haven’t completely nailed down the Lagrangian yet. In fact, there are typically an infinite number of terms that could appears in the Lagrangian that are consistent with a given set of symmetries. How do we narrow it down further?</p>
+
+<p>If we reckon the Lagrangian is an analytic function of the fields (which I will just call \( \phi \) ), then we can approximate it as accurately as we want with a Taylor series</p>
+
+\[\mathcal{L} = \alpha_0 + \alpha_1 f_1(\phi) + \alpha_2 f_2(\phi) + ...  \label{lagrangian} \tag{2}\]
+
+<p>The numbers \( \alpha_0, \; \alpha_1, … \) are constants that need to be determined by experiment, and \( f_n(\dot) \) are some functions.</p>
+
+<p>We can also treat spacetime as if it is discrete. In fact, not only can we, but it seems like it <a href="https://en.wikipedia.org/wiki/Wightman_axioms#Existence_of_theories_which_satisfy_the_axioms" target="_blank">may be forced upon us in order for the theory to be mathematically well-defined</a>. Note that this is not to say that spacetime ‘really is’ discrete; rather treating it as if it is provides an approximation that is good enough for us to calculate whatever quantities we want.</p>
+
+<p>Discrete theories come with a length scale called a cutoff that defines the smallest length it is possible to sensibly ‘talk about’ within the theory. The point here is that we can arrange the above Taylor expansion so that the higher order terms are suppressed by powers of the cutoff. This means that at any desired degree of accuracy, we need only include a finite number of terms in the theory.</p>
+
+<h3>  Why don't quantum mechanics and general relativity play well together? </h3>
+
+<p>Now it seems like we’re all set. We believe the universe has symmetry under certain coordinate transformations, and for any desired degree of accuracy we can do a finite number of experiments to determine the parameters that fully specify the theory. So what’s the problem?</p>
+
+<p>Well, the way I have presented things here is quite contrary to the way things unfolded historically. In the 60s and 70s, there was a belief among many physicists that as the length cutoff goes to zero, it better be the case that only a finite number of terms have a non-zero coefficient in equation \(\ref{lagrangian}\). They were many good reasons to believe this at the time, and many still maintain the belief today. The main argument in favour is that if it weren’t true, then as the cutoff is taken to zero, and barring some ‘special’ circumstances, there would be an infinite number of parameters, each of which has to be determined by experiment. I don’t know about you, but I don’t really have time to do an infinite number of experiments.</p>
+
+<p>When this is the case, the theory is called ‘non-renormalisable’. It turns out that Einstein’s general relativity is non-renormalisable, and this the heart of the problem of ‘unifying’ quantum mechanics and general relativity into a quantum theory of gravity.</p>
+
+<h3>  What's wrong with a never-ending series of increasingly accurate approximations? </h3>
+
+<p>I am, however, not at all convinced that non-renormalisability is that big an issue. We already have a theory that in principle can be used to calculate any quantity we want, to any desired degree of accuracy we want. Am I missing something here?</p>
+
+<p>Fundamentally, I think the desire to have a theory that is determined by a finite set of parameters at all length scales is driven by what the physics community thinks an aesthetically-pleasing theory is. I don’t really think that’s the greatest guide to scientific truth. Physicists are quite fickle in their aesthetic tastes - there was a time when quantum mechanics was considered quite ugly, for example. For what it’s worth, I personally quite enjoy the idea that nature isn’t so simple that it can be described by a finite number of experimentally determinable quantities at all length scales. We have to work harder the more we want to know. There is no cosmic free lunch.</p>
+
+<h3>  Don't expect this point of view to catch on any time soon </h3>
+
+<p>The other problem with this view is that it would kind of leave a whole bunch of high energy theoretical physicists without much to do. If we already have the quantum theory of gravity, then they are out of a job. Thus they collectively have a very strong incentive to convince themselves that non-renormalisability is a big problem, and so of course that’s exactly what they do.</p>
+:ET

@@ -1,0 +1,31 @@
+I"0<p>06 Jan 2022</p>
+
+<p>There has been a great deal of controversy over the way COVID-19 deaths are calculated. Initially in the UK, the count that was most widely reported consisted of all who died within 60 days of a positive PCR test, or who died more than 60 days after a positive test but had COVID-19 listed as a cause of death on their death certificate.</p>
+
+<p>The main objection to this is that, for example, someone could test positive for COVID-19, recover fully, then die in e.g. a car crash and still be counted as a COVID-19 death.</p>
+
+<h3> What are we trying to do when we count COVID-19 deaths anyway? </h3>
+
+<p>It’s important to be clear what we’re trying to achieve with the COVID-19 death count. I think most people agree that we should be aiming to count the number of deaths caused by COVID-19. But what does that mean exactly? In the Scottish data, the average number of comorbidities in people who died from COVID-19 is upwards of 3. How do we assign causation when there are multiple contributing factors?</p>
+
+<p>Ideally, what we would like to do is a controlled experiment. We would ‘run’ a parallel version of the world that is completely identical, except COVID-19 is non-existent. And when I say identical, I really mean it. Everyone’s believes just as much in the reality of COVID-19 as they do now, governments enact social distancing and lockdowns etc. Everything the same, it’s just that there ain’t no such thing as COVID-19.</p>
+
+<p>The point is that we only changed one thing in our experiment. Therefore any difference in outcome can definitively be attributed to the thing we changed.</p>
+
+<p>Of course this wouldn’t really be feasible (not to mention ethical), but at least now we know what we’re aiming for.</p>
+
+<h3> Hasn't someone thought about this problem lots before? </h3>
+
+<p>Yes. There is a large literature on, for example, how to define deaths due to influenza. The proximate cause of death in most people who die as a result of influenza is most often pneumonia. But they also often have several comorbidities. One might typically see a flu death defined as a hospital admission for flu that ends in the patient dying. However, the question is far from being settled.</p>
+
+<h3> What should we do with COVID-19 then? </h3>
+
+<p>On August 12 2020, <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/916035/RA_Technical_Summary_-_PHE_Data_Series_COVID_19_Deaths_20200812.pdf" target="_blank">Public Health England changed their main definition of a COVID-19 death to be a death within 28 days of a PCR positive test.</a> This lead to the primary death count dropping by about 13% overnight.</p>
+
+<p>Still, many criticisms remain. It remains possible for car crash victims to be counted as COVID-19 deaths, and there is the unfortunate fact that the rate of COVID-19 deaths increases as we do more testing, even if the rate of deaths actually caused by COVID-19 remains constant.</p>
+
+<p>This is also quite different from how a flu death is usually defined. Perhaps there’s a defensible rationale for that; COVID-19 and flu are different diseases, and there is a world of difference in how we have reacted to them. For example, it might be reasonable not to require a positive PCR test for a flu death because PCR testing is quite rare in a typical flu season, which would likely lead to a significant under-count. On the other hand, we have ramped up <a href="https://coronavirus.data.gov.uk/details/testing f" target="_blank">PCR testing for COVID</a> extraordinarily rapidly, from 10s of thousands per day in April 2020, to well over half a million per day at the time of writing. In my eyes, the more pertinent danger with our current definition of a COVID-19 death is over-counting. I think there is a reasonable case for using an alternate definition, such as death within 28 days of a postive PCR test <strong>and </strong> COVID-19 listed as the main cause of death on the death certificate.</p>
+
+<p>I really wouldn’t want to be the PR person who would have to deal with the public reaction to this, though.</p>
+
+:ET

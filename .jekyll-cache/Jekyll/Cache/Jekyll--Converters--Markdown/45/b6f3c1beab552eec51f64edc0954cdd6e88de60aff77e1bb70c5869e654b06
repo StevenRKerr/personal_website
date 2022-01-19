@@ -1,0 +1,32 @@
+I"�
+<p>05 Jan 2022</p>
+
+<h3>  The holy grail of theoretical physics </h3>
+
+<p>For many decades now, physicsists have been trying to ‘unite’ quantum mechanics and Einstein’s general relativity into a quantum theory of gravity. This has proven to be very difficult, and achieving such a unification is one of the major outstanding problems in theoretical physics. To understand why, let me first give you a quick primer.</p>
+
+<h3>  The principle of least action </h3>
+
+<p>Modern physics theories tend to be defined in terms of the <a href="https://en.wikipedia.org/wiki/Stationary-action_principles" target="_blank"> principle of least action</a>. What this means is that the laws of nature (at least classically) are derived from the minimisation of a quantity we call the action. It turns out that a wide range of dynamical laws can be derived this way, including for example Newton’s laws. When various mathematicians/physicists worked all of this out in the 1700s, some were inclined to attach mystical singnificance to it. If the workings of the entire universe are described by a minimisation principle, then there must be a <em>minimiser</em>, whom they often identified as god.</p>
+
+<h3>  Symmetry </h3>
+
+<p>The action is in turn is an integral over spacetime of a quantity called the Lagrangian (or sometimes Lagrangian density)</p>
+
+\[S = \int \mathcal{L}\]
+
+<p>In principle, the Lagrangian can be just about anything you want, and there is a hell of a lot of choice to be had. So how do we choose a Lagrangian that desribes our universe?</p>
+
+<p>Well one thing that helps to narrow down the field significantly is symmetry. Symmetry has played a very important role in modern physics. It turns out that once you know what symmetries the universe has, you are well on your way to having a full specification of a theory that describes it.</p>
+
+<p>As an example of symmetry, think about coordinate tranformations. The behaviour of a physical system should not change when we describe it in a different set of coordinates - this is a type of symmetry. These sorts of considerations are what led Einstein to develop special and general relativity.</p>
+
+<h3>  Coupling constants </h3>
+
+<p>Ok but we haven’t completely nailed down the Lagrangian yet. In fact, there are typically an infinite number of terms that could appears in the Lagrangian that are consistent with a given set of symmetries. How do we narrow it down further?</p>
+
+<p>If we reckon the Lagrangian is an analytic function, then we can approximate it as accurately as we want by a polynomial in the field content of the theory (which I will just call ( \phi ) ).</p>
+
+\[\mathcal{L} = \alpha_0 + \alpha_1 f_1(\phi) + \alpha_2 f_2(\phi) + ...\]
+
+:ET
