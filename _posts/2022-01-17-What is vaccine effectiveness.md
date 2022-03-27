@@ -15,7 +15,7 @@ There are many quantities that get called "vaccine effectiveness" that are mathe
 
 <h4>  Risk ratio </h4>
 
-Risk ratios are perhaps the most intuitive way  of defining vaccine effectiveness. It really is just the probability of a vaccinated person being infected with COVID, divided by the probability of an unvaccinated person being infected with COVID. A rate ratio less than one indicates some vaccine effectiveness against infection. This motivates our first definition of vaccine effectiveness,
+Risk ratios are perhaps the most intuitive way  of defining vaccine effectiveness. It really is just the probability of a vaccinated person being infected with COVID, divided by the probability of an unvaccinated person being infected with COVID. A risk ratio less than one indicates some vaccine effectiveness against infection. This motivates our first definition of vaccine effectiveness,
 
 $$ \mathrm{VE} = 1-  \mathrm{Risk \; ratio}.$$
 
@@ -72,7 +72,7 @@ News reports on studies have vaccine effectiveness have tended to report peak ef
 
 <h3>  An example </h3>
 
-Let's assume that the probbility of an unvaccinated person being infected with COVID in a given week is 0.1 and constant. Let's assume vaccine effectiveness stays at roughly the peak level that we found in our paper of 90%.  What is probability of being infected with COVID relative to an unvaccinated person over, say, a 12 week period?
+Let's assume that the probability of an unvaccinated person being infected with COVID in a given week is 0.1 and constant. Let's assume vaccine effectiveness stays at roughly the peak level that we found in our paper of 90%.  What is the probability of being infected with COVID relative to an unvaccinated person over, say, a 12 week period?
 
 This is like flipping a biased coin each week, and calculating the probability of flipping 12 "not infected" in a row. Doing this calculation (I'll spare you the details), you get a reduction in risk of \\( 84 \% \\).
 

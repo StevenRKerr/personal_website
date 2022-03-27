@@ -1,0 +1,37 @@
+I"O<p>08 Mar 2022</p>
+
+<p>Ever since Newton/Leibniz invented the infinitesimal calculus in the latter half of the 1600s, it seems like the world has been enthralled by beauty and possibility of the continuum. This event marked the beginning of modern physics and mathematics, and there is virtually no topic in either of these fields that is not deeply interwoven with calculus.</p>
+
+<p>Sometimes, though, I think they may have been a little too successful.</p>
+
+<h3> Before we get started, kindly allow me to explain my super clever title pun </h3>
+
+<p>It turns out that there are different sizes of infinity. So, for example, the entire set of counting numbers \( \{ 1,2,3 …\} \) is smaller than the entire set of real numbers. What this means is that you can pair up every counting number to a real number, and still have lots of real numbers left over. 
+Sets that are of the same ‘size’ as the real numbers are sometimes said to have the ‘power of the continuum’ - and this is where we lay the scene of the eponymous wordplay.</p>
+
+<h3> What's weak about the continuum? </h3>
+
+<p>No one can doubt the real numbers are pretty and endlessly fascinating. But have we sometimes been a little too seduced/beguiled by them?</p>
+
+<h4> Exhibit A: Quantum field theory </h4>
+
+<p>Quantum field theory is at the heart of our current best theory of the fundamental workings of the universe, <a href="https://en.wikipedia.org/wiki/Standard_Model" target="_blank">The Standard Model</a> . However, somewhat amusingly, <a href="https://en.wikipedia.org/wiki/Wightman_axioms#Existence_of_theories_which_satisfy_the_axioms" target="_blank">we do not yet know if the standard model ‘exists’ mathematically</a>. When it comes to calculating physical quantities from the standard model, we use various types of fudges/approximations, all of which rely in one way or another on a ‘cutoff’. The cutoff is a distance scale below which, for practical purposes, we declare that we are not interested in what is physically happening - much like when we round off numbers at say, 2 decimal places, because precision beyond that is not useful for the purpose at hand. This cutoff effectively introduces some ‘discreteness’ into the theory, and that allows us to do sensible calculations.</p>
+
+<p>However, the full theory is meant to be set in a continuous spacetime. When you try to define this mathematically, you unfortunately run into all sorts of problems. In particular, the fields are operator-valued distributions, for which multiplication is not well-defined outside of some very restricted subsets. This has the consequence that there are basically no known, interacting quantum field theories that have local degrees of freedom - this is the kind of quantum field theory that is required to describe our universe. Indeed there is a <a href="https://en.wikipedia.org/wiki/Yang%E2%80%93Mills_existence_and_mass_gap" target="_blank">million dollar Millenium prize</a> waiting for anyone who can provide an example. It has also led physicists to spend a huge amount of time and effort on very complex, speculative, and issue-ridden ideas like string theory.</p>
+
+<p>All of this kerfuffle can be avoided if you’re just willing to take the cutoff seriously and put the theory on a discrete spacetime lattice. Everything is mathematically well-defined, and any physical quantity the theory predicts can be calculated to any desired degree of precision by adjusting the cutoff as necessary.</p>
+
+<p>Physicists almost unanimously reject this, though. The continuum is just too pretty to be abandoned, despite all the issues it causes.</p>
+
+<h4> Exhibit B: Financial markets </h4>
+
+<p>Let’s say that asset prices are buffeted by mysterious, difficult-to-comprehend forces that we believe are roughly ‘independent’ from each other at different time steps. Let’s say we also believe that time in financial markets is a continuum. Then the central limit theorem implies that movements in asset prices are normally distributed at all times - it’s inescapable.</p>
+
+<p>Of course, movements in asset prices are known to exhibit ‘fat tails’ - in reality there are far more extreme events than we would expect from models that use normal distributions. Indeed some people have at least partly attributed the 2008 financial crisis, as well as various other financial disasters, to widespread use of modelling strategies in which asset returns are normally distributed.</p>
+
+<p>It is pretty clear that the assumptions above are wrong. An asset price does not undergo an infinite number of random kicks between 09:00:00 AM and 09:00:01 AM on a Monday morning. But the underlying mathematics sure is pretty if you assume it does.</p>
+
+<h3> Conclusion </h3>
+
+<p>I’m sure there are other good examples we could talk about. My point is that I think people often want so much for the maths to be pretty that they get led astray from reality.</p>
+:ET

@@ -1,0 +1,128 @@
+I"E*<p>09 Feb 2022</p>
+
+<p>A <a href="https://sites.krieger.jhu.edu/iae/files/2022/01/A-Literature-Review-and-Meta-Analysis-of-the-Effects-of-Lockdowns-on-COVID-19-Mortality.pdf" target="_blank">paper</a> has recently come out claiming that lockdowns had minimal effects on COVID mortality. The headline figure is that in Europe and the USA, lockdowns reduced mortality by 0.2%. Fifty words in and the authors are already dropping bombs like this:</p>
+
+<p><em>While this meta-analysis concludes that lockdowns have had little to no public health effects,
+they have imposed enormous economic and social costs where they have been adopted. In
+consequence, lockdown policies are ill-founded and should be rejected as a pandemic policy
+instrument.</em></p>
+
+<p>You’ve gotta admire that moxie.</p>
+
+<p>Here’s my review.</p>
+
+<h3>  What did they do? </h3>
+
+<p>The authors have done a meta-analysis and review of studies seeking to establish the effect that non-pharmaceutical interventions (NPIs, referred to loosely as `lockdowns’ by the authors) have on COVID mortality.</p>
+
+<p>Their initial search turned up 18,590 papers.</p>
+
+<p>1,048 remained after screening based on the title of the paper.</p>
+
+<p>117 remained after excluding studies that were not empirical, or did not study COVID mortality.</p>
+
+<p>34 remained after filtering according to their eligibility criteria.</p>
+
+<h3>  What eligibility criteria? </h3>
+
+<p>Great question. Most of the substantive criticisms of this paper focus on whether their selection conditions were reasonable. The authors used the following criteria:</p>
+
+<ul>
+  <li><strong>Studies that used simulations to predict mortality in the counterfactual were excluded</strong> <br />
+Counterfactuals are scenarios that didn’t happen, that one typically uses as a basis for comparison. In this context, the counterfactual is what would have unfolded without lockdowns. The authors only admit studies that used real data on mortality from countries that implemented different policies, rather than simulated data.</li>
+</ul>
+
+<p>I find myself in agreement with this as an exclusion criterion, given how stunningly bad various predictions for the epidemic have been, and how much freedom simulations give researchers to get the answer that they want.</p>
+
+<ul>
+  <li><strong>Studies that used synthetic controls were excluded</strong> <br />
+Synthetic control methods work as follows. Ideally, what one would like to do is to take two identical populations, existing in identical circumstances, apply a lockdown to one (the ‘treatment’ group) and not the other (the control group). and then measure the difference in mortality. Any difference can unambiguously be attributed to lockdown, since everything else is identical.</li>
+</ul>
+
+<p>However, that’s obviously not practically feasible a lot of the time. Synthetic control studies attempt to get around this by artifiically creating a control group. So, perhaps there exists a population that were not subjected to lockdown that might be used as a control group, except they are quite different to the treatment group. Synthetic control studies statistically re-weight this population so that they look more like the treatment group, and then look at the differences in mortality compared to the treatment group.</p>
+
+<p>While there is definitely a lot of room for this technique to be abused, I think the authors were perhaps a little too trigger-happy using it as grounds for exclusion.</p>
+
+<ul>
+  <li><strong>Interrupted time-series studies were excluded</strong> <br />
+Interrupted time series studies are fairly straightforward, and in this context consist of fitting a curve to deaths over time in a time period around the imposition of lockdown. One hopes that all other variables that might affect COVID mortality are not changing much during the study period, so that causality can be assigned to the lockdown.</li>
+</ul>
+
+<p>I think the authors were on solid ground excluding studies of this type. There are typically just too many other variables that are changing in the study period to sensibly assign causation.</p>
+
+<ul>
+  <li><strong>Both published and working papers were included</strong> <br />
+This means that the paper did not have to be published in a peer-reviewed journal to make the final cut.</li>
+</ul>
+
+<p>I think this is fair enough. In my experience, peer-review rarely results in major changes to the results of a paper, and there are many high quality papers that are yet to be published.</p>
+
+<ul>
+  <li><strong>Papers that focus on comparing imposition of lockdowns at different times excluded</strong> <br />
+The main rationale behind this is that the authors were seeking to compare the lockdowns that were actually imposed, with a counterfactual in which the lockdowns were not imposed, not a counterfactual in which they were imposed at a different time.</li>
+</ul>
+
+<p>You might say, however, that it is still worth doing the latter comparison because maybe it will tell us whether lockdowns are worthwhile if we could just get the timing right. However, I have pretty much zero confidence in our ability to precisely time the imposition of lockdowns, and I think I the worldwide track record in the last two years backs me up.</p>
+
+<h3>  Quality measures </h3>
+<p>Ok, so that’s how the authors narrowed it down to their chosen 34. That’s not the end of the story though. They also rated each of these studies according to the following four measures of quality:</p>
+
+<ul>
+  <li><strong>Published versus working papers</strong> <br />
+You didn’t think they were going to ignore peer-review completely, did you?</li>
+</ul>
+
+<p>I do think it is reasonable to put more trust in papers that have been peer-reviewed. So no qualms with this one.</p>
+
+<ul>
+  <li><strong>Long verus short term</strong> <br />
+Papers that have data that extends beyond 31st May 2021 get an extra merit point here. The rationale here is that if lockdowns ‘flattern the curve’ but do not prevent deaths, then studies that are cut short may conclude that lockdowns are effective against death when in fact all they may have achieved is slightly prolonging death.</li>
+</ul>
+
+<p>I also think this is reasonable.</p>
+
+<ul>
+  <li><strong>Studies that have an effect on mortality sooner than 14 days after the intervention</strong> <br />
+The idea here is that lockdowns presumably affect mortality by curbing transmission. Since it typically takes at least a few weeks between infection and death for those who die from COVID, any study that sees an early effect on mortality is likely to be flawed.</li>
+</ul>
+
+<p>I’m on board with this.</p>
+
+<ul>
+  <li><strong>Social sciences versus other sciences</strong> <br />
+Ok this is where it gets a bit sketchy. The authors’ rationale is that social scientists have greater expertise in evaluating policy interventions compared to those in the natural sciences. What this effectively means is that studies carried out by economists get a gold star, and studies carried out by e.g. epidemiologists don’t.</li>
+</ul>
+
+<p>I think this is questionable. While I recognise there certainly are biases in different fields, this doesnt sit well with me.</p>
+
+<h3>  The results </h3>
+<p>These measures of quality were used to do stratified analyses. So, they carried out their analysis on papers that scored 4 out of 4 on the above criteria, then a separate analysis for the papers that scored at least 3, etc.</p>
+
+<p>The authors do an inverse-variance weighted meta-analysis, which is just a fancy type of weighted average of the results in the selected papers. It means that studies that were able to more precisely estimate the effect of lockdown on mortality get given more weight. Their main results are as follows:</p>
+
+<ul>
+  <li>
+    <p><strong>Stringency-based studies</strong> <br />
+These are studies that used the <a href="https://ourworldindata.org/f" target="_blank">our world in data</a> <a href="hhttps://ourworldindata.org/metrics-explained-covid19-stringency-index" target="_blank">stringency index</a> to measure how strict lockdown measures were. In their meta-analysis of these studies, the authors find that lockdowns results in a 0.2% reduction in mortality in Europe and the United States. There were only seven papers in this analysis, and one of them receives almost all the weighting.</p>
+  </li>
+  <li>
+    <p><strong>Shelter-in-place-order studies</strong> <br />
+The authors found that shelter-in-place orders reduced mortality by 2.9% in Europe and the United States. Again most of the weight goes to the result from one paper.</p>
+  </li>
+  <li>
+    <p><strong>Specific NPIs</strong> <br />
+Amongst papers that scored a perfect 4 on the quality criteria, the authors found a 34% reduction in mortality for the use of face masks, and 2.9% reduction for business closures. Once again, most of weight appears to be come from single studies.</p>
+  </li>
+</ul>
+
+<h3>  The verdict </h3>
+
+<p>Once can find a selection of papers in the literature on lockdowns that support pretty much any inclusion one wishes to come to. Thus most criticism of this meta-analysis has, rightly, focused on whether the selection criteria are reasonable.</p>
+
+<p>I think the selection criteria are mostly kosher. The one that I take most issue with is the exclusion of papers from the natural scientists. It is a little difficult though, because I do there is a prevailing orthodoxy amongst epidemiologists that errs strongly on the side of interventions that may prevent deaths whose proximate cause is COVID, while neglecting any other effects they may have, no matter how catastrophic. The economists do tend to orient themselves towards broader, utilitarian measures of societal welfare.</p>
+
+<p>At the intutitive level, I would not be surprised if lockdowns had minimal effect on COVID mortality. The mechanism through which they were meant to work was ‘flattening the curve’, thus preventing healthcare services from being overwhelmed. That didn’t happen, and looking at other countries that didn’t have as stringent lockdowns, it seems like we wouldn’t even have come particularly close.</p>
+
+<p>Another interesting thing that the furore over this paper illustrates is the huge schism between economists and public health professionals. It’s quite amazing how two well-developed wings of the academy can be so deeply in disagreement over some rather fundamental items. It’s reminiscent of the chasm that exists between biologists and the humanities on ideas like the <a href="https://en.wikipedia.org/wiki/Tabula_rasa#Science" target="_blank">tabula rasa</a> theory of human nature. One thing is for sure; if the economists were in charge of the governmental response to the pandemic, things would have looked <em>a lot</em> different.</p>
+
+:ET

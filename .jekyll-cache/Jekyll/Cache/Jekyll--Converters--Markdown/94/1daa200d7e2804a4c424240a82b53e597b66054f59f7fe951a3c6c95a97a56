@@ -1,0 +1,14 @@
+I"o
+<p>27 Feb 2022</p>
+
+<p>On February 22nd, PLOS medicine published a <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003927" target="_blank">paper</a> on cerebral venous sinus thrombosis (CVST) following vaccination on which I was the lead author. CVST is a type of blood clot in the brain that can lead to stroke and death. In this paper, we carried out a pooled analyis of 11.6 million people in England, Scotland and Wales, comparing the rate of CVST events in individuals before and after receiving the vaccine. We found that in the 4 weeks following vaccination with Oxford-AstraZeneca, the risk of CVST events approximately doubled. We did not see any increase in risk of CVST events following Pfizer.</p>
+
+<p>This paper was released at the same time as a <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003926" target="_blank">second paper</a> headed by William Whiteley, also at the University of Edinburgh, that studied 46 million people in England and had strikingly similar findings. It is reassuring when independent research efforts come to similar conclusions.</p>
+
+<p>CVST is a very rare event, occurring at a rate of perhaps 3-4 per million people per year. Assuming this as a background rate, our findings would imply one additional CVST event for every 4 million doses of Oxford-AstraZeneca administered. This has to be weighed up against the benefits of vaccination. Due to concerns over safety, Oxford-AstraZeneca was suspended in those aged under 40, and was not routinely used for booster doses in the UK. The risk/benefit analysis for whom should be vaccinated, with which vaccine, and when, is extremely complicated and depends on background rates of infection, availability of vaccines, vaccine waning, characteristics of future variants and robustness of naturally-acquired immunity versus vaccine-induced immunity among others.</p>
+
+<p>Our paper included a small methodological novelty that allowed us to pool data across several nations without individual-level data having to be shared between countries. Each country stores data in a trusted resesarch environment (TRE), which is just a highly secure server that contains anonymised medical information. Sharing individual-level data is forbidden, but we carried out a Poisson regression in which only count data is required. We are aiming to use a similar method to carry out further pooled studies in future.</p>
+
+<p>PLOS medicine published an author interview with me, which can be found <a href="https://speakingofmedicine.plos.org/2022/02/22/plos-medicine-author-interview-steven-kerr-phd/" target="_blank">here</a>.</p>
+
+:ET
