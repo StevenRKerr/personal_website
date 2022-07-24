@@ -1,0 +1,73 @@
+I"Y)<p>05 Jun 2022</p>
+
+<p>What if I told you there was a well-known, 100-year old theory of gravity that reproduces all empirical successes of Einstein’s general relativity, and may solve a who’s who of major oustanding problems in theoretical physics?</p>
+
+<p>Its called <a href="https://en.wikipedia.org/wiki/Einstein%E2%80%93Cartan_theory" target="_blank"> Einstein-Cartan theory </a>, or sometimes Einstein-Cartan-Sciama-Kibble (ECSK) theory. By the way, Kibble is my “physics grandfather” - my PhD supervisor’s PhD supervisor.</p>
+
+<p>ECSK theory is a minor generalisation of Einstein’s general relattivity that does not require the <a href="https://en.wikipedia.org/wiki/Torsion_tensor" target="_blank"> torsion </a> to be zero. It turns out that the torsion tensor does not have any propagating degrees of freedom, with the consequence that the only place that ECSK and general relavitity differ is at extremely high matter densities.</p>
+
+<p>First, let’s do a quick tour of major outstanding problems that ECSK theory might solve.</p>
+
+<h3> Gravitational singularities </h3>
+
+<p>In a nutshell, Einstein’s general relativity posits that space and time are curved, and that their curvature is determined by the distribution of energy/matter within the spacetime. So, if you plonk  mass down somewhere, it causes space and time to bend in way that we experience as gravity.</p>
+
+<p>One of the problems with the theory is that if the mass/energy gets sufficiently dense, the curvature of spacetime becomes infinite. This is known as a gravitational singularity, and in general relativity every black hole comes with one. Many physicists consider it to be an unsatisfactory state of affairs that the theory predicts some physical quantities are infinite, although currently this does not conflict with any experimental evidence because the singularity is inevitably ‘hidden’ behind an <a href="https://en.wikipedia.org/wiki/Event_horizon" target="_blank"> event horizon</a>, which stops us from knowing much about what happens on the other side.</p>
+
+<p>Physicist Nikodem Poplawski has suggested that the <a href="https://arxiv.org/abs/0910.1181" target="_blank">gravitational singularities may be avoided in ECSK theory</a>, due to torsion manifesting as a repulsive force that prevents fermions collapsing to infinite density. The big bang is then replaced by a big bounce, and our universe is the other side of a black hole in another universe.</p>
+
+<h3> The horizon problem </h3>
+
+<p>The universe appears to be relatively samey everywhere we look. In particular, the temperature of the <a href="https://en.wikipedia.org/wiki/Cosmic_microwave_background" target="_blank"> cosmic background radiation</a>, a remanant from the early universe, is extremely uniform. Turns out that’s a big problem.</p>
+
+<p>The issue is that when the cosmic background radiation was formed, the universe was about 300,000 years old, and it is possible to show that cosmic background radiation separated by an angle of incidence on Earth of any more than about 2 degrees cannot have been been in causal contact at that time. In other words, the radiation coming from any two such patches of the sky cannot have been in thermal equilibrium at the time it was produced, and have not been in thermal contact since - so why is it the same temperature?</p>
+
+<p>To put it more simply, let’s say I have a glass of hot water and a glass of cold water. If they are not in thermal contact with each other, or their surroundings, they will remain at different temperatures. If I pour them both into a container, they rapidly come into thermal equilibrium at an intermediate temperature. Cosmic background radiation from two slightly separated patches of the sky are like separate glasses of water - due to the expansion of the universe, they could not have been in thermal equilibrium when they were created, and have not been in thermal contact since. So why is it that in every direction we look, the temperature is the same?</p>
+
+<p>In the ECSK theory, the torsion generates <a href="https://en.wikipedia.org/wiki/Inflation_(cosmology)" target="_blank"> cosmic inflation</a>, which<a href="https://arxiv.org/abs/1410.3881" target="_blank"> causes the early universe to be homogeneous</a>, leading to uniformity in the temperature of the cosmic background radiation.</p>
+
+<h3> The black hole information paradox </h3>
+
+<p>In quantum mechanics/quantum field theory, it is taken as an axiom that time evolution is <a href="https://en.wikipedia.org/wiki/Unitarity_(physics)" target="_blank"> unitary</a>. What this means simply is that the value of the <a href="https://en.wikipedia.org/wiki/Wave_function" target="_blank"> wavefunction</a> at one time determines a unique value at all times. The main reason this is important is because it is a sufficient condition for ‘proability to be conserved’. That is, if the probability of finding the system in some state \( \ket(\psi (0)) \) at time \(0\) is \(p\), and it evolves to \( \ket{\psi (t)} \) at time \(t\) under the Hamiltonian, then the probability of \( \ket{\psi (t)} \) is also \(p\).</p>
+
+<p>Note that unitarity is a sufficient, but not necessary condition for this conservation. Indeed, Roger Penrose has pointed out that there are standard interpretations of quantum mechanics in which unitarity is routinely violated (by measurement), and this does not appear to pose any insurmountable interpretational difficulties.</p>
+
+<p>In the 1970s, Stephen Hawking found that combining quantum field theory and general relativity could result in a loss of unitarity. In particular, black holes emit <a href="https://en.wikipedia.org/wiki/Hawking_radiation" target="_blank"> Hawking radiation</a> which should eventually cause black holes to evaporate. The resulting thermal radiation would not contain any information about the initial state of the black hole. In other words, multiple different initial states could end in the same final state, and therefore a value for the wavefunction at a later time does not uniquely determine its value at all other times. Information has somehow been destroyed.</p>
+
+<p>Thus it appears that physicists have to give up at least one of their cherished principles. Either time evolution is not unitary, or general relativity is wrong, or some other aspect of quantum field theory is wrong.</p>
+
+<p>It has been suggested the ECSK theory could resolve the black hole information paradox by avoiding the gravitational singularity in black holes. Then every black hole is actually a one-way membrane leading to a new universe that retains all the information from the initial state.</p>
+
+<h3> Matter-antimatter asymmetry </h3>
+
+<p>In the laws of physics as they are best known today, there is nothing that favours the production of matter over antimatter. On the other hannd, the <a href="https://en.wikipedia.org/wiki/Observable_universe" target="_blank"> observable universe</a> is heavily dominated by matter, which immediately raises the question “why?”.</p>
+
+<p>ECSK theory coupled to fermions generates a term that is cubic in the spinors, which could be responsible for charge conjugation asymmetry and give a <a href="https://arxiv.org/abs/1101.4012" target="_blank"> possible explanation for matter-antimatter asymmetry</a>.</p>
+
+<h3> Ultraviolet divergences </h3>
+
+<p>When you naively try to calculate physically measureable quantities in interacting quantum field theories, you tend to get an infinite answer. That’s a problem.</p>
+
+<p>The basic issue is that fields are operator-valued distributions, for which multiplication is not well-defined aside from some trivial cases. If you plough ahead anyway pretending this problem doesn’t exist, aforementioned infinities tend to show up. Garbage in, garbage out, as they say.</p>
+
+<p>To deal with this, physicsts play a regularisation game that involves artificially adding terms to the theory to cancel out the infinities, in a process that Richad Feynman famously described as ‘dippy’. This is not mathematically kosher, but it does allow us to extract sensible predictions from the theory, so those concerns tend to get brushed under the carpet to a degree.</p>
+
+<p>The infinities that occur are broadly of two kinds: ultraviolet (high energy/short distance) and infrared (low energy/large distance). The infrared divergences are typically regarded as less troubling, and one reason is because they go away if you think the universe is finite, which introduces a maximum possible length. The ultravolet divergences tend to cause more consternation because there is less sympathy for the idea of a universal minimum length.</p>
+
+<p>It has been suggested by physicists Nikodem Poplawski that Einstein-Cartan theory <a href="https://arxiv.org/abs/1712.09997" target="_blank"> resolves the ultraviolet divergences</a> because torsion causes momentum operators to be non-commutative momentum.</p>
+
+<h3> Ok, if ECSK theory is so great, why isn't it more popular? </h3>
+
+<p>Great question, me.</p>
+
+<p>So I should first say that the solutions that ECSK theory proposes to the above problems are only conjectures at the moment. We have suggestive evidence only.</p>
+
+<p>On the other hand, it is a relatively modest generalisation of Einstein’s general relativity that may solve just about every major problem going in physics today. Why isn’t it famous?</p>
+
+<p>One reason is that it’s more complicated then Einstein’s general relativity. Introducing torsion makes it significantly more difficult to do calculations and extract predictions from the theory. Because there is no currently feasible experiment whose result would distinguish between Einstein’s general relativity and ECSK theory, people have tended to choose the simpler theory.</p>
+
+<p>That said, the additional theoretical complications that ECSK theory brings does not, to me, seem to justify how little attention it receives. The ECSK theory introduces non-linearity in the Dirac equation, but since when did non-linearty scare us? General relativity and Quantum Chromodynamics are both nonlinear and we’re quite happy with those. On the other hand, there is an entire industry dedicated to the extremely speculative idea of string theory, which is mind-bogglingly complicated and it is not yet clear whether it solves anything despite decades of dedicated work by many very smart people. Surely ECSK theory could use a little love too?</p>
+
+<p>Ultimately I think the disparity has its explanation in historical coincidence and herding behaviour.</p>
+
+:ET
