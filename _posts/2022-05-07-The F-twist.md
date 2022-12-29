@@ -68,7 +68,7 @@ this is surely where all the most fruitful and significant ideas lie. If taken s
 way we do science. It's not often in history that paradigm shifts like that occur.
 
 Of course, it needn't be a revolution that's actually any good. Imagine physicists and chemists and biologists rejecting new
-ideas out of hand because they are simply in excesively good agreement with reality. Everyone knows those theories are a dead-end!
+ideas out of hand because they are simply in excessively good agreement with reality. Everyone knows those theories are a dead-end!
  
 I have to call out the F-twist for what it is: nonsense.
 

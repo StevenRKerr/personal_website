@@ -1,4 +1,72 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-07-24T11:39:14+01:00</updated><id>/feed.xml</id><entry><title type="html">The solution to everything</title><link href="/2022/07/22/The-solution-to-everything.html" rel="alternate" type="text/html" title="The solution to everything" /><published>2022-07-22T00:00:00+01:00</published><updated>2022-07-22T00:00:00+01:00</updated><id>/2022/07/22/The%20solution%20to%20everything</id><content type="html" xml:base="/2022/07/22/The-solution-to-everything.html"><![CDATA[<p>22 Jul 2022</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-11-23T15:09:04+00:00</updated><id>/feed.xml</id><entry><title type="html">Negative vaccine effectiveness</title><link href="/2022/11/20/Negative-vaccine-effectiveness.html" rel="alternate" type="text/html" title="Negative vaccine effectiveness" /><published>2022-11-20T00:00:00+00:00</published><updated>2022-11-20T00:00:00+00:00</updated><id>/2022/11/20/Negative%20vaccine%20effectiveness</id><content type="html" xml:base="/2022/11/20/Negative-vaccine-effectiveness.html"><![CDATA[<p>20 Nov 2022</p>
+
+<p>Myself and a team of collaborators including Stuart Bedston at the University of Swansea, Declan Bradley at Queen’s University Belfast and Mark Joy at the University of Oxford recently published a <a href="https://doi.org/10.1093/ije/dyac199" target="_blank"> paper</a> in the International Journal of Epidemiology studying waning of COVID-19 vaccine effectiveness. One of the major findings of the paper is that for first and second dose of AstraZeneca and first dose of Pfizer, effectiveness of the vaccine against COVID-19 hospitalisation or death reached zero by approximately day 60-80 after receiving the vaccine, and then went negative.</p>
+
+<p>That is quite a striking result. This post is going to dig into possible explanations of this phenomenon and its implications.</p>
+
+<h3> First of all, what did you actually do? </h3>
+
+<p>We carried out a type of study called a ‘target trial’. This attempts to find a ‘naturally occurring’ clinical trial, by matching people in a population who received a given treatment to similar people who didn’t receive the treatment. You can then compare the rate of adverse events in these retrospectively generated, artificial treatment and control groups.</p>
+
+<p>The data that we used to do this study are highly confidential, and stored securely on different servers in each nation of the UK. It is not permitted to have any statistically disclosive, individual-level information leave those servers. However, we introduced an interesting methodological novelty that allowed us to do a pooled study despite these restrictions. This means that the final result that we ended up with is identical to what we would have got if the data all started out in the same location. We were able to do this because of the target trial study design that we used. So, amazingly, it is possible to do a pooled analysis across multiple separate datasets that controls very carefully for individual level characteristics, without actually having to share any individual-level information!</p>
+
+<h3> What could be causing negative vaccine effectiveness? </h3>
+
+<p>One possibilty is that it is behavioural. So people who get vaccinated might be more likely to behave in ways that put them at greater risk of infection. For example, at various points during the pandemic, vaccinated people have been subject to fewer restrictions on movement than unvaccinated people. On the other hand, it could just as well go the other way - unvaccinated people may be less risk averse when it comes to the possibility of being infected, and thus may have behaved in ways that put them at greater danger of contracting COVID-19.</p>
+
+<p>It is also possible that naturally-acquired immunity is more robust than vaccine-induced immunity. A <a href="https://doi.org/10.1093/ije/dyac199" target="_blank"> study</a> from Israel found that vaccinated individuals had a 13-fold increased risk of infection compared to previously infected individuals.</p>
+
+<p>A final possibility is that this is all just a consequence of the fact that the protection offered by the vaccine is relatively short-lasting. For example, imagine that I had two cohorts of similar individuals, and vaccination offered 100% protection against infection for a short period of time. The first cohort receives a dose of vaccine on day 0, while the second cohort receives a dose of vaccine on day 30. One would intuitively expect that the first cohort would initially have fewer severe COVID-19 outcomes, but then at some point the second cohort would do better. Now instead of vaccinating the second cohort, let’s have them contract COVID-19. And instead of it happening on day 30, let’s sprinkle it around randomly in time, but initially occurring at a higher rate than in the vaccinated group. Finally, let’s assume that the vaccine is effective but not perfect for a short period of time, and naturally-acquired innoculation is as immunologically effective (or better) than the vaccine. One would still expect something qualitatively similar; the first cohort would have fewer events intially, then subsequently the second cohort would do better because those people who contract and recover from COVID-19 are naturally innoculated.</p>
+
+<p>By the way I should say that our study is not the only one to find negative vaccine effectiveness - our result is unlikely to be an anomaly.</p>
+
+<h3> What are the implications? </h3>
+
+<p>If negative vaccine effectiveness is largely explained by behavioural factors, then it might be possible to curtail it with a public information campaign aimed at making sure vaccinated individuals continue to observe precautions against COVID-19. On the other hand, I do think that one of the major incentives to get the vaccine is so that one can return to normal behaviour. I personally am not convinced that the explanation for negative vaccine effectiveness is behavioural, and even if it was I am skeptical about our ability to do anything about it.</p>
+
+<p>If negative vaccine effectiveness cannot be significantly curtailed, then it raises some very interesting policy questions. Vaccines still have utility, but what is their proper role in world where COVID-19 is endemic? For example, if vaccine doses could be timed so that the period where negative vaccine effectiveness would kick in happens towards the end of a wave of infections, it may be be possible to provide significant long-term protection by offering a precisley-timed, recurring regimen of COVID-19 vaccines. However, I don’t really have much confidence in our ability to sufficiently accurately forecast future waves of infections in a way that would allow us to usefully implement such a scheme.</p>
+
+<p>The other main utility offered by COVID-19 vaccines is ‘flattening the curve’. That is, spreading the caseload over time so that our healthcare services are not overwhelmed and can offer better treatment. This could be worthwhile, though again it would require forecasting ability that so far has proven elusive to us.</p>
+
+<p>The final question is whether all of this is worth it. Mass COVID-19 vaccinations are expensive, and it is not clear how beneficial it is. It seems quite possible that there are far more cost-effective ways to preserve human life. In particular, I think in our revolutionary fervour for vaccines, we may have neglected a cheaper and easier win in the form of anti-viral and monoclonal antibody treatments.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[20 Nov 2022]]></summary></entry><entry><title type="html">Modern monetary theory is the road to hell</title><link href="/2022/08/28/Modern-monetary-theory-is-the-road-to-hell.html" rel="alternate" type="text/html" title="Modern monetary theory is the road to hell" /><published>2022-08-28T00:00:00+01:00</published><updated>2022-08-28T00:00:00+01:00</updated><id>/2022/08/28/Modern%20monetary%20theory%20is%20the%20road%20to%20hell</id><content type="html" xml:base="/2022/08/28/Modern-monetary-theory-is-the-road-to-hell.html"><![CDATA[<p>28 Aug 2022</p>
+
+<h3> What is modern monetary theory (MMT)? </h3>
+
+<p>It’s an economic theory which, in a nutshell, says that full employment and funding of various other government programmes can be guaranteed by printing money, and the inflation that would normally ensue can be kept under control by taxation.</p>
+
+<h3> Woah. That sounds pretty wild. </h3>
+
+<p>Indeed.</p>
+
+<p>The first thing that should set off alarm bells is that MMT appears to advocate for governmental control over monetary policy. That’s a <i>really</i> bad idea. This is a lesson that we have historically learned the hard way. Governments simply cannot be trusted with the keys to the printing press. The temptation for them to print money in order to deliver on some promise, at least in the short term, is just too great. That’s how you get hyperinflation. There is a reason we insist on independence of central banks and government.</p>
+
+<p>Second is that, of course if you’re willing to fire up the printing press you can achieve full employment. You can pay people to twiddle their thumbs all day if you want. Much more difficult is ensuring that people are employed <i>usefully</i>. Forgive me if I don’t have a great deal of confidence in the ability of governments to do this. It would mean that they would have to step in and effectively deploy a significant and variable fraction of the country’s labour force across different sectors, depending on the prevailing economic conditions. Yeah, right.</p>
+
+<p>Finally, how exactly is it that taxation is supposed to control inflation? I mean, in principle it could be done if the government increased taxes and then threw the revenue thus collected into the sea. And I mean that literally, not figuratively, i.e. if they actually destroyed money, or at least removed it from circulation for an extended period of time. That would effectively make money more valuable which could reduce inflation. The problem is again, do we really think governments can be trusted to do this rather than spend that money? Especially a government that has already demonstrated itself to be quite fond of liberal use of the printing press to meet its obligations?</p>
+
+<p>The whole thing is a nonsense. And a very dangerous nonsense, at that.</p>
+
+<h3> What's really going on here? </h3>
+
+<p>When I see people advocating for ideologies that are so obviously lacking, instead of trying square their circle I ask what purpose does the ideology serve for them.</p>
+
+<p>As an example, think about Marxism. There are many ideas under that umbrella that fail to survive the gentlest scrutiny. Take the <a href="https://en.wikipedia.org/wiki/Labor_theory_of_value" target="_blank"> labour theory of value</a>, which underpins the whole edifice. It holds, roughly speaking, that the economic value of an object is determined by the amount of labour required to produce it. This has the immediate consequence that some extraordinarily useless objects have arbitarily high value. Like a <a href="https://www.youtube.com/watch?v=EZ73Q4DwrGM" target="_blank"> sarcasm detector</a> or <a href="https://youtu.be/dJNd_HtZH2g?t=30" target="_blank"> The Homer</a>. I bet it takes <i>a lot</i> of effort to make them. Ok, my examples may be taken from the Simpsons, but the Simpsons does have a stunning ability to reflect real life.</p>
+
+<p>Anyway, the point is that the entire foundation of Marxism is based on a nonsense. Why then did it become so popular? I would say that no small part of the explanation lies in the fact that it gave the working classes, who at the time genuinely were exploited and treated horrendously, intellectual justification for their revolutionary fervour. It was political discontent in search of an academic seal of approval.</p>
+
+<p>And so it is with MMT.</p>
+
+<p>What MMT advocates ultimately want is to radically increase government spending and have the rich pay for it via progressive taxation. That <i>may</i> be an admirable goal, but what if the process by which it is achieved is far more harmful than the end is good?</p>
+
+<p>The MMT crowd have figured out that increasing taxation is difficult and generally requires a long legislative process that tends to disfavour radical changes. On the other hand, if the government just got its hands on the printing press, it could spend as much as it wants.</p>
+
+<p>The only problem is that causes inflation, and inflation is effectively a tax levied on all those who hold the nation’s currency. As prices rise, the notes in your wallet have less and less purchasing power - you are losing real wealth. And it is a deeply regressive tax at that - poorer people who can’t put their money into assets will be hit harder than the rich.</p>
+
+<p>What the MMT advocates wish to do is to use that to put a gun to government’s head. They fire up the printing press and spend to their heart’s content, and that threatens to cause inflation with  truly terrible consequences. At this point they offer up their snake oil solution. There is only one way out: force rich people to bail us out.</p>
+
+<p>It’s a truly terrible ideology. And there are some indications that it’s becoming more mainstream. For example, here is Joe Biden <a href="https://twitter.com/joebiden/status/1525234935346483210?lang=en" target="_blank"> advocating for a core tenet of MMT</a>.</p>
+
+<p>This is very worrying.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[28 Aug 2022]]></summary></entry><entry><title type="html">The solution to everything</title><link href="/2022/07/22/The-solution-to-everything.html" rel="alternate" type="text/html" title="The solution to everything" /><published>2022-07-22T00:00:00+01:00</published><updated>2022-07-22T00:00:00+01:00</updated><id>/2022/07/22/The%20solution%20to%20everything</id><content type="html" xml:base="/2022/07/22/The-solution-to-everything.html"><![CDATA[<p>22 Jul 2022</p>
 
 <p>What if I told you there was a well-known, 100-year old theory of gravity that reproduces all empirical successes of Einstein’s general relativity, and may solve a who’s who of major oustanding problems in theoretical physics?</p>
 
@@ -154,7 +222,7 @@ this is surely where all the most fruitful and significant ideas lie. If taken s
 way we do science. It’s not often in history that paradigm shifts like that occur.</p>
 
 <p>Of course, it needn’t be a revolution that’s actually any good. Imagine physicists and chemists and biologists rejecting new
-ideas out of hand because they are simply in excesively good agreement with reality. Everyone knows those theories are a dead-end!</p>
+ideas out of hand because they are simply in excessively good agreement with reality. Everyone knows those theories are a dead-end!</p>
 
 <p>I have to call out the F-twist for what it is: nonsense.</p>
 
@@ -228,7 +296,7 @@ one’s colleagues how pleasing one’s ideas are, than ability to understand an
 
 <p>For sure. And this is quite separate from the idea of whether god exists. Humans are quite capable of entertaining/believing in all manner of fantastical, self-inconsistent and just plain wrong things.</p>
 
-<p>As a storytelling device god is absolutely unparalleled. I think the most compelling stories that have ever been told have all in one way or another been about god. As an organising idea for human behaviour and by extension a force guiding the course of human history, you’ll struggle to find anything more significant - religious stories have had as deep an impact on humanity as you care to realise. For my money, I think that god and religion provide a sort of familial <a href="https://en.wikipedia.org/wiki/Superstructure" target="_blank">superstructure</a> to society - in Christianity it is the brotherhood of man under the paternal bond of god. I don’t think we stop having a deep yearning for a father figure as soon as we become adults ourselves. That’s our so-called god-shaped-hole, and it needs filled with something, gosh darnit. Indeed, I am semi-convinced that such superstructures are necessary/responsible for the emergence of humans from the wretched <a href="https://en.wikipedia.org/wiki/State_of_nature" target="_blank">state of nature</a>. And I have had my mind changed in a fairly major way in recent years on the merits of religion and the contributions that it has made to humanity. In short, I think it’s likely a net positive. But that’s a subject for another day.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[27 Mar 2022]]></summary></entry><entry><title type="html">The weakness of the continuum</title><link href="/2022/03/08/The-weakness-of-the-continuum.html" rel="alternate" type="text/html" title="The weakness of the continuum" /><published>2022-03-08T00:00:00+00:00</published><updated>2022-03-08T00:00:00+00:00</updated><id>/2022/03/08/The%20weakness%20of%20the%20continuum</id><content type="html" xml:base="/2022/03/08/The-weakness-of-the-continuum.html"><![CDATA[<p>08 Mar 2022</p>
+<p>As a storytelling device god is absolutely unparalleled. I think the most compelling stories that have ever been told have all in one way or another been about god. As an organising idea for human behaviour and by extension a force guiding the course of human history, you’ll struggle to find anything more significant - religious stories have had as deep an impact on humanity as you care to realise. For my money, I think that god and religion provide a sort of familial superstructure to society - in Christianity it is the brotherhood of man under the paternal bond of god. I don’t think we stop having a deep yearning for a father figure as soon as we become adults ourselves. That’s our so-called god-shaped-hole, and it needs filled with something, gosh darnit. Indeed, I am semi-convinced that such superstructures are necessary/responsible for the emergence of humans from the wretched <a href="https://en.wikipedia.org/wiki/State_of_nature" target="_blank">state of nature</a>. And I have had my mind changed in a fairly major way in recent years on the merits of religion and the contributions that it has made to humanity. In short, I think it’s likely a net positive. But that’s a subject for another day.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[27 Mar 2022]]></summary></entry><entry><title type="html">The weakness of the continuum</title><link href="/2022/03/08/The-weakness-of-the-continuum.html" rel="alternate" type="text/html" title="The weakness of the continuum" /><published>2022-03-08T00:00:00+00:00</published><updated>2022-03-08T00:00:00+00:00</updated><id>/2022/03/08/The%20weakness%20of%20the%20continuum</id><content type="html" xml:base="/2022/03/08/The-weakness-of-the-continuum.html"><![CDATA[<p>08 Mar 2022</p>
 
 <p>Ever since Newton/Leibniz invented the infinitesimal calculus in the latter half of the 1600s, it seems like the world has been enthralled by beauty and possibility of the continuum. This event marked the beginning of modern physics and mathematics, and there is virtually no topic in either of these fields that is not deeply interwoven with calculus.</p>
 
@@ -382,102 +450,4 @@ Amongst papers that scored a perfect 4 on the quality criteria, the authors foun
 
 <p>Another interesting point that the furore over this paper illustrates is the huge schism between economists and public health professionals. It’s quite amazing how two well-developed wings of the academy can be so deeply in disagreement over some rather fundamental items. It’s reminiscent of the chasm that exists between biologists and the humanities on ideas like the <a href="https://en.wikipedia.org/wiki/Tabula_rasa#Science" target="_blank">tabula rasa</a> theory of human nature.</p>
 
-<p>One thing is for sure; if the economists were in charge of the governmental response to the pandemic, things would have looked <em>a lot</em> different.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[09 Feb 2022]]></summary></entry><entry><title type="html">What is vaccine effectiveness?</title><link href="/2022/01/17/What-is-vaccine-effectiveness.html" rel="alternate" type="text/html" title="What is vaccine effectiveness?" /><published>2022-01-17T00:00:00+00:00</published><updated>2022-01-17T00:00:00+00:00</updated><id>/2022/01/17/What%20is%20vaccine%20effectiveness</id><content type="html" xml:base="/2022/01/17/What-is-vaccine-effectiveness.html"><![CDATA[<p>17 Jan 2022</p>
-
-<p>There have been interesting reports from Public Health Scotland that COVID infection rates amongst the unvaccinated have been consistently lower compared to those who have had one or two doses of vaccine since early December 2021, though higher compared to those with a booster dose. See a news story <a href="https://www.heraldscotland.com/news/19843315.covid-scotland-case-rates-lowest-unvaccinated-double-jabbed-elderly-drive-rise-hospital-admissions/" target="_blank">here</a>, based on the original report <a href="https://publichealthscotland.scot/media/11089/22-01-12-covid19-winter_publication_report.pdf" target="_blank">here</a>. I believe this has led many people to question vaccine effectiveness.</p>
-
-<h3>  What is vaccine effectiveness? </h3>
-
-<p>If you’re maths averse, you might want to scroll straight down to the “What does it mean?” section. It’s not that bad though, I promise.</p>
-
-<p>There are many quantities that get called “vaccine effectiveness” that are mathematically and conceptually distinct. This is a little bit unfortunate, because it makes it diffucult to compare them. Throughout this article, I will assume we are talking about vaccine effectiveness against infection, but we may also be interested in effectiveness against hospitalistion, death and other outcomes.</p>
-
-<h4>  Risk ratio </h4>
-
-<p>Risk ratios are perhaps the most intuitive way  of defining vaccine effectiveness. It really is just the probability of a vaccinated person being infected with COVID, divided by the probability of an unvaccinated person being infected with COVID. A risk ratio less than one indicates some vaccine effectiveness against infection. This motivates our first definition of vaccine effectiveness,</p>
-
-\[\mathrm{VE} = 1-  \mathrm{Risk \; ratio}.\]
-
-<h4>  Rate ratio </h4>
-
-<p>The rate at which vaccinated/unvaccinated people get infected can be estimated using <a href="https://en.wikipedia.org/wiki/Poisson_regression" target="_blank">Poisson regression</a>. Dividing the rate for vaccinated people by the rate for unvaccinated people gives the rate ratio, which leads to our second definition of vaccine effectiveness,</p>
-
-\[\mathrm{VE} = 1-  \mathrm{Rate \; ratio}.\]
-
-<p>Rate ratios and risk ratios should be approximately equivalent over the same time horizon.</p>
-
-<h4>  Hazard ratio </h4>
-
-<p>The hazard ratio is similar to the rate ratio, except that it takes into account the number of people who are susceptible to an event at any given time. So the rate ratio just compares the event rate in all the vaccinated and unvaccinated, whereas the hazard ratio compares the event rate amongst only those who are susceptible to an event in the vaccinated and unvaccinated. A key difference is that, for example, people who die during the observation period are removed from the calculation of hazard ratios, but not rate ratios. Hazard ratios can be estimated using <a href="https://en.wikipedia.org/wiki/Proportional_hazards_model" target="_blank">proportional hazards models</a>. This gives our third definition of vaccine effectiveness,</p>
-
-\[\mathrm{VE} = 1-  \mathrm{Hazard \; ratio}.\]
-
-<p>Hazard ratios and risk ratios should be aproximately equivalent if there aren’t many people who cease being susceptible to an event in the observation period.</p>
-
-<h4>  Odds ratio </h4>
-
-<p>The odds of an event is the probability of it occurring \( p \), divided by the probability of it not occurring \(1- p \),</p>
-
-\[\mathrm{Odds} = \frac{p}{1-p}.\]
-
-<p>An odds ratio is dividing the odds of one event, by the odds of a second event,</p>
-
-\[\mathrm{OR} = \frac{ \mathrm{Odds}_1 }{ \mathrm{Odds}_2 }.\]
-
-<p>So, we might divide the odds of being infected with COVID if you have recived the vaccine, by the odds of being infected with COVID if you haven’t received the vaccine. If this quantity is less than one, it indicates that those who received the vaccine are less likely to be infected than those who didn’t. Odds ratios can be calculated using <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank">logistic regression</a>. This gives our fourth definition of vaccine effectiveness,</p>
-
-\[\mathrm{VE} = 1- \mathrm{OR}.\]
-
-<p>Odds ratios are approximately equal to risk ratios for low probability events. This follows from the first order Taylor expansion of the odds,</p>
-
-\[\mathrm{Odds} = \frac{p}{1-p} \simeq p.\]
-
-<h3>  Why so many different measures of vaccine effectiveness? </h3>
-
-<p>At first glance, it might seem odd that we use so many different measures of vaccine effectivenss, especially given that under many circumstances they are approximately equal. Why not just one? The answer that there are a number of statistical models/techniques that can be used to try and estimate vaccine effectiveness, and they each have various merits depending on the assumptions one thinks are reasonable to make, and the data that one has available.</p>
-
-<h3>  What does it mean? </h3>
-
-<p>That’s a fine question. I believe that many people, when reading a headline of e.g. 90% effectiveness, will take that to mean something like “there is a 90% chance the vaccine will prevent me from getting COVID”. Which is of course, not at all what it means.</p>
-
-<p>A more sophisticated take would be “The vaccine will reduce my chances of catching COVID by a factor of 20”. This is better, but still not quite right. The main issue is that it lacks a time horizon. What period of time does this statement apply to?</p>
-
-<p>News reports on studies have vaccine effectiveness have tended to report peak effectiveness over a certain unit of time. For example, in our <a href="https://doi.org/10.1016/S0140-6736(21)00677-2 " target="_blank">study of vaccine effectiveness</a>, we calculated vaccine effectiveness by week, and the media widely reported the maximum value. This can cause confusion.</p>
-
-<h3>  An example </h3>
-
-<p>Let’s assume that the probability of an unvaccinated person being infected with COVID in a given week is 0.1 and constant. Let’s assume vaccine effectiveness stays at roughly the peak level that we found in our paper of 90%.  What is the probability of being infected with COVID relative to an unvaccinated person over, say, a 12 week period?</p>
-
-<p>This is like flipping a biased coin each week, and calculating the probability of flipping 12 “not infected” in a row. Doing this calculation (I’ll spare you the details), you get a reduction in risk of \( 84 \% \).</p>
-
-<p>Pretty good. However, we know that COVID vaccines wane in effectiveness relatively quickly. What happens if we take that into account?</p>
-
-<p>Let’s assume that vaccine effectiveness starts out at 90% and decreases by 5% each week (this is a decent approximation to what we actually see with COVID vaccines). Then you get a reduction in risk of \(49 \% \). Doing the same calculation over 16 weeks, you get a reduction in risk of \(33 \% \).</p>
-
-<p>This is very much a ‘back of the envelope’ calculation, and does not take account of the fact that background infection rates are dynamic and dependent upon levels of immunity amongst the population. Nonetheless I do think it hints at some interesting questions about what the proper aim of vaccination is in the midst of a pandemic.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[17 Jan 2022]]></summary></entry><entry><title type="html">Counting COVID-19 deaths</title><link href="/2022/01/06/Counting-COVID-deaths.html" rel="alternate" type="text/html" title="Counting COVID-19 deaths" /><published>2022-01-06T00:00:00+00:00</published><updated>2022-01-06T00:00:00+00:00</updated><id>/2022/01/06/Counting%20COVID%20deaths</id><content type="html" xml:base="/2022/01/06/Counting-COVID-deaths.html"><![CDATA[<p>06 Jan 2022</p>
-
-<p>There has been a great deal of controversy over the way COVID-19 deaths are calculated. Initially in the UK, the count that was most widely reported consisted of all who died within 60 days of a positive PCR test, or who died more than 60 days after a positive test but had COVID-19 listed as a cause of death on their death certificate.</p>
-
-<p>The main objection to this is that, for example, someone could test positive for COVID-19, recover fully, then die in e.g. a car crash and still be counted as a COVID-19 death.</p>
-
-<h3> What are we trying to do when we count COVID-19 deaths anyway? </h3>
-
-<p>It’s important to be clear what we’re trying to achieve with the COVID-19 death count. I think most people agree that we should be aiming to count the number of deaths caused by COVID-19. But what does that mean exactly? In the Scottish data, the average number of comorbidities in people who died from COVID-19 is upwards of 3. How do we assign causation when there are multiple contributing factors?</p>
-
-<p>Ideally, what we would like to do is a controlled experiment. We would ‘run’ a parallel version of the world that is completely identical, except SARS-CoV-2 is non-existent. And when I say identical, I really mean it. Everyone believes just as much in the reality of SARS-CoV-2 as they do now, people are furloughed from work en masse, governments impose social distancing and lockdown measures etc. Everything the same, it’s just that there ain’t no such thing as SARS-CoV-2.</p>
-
-<p>The point is that we only changed one thing in our experiment. Therefore any difference in outcome can definitively be attributed to that one change.</p>
-
-<p>Of course this wouldn’t really be feasible (not to mention ethical), but at least now we know what we’re aiming for.</p>
-
-<h3> Hasn't someone spent a lot of time thinking about this problem before? </h3>
-
-<p>Yes. There is a large literature on, for example, how to define deaths due to influenza. The proximate cause of death in most people who die as a result of influenza is pneumonia. But they also often have several comorbidities. One might typically see a flu death defined as death after a hospital admission with flu recorded as the reason for admission. However, the question is far from being settled.</p>
-
-<h3> What should we do with COVID-19 then? </h3>
-
-<p>On August 12 2020, <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/916035/RA_Technical_Summary_-_PHE_Data_Series_COVID_19_Deaths_20200812.pdf" target="_blank">Public Health England changed their main definition of a COVID-19 death to be a death within 28 days of a PCR positive test.</a> This led to the primary COVID-19 death count dropping by about 13% overnight. Still, it remains possible for car crash victims to be counted as COVID-19 deaths, and there is the unfortunate fact that the rate of COVID-19 deaths increases as we do more testing, even if the rate of deaths actually caused by COVID-19 remains constant.</p>
-
-<p>This is also quite different from how a flu death is usually defined. Perhaps there’s a defensible rationale for that; COVID-19 and flu are different diseases, and there is a world of difference in how we have reacted to them. For example, it might be reasonable not to require a positive PCR test in the definition of a flu death because PCR testing is quite rare in a typical flu season, which would likely lead to a significant under-count. On the other hand, in the UK we have ramped up PCR testing for COVID extraordinarily rapidly, <a href="https://coronavirus.data.gov.uk/details/testing" target="_blank"> from 10s of thousands per day in April 2020, to well over half a million per day at the time of writing</a>. In my eyes, the more pertinent danger with our current definition of a COVID-19 death is over-counting. I think there is a reasonable case for further modifying the defintion of a COVID-19 death, to be death within 28 days of a postive PCR test <strong>and </strong> COVID-19 listed as the main cause of death on the death certificate, or something similar.</p>
-
-<p>I really wouldn’t want to be the PR person who deals with the reaction to that, though.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[06 Jan 2022]]></summary></entry></feed>
+<p>One thing is for sure; if the economists were in charge of the governmental response to the pandemic, things would have looked <em>a lot</em> different.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[09 Feb 2022]]></summary></entry></feed>
