@@ -1,0 +1,44 @@
+---
+layout: default
+title: Blog - 2023
+page_type: 'left-sidebar'
+---
+
+<!-- Header -->
+	<div id="header">
+
+		<!-- Inner -->
+			<div class="inner">
+				<header>
+					<h1>Blog - 2023</h1>
+				</header>
+			</div>
+
+		{% include navigation.html %}
+
+	</div>
+
+<!-- Main -->
+	<div class="wrapper style1">
+
+		<div class="container">
+			<div class="row gtr-200">
+				<div class="col-3 col-12-mobile" id="sidebar">
+					<hr class="first" />
+			
+                    {% for post in site.posts %}
+                    {% capture year %}{{post.date | date: "%Y"}}{% endcapture %}
+                    {% if year == "2023" %}
+					<section>
+						<header>
+							<a href=".{{ post.url }}"> {{ post.title }} </a> 
+							<p style="margin:10px;"></p>
+						</header>
+					</section>
+                    {% endif %}
+                  {% endfor %}
+
+				</div>
+			</div>
+		</div>
+	</div>

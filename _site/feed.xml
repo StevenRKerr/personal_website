@@ -1,4 +1,113 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-11-23T15:09:04+00:00</updated><id>/feed.xml</id><entry><title type="html">Negative vaccine effectiveness</title><link href="/2022/11/20/Negative-vaccine-effectiveness.html" rel="alternate" type="text/html" title="Negative vaccine effectiveness" /><published>2022-11-20T00:00:00+00:00</published><updated>2022-11-20T00:00:00+00:00</updated><id>/2022/11/20/Negative%20vaccine%20effectiveness</id><content type="html" xml:base="/2022/11/20/Negative-vaccine-effectiveness.html"><![CDATA[<p>20 Nov 2022</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-06-29T14:39:10+01:00</updated><id>/feed.xml</id><entry><title type="html">Population ethics</title><link href="/2023/03/21/Population-ethics.html" rel="alternate" type="text/html" title="Population ethics" /><published>2023-03-21T00:00:00+00:00</published><updated>2023-03-21T00:00:00+00:00</updated><id>/2023/03/21/Population%20ethics</id><content type="html" xml:base="/2023/03/21/Population-ethics.html"><![CDATA[<p>21 Mar 2023</p>
+
+<p>Population ethics is a subfield of philosophy that attempts to sensibly compare two populations that may differ in size and material circumstances, and decide which state of the world is better. That is, if we had the choice between one of these states being a reality, which should we choose?</p>
+
+<p>The way in which one answers these questions can have profound consequences. For example, if life is sacrosanct, then is there a moral obligation to have children? Is not having children when you could ethically tantamount to murder? Or, given the various risks that humanity faces, e.g. climate change, would it in fact be deeply immoral to bring more children into the world?</p>
+
+<p>It also turns out that if you approach this topic in a naive way, you can get very confused very fast. People can end up accepting a series of reasonable-sounding logical steps that lead to conculsions that are, to say the least, extremely dubious.</p>
+
+<h3> Exhibit A: The repugnant conclusion </h3>
+
+<p>Let’s start in a simple-minded way. We’re given two states of the world, and we want to be able to decide which is better. We like numbers, so why don’t we try to assign a number to how ‘good’ each state is, where high numbers means better.</p>
+
+<p>Presumably different people have different ideas about how good each state is, and will each assign their own number. We might imagine that the numbers represent some common unit of goodness - let’s call it utility. So for example, just as we all agree to measure distances in metres so that we can readily compare without having to worry about unit conversions, perhaps we can in principle do the same thing with utility.</p>
+
+<p>So far, so simple.</p>
+
+<p>Ok since we have a common unit of utility, maybe the natural way to aggregate is to add together. Let’s say in a given state of the world, person \( i \) has utility \( u_i \). Then the total utility is</p>
+
+\[U = \sum_{i=1}^{N} u_i. \label{utility} \tag{1}\]
+
+<p>Great, now we can begin to think about how we might use this utility function to make decisions about which states are better than others. This is where the fun starts.</p>
+
+<p>Let’s imagine we have states of the world \( A \) and \( B \). State \( A \) has 100 people who have wonderful lives. State \( B \) has 100 people who have lives that are just a tiny bit better than if they had never come into existence at all.</p>
+
+<p>We don’t need to do any moral calculus to think that \( A \) is clearly better than \( B \).
+Ok, but now let’s add more people whose lives are just marginally worth living to state \( B \). If there were \( 10,000 \) such people, would \( B \) be better than \( A \)? How about \( 1,000,000 \)?</p>
+
+<p>Most people’s intuition will tell them there is no number of additional people in state \( B \) that will make it better than \( A \). But that clashes with our equation \(\ref{utility}\). If we multiply any small, positive quantity up by a sufficiently large number, we can get a result that is as big as we want. That is to say, there is some number of people living lives that are just barely worth living, that is preferable to a smaller number of people living wonderful lives.</p>
+
+<p>This is called the repugnant conclusion, and a lot of people don’t like it.</p>
+
+<h3> Ok, so what did we do wrong? </h3>
+
+<p>Maybe we shouldn’t be adding together everyone’s utility. Does it really make sense to do that?</p>
+
+<p>The issue you have if you want to get rid of additive utilities is that you end up in situations where adding another perfectly happy person to the world isn’t any better than if you didn’t. Or adding a completely miserable person to the world isn’t any worse than if you didn’t. That seems like a non-starter.</p>
+
+<p>How about this: maybe some states are not comparable to others. There is just no sensible way of doing it.</p>
+
+<p>The issue with this is that it isn’t so much a solution to our problem as it is giving up. Remember we want to be able to decide which course of action is the best. There is no way of doing this if there are possibilities that are simply not comparable to others.</p>
+
+<p>Ok then what’s left. Accept the repugnant conclusion? But now you can be led down some very strange roads. For example, you could justify inflicting extraordinary, undeserved suffering on people now in order to bring about a future that has trillions of people living lives that are marginally worth living. Maybe you’re willing to bite that bullet. I’m not.</p>
+
+<h3> Hidden option C: We are idiots who don't know how to do maths </h3>
+
+<p>Or, maybe the real place we went wrong was when we allowed philosophers to do maths. Ok, I jest. But more seriously, why should we use <i>numbers</i> to represent how good a state of the world is. Who says it should have anything to do with numbers?</p>
+
+<p>Indeed, every decent economics graduate learns about the canonical example of an ordering that cannot be represented using real numbers: <a href="https://en.wikipedia.org/wiki/Lexicographic_preferences" target="_blank">lexicographic preferences</a>. In short, imagine I like both tea and spending time with my partner. However, there is no amount of tea in the world (or China) that would convince me to spend any less time with her. Those preferences simply cannot be represented using numbers. Turns out there just aren’t enough real numbers to accommodate/fathom my depths.</p>
+
+<p>Ok, so why can’t we have lexicographic preferences or similar when it comes to population ethics? I.e. there is no number of lives that are barely worth living that would be morally preferable to 100 people having wonderful lives. Seems easy enough. We don’t have to come to any of the utterly bizarre conclusions that philosophers think are forced upon us. We just can’t use numbers to represent our preferences - we’re not such simple creatures.</p>
+
+<p>It really is that easy. Nonetheless, you would be truly shocked by the sheer volume of commentary this completely trivial ‘problem’ has generated in academic philosophy circles. And if you’re anything like me, absolutely appalled by the moral positions that various esteemed thinkers take seriously and have adopted as a result of this thinking.</p>
+
+<p>Never do philosophy kids.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[21 Mar 2023]]></summary></entry><entry><title type="html">Effective altruism, longtermism and Pascal’s mugging</title><link href="/2023/01/04/Effective-altruism,-longtermism,-and-Pascal's-mugging.html" rel="alternate" type="text/html" title="Effective altruism, longtermism and Pascal’s mugging" /><published>2023-01-04T00:00:00+00:00</published><updated>2023-01-04T00:00:00+00:00</updated><id>/2023/01/04/Effective%20altruism,%20longtermism,%20and%20Pascal&apos;s%20mugging</id><content type="html" xml:base="/2023/01/04/Effective-altruism,-longtermism,-and-Pascal&apos;s-mugging.html"><![CDATA[<p>04 Jan 2023</p>
+
+<h3> What is effective altruism? </h3>
+
+<p>It is a social movement that broadly aims to do the ‘most good’ in the world with limited resources. They advocate for making career choices and charitable donations that maximise altruistic impact. Their activities include writing research papers on ethics, analysing effectiveness of charitable organisations, giving career advice, and promoting pledges to donate a proportion of one’s income to charity. The main individuals who are credited with starting the movement are Will MacAskill and Toby Ord, both at the University of Oxford, and Australian moral philospher Peter Singer, at Princeton university.</p>
+
+<h3> What is longtermism? </h3>
+
+<p>Longtermism has become a signature idea within the effective altruism community. It broadly argues for greater emphasis to be placed on the long-term future in ethical decisions. The basic gist is that future humans/sentient beings who have not yet come into existence should be given the same ‘moral weight’ as those alive now. This tends to be coupled with the idea that the number of beings alive right now could be completely dwarfed by the number of future humans, especially if humanity survives for millions/billions of years into the future and colonises other planets.</p>
+
+<h3> Sounds dandy. Ok, and what is the last thing you mentioned? </h3>
+
+<p>Pascal’s mugging.</p>
+
+<p>Let’s say you’re walking along the street one day and you’re accosted by a mugger. However, he is an extremely incompetent mugger who has forgotten his weapon. So, he instead makes the following proposal: give me all the money in your wallet, and tomorrow I will give you back twice that amount of money. You, being sensible, immediately dismiss his offer - what are the chances that he would actually follow through? The mugger, sensing he is losing you, continues to increase his offer. He says that if there is even the tiniest non-zero probability that he will honour the deal, then you should accept. Eventually he wins you over by offering a bajillion dollars on the morrow sharp if you agree, but otherwise he will kick a gazillion puppies right in the face.</p>
+
+<h3> Ok, you have a problem, don't you Steven. Why don't you tell me about it. </h3>
+
+<p>Yeah I do have a problem. Well-intuited, me.</p>
+
+<p>The notion that we are not giving sufficient ‘moral weight’ to future individuals compared to individuals alive now, comes from a little mish-mash of undergraduate economics and philosophy. In economics 101, you learn that the default setting for economic models is to discount future utility. That means that we prefer a bowl of ice cream now compared to a bowl of ice cream tomorrow, or a year from now. This is expressed mathematically as follows:</p>
+
+<p>\begin{align} U = \sum_{t=1}^{T} \beta^t u(x_t).\end{align}</p>
+
+<p>Here, \( x_t \) is some amount of a good received at time \( t \) (e.g. a bowl of ice cream), \( u \) is a utility function which measures the benefit that you get from said good at the moment of consumption, and \( \beta \) is a number between 0 and 1 that we call the utility discount factor. The utility discount factor captures how much we prefer benefits now compared to benefits at a later date. For example, let’s say units of time are measured in days and \( \beta = 0.5 \). That would mean that a bowl of ice cream tomorrow is ‘worth’ half as much as a bowl of ice cream today.</p>
+
+<p>Now, the fine upstanding philospher sees this and is frankly outraged. So outraged, he almost smashes his monocle. What does this presume to say - that the you of tomorrow has only half the moral worth of today’s you? What egregious claptrap is this!</p>
+
+<p>I jest, but only a little. But that’s basically the longtermists; they think that \( \beta \) should be equal to 1, for reasons.</p>
+
+<p>Of course what they completely ignore is that the utility discount factor is really just a parsimonious way of capturing the fact that everything is a lottery, without actually having to model everything as a lottery, because frankly that’s a pain in the arse. The choice is not between a bowl of ice cream now or tomorrow. It is a choice between a bowl of ice cream now, and an almost-certain bowl of ice cream tomorrow plus a small probability that you meet your tragic and untimely demise in an unforseeable bovine trebuchet incident before tomorrow, thus depriving you of said bowl of ice cream.</p>
+
+<p>Ok I jest again, maybe a little more this time.</p>
+
+<p>The point is there is a chance you may not be around to get that bowl of ice cream tomorrow, or you might lose your taste buds, or whatever else. Of course there’s also a chance that a magical fairy will wave her wand and make it so that tomorrow you get twice the enjoyment from that bowl of ice cream that you otherwise would have. But basically, there’s a lottery over events that could happen, and the end result of that lottery is that humans tend to prefer sure things today rather than near-sure things tomorrow, or not-so-sure things a year from now. As a quick fix to model this, we set \( \beta \) a little less than 1.</p>
+
+<p>It is not difficult to figure this out. Many people know it, and have pointed it out. This has not stopped the longtermists from building a utopian (read: probably dystopian) moral calculus though.</p>
+
+<p>So yeah, let’s say we take the longtermist idea seriously - there will be no utility discounting, no siree. On top of that, let’s presume that there is a non-zero chance that there will be an arbitrarily large number of human beings with wonderful lives in the future. Does this remind you of a certain unarmed robbery of a certain historical Frenchman yet?</p>
+
+<p>Armed with this ideology, you could come to some rather dubious conclusions, to say the least. For example, you could argue that instead of using our resources to provide food for millions of people on the brink of famine today, we should instead give that money to our well-to-do academics and intellectual superiors at Oxbridge and the Ivy league so they can do urgently-needed research on where to best expend further resources.</p>
+
+<p>Yeah, right.</p>
+
+<p>In fact, you could use this ideology to justify inflicting any amount of suffering on people who are alive today, in order to serve the interests of hypothetical future people. After all, what’s worse: the suffering of a few million people, or the suffering of <b>ONE ZILLION SQUILLION</b> future people, who let’s face it are, for all ethical intents and purposes, really alive today.</p>
+
+<p>This thinking is the product of ordinary academic minds furiously scurrying to justify their existence. They need some new, counterintuitive take that they can write papers about, use to position themselves as the thought-leaders of a burgeoning social movement and get tenured positions at universities.</p>
+
+<p>It’s easy not to take this too seriously. Surely they are on the fringe.</p>
+
+<p>Then you realise that that the effective altruism movement may have control over several billions of dollars.</p>
+
+<p>Then you find out that a prominent effective altruist, by the name of Sam Bankman-Fried, was (allegedly!) running a cryptocurrency Ponzi scheme, which basically amounted to stealing people’s life savings and donating it to his preferred political party.</p>
+
+<p>Very effective. Much altruism.</p>
+
+<p>Really what this is is some kids with a god complex and a utopian ideology that, like so many before it, would almost certainly lead to misery on the grandest scale imaginable if ever fully realised. The only thing they need to make it a reality is a little more power.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[04 Jan 2023]]></summary></entry><entry><title type="html">Negative vaccine effectiveness</title><link href="/2022/11/20/Negative-vaccine-effectiveness.html" rel="alternate" type="text/html" title="Negative vaccine effectiveness" /><published>2022-11-20T00:00:00+00:00</published><updated>2022-11-20T00:00:00+00:00</updated><id>/2022/11/20/Negative%20vaccine%20effectiveness</id><content type="html" xml:base="/2022/11/20/Negative-vaccine-effectiveness.html"><![CDATA[<p>20 Nov 2022</p>
 
 <p>Myself and a team of collaborators including Stuart Bedston at the University of Swansea, Declan Bradley at Queen’s University Belfast and Mark Joy at the University of Oxford recently published a <a href="https://doi.org/10.1093/ije/dyac199" target="_blank"> paper</a> in the International Journal of Epidemiology studying waning of COVID-19 vaccine effectiveness. One of the major findings of the paper is that for first and second dose of AstraZeneca and first dose of Pfizer, effectiveness of the vaccine against COVID-19 hospitalisation or death reached zero by approximately day 60-80 after receiving the vaccine, and then went negative.</p>
 
@@ -118,7 +227,7 @@
 
 <p>The basic issue is that fields are operator-valued distributions, for which multiplication is not well-defined outside of some trivial cases. If you plough ahead anyway pretending this problem doesn’t exist, aforementioned infinities rear their ugly head. Garbage in, garbage out, as they say.</p>
 
-<p>To deal with this, physicsts play a regularisation game that involves artificially adding terms to the theory to cancel out the infinities, in a process that Richad Feynman famously described as ‘dippy’. This is not mathematically kosher, but it does allow us to extract sensible predictions from the theory, so the technical concerns tend to get brushed under the carpet to a degree.</p>
+<p>To deal with this, physicsts play a regularisation game that involves artificially adding terms to the theory to cancel out the infinities, in a process that Richard Feynman famously described as ‘dippy’. This is not mathematically kosher, but it does allow us to extract sensible predictions from the theory, so the technical concerns tend to get brushed under the carpet to a degree.</p>
 
 <p>The infinities that occur are broadly of two kinds: ultraviolet (high energy/short distance) and infrared (low energy/large distance). The infrared divergences are typically regarded as less troubling, and one reason is because they go away if you think the universe is finite because that introduces a maximum possible length scale. The ultravolet divergences tend to cause more consternation because there is less sympathy for the idea of a universal minimum length scale.</p>
 
@@ -331,123 +440,4 @@ Sets that are of the same ‘size’ as the real numbers are sometimes said to h
 
 <h3> Conclusion </h3>
 
-<p>I’m sure there are other good examples we could talk about. My point is that I think people often want so much for the maths to be pretty that they get led astray from reality.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[08 Mar 2022]]></summary></entry><entry><title type="html">Vaccines and blood clots</title><link href="/2022/02/27/Vaccines-and-blood-clots.html" rel="alternate" type="text/html" title="Vaccines and blood clots" /><published>2022-02-27T00:00:00+00:00</published><updated>2022-02-27T00:00:00+00:00</updated><id>/2022/02/27/Vaccines%20and%20blood%20clots</id><content type="html" xml:base="/2022/02/27/Vaccines-and-blood-clots.html"><![CDATA[<p>27 Feb 2022</p>
-
-<p>On February 22nd, PLOS medicine published a <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003927" target="_blank">paper</a> on cerebral venous sinus thrombosis (CVST) following vaccination on which I was the lead author. CVST is a type of blood clot in the brain that can lead to stroke and death. In this paper, we carried out a pooled analyis of 11.6 million people in England, Scotland and Wales, comparing the rate of CVST events in individuals before and after receiving the vaccine. We found that in the 4 weeks following vaccination with Oxford-AstraZeneca, the risk of CVST events approximately doubled. We did not see any increase in risk of CVST events following Pfizer.</p>
-
-<p>This paper was released at the same time as a <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003926" target="_blank">second paper</a> headed by William Whiteley, also at the University of Edinburgh, that studied 46 million people in England and had strikingly similar findings. It is reassuring when independent research efforts come to similar conclusions.</p>
-
-<p>CVST is a very rare event, occurring at a rate of perhaps 3-4 per million people per year. Assuming this as a background rate, our findings would imply one additional CVST event for every 4 million doses of Oxford-AstraZeneca administered. This has to be weighed up against the benefits of vaccination. Due to concerns over safety, Oxford-AstraZeneca was suspended in those aged under 40, and was not routinely used for booster doses in the UK. The risk/benefit analysis for whom should be vaccinated, with which vaccine, and when, is extremely complicated and depends on background rates of infection, availability of vaccines, vaccine waning, characteristics of future variants and robustness of naturally-acquired immunity versus vaccine-induced immunity, among others.</p>
-
-<p>Our paper included a small methodological novelty that allowed us to pool data across several nations without individual-level data having to be shared between them. Each country stores data in a trusted resesarch environment (TRE), which is just a highly secure server that contains anonymised data. Sharing individual-level data is forbidden, but we worked around this by carrying out a Poisson regression in which only count data is required. We are aiming to use a similar method to carry out further pooled studies in future.</p>
-
-<p>PLOS medicine published an author interview with me, which can be found <a href="https://speakingofmedicine.plos.org/2022/02/22/plos-medicine-author-interview-steven-kerr-phd/" target="_blank">here</a>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[27 Feb 2022]]></summary></entry><entry><title type="html">Lockdowns and mortality</title><link href="/2022/02/09/Lockdowns-and-mortality.html" rel="alternate" type="text/html" title="Lockdowns and mortality" /><published>2022-02-09T00:00:00+00:00</published><updated>2022-02-09T00:00:00+00:00</updated><id>/2022/02/09/Lockdowns%20and%20mortality</id><content type="html" xml:base="/2022/02/09/Lockdowns-and-mortality.html"><![CDATA[<p>09 Feb 2022</p>
-
-<p>A <a href="https://sites.krieger.jhu.edu/iae/files/2022/01/A-Literature-Review-and-Meta-Analysis-of-the-Effects-of-Lockdowns-on-COVID-19-Mortality.pdf" target="_blank">paper</a> has recently come out claiming that lockdowns had minimal effects on COVID mortality, causing quite a stir. The headline figure is that in Europe and the USA, lockdowns reduced mortality by 0.2%. Fifty words in and the authors are already dropping bombs like this:</p>
-
-<p><em>“While this meta-analysis concludes that lockdowns have had little to no public health effects,
-they have imposed enormous economic and social costs where they have been adopted. In
-consequence, lockdown policies are ill-founded and should be rejected as a pandemic policy
-instrument.”</em></p>
-
-<p>You’ve gotta admire that moxie.</p>
-
-<p>Here’s my review of this paper.</p>
-
-<h3>  What did they do? </h3>
-
-<p>The authors have done a meta-analysis of studies seeking to establish the effect that non-pharmaceutical interventions (NPIs, referred to loosely as `lockdowns’ by the authors) have on COVID mortality.</p>
-
-<ul>
-  <li>
-    <p>Their initial search turned up 18,590 papers.</p>
-  </li>
-  <li>
-    <p>1,048 remained after screening based on the title of the paper.</p>
-  </li>
-  <li>
-    <p>117 remained after excluding studies that were not empirical, or did not study COVID mortality.</p>
-  </li>
-  <li>
-    <p>34 remained after filtering according to their eligibility criteria.</p>
-  </li>
-</ul>
-
-<h3>  What eligibility criteria? </h3>
-
-<p>Great question. Most of the substantive criticisms of this paper focus on whether their selection conditions were reasonable. The authors used the following criteria:</p>
-
-<ul>
-  <li>
-    <p><strong>Studies that used simulations to predict mortality in the counterfactual were excluded</strong> <br />
-Counterfactuals are scenarios that didn’t happen, that one typically uses as a basis for comparison. In this context, the counterfactual is what would have unfolded without lockdowns. The authors only admit studies that used real data on mortality from countries that implemented different policies, rather than simulated data. <br /><br />I find myself in agreement with this as an exclusion criterion, given how stunningly bad various predictions for the epidemic have been, and how much freedom simulations give researchers to get the answer that they want.</p>
-  </li>
-  <li>
-    <p><strong>Studies that used synthetic controls were excluded</strong> <br />
-Synthetic control methods work as follows. Ideally, what one would like to do is to take two identical populations, existing in identical circumstances, apply a lockdown to one (the ‘treatment’ group) and not the other (the control group), and then measure the difference in mortality. Any difference can then unambiguously be attributed to lockdown, since everything else is identical.<br /><br />However, that’s obviously not practically feasible. Synthetic control studies attempt to get around this by artifiically creating a control group. So, perhaps there exists a population that were not subjected to lockdown that might be used as a control group, except they are quite different to the treatment group. Synthetic control studies statistically re-weight this population so that they look more like the treatment group, and then examine the differences in mortality compared to the treatment group <br /><br />While there is definitely a lot of room for this technique to be abused, I think the authors were perhaps a little too trigger-happy using it as grounds for exclusion.</p>
-  </li>
-  <li>
-    <p><strong>Interrupted time-series studies were excluded</strong> <br />
-Interrupted time series studies are fairly straightforward, and in this context consist of fitting a curve to deaths both before and after the imposition of lockdown. One hopes that all other variables that might affect COVID mortality do not change much during the study period, so that causality can be assigned to the lockdown.<br /><br />I think the authors were on solid ground excluding studies of this type. There are typically just too many other variables that are changing in the study period to sensibly assign causation.</p>
-  </li>
-  <li>
-    <p><strong>Both published and working papers were included</strong> <br />
-This means that the paper did not have to be published in a peer-reviewed journal to make the final cut.<br /><br />I think this is fair enough. In my experience, peer-review rarely results in major changes to the results of a paper, and there are many high quality papers that are yet to be published.</p>
-  </li>
-  <li>
-    <p><strong>Papers that focus on comparing imposition of lockdowns at different times excluded</strong> <br />
-The main rationale behind this is that the authors were seeking to compare the lockdowns that were actually imposed with a counterfactual in which the lockdowns were not imposed, not a counterfactual in which they were imposed at a different time.<br /><br />You might say, however, that it is still worth doing the latter comparison because maybe it will tell us whether lockdowns are worthwhile if we were just able to get the timing right. However, I have pretty much zero confidence in our ability to precisely time the imposition of lockdowns, and I think I the worldwide track record in the last two years backs me up on that.</p>
-  </li>
-</ul>
-
-<h3>  Quality measures </h3>
-<p>Ok, so that’s how the authors narrowed it down to their chosen 34. That’s not the end of the story though. They also rated each of these studies according to the following four measures of quality:</p>
-
-<ul>
-  <li>
-    <p><strong>Published versus working papers</strong> <br />
-You didn’t think they were going to ignore peer-review completely, did you? <br /><br />I do think it is reasonable to put more trust in papers that have been peer-reviewed. So no qualms with this one.</p>
-  </li>
-  <li>
-    <p><strong>Long verus short term</strong> <br />
-Papers that have data that extends beyond 31st May 2021 get an extra merit point from the authors. The rationale here is that if lockdowns ‘flattern the curve’ but do not prevent deaths, then studies that are cut short may conclude that lockdowns are effective against death when in fact all they may be doing is slightly prolonging death.<br /><br />I also think this is reasonable.</p>
-  </li>
-  <li>
-    <p><strong>Studies that have an effect on mortality sooner than 14 days after the intervention</strong> <br />
-The idea here is that lockdowns presumably affect mortality by curbing transmission. Since it typically takes at least a few weeks between infection and death for those who die from COVID, any study that sees an early effect on mortality is likely to be flawed.<br /><br />I’m on board with this.</p>
-  </li>
-  <li>
-    <p><strong>Social sciences versus other sciences</strong> <br />
-Ok this is where it gets a bit sketchy. The authors’ rationale is that social scientists have greater expertise in evaluating policy interventions compared to those in the natural sciences. What this effectively means is that studies carried out by economists get a merit point, and studies carried out by e.g. epidemiologists don’t.<br /><br />I think this is questionable. While I recognise there certainly are biases in different fields, this just doesnt sit well with me.</p>
-  </li>
-</ul>
-
-<h3>  The results </h3>
-<p>These measures of quality were used to do stratified analyses. So, they carried out their analysis on papers that scored 4 out of 4 on the above criteria, then a separate analysis for the papers that scored at least 3, etc.<br /><br />The authors carry out an inverse-variance weighted meta-analysis, which is just a fancy type of weighted average of the results in the selected papers. It means that studies that were able to more precisely estimate the effect of lockdown on mortality get given more weight. Their main results are as follows:</p>
-
-<ul>
-  <li>
-    <p><strong>Stringency-based studies</strong> <br />
-These are studies that used the <a href="https://ourworldindata.org/" target="_blank">our world in data</a> <a href="https://ourworldindata.org/metrics-explained-covid19-stringency-index" target="_blank">stringency index</a> to measure how strict lockdown measures were. In their meta-analysis of these studies, the authors find that lockdowns resulted in a 0.2% reduction in mortality in Europe and the United States. There were only seven papers in this analysis, and one of them receives almost all the weighting.</p>
-  </li>
-  <li>
-    <p><strong>Shelter-in-place-order studies</strong> <br />
-The authors found that shelter-in-place orders reduced mortality by 2.9% in Europe and the United States. Again most of the weight goes to the result from one paper.</p>
-  </li>
-  <li>
-    <p><strong>Specific NPIs</strong> <br />
-Amongst papers that scored a perfect 4 on the quality criteria, the authors found a 34% reduction in mortality for the use of face masks, and 2.9% reduction for business closures. Once again, most of weight appears to come from single studies.</p>
-  </li>
-</ul>
-
-<h3>  The verdict </h3>
-
-<p>Once can find a selection of papers in the literature on lockdowns that support pretty much any inclusion one wishes to come to. Thus most criticism of this meta-analysis has rightly focused on whether the selection criteria employed by the authors are reasonable.</p>
-
-<p>I think they are mostly kosher. The one that I take greatest issue with is the exclusion of papers written by people from the natural sciences. It is a little difficult though, because I do think there is a prevailing orthodoxy amongst epidemiologists that errs strongly on the side of interventions that seek to prevent deaths whose proximate cause is COVID, while neglecting any other side effects those interventions may have, no matter how catastrophic. Economists, on the other hand, tend to orient themselves towards broader, utilitarian measures of societal welfare.</p>
-
-<p>At the intutitive level, I would not be surprised if lockdowns had minimal effect on COVID mortality. The mechanism through which they were meant to work was ‘flattening the curve’, thus preventing healthcare services from being overwhelmed. That didn’t happen, and looking at other countries that didn’t have as stringent lockdowns, it seems like we wouldn’t even have come particularly close.</p>
-
-<p>Another interesting point that the furore over this paper illustrates is the huge schism between economists and public health professionals. It’s quite amazing how two well-developed wings of the academy can be so deeply in disagreement over some rather fundamental items. It’s reminiscent of the chasm that exists between biologists and the humanities on ideas like the <a href="https://en.wikipedia.org/wiki/Tabula_rasa#Science" target="_blank">tabula rasa</a> theory of human nature.</p>
-
-<p>One thing is for sure; if the economists were in charge of the governmental response to the pandemic, things would have looked <em>a lot</em> different.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[09 Feb 2022]]></summary></entry></feed>
+<p>I’m sure there are other good examples we could talk about. My point is that I think people often want so much for the maths to be pretty that they get led astray from reality.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[08 Mar 2022]]></summary></entry></feed>

@@ -55,7 +55,7 @@ When you naively try to calculate physically measurable quantities in interactin
 
 The basic issue is that fields are operator-valued distributions, for which multiplication is not well-defined outside of some trivial cases. If you plough ahead anyway pretending this problem doesn't exist, aforementioned infinities rear their ugly head. Garbage in, garbage out, as they say.
 
-To deal with this, physicsts play a regularisation game that involves artificially adding terms to the theory to cancel out the infinities, in a process that Richad Feynman famously described as 'dippy'. This is not mathematically kosher, but it does allow us to extract sensible predictions from the theory, so the technical concerns tend to get brushed under the carpet to a degree. 
+To deal with this, physicsts play a regularisation game that involves artificially adding terms to the theory to cancel out the infinities, in a process that Richard Feynman famously described as 'dippy'. This is not mathematically kosher, but it does allow us to extract sensible predictions from the theory, so the technical concerns tend to get brushed under the carpet to a degree. 
 
 The infinities that occur are broadly of two kinds: ultraviolet (high energy/short distance) and infrared (low energy/large distance). The infrared divergences are typically regarded as less troubling, and one reason is because they go away if you think the universe is finite because that introduces a maximum possible length scale. The ultravolet divergences tend to cause more consternation because there is less sympathy for the idea of a universal minimum length scale.
 

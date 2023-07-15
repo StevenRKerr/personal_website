@@ -20,7 +20,7 @@ When various mathematicians/physicists worked all of this out in the 1700s, some
 
 The action is in turn is an integral over spacetime of a quantity called the Lagrangian (or sometimes Lagrangian density),
 
-$$ S = \int \mathcal{L} \tag{1}$$
+\begin{align} S = \int \mathcal{L} \tag{1} \end{align}
 
 In principle, the Lagrangian can be just about anything we want, and there is a hell of a lot of choice to be had. So how do we pick a Lagrangian that desribes our universe?
 
