@@ -22,7 +22,7 @@
                     <!-- Inner -->
                         <div class="inner">
                             <header>
-                                <h1>Blog</h1>
+                                <h1>Blog - {{ page.date | date: "%Y" }}</h1>
                             </header>
                         </div>
 
@@ -47,16 +47,18 @@
                                 <hr class="first" />
                                 
                                 {% for post in site.posts %}
+                                {% capture post_year %}{{post.date | date: "%Y"}}{% endcapture %}
+                                {% capture section_year %}{{page.date | date: "%Y"}}{% endcapture %}
+                                {% if post_year == section_year %}
                                 <section>
                                     <header>
                                         <a href="../../..{{ post.url }}"> {{ post.title }} </a> 
                                         <p style="margin:10px;"></p>
                                     </header>
                                 </section>
-
-                                {% endfor %}
-
-
+                                {% endif %}
+                              {% endfor %}
+            
                             </div>
 
                             <div class="col-8 col-12-mobile imp-mobile" id="content">

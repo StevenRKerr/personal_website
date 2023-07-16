@@ -1,4 +1,381 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2022-03-27T21:53:57+01:00</updated><id>/feed.xml</id><entry><title type="html">God</title><link href="/2022/03/27/God.html" rel="alternate" type="text/html" title="God" /><published>2022-03-27T00:00:00+00:00</published><updated>2022-03-27T00:00:00+00:00</updated><id>/2022/03/27/God</id><content type="html" xml:base="/2022/03/27/God.html"><![CDATA[<p>27 Mar 2022</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.2.1">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-06-29T14:39:10+01:00</updated><id>/feed.xml</id><entry><title type="html">Population ethics</title><link href="/2023/03/21/Population-ethics.html" rel="alternate" type="text/html" title="Population ethics" /><published>2023-03-21T00:00:00+00:00</published><updated>2023-03-21T00:00:00+00:00</updated><id>/2023/03/21/Population%20ethics</id><content type="html" xml:base="/2023/03/21/Population-ethics.html"><![CDATA[<p>21 Mar 2023</p>
+
+<p>Population ethics is a subfield of philosophy that attempts to sensibly compare two populations that may differ in size and material circumstances, and decide which state of the world is better. That is, if we had the choice between one of these states being a reality, which should we choose?</p>
+
+<p>The way in which one answers these questions can have profound consequences. For example, if life is sacrosanct, then is there a moral obligation to have children? Is not having children when you could ethically tantamount to murder? Or, given the various risks that humanity faces, e.g. climate change, would it in fact be deeply immoral to bring more children into the world?</p>
+
+<p>It also turns out that if you approach this topic in a naive way, you can get very confused very fast. People can end up accepting a series of reasonable-sounding logical steps that lead to conculsions that are, to say the least, extremely dubious.</p>
+
+<h3> Exhibit A: The repugnant conclusion </h3>
+
+<p>Let’s start in a simple-minded way. We’re given two states of the world, and we want to be able to decide which is better. We like numbers, so why don’t we try to assign a number to how ‘good’ each state is, where high numbers means better.</p>
+
+<p>Presumably different people have different ideas about how good each state is, and will each assign their own number. We might imagine that the numbers represent some common unit of goodness - let’s call it utility. So for example, just as we all agree to measure distances in metres so that we can readily compare without having to worry about unit conversions, perhaps we can in principle do the same thing with utility.</p>
+
+<p>So far, so simple.</p>
+
+<p>Ok since we have a common unit of utility, maybe the natural way to aggregate is to add together. Let’s say in a given state of the world, person \( i \) has utility \( u_i \). Then the total utility is</p>
+
+\[U = \sum_{i=1}^{N} u_i. \label{utility} \tag{1}\]
+
+<p>Great, now we can begin to think about how we might use this utility function to make decisions about which states are better than others. This is where the fun starts.</p>
+
+<p>Let’s imagine we have states of the world \( A \) and \( B \). State \( A \) has 100 people who have wonderful lives. State \( B \) has 100 people who have lives that are just a tiny bit better than if they had never come into existence at all.</p>
+
+<p>We don’t need to do any moral calculus to think that \( A \) is clearly better than \( B \).
+Ok, but now let’s add more people whose lives are just marginally worth living to state \( B \). If there were \( 10,000 \) such people, would \( B \) be better than \( A \)? How about \( 1,000,000 \)?</p>
+
+<p>Most people’s intuition will tell them there is no number of additional people in state \( B \) that will make it better than \( A \). But that clashes with our equation \(\ref{utility}\). If we multiply any small, positive quantity up by a sufficiently large number, we can get a result that is as big as we want. That is to say, there is some number of people living lives that are just barely worth living, that is preferable to a smaller number of people living wonderful lives.</p>
+
+<p>This is called the repugnant conclusion, and a lot of people don’t like it.</p>
+
+<h3> Ok, so what did we do wrong? </h3>
+
+<p>Maybe we shouldn’t be adding together everyone’s utility. Does it really make sense to do that?</p>
+
+<p>The issue you have if you want to get rid of additive utilities is that you end up in situations where adding another perfectly happy person to the world isn’t any better than if you didn’t. Or adding a completely miserable person to the world isn’t any worse than if you didn’t. That seems like a non-starter.</p>
+
+<p>How about this: maybe some states are not comparable to others. There is just no sensible way of doing it.</p>
+
+<p>The issue with this is that it isn’t so much a solution to our problem as it is giving up. Remember we want to be able to decide which course of action is the best. There is no way of doing this if there are possibilities that are simply not comparable to others.</p>
+
+<p>Ok then what’s left. Accept the repugnant conclusion? But now you can be led down some very strange roads. For example, you could justify inflicting extraordinary, undeserved suffering on people now in order to bring about a future that has trillions of people living lives that are marginally worth living. Maybe you’re willing to bite that bullet. I’m not.</p>
+
+<h3> Hidden option C: We are idiots who don't know how to do maths </h3>
+
+<p>Or, maybe the real place we went wrong was when we allowed philosophers to do maths. Ok, I jest. But more seriously, why should we use <i>numbers</i> to represent how good a state of the world is. Who says it should have anything to do with numbers?</p>
+
+<p>Indeed, every decent economics graduate learns about the canonical example of an ordering that cannot be represented using real numbers: <a href="https://en.wikipedia.org/wiki/Lexicographic_preferences" target="_blank">lexicographic preferences</a>. In short, imagine I like both tea and spending time with my partner. However, there is no amount of tea in the world (or China) that would convince me to spend any less time with her. Those preferences simply cannot be represented using numbers. Turns out there just aren’t enough real numbers to accommodate/fathom my depths.</p>
+
+<p>Ok, so why can’t we have lexicographic preferences or similar when it comes to population ethics? I.e. there is no number of lives that are barely worth living that would be morally preferable to 100 people having wonderful lives. Seems easy enough. We don’t have to come to any of the utterly bizarre conclusions that philosophers think are forced upon us. We just can’t use numbers to represent our preferences - we’re not such simple creatures.</p>
+
+<p>It really is that easy. Nonetheless, you would be truly shocked by the sheer volume of commentary this completely trivial ‘problem’ has generated in academic philosophy circles. And if you’re anything like me, absolutely appalled by the moral positions that various esteemed thinkers take seriously and have adopted as a result of this thinking.</p>
+
+<p>Never do philosophy kids.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[21 Mar 2023]]></summary></entry><entry><title type="html">Effective altruism, longtermism and Pascal’s mugging</title><link href="/2023/01/04/Effective-altruism,-longtermism,-and-Pascal's-mugging.html" rel="alternate" type="text/html" title="Effective altruism, longtermism and Pascal’s mugging" /><published>2023-01-04T00:00:00+00:00</published><updated>2023-01-04T00:00:00+00:00</updated><id>/2023/01/04/Effective%20altruism,%20longtermism,%20and%20Pascal&apos;s%20mugging</id><content type="html" xml:base="/2023/01/04/Effective-altruism,-longtermism,-and-Pascal&apos;s-mugging.html"><![CDATA[<p>04 Jan 2023</p>
+
+<h3> What is effective altruism? </h3>
+
+<p>It is a social movement that broadly aims to do the ‘most good’ in the world with limited resources. They advocate for making career choices and charitable donations that maximise altruistic impact. Their activities include writing research papers on ethics, analysing effectiveness of charitable organisations, giving career advice, and promoting pledges to donate a proportion of one’s income to charity. The main individuals who are credited with starting the movement are Will MacAskill and Toby Ord, both at the University of Oxford, and Australian moral philospher Peter Singer, at Princeton university.</p>
+
+<h3> What is longtermism? </h3>
+
+<p>Longtermism has become a signature idea within the effective altruism community. It broadly argues for greater emphasis to be placed on the long-term future in ethical decisions. The basic gist is that future humans/sentient beings who have not yet come into existence should be given the same ‘moral weight’ as those alive now. This tends to be coupled with the idea that the number of beings alive right now could be completely dwarfed by the number of future humans, especially if humanity survives for millions/billions of years into the future and colonises other planets.</p>
+
+<h3> Sounds dandy. Ok, and what is the last thing you mentioned? </h3>
+
+<p>Pascal’s mugging.</p>
+
+<p>Let’s say you’re walking along the street one day and you’re accosted by a mugger. However, he is an extremely incompetent mugger who has forgotten his weapon. So, he instead makes the following proposal: give me all the money in your wallet, and tomorrow I will give you back twice that amount of money. You, being sensible, immediately dismiss his offer - what are the chances that he would actually follow through? The mugger, sensing he is losing you, continues to increase his offer. He says that if there is even the tiniest non-zero probability that he will honour the deal, then you should accept. Eventually he wins you over by offering a bajillion dollars on the morrow sharp if you agree, but otherwise he will kick a gazillion puppies right in the face.</p>
+
+<h3> Ok, you have a problem, don't you Steven. Why don't you tell me about it. </h3>
+
+<p>Yeah I do have a problem. Well-intuited, me.</p>
+
+<p>The notion that we are not giving sufficient ‘moral weight’ to future individuals compared to individuals alive now, comes from a little mish-mash of undergraduate economics and philosophy. In economics 101, you learn that the default setting for economic models is to discount future utility. That means that we prefer a bowl of ice cream now compared to a bowl of ice cream tomorrow, or a year from now. This is expressed mathematically as follows:</p>
+
+<p>\begin{align} U = \sum_{t=1}^{T} \beta^t u(x_t).\end{align}</p>
+
+<p>Here, \( x_t \) is some amount of a good received at time \( t \) (e.g. a bowl of ice cream), \( u \) is a utility function which measures the benefit that you get from said good at the moment of consumption, and \( \beta \) is a number between 0 and 1 that we call the utility discount factor. The utility discount factor captures how much we prefer benefits now compared to benefits at a later date. For example, let’s say units of time are measured in days and \( \beta = 0.5 \). That would mean that a bowl of ice cream tomorrow is ‘worth’ half as much as a bowl of ice cream today.</p>
+
+<p>Now, the fine upstanding philospher sees this and is frankly outraged. So outraged, he almost smashes his monocle. What does this presume to say - that the you of tomorrow has only half the moral worth of today’s you? What egregious claptrap is this!</p>
+
+<p>I jest, but only a little. But that’s basically the longtermists; they think that \( \beta \) should be equal to 1, for reasons.</p>
+
+<p>Of course what they completely ignore is that the utility discount factor is really just a parsimonious way of capturing the fact that everything is a lottery, without actually having to model everything as a lottery, because frankly that’s a pain in the arse. The choice is not between a bowl of ice cream now or tomorrow. It is a choice between a bowl of ice cream now, and an almost-certain bowl of ice cream tomorrow plus a small probability that you meet your tragic and untimely demise in an unforseeable bovine trebuchet incident before tomorrow, thus depriving you of said bowl of ice cream.</p>
+
+<p>Ok I jest again, maybe a little more this time.</p>
+
+<p>The point is there is a chance you may not be around to get that bowl of ice cream tomorrow, or you might lose your taste buds, or whatever else. Of course there’s also a chance that a magical fairy will wave her wand and make it so that tomorrow you get twice the enjoyment from that bowl of ice cream that you otherwise would have. But basically, there’s a lottery over events that could happen, and the end result of that lottery is that humans tend to prefer sure things today rather than near-sure things tomorrow, or not-so-sure things a year from now. As a quick fix to model this, we set \( \beta \) a little less than 1.</p>
+
+<p>It is not difficult to figure this out. Many people know it, and have pointed it out. This has not stopped the longtermists from building a utopian (read: probably dystopian) moral calculus though.</p>
+
+<p>So yeah, let’s say we take the longtermist idea seriously - there will be no utility discounting, no siree. On top of that, let’s presume that there is a non-zero chance that there will be an arbitrarily large number of human beings with wonderful lives in the future. Does this remind you of a certain unarmed robbery of a certain historical Frenchman yet?</p>
+
+<p>Armed with this ideology, you could come to some rather dubious conclusions, to say the least. For example, you could argue that instead of using our resources to provide food for millions of people on the brink of famine today, we should instead give that money to our well-to-do academics and intellectual superiors at Oxbridge and the Ivy league so they can do urgently-needed research on where to best expend further resources.</p>
+
+<p>Yeah, right.</p>
+
+<p>In fact, you could use this ideology to justify inflicting any amount of suffering on people who are alive today, in order to serve the interests of hypothetical future people. After all, what’s worse: the suffering of a few million people, or the suffering of <b>ONE ZILLION SQUILLION</b> future people, who let’s face it are, for all ethical intents and purposes, really alive today.</p>
+
+<p>This thinking is the product of ordinary academic minds furiously scurrying to justify their existence. They need some new, counterintuitive take that they can write papers about, use to position themselves as the thought-leaders of a burgeoning social movement and get tenured positions at universities.</p>
+
+<p>It’s easy not to take this too seriously. Surely they are on the fringe.</p>
+
+<p>Then you realise that that the effective altruism movement may have control over several billions of dollars.</p>
+
+<p>Then you find out that a prominent effective altruist, by the name of Sam Bankman-Fried, was (allegedly!) running a cryptocurrency Ponzi scheme, which basically amounted to stealing people’s life savings and donating it to his preferred political party.</p>
+
+<p>Very effective. Much altruism.</p>
+
+<p>Really what this is is some kids with a god complex and a utopian ideology that, like so many before it, would almost certainly lead to misery on the grandest scale imaginable if ever fully realised. The only thing they need to make it a reality is a little more power.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[04 Jan 2023]]></summary></entry><entry><title type="html">Negative vaccine effectiveness</title><link href="/2022/11/20/Negative-vaccine-effectiveness.html" rel="alternate" type="text/html" title="Negative vaccine effectiveness" /><published>2022-11-20T00:00:00+00:00</published><updated>2022-11-20T00:00:00+00:00</updated><id>/2022/11/20/Negative%20vaccine%20effectiveness</id><content type="html" xml:base="/2022/11/20/Negative-vaccine-effectiveness.html"><![CDATA[<p>20 Nov 2022</p>
+
+<p>Myself and a team of collaborators including Stuart Bedston at the University of Swansea, Declan Bradley at Queen’s University Belfast and Mark Joy at the University of Oxford recently published a <a href="https://doi.org/10.1093/ije/dyac199" target="_blank"> paper</a> in the International Journal of Epidemiology studying waning of COVID-19 vaccine effectiveness. One of the major findings of the paper is that for first and second dose of AstraZeneca and first dose of Pfizer, effectiveness of the vaccine against COVID-19 hospitalisation or death reached zero by approximately day 60-80 after receiving the vaccine, and then went negative.</p>
+
+<p>That is quite a striking result. This post is going to dig into possible explanations of this phenomenon and its implications.</p>
+
+<h3> First of all, what did you actually do? </h3>
+
+<p>We carried out a type of study called a ‘target trial’. This attempts to find a ‘naturally occurring’ clinical trial, by matching people in a population who received a given treatment to similar people who didn’t receive the treatment. You can then compare the rate of adverse events in these retrospectively generated, artificial treatment and control groups.</p>
+
+<p>The data that we used to do this study are highly confidential, and stored securely on different servers in each nation of the UK. It is not permitted to have any statistically disclosive, individual-level information leave those servers. However, we introduced an interesting methodological novelty that allowed us to do a pooled study despite these restrictions. This means that the final result that we ended up with is identical to what we would have got if the data all started out in the same location. We were able to do this because of the target trial study design that we used. So, amazingly, it is possible to do a pooled analysis across multiple separate datasets that controls very carefully for individual level characteristics, without actually having to share any individual-level information!</p>
+
+<h3> What could be causing negative vaccine effectiveness? </h3>
+
+<p>One possibilty is that it is behavioural. So people who get vaccinated might be more likely to behave in ways that put them at greater risk of infection. For example, at various points during the pandemic, vaccinated people have been subject to fewer restrictions on movement than unvaccinated people. On the other hand, it could just as well go the other way - unvaccinated people may be less risk averse when it comes to the possibility of being infected, and thus may have behaved in ways that put them at greater danger of contracting COVID-19.</p>
+
+<p>It is also possible that naturally-acquired immunity is more robust than vaccine-induced immunity. A <a href="https://doi.org/10.1093/ije/dyac199" target="_blank"> study</a> from Israel found that vaccinated individuals had a 13-fold increased risk of infection compared to previously infected individuals.</p>
+
+<p>A final possibility is that this is all just a consequence of the fact that the protection offered by the vaccine is relatively short-lasting. For example, imagine that I had two cohorts of similar individuals, and vaccination offered 100% protection against infection for a short period of time. The first cohort receives a dose of vaccine on day 0, while the second cohort receives a dose of vaccine on day 30. One would intuitively expect that the first cohort would initially have fewer severe COVID-19 outcomes, but then at some point the second cohort would do better. Now instead of vaccinating the second cohort, let’s have them contract COVID-19. And instead of it happening on day 30, let’s sprinkle it around randomly in time, but initially occurring at a higher rate than in the vaccinated group. Finally, let’s assume that the vaccine is effective but not perfect for a short period of time, and naturally-acquired innoculation is as immunologically effective (or better) than the vaccine. One would still expect something qualitatively similar; the first cohort would have fewer events intially, then subsequently the second cohort would do better because those people who contract and recover from COVID-19 are naturally innoculated.</p>
+
+<p>By the way I should say that our study is not the only one to find negative vaccine effectiveness - our result is unlikely to be an anomaly.</p>
+
+<h3> What are the implications? </h3>
+
+<p>If negative vaccine effectiveness is largely explained by behavioural factors, then it might be possible to curtail it with a public information campaign aimed at making sure vaccinated individuals continue to observe precautions against COVID-19. On the other hand, I do think that one of the major incentives to get the vaccine is so that one can return to normal behaviour. I personally am not convinced that the explanation for negative vaccine effectiveness is behavioural, and even if it was I am skeptical about our ability to do anything about it.</p>
+
+<p>If negative vaccine effectiveness cannot be significantly curtailed, then it raises some very interesting policy questions. Vaccines still have utility, but what is their proper role in world where COVID-19 is endemic? For example, if vaccine doses could be timed so that the period where negative vaccine effectiveness would kick in happens towards the end of a wave of infections, it may be be possible to provide significant long-term protection by offering a precisley-timed, recurring regimen of COVID-19 vaccines. However, I don’t really have much confidence in our ability to sufficiently accurately forecast future waves of infections in a way that would allow us to usefully implement such a scheme.</p>
+
+<p>The other main utility offered by COVID-19 vaccines is ‘flattening the curve’. That is, spreading the caseload over time so that our healthcare services are not overwhelmed and can offer better treatment. This could be worthwhile, though again it would require forecasting ability that so far has proven elusive to us.</p>
+
+<p>The final question is whether all of this is worth it. Mass COVID-19 vaccinations are expensive, and it is not clear how beneficial it is. It seems quite possible that there are far more cost-effective ways to preserve human life. In particular, I think in our revolutionary fervour for vaccines, we may have neglected a cheaper and easier win in the form of anti-viral and monoclonal antibody treatments.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[20 Nov 2022]]></summary></entry><entry><title type="html">Modern monetary theory is the road to hell</title><link href="/2022/08/28/Modern-monetary-theory-is-the-road-to-hell.html" rel="alternate" type="text/html" title="Modern monetary theory is the road to hell" /><published>2022-08-28T00:00:00+01:00</published><updated>2022-08-28T00:00:00+01:00</updated><id>/2022/08/28/Modern%20monetary%20theory%20is%20the%20road%20to%20hell</id><content type="html" xml:base="/2022/08/28/Modern-monetary-theory-is-the-road-to-hell.html"><![CDATA[<p>28 Aug 2022</p>
+
+<h3> What is modern monetary theory (MMT)? </h3>
+
+<p>It’s an economic theory which, in a nutshell, says that full employment and funding of various other government programmes can be guaranteed by printing money, and the inflation that would normally ensue can be kept under control by taxation.</p>
+
+<h3> Woah. That sounds pretty wild. </h3>
+
+<p>Indeed.</p>
+
+<p>The first thing that should set off alarm bells is that MMT appears to advocate for governmental control over monetary policy. That’s a <i>really</i> bad idea. This is a lesson that we have historically learned the hard way. Governments simply cannot be trusted with the keys to the printing press. The temptation for them to print money in order to deliver on some promise, at least in the short term, is just too great. That’s how you get hyperinflation. There is a reason we insist on independence of central banks and government.</p>
+
+<p>Second is that, of course if you’re willing to fire up the printing press you can achieve full employment. You can pay people to twiddle their thumbs all day if you want. Much more difficult is ensuring that people are employed <i>usefully</i>. Forgive me if I don’t have a great deal of confidence in the ability of governments to do this. It would mean that they would have to step in and effectively deploy a significant and variable fraction of the country’s labour force across different sectors, depending on the prevailing economic conditions. Yeah, right.</p>
+
+<p>Finally, how exactly is it that taxation is supposed to control inflation? I mean, in principle it could be done if the government increased taxes and then threw the revenue thus collected into the sea. And I mean that literally, not figuratively, i.e. if they actually destroyed money, or at least removed it from circulation for an extended period of time. That would effectively make money more valuable which could reduce inflation. The problem is again, do we really think governments can be trusted to do this rather than spend that money? Especially a government that has already demonstrated itself to be quite fond of liberal use of the printing press to meet its obligations?</p>
+
+<p>The whole thing is a nonsense. And a very dangerous nonsense, at that.</p>
+
+<h3> What's really going on here? </h3>
+
+<p>When I see people advocating for ideologies that are so obviously lacking, instead of trying square their circle I ask what purpose does the ideology serve for them.</p>
+
+<p>As an example, think about Marxism. There are many ideas under that umbrella that fail to survive the gentlest scrutiny. Take the <a href="https://en.wikipedia.org/wiki/Labor_theory_of_value" target="_blank"> labour theory of value</a>, which underpins the whole edifice. It holds, roughly speaking, that the economic value of an object is determined by the amount of labour required to produce it. This has the immediate consequence that some extraordinarily useless objects have arbitarily high value. Like a <a href="https://www.youtube.com/watch?v=EZ73Q4DwrGM" target="_blank"> sarcasm detector</a> or <a href="https://youtu.be/dJNd_HtZH2g?t=30" target="_blank"> The Homer</a>. I bet it takes <i>a lot</i> of effort to make them. Ok, my examples may be taken from the Simpsons, but the Simpsons does have a stunning ability to reflect real life.</p>
+
+<p>Anyway, the point is that the entire foundation of Marxism is based on a nonsense. Why then did it become so popular? I would say that no small part of the explanation lies in the fact that it gave the working classes, who at the time genuinely were exploited and treated horrendously, intellectual justification for their revolutionary fervour. It was political discontent in search of an academic seal of approval.</p>
+
+<p>And so it is with MMT.</p>
+
+<p>What MMT advocates ultimately want is to radically increase government spending and have the rich pay for it via progressive taxation. That <i>may</i> be an admirable goal, but what if the process by which it is achieved is far more harmful than the end is good?</p>
+
+<p>The MMT crowd have figured out that increasing taxation is difficult and generally requires a long legislative process that tends to disfavour radical changes. On the other hand, if the government just got its hands on the printing press, it could spend as much as it wants.</p>
+
+<p>The only problem is that causes inflation, and inflation is effectively a tax levied on all those who hold the nation’s currency. As prices rise, the notes in your wallet have less and less purchasing power - you are losing real wealth. And it is a deeply regressive tax at that - poorer people who can’t put their money into assets will be hit harder than the rich.</p>
+
+<p>What the MMT advocates wish to do is to use that to put a gun to government’s head. They fire up the printing press and spend to their heart’s content, and that threatens to cause inflation with  truly terrible consequences. At this point they offer up their snake oil solution. There is only one way out: force rich people to bail us out.</p>
+
+<p>It’s a truly terrible ideology. And there are some indications that it’s becoming more mainstream. For example, here is Joe Biden <a href="https://twitter.com/joebiden/status/1525234935346483210?lang=en" target="_blank"> advocating for a core tenet of MMT</a>.</p>
+
+<p>This is very worrying.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[28 Aug 2022]]></summary></entry><entry><title type="html">The solution to everything</title><link href="/2022/07/22/The-solution-to-everything.html" rel="alternate" type="text/html" title="The solution to everything" /><published>2022-07-22T00:00:00+01:00</published><updated>2022-07-22T00:00:00+01:00</updated><id>/2022/07/22/The%20solution%20to%20everything</id><content type="html" xml:base="/2022/07/22/The-solution-to-everything.html"><![CDATA[<p>22 Jul 2022</p>
+
+<p>What if I told you there was a well-known, 100-year old theory of gravity that reproduces all empirical successes of Einstein’s general relativity, and may solve a who’s who of major oustanding problems in theoretical physics?</p>
+
+<p>Its called <a href="https://en.wikipedia.org/wiki/Einstein%E2%80%93Cartan_theory" target="_blank"> Einstein-Cartan theory</a>, or sometimes Einstein-Cartan-Sciama-Kibble (ECSK) theory. By the way, the eponymous Kibble is my “physics grandfather” - my PhD supervisor’s PhD supervisor.</p>
+
+<p>ECSK theory is a minor generalisation of Einstein’s general relativity that does not require the <a href="https://en.wikipedia.org/wiki/Torsion_tensor" target="_blank"> torsion </a> to be zero. It turns out that the torsion tensor does not have any propagating degrees of freedom, with the consequence that the only place that ECSK theory and general relavitity differ is at extremely high matter densities.</p>
+
+<p>First, let’s do a quick tour of major outstanding problems that ECSK theory might solve.</p>
+
+<h3> Gravitational singularities </h3>
+
+<p>In a nutshell, Einstein’s general relativity posits that space and time are curved, and that their curvature is determined by the distribution of energy/matter within the spacetime. So, if you plonk a mass down somewhere, it causes space and time to bend in way that we experience as gravity.</p>
+
+<p>One of the problems with the theory is that if the mass/energy gets sufficiently dense, the curvature of spacetime becomes infinite. This is known as a gravitational singularity, and in general relativity every black hole comes with one. Many physicists consider it to be an unsatisfactory state of affairs that the theory predicts some physical quantities are infinite, although currently this does not conflict with any experimental evidence because the singularity is inevitably ‘hidden’ behind an <a href="https://en.wikipedia.org/wiki/Event_horizon" target="_blank"> event horizon</a>, which stops us from knowing much about what happens on the other side.</p>
+
+<p>Physicist Nikodem Poplawski has suggested that <a href="https://arxiv.org/abs/0910.1181" target="_blank">gravitational singularities may be avoided in ECSK theory</a>, due to torsion manifesting as a repulsive force that prevents fermions collapsing to infinite density. The big bang is then replaced by a big bounce, and our universe is the other side of a black hole in another universe.</p>
+
+<h3> The horizon problem </h3>
+
+<p>The universe appears to be relatively samey everywhere we look. In particular, the temperature of the <a href="https://en.wikipedia.org/wiki/Cosmic_microwave_background" target="_blank"> cosmic background radiation</a>, a remanant from the early universe, is extremely uniform. Turns out that’s a big problem.</p>
+
+<p>The issue is that when the cosmic background radiation was formed, the universe was about 300,000 years old, and it is possible to show that cosmic background radiation separated by an angle of incidence on Earth of any more than about 2 degrees cannot have been been in causal contact at that time. In other words, there is no reason to think that the radiation coming from any two such patches of the sky were in thermal equilibrium at the time they were produced, and they have not been in thermal contact since - so why is it the same temperature?</p>
+
+<p>To put it more simply, let’s say I have a glass of hot water and a glass of cold water. If they are not in thermal contact with each other, or their surroundings, they will remain at different temperatures. If I pour them both into a container, they rapidly come into thermal equilibrium at an intermediate temperature. Cosmic background radiation from two slightly separated patches of the sky are like separate glasses of water - there’s no reason why they should have been in thermal equilibrium when they were created, and have not been in thermal contact since. So why is it that in every direction we look, the temperature is the same?</p>
+
+<p>In the ECSK theory, the torsion generates <a href="https://en.wikipedia.org/wiki/Inflation_(cosmology)" target="_blank"> cosmic inflation</a>, which<a href="https://arxiv.org/abs/1410.3881" target="_blank"> causes the early universe to be homogeneous</a>, leading to uniformity in the temperature of the cosmic background radiation.</p>
+
+<h3> The black hole information paradox </h3>
+
+<p>In quantum mechanics/quantum field theory, it is taken as an axiom that time evolution is <a href="https://en.wikipedia.org/wiki/Unitarity_(physics)" target="_blank"> unitary</a>. What this means simply is that the value of the wavefunction at one time determines a unique value at all times. The main reason this is important is because it is a sufficient condition for ‘probability to be conserved’. That is, if the probability of finding the system in some state \( \ket{ \psi(0)} \) at time \(0\) is \(p\), and it evolves to \( \ket{ \psi(t)} \) at time \(t\) under the Hamiltonian, then the probability of \( \ket{ \psi(t)} \) is also \(p\).</p>
+
+<p>Note however, as Roger Penrose reminds us, that there are standard interpretations of quantum mechanics in which unitarity is routinely violated (by measurement), and this does not appear to pose any insurmountable difficulties.</p>
+
+<p>In the 1970s, Stephen Hawking found that combining quantum field theory and general relativity could result in a loss of unitarity. In particular, black holes emit <a href="https://en.wikipedia.org/wiki/Hawking_radiation" target="_blank"> Hawking radiation</a> which should eventually cause black holes to evaporate. The resulting thermal radiation would not contain any information about the initial state of the black hole. In other words, multiple different initial states could end in the same final state, and therefore a value for the wavefunction at a later time does not uniquely determine its value at all other times. Information has somehow been destroyed.</p>
+
+<p>Thus it appears that physicists have to give up at least one of their cherished principles. Either time evolution in the Schrodinger equation is not unitary, or general relativity is wrong, or some other aspect of quantum field theory is wrong.</p>
+
+<p>It has been suggested the ECSK theory could resolve the black hole information paradox by avoiding the gravitational singularity in black holes. Then every black hole is actually a one-way membrane leading to a new universe that retains all the information from the initial state.</p>
+
+<h3> Matter-antimatter asymmetry </h3>
+
+<p>In the laws of physics as they are best known today, there is nothing that favours the production of matter over antimatter. On the other hand, the <a href="https://en.wikipedia.org/wiki/Observable_universe" target="_blank"> observable universe</a> is heavily dominated by matter, which immediately raises the question “Why?”.</p>
+
+<p>ECSK theory coupled to fermions generates a term that is cubic in the spinors and thus not invariant under charge conjugation, giving a <a href="https://arxiv.org/abs/1101.4012" target="_blank"> possible explanation for matter-antimatter asymmetry</a>.</p>
+
+<h3> Ultraviolet divergences </h3>
+
+<p>When you naively try to calculate physically measurable quantities in interacting quantum field theories, you tend to get an infinite answer. That’s a problem.</p>
+
+<p>The basic issue is that fields are operator-valued distributions, for which multiplication is not well-defined outside of some trivial cases. If you plough ahead anyway pretending this problem doesn’t exist, aforementioned infinities rear their ugly head. Garbage in, garbage out, as they say.</p>
+
+<p>To deal with this, physicsts play a regularisation game that involves artificially adding terms to the theory to cancel out the infinities, in a process that Richard Feynman famously described as ‘dippy’. This is not mathematically kosher, but it does allow us to extract sensible predictions from the theory, so the technical concerns tend to get brushed under the carpet to a degree.</p>
+
+<p>The infinities that occur are broadly of two kinds: ultraviolet (high energy/short distance) and infrared (low energy/large distance). The infrared divergences are typically regarded as less troubling, and one reason is because they go away if you think the universe is finite because that introduces a maximum possible length scale. The ultravolet divergences tend to cause more consternation because there is less sympathy for the idea of a universal minimum length scale.</p>
+
+<p>It has been suggested by Nikodem Poplawski that Einstein-Cartan theory <a href="https://arxiv.org/abs/1712.09997" target="_blank"> resolves the ultraviolet divergences</a> because torsion causes momentum operators to be non-commutative.</p>
+
+<h3> Ok, if ECSK theory is so awesome, why isn't it more popular? </h3>
+
+<p>Great question, me.</p>
+
+<p>So I should first say that the solutions that ECSK theory proposes to the above problems are mostly only conjecture at the moment. We have suggestive evidence only.</p>
+
+<p>On the other hand, it is a relatively modest generalisation of Einstein’s general relativity that may solve just about every major problem going in physics today. Why isn’t it famous?</p>
+
+<p>One reason is that ECSK theory is more complicated than Einstein’s general relativity. Introducing torsion makes it significantly more difficult to do calculations and extract predictions from the theory. Because there is no currently feasible experiment whose result would distinguish between Einstein’s general relativity and ECSK theory, people have tended to go for the simpler theory.</p>
+
+<p>That said, the additional theoretical complications that ECSK theory brings does not, to me, seem to justify how little attention it receives. It introduces non-linearity in the Dirac equation, but since when did a little non-linearity scare us physicists? General relativity and Quantum Chromodynamics are both non-linear and we’re quite happy with those. On the other hand, there is an entire industry dedicated to the extremely speculative idea of string theory, which is mind-bogglingly complicated and it is not yet clear whether it solves anything despite decades of dedicated work by many very smart people. Surely ECSK theory could use a little love too?</p>
+
+<p>Ultimately I think the disparity has its explanation in historical coincidence and herding behaviour. Which I understand, but I also think we need to #GiveECSKTheoryAChance.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[22 Jul 2022]]></summary></entry><entry><title type="html">On one-use code</title><link href="/2022/06/05/On-one-use-code.html" rel="alternate" type="text/html" title="On one-use code" /><published>2022-06-05T00:00:00+01:00</published><updated>2022-06-05T00:00:00+01:00</updated><id>/2022/06/05/On%20one%20use%20code</id><content type="html" xml:base="/2022/06/05/On-one-use-code.html"><![CDATA[<p>05 Jun 2022</p>
+
+<p>Academics who code are, I think, somewhat known for their less than stellar creations. I have certainly written code that I would prefer didn’t see the light of day. A recent example that attracted a great deal of attention is <a href="https://en.wikipedia.org/wiki/Neil_Ferguson_(epidemiologist)" target="_blank"> Professor Neil Ferguson’s</a> <a href="https://en.wikipedia.org/wiki/CovidSim" target="_blank"> CovidSim</a>. As the name suggests, it is a simulator of COVID-19 transmission that works by creating artificial agents representing people and environments that they interact with, in much the same way as the SimCity series of games but without the funky graphics. It was the basis of a <a href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf" target="_blank"> paper</a> that is credited with fundamentally altering the course of the UK’s COVID-19 policy. The paper predicted that even under the optimal ‘mitigation’ strategy that was considered, the peak surge capacity of ICU beds in the UK would be exceeded 8-times over due to the pandemic. As of the date of writing, it has 3,910 citations.</p>
+
+<p>In May 2020, The code behind the simulation was released to GitHub, which is a ubiquitously-used online tool for software development. Before it was released to the public, it apparently consisted of a single 15,000 line file written in C. Having one file of source code that long is already a cardinal sin in coding, and there were many other failures to live up to standard software development practices.</p>
+
+<h3> Ok, but it worked, didn't it? </h3>
+
+<p>An independent research group was able to reproduce the published results of CovidSim by running it themselves. So, while CovidSim may have been less than desirable from a coding point of view, it did its job as intended. Does it really matter that it wasn’t that pretty?</p>
+
+<p>I have a lot of sympathy for the team that worked on this code. Academic coding often doesn’t live up to industry software development standards, for a multitude of reasons. Code that is used to carry out analysis for research is typically ‘one-use’, or close to it. It is not, for example, google.com, which is used by god knows how many millions of people every day and has a large team of people continuously maintaining it. Code written for research is typically intended to be used by a small number of people who authored it, to obtain a specific set of outputs just once.</p>
+
+<p>In addition to that, the PhD students, postdocs and other research staff who typically write the code for such projects are usually themselves not trained in industry standard software development pratices. Many of them will come from disciplines that aren’t primarily coding-centred, and will have to pick it up along the way with little or no oversight. That’s a tough position to be in.</p>
+
+<p>Third, academia is often a race to publish results, that can end up being a very much winner-take-all proposition. Release your paper a week too late and posterity will not look kindly upon you. These are not circumstances that are conducive to producing nice code.</p>
+
+<p>Lastly, an adage comes to mind that goes something like this: “Feel free to break the rules once you know why they exist”. It captures the idea that once you are at a sufficiently high level in a given skill, a lot of what you do consists of knowing when exactly the rules can be bent/broken. Great chess grandmasters, for example, often play with flagrant disregard for well-established principles of the game. They have been at it for long enough that they can often get a competitive edge by going beyond the rules, in a way that is informed by years of study and expertise. Likewise, there are circumstances where it is ok to write fairly ‘terrible’ code, that breaks all the rules - sometimes you just need a result quickly, and you can focus on cleaning it up/optimising later, or not at all. Why, for example, spend hours beautifying a piece of code when you have a deadline looming that depends crucially on the output of said code? Do your due diligence in making sure it is correct, and hit enter.</p>
+
+<p>That said, it is not exactly confidence-inspiring that this simulation that changed the course of a nation was lacking in robustness. One reason we like pretty code is that it tends to minimise the chances of an error. The stakes could not have been higher in this case - an error would have had massive consequences. Also, the fact that the code has been around in one form or another since 2005, and has been adapted repeatedly for modelling various epidemics, makes me a little less sympathetic. That is not exactly what one would call one-use code.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[05 Jun 2022]]></summary></entry><entry><title type="html">The F-twist</title><link href="/2022/05/07/The-F-twist.html" rel="alternate" type="text/html" title="The F-twist" /><published>2022-05-07T00:00:00+01:00</published><updated>2022-05-07T00:00:00+01:00</updated><id>/2022/05/07/The%20F-twist</id><content type="html" xml:base="/2022/05/07/The-F-twist.html"><![CDATA[<p>07 May 2022</p>
+
+<h3> What is the F-twist? </h3>
+
+<p>Milton Friedman was a Nobel prize-winning economist whose ideas became deeply influential both inside and outside academia.
+He broadly advocated for free markets with minimal government intervention. For example, he opposed the military draft,
+ minimum wage laws and <a href="https://en.wikipedia.org/wiki/Occupational_licensing" target="_blank"> occupational licensing</a>,
+and supported <a href="https://en.wikipedia.org/wiki/School_voucher" target="_blank"> school vouchers</a>
+and legalisation of drugs and prostitution. He was an advisor to Ronald Reagan
+and Margaret Thatcher, and he is widely thought of as the intellectual father of the ideology of 
+<a href="https://en.wikipedia.org/wiki/Neoliberalism" target="_blank"> neoliberalism</a>.</p>
+
+<p>In his 1953 book Essays in positive economics, he introduced a principle that has later become known as the “F-twist”, famously 
+embodied in the following sentence:</p>
+
+<blockquote>
+Truly important and significant hypotheses will be found to have "assumptions" that are wildly inaccurate descriptive 
+representations of reality, and, in general, the more significant the theory, the more unrealistic the assumptions (in this sense).
+</blockquote>
+
+<p>The name “F-twist” was dubbed by Friedman’s fellow Nobel economist Paul Samuelson, who reportedly chose not to name it after Friedman
+directly out of “courtesy”.</p>
+
+<p>It’s a pretty outrageous idea, seemingly suggesting that we should limit our search for new theories to those whose axioms are
+“wildly inaccurate”. Nonetheless, it has been widely adopted in mainstream academic economics. That’s a fascinating state of affairs
+to me.</p>
+
+<h3> Doesn't it contradict pretty much everything we know about science and the scientific method? </h3>
+
+<p>In a word: yes.</p>
+
+<p>The core of the scientific method is</p>
+
+<ol>
+  <li>Generate a hypothesis</li>
+  <li>Figure out what observable consequences of the hypothesis are</li>
+  <li>Do experiments to see if those observable consequences are in accordance with reality</li>
+</ol>
+
+<p>There’s a few thorny issues to take care of there. But the underlying philosophy is that the proper aim of science is to understand/predict
+the behaviour of the universe and its various constitutents, and the ultimate arbiter of truth is reality itself - all ideas
+must be subject to rigorous empirical testing.</p>
+
+<p>As an example, consider Einstein’s special theory of relativity. It starts with two axioms:</p>
+
+<ol>
+  <li>The laws of physics are the same in all inertial frames of reference</li>
+  <li>The speed of light in a vacuum is that same for all observers</li>
+</ol>
+
+<p>Starting from just this, one can figure out (if you’re a genius) that measurements of length and time are “subjective” - two 
+observers with clocks and rulers can disagree on the length of an object, or the number of seconds that elapses between
+two events, depending on their state of motion. In particular, an observer travelling at high speed will experience time
+passing more slowly, and lengths as shorter, than a stationary observer.</p>
+
+<p>One of the great strengths of this theory is that it made clear, novel predictions, and the axioms can be directly subjected 
+to experimental test. As it happened, it passed with flying colours.</p>
+
+<p>Of note here is that the axioms of a theory are trivially also predictions of that theory, that should be tested against reality. 
+There is nothing special about the axioms as opposed to observable consequences that are derived from those axioms; they all 
+must be scrutinised to determine if they are in concordance with reality.</p>
+
+<p>The extraordinary thing about the F-twist is that it completely upends this bedrock of science. It arbitrarily asks us to give the axioms of 
+a theory an easy ride. In fact, further; it asks us to look for axioms that are wildly inconsistent with observed reality, for
+this is surely where all the most fruitful and significant ideas lie. If taken seriously, it would revolutionise the 
+way we do science. It’s not often in history that paradigm shifts like that occur.</p>
+
+<p>Of course, it needn’t be a revolution that’s actually any good. Imagine physicists and chemists and biologists rejecting new
+ideas out of hand because they are simply in excessively good agreement with reality. Everyone knows those theories are a dead-end!</p>
+
+<p>I have to call out the F-twist for what it is: nonsense.</p>
+
+<h3> Oh yeah, if it'so obviously wrong, then why has it been bought wholesale by academic economists? </h3>
+
+<p>Oh that’s easy. It’s because they need to rationalise what they spend their professsional lives doing.</p>
+
+<p>Economists in general are trying to answer extraordinarily complex questions. Questions so difficult that they may be
+permanently beyond the ability of humans to answer. The people who end up devoting their professional lives to this pursuit
+are inevitably going to be the ones who can convince themselves, by hook or by crook, that what they are doing is useful and important.
+ The people who don’t do that drop out of the profession relatively quickly.</p>
+
+<p>What we are left with is a lot of theorising that is ultimately fairly useless. The metric of success is decoupled from 
+the normal scientific standards of standing up to empirical scrutiny, and instead focuses on how much other equally 
+useless research it inspires/influences. Friedman was quite expicit about this in his essays in positive economics; 
+theories are to be judged according to fruitfulness in the precision and scope of their predictions and <i>ability to generate 
+additional research lines</i>. Theoretical economics becomes a hierarchy that is predicated more upon ability to convince
+one’s colleagues how pleasing one’s ideas are, than ability to understand and predict economic systems.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[07 May 2022]]></summary></entry><entry><title type="html">Model complexity</title><link href="/2022/04/21/Model-complexity.html" rel="alternate" type="text/html" title="Model complexity" /><published>2022-04-21T00:00:00+01:00</published><updated>2022-04-21T00:00:00+01:00</updated><id>/2022/04/21/Model%20complexity</id><content type="html" xml:base="/2022/04/21/Model-complexity.html"><![CDATA[<p>21 Apr 2022</p>
+
+<p>There are models for just about anything you can think of. Fundamental physics, economic markets, epidemics, brain function, climate, click-through rates, animal behavior, election outcomes, to name a few. There’s a universe of possibilities for ways to model any given phenomenon, and only a few small hidden oases in an otherwise barren desert. What’s a model-builder to do?</p>
+
+<h3> How complex should my model be? </h3>
+
+<p>So, a model should certainly not be as “complex” as the pheonomenon that it attempts to describe is, at least at face value. The whole point of a model is to take something that is too complex for our brains to process by brute force, and find some underlying structure that makes it easier for us to understand. ‘The map is not the territory’, as they say.</p>
+
+<p>As an example, <a href="https://en.wikipedia.org/wiki/Standard_Model" target="_blank"> The Standard Model</a> of particle physics contains precisely 19 free parameters that need to be determined by experiment. In exchange for that, we get a description of all known matter, that is accurate all the way down to the subatomic scale. Quite extraordinary.</p>
+
+<p>That still leaves plenty of rope with which to hang oneself though. In particular, I think the academy has a tendency to needlessly over-complicate. For one thing, more free parameters allows more impressive results to be obtained - at least when limiting to the data that the model is trained with. This is known as <a href="https://en.wikipedia.org/wiki/Overfitting" target="_blank"> overfitting</a>, and it’s everywhere. It gives the model-builder more levers and buttons that they can use in order to manufacture the exact results they want. Cranking up model complexity also allows academics to go down an intellectual rabbit hole where they can write lots of papers, as is necessary to advance one’s career. And finally, it allows them to obfuscate their overfitting - the model gets so complex that people mostly can’t be bothered investing weeks/months of their lives in order to figure out the exact trickery that is afoot.</p>
+
+<h3> Model complexity should be proportional to experimental power </h3>
+
+<p>The better the experiments we can do, the more detailed the hypotheses they can distinguish between. So for example, good physics models can be quite complex because we can often do excellent experiments that allow us to declare a clear victor amongst the competitors. We can build big machines like the <a href="https://en.wikipedia.org/wiki/Large_Hadron_Collider" target="_blank"> Large Hadron Collider</a> and smash beams of particles together in precisely controlled ways for years, and see which theory best predicts what comes out the other end.</p>
+
+<p>By way of contrast, in e.g. economics we generally have poor experimental power. We can’t run repeated controlled experiments that involve tweaking the economies of large countries and see what the results are. This is why economic modelling should for the most part be quite humble in its aspirations. It should not, for example, have any illusions about its ability to provide adequate <a href="https://en.wikipedia.org/wiki/Microfoundations" target="_blank"> microfoundations</a> for macroeconomic models. It’s just not going to happen, at least anytime soon.</p>
+
+<h3> Parameters required:Parameters used </h3>
+
+<p>I have a somewhat loosely formulated idea for an initial sweep at sorting the wheat from the chaff.</p>
+
+<p>First, look at the quantities that the model purports to accurately predict. What is the smallest number of parameters that would be required to get a prediction at least as good? For example, if its a macroeconomic model whose only accurate prediction a straight line trend for GDP, this would require precisely two parameters: an intercept and a slope.</p>
+
+<p>Now look at the number of free parameters the model has. If it has at least two, then I suggest the model prima facie has no predictive value beyond a simple line of best fit. It hasn’t simplified anything, and the free parameters  give the model-builder enough space to actually get whatever straight line they wanted.</p>
+
+<p>This is definitely a vague idea at the moment, but maybe it has some legs.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[21 Apr 2022]]></summary></entry><entry><title type="html">God</title><link href="/2022/03/27/God.html" rel="alternate" type="text/html" title="God" /><published>2022-03-27T00:00:00+00:00</published><updated>2022-03-27T00:00:00+00:00</updated><id>/2022/03/27/God</id><content type="html" xml:base="/2022/03/27/God.html"><![CDATA[<p>27 Mar 2022</p>
 
 <p>I have decided to take a philosophical turn with this blog, because why the Dickens not. Philosphers love doing useless crap (just kidding, I heart you guys), so in that spirit I have converged upon the ultimate philosophical waste of time: Does god exist?</p>
 
@@ -18,17 +395,17 @@
 
 <h4> Formulation 2: The whatcha-ma-callit  in the thing-ma-bob </h4>
 
-<p>Admittedly, this one is a bit more abstract. But I think it is the concept of god that most believers have, whether they acknowledge it or not. Namely; god as a myserious, supernatural and completely intangible entity. There is no experiment that we could do, <em>not even in principle</em>, that would allow us to reasonably adjust our degree of belief in his existence one way or the other. God transcends all that pedestrian stuff.</p>
+<p>Admittedly, this one is a bit more abstract. But I think it is the concept of god that most believers have, whether they acknowledge it or not. Namely; god as a mysterious, supernatural and completely intangible entity. There is no experiment that we could do, <em>not even in principle</em>, that would allow us to reasonably adjust our degree of belief in his existence one way or the other. God transcends all that pedestrian stuff.</p>
 
 <p>At this point my reply is pretty simple: I consider this to be the definition of something that does not exist. Like, if someone tells me there’s a gnome on my shoulder, but this gnome does not interact with our universe in any intelligble way and has a presence that is theoretically undetectable, then I am pretty uninterested in talking about the gnome. That is as long as I’m on a fact-finding mission about the universe. This gnome contains no information about the universe, and so frankly can take a running jump. Just another <a href="https://en.wikipedia.org/wiki/Russell%27s_teapot" target="_blank">Russell’s teapot</a>.</p>
 
 <p>I think this is a reasonable definition of what it means for something to not exist, and I’m willing to engage in trial by combat with anyone who thinks otherwise.</p>
 
-<h3> Hang on, but isn't the idea of god intersting/useful </h3>
+<h3> Hang on, but isn't the idea of god interesting/useful? </h3>
 
 <p>For sure. And this is quite separate from the idea of whether god exists. Humans are quite capable of entertaining/believing in all manner of fantastical, self-inconsistent and just plain wrong things.</p>
 
-<p>As a storytelling device god is absolutely unparalleled. I think the most compelling stories that have ever been told have all in one way or another been about god. As an organising idea for human behaviour and by extension a force guiding the course of human history, you’ll struggle to find anything more significant - religious stories have had as deep an impact on humanity as you care to realise. For my money, I think that god and religion provide a sort of familial <a href="https://en.wikipedia.org/wiki/Superstructure" target="_blank">superstrucutre</a> to society - in Christianity it is the brotherhood of man under the paternal bond of god. I don’t think we stop having a deep yearning for a father figure as soon as we become adults ourselves. That’s our so-called god-shaped-hole, and it needs filled with something, gosh darnit. Indeed, I am semi-convinced that such superstrucutres are necessary/responsible for the emergence of humans from the wretched <a href="https://en.wikipedia.org/wiki/State_of_nature" target="_blank">state of nature</a>. And I have had my mind changed in a fairly major way in recent years on the merits of religion and the contributions that it has made to humanity. In short, I think it’s likely a net positive. But that’s a subject for another day.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[27 Mar 2022]]></summary></entry><entry><title type="html">The weakness of the continuum</title><link href="/2022/03/08/The-weakness-of-the-continuum.html" rel="alternate" type="text/html" title="The weakness of the continuum" /><published>2022-03-08T00:00:00+00:00</published><updated>2022-03-08T00:00:00+00:00</updated><id>/2022/03/08/The%20weakness%20of%20the%20continuum</id><content type="html" xml:base="/2022/03/08/The-weakness-of-the-continuum.html"><![CDATA[<p>08 Mar 2022</p>
+<p>As a storytelling device god is absolutely unparalleled. I think the most compelling stories that have ever been told have all in one way or another been about god. As an organising idea for human behaviour and by extension a force guiding the course of human history, you’ll struggle to find anything more significant - religious stories have had as deep an impact on humanity as you care to realise. For my money, I think that god and religion provide a sort of familial superstructure to society - in Christianity it is the brotherhood of man under the paternal bond of god. I don’t think we stop having a deep yearning for a father figure as soon as we become adults ourselves. That’s our so-called god-shaped-hole, and it needs filled with something, gosh darnit. Indeed, I am semi-convinced that such superstructures are necessary/responsible for the emergence of humans from the wretched <a href="https://en.wikipedia.org/wiki/State_of_nature" target="_blank">state of nature</a>. And I have had my mind changed in a fairly major way in recent years on the merits of religion and the contributions that it has made to humanity. In short, I think it’s likely a net positive. But that’s a subject for another day.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[27 Mar 2022]]></summary></entry><entry><title type="html">The weakness of the continuum</title><link href="/2022/03/08/The-weakness-of-the-continuum.html" rel="alternate" type="text/html" title="The weakness of the continuum" /><published>2022-03-08T00:00:00+00:00</published><updated>2022-03-08T00:00:00+00:00</updated><id>/2022/03/08/The%20weakness%20of%20the%20continuum</id><content type="html" xml:base="/2022/03/08/The-weakness-of-the-continuum.html"><![CDATA[<p>08 Mar 2022</p>
 
 <p>Ever since Newton/Leibniz invented the infinitesimal calculus in the latter half of the 1600s, it seems like the world has been enthralled by beauty and possibility of the continuum. This event marked the beginning of modern physics and mathematics, and there is virtually no topic in either of these fields that is not deeply interwoven with calculus.</p>
 
@@ -63,447 +440,4 @@ Sets that are of the same ‘size’ as the real numbers are sometimes said to h
 
 <h3> Conclusion </h3>
 
-<p>I’m sure there are other good examples we could talk about. My point is that I think people often want so much for the maths to be pretty that they get led astray from reality.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[08 Mar 2022]]></summary></entry><entry><title type="html">Vaccines and blood clots</title><link href="/2022/02/27/Vaccines-and-blood-clots.html" rel="alternate" type="text/html" title="Vaccines and blood clots" /><published>2022-02-27T00:00:00+00:00</published><updated>2022-02-27T00:00:00+00:00</updated><id>/2022/02/27/Vaccines%20and%20blood%20clots</id><content type="html" xml:base="/2022/02/27/Vaccines-and-blood-clots.html"><![CDATA[<p>27 Feb 2022</p>
-
-<p>On February 22nd, PLOS medicine published a <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003927" target="_blank">paper</a> on cerebral venous sinus thrombosis (CVST) following vaccination on which I was the lead author. CVST is a type of blood clot in the brain that can lead to stroke and death. In this paper, we carried out a pooled analyis of 11.6 million people in England, Scotland and Wales, comparing the rate of CVST events in individuals before and after receiving the vaccine. We found that in the 4 weeks following vaccination with Oxford-AstraZeneca, the risk of CVST events approximately doubled. We did not see any increase in risk of CVST events following Pfizer.</p>
-
-<p>This paper was released at the same time as a <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003926" target="_blank">second paper</a> headed by William Whiteley, also at the University of Edinburgh, that studied 46 million people in England and had strikingly similar findings. It is reassuring when independent research efforts come to similar conclusions.</p>
-
-<p>CVST is a very rare event, occurring at a rate of perhaps 3-4 per million people per year. Assuming this as a background rate, our findings would imply one additional CVST event for every 4 million doses of Oxford-AstraZeneca administered. This has to be weighed up against the benefits of vaccination. Due to concerns over safety, Oxford-AstraZeneca was suspended in those aged under 40, and was not routinely used for booster doses in the UK. The risk/benefit analysis for whom should be vaccinated, with which vaccine, and when, is extremely complicated and depends on background rates of infection, availability of vaccines, vaccine waning, characteristics of future variants and robustness of naturally-acquired immunity versus vaccine-induced immunity, among others.</p>
-
-<p>Our paper included a small methodological novelty that allowed us to pool data across several nations without individual-level data having to be shared between them. Each country stores data in a trusted resesarch environment (TRE), which is just a highly secure server that contains anonymised data. Sharing individual-level data is forbidden, but we worked around this by carrying out a Poisson regression in which only count data is required. We are aiming to use a similar method to carry out further pooled studies in future.</p>
-
-<p>PLOS medicine published an author interview with me, which can be found <a href="https://speakingofmedicine.plos.org/2022/02/22/plos-medicine-author-interview-steven-kerr-phd/" target="_blank">here</a>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[27 Feb 2022]]></summary></entry><entry><title type="html">Lockdowns and mortality</title><link href="/2022/02/09/Lockdowns-and-mortality.html" rel="alternate" type="text/html" title="Lockdowns and mortality" /><published>2022-02-09T00:00:00+00:00</published><updated>2022-02-09T00:00:00+00:00</updated><id>/2022/02/09/Lockdowns%20and%20mortality</id><content type="html" xml:base="/2022/02/09/Lockdowns-and-mortality.html"><![CDATA[<p>09 Feb 2022</p>
-
-<p>A <a href="https://sites.krieger.jhu.edu/iae/files/2022/01/A-Literature-Review-and-Meta-Analysis-of-the-Effects-of-Lockdowns-on-COVID-19-Mortality.pdf" target="_blank">paper</a> has recently come out claiming that lockdowns had minimal effects on COVID mortality, causing quite a stir. The headline figure is that in Europe and the USA, lockdowns reduced mortality by 0.2%. Fifty words in and the authors are already dropping bombs like this:</p>
-
-<p><em>“While this meta-analysis concludes that lockdowns have had little to no public health effects,
-they have imposed enormous economic and social costs where they have been adopted. In
-consequence, lockdown policies are ill-founded and should be rejected as a pandemic policy
-instrument.”</em></p>
-
-<p>You’ve gotta admire that moxie.</p>
-
-<p>Here’s my review of this paper.</p>
-
-<h3>  What did they do? </h3>
-
-<p>The authors have done a meta-analysis of studies seeking to establish the effect that non-pharmaceutical interventions (NPIs, referred to loosely as `lockdowns’ by the authors) have on COVID mortality.</p>
-
-<ul>
-  <li>
-    <p>Their initial search turned up 18,590 papers.</p>
-  </li>
-  <li>
-    <p>1,048 remained after screening based on the title of the paper.</p>
-  </li>
-  <li>
-    <p>117 remained after excluding studies that were not empirical, or did not study COVID mortality.</p>
-  </li>
-  <li>
-    <p>34 remained after filtering according to their eligibility criteria.</p>
-  </li>
-</ul>
-
-<h3>  What eligibility criteria? </h3>
-
-<p>Great question. Most of the substantive criticisms of this paper focus on whether their selection conditions were reasonable. The authors used the following criteria:</p>
-
-<ul>
-  <li>
-    <p><strong>Studies that used simulations to predict mortality in the counterfactual were excluded</strong> <br />
-Counterfactuals are scenarios that didn’t happen, that one typically uses as a basis for comparison. In this context, the counterfactual is what would have unfolded without lockdowns. The authors only admit studies that used real data on mortality from countries that implemented different policies, rather than simulated data. <br /><br />I find myself in agreement with this as an exclusion criterion, given how stunningly bad various predictions for the epidemic have been, and how much freedom simulations give researchers to get the answer that they want.</p>
-  </li>
-  <li>
-    <p><strong>Studies that used synthetic controls were excluded</strong> <br />
-Synthetic control methods work as follows. Ideally, what one would like to do is to take two identical populations, existing in identical circumstances, apply a lockdown to one (the ‘treatment’ group) and not the other (the control group), and then measure the difference in mortality. Any difference can then unambiguously be attributed to lockdown, since everything else is identical.<br /><br />However, that’s obviously not practically feasible. Synthetic control studies attempt to get around this by artifiically creating a control group. So, perhaps there exists a population that were not subjected to lockdown that might be used as a control group, except they are quite different to the treatment group. Synthetic control studies statistically re-weight this population so that they look more like the treatment group, and then examine the differences in mortality compared to the treatment group <br /><br />While there is definitely a lot of room for this technique to be abused, I think the authors were perhaps a little too trigger-happy using it as grounds for exclusion.</p>
-  </li>
-  <li>
-    <p><strong>Interrupted time-series studies were excluded</strong> <br />
-Interrupted time series studies are fairly straightforward, and in this context consist of fitting a curve to deaths both before and after the imposition of lockdown. One hopes that all other variables that might affect COVID mortality do not change much during the study period, so that causality can be assigned to the lockdown.<br /><br />I think the authors were on solid ground excluding studies of this type. There are typically just too many other variables that are changing in the study period to sensibly assign causation.</p>
-  </li>
-  <li>
-    <p><strong>Both published and working papers were included</strong> <br />
-This means that the paper did not have to be published in a peer-reviewed journal to make the final cut.<br /><br />I think this is fair enough. In my experience, peer-review rarely results in major changes to the results of a paper, and there are many high quality papers that are yet to be published.</p>
-  </li>
-  <li>
-    <p><strong>Papers that focus on comparing imposition of lockdowns at different times excluded</strong> <br />
-The main rationale behind this is that the authors were seeking to compare the lockdowns that were actually imposed with a counterfactual in which the lockdowns were not imposed, not a counterfactual in which they were imposed at a different time.<br /><br />You might say, however, that it is still worth doing the latter comparison because maybe it will tell us whether lockdowns are worthwhile if we were just able to get the timing right. However, I have pretty much zero confidence in our ability to precisely time the imposition of lockdowns, and I think I the worldwide track record in the last two years backs me up on that.</p>
-  </li>
-</ul>
-
-<h3>  Quality measures </h3>
-<p>Ok, so that’s how the authors narrowed it down to their chosen 34. That’s not the end of the story though. They also rated each of these studies according to the following four measures of quality:</p>
-
-<ul>
-  <li>
-    <p><strong>Published versus working papers</strong> <br />
-You didn’t think they were going to ignore peer-review completely, did you? <br /><br />I do think it is reasonable to put more trust in papers that have been peer-reviewed. So no qualms with this one.</p>
-  </li>
-  <li>
-    <p><strong>Long verus short term</strong> <br />
-Papers that have data that extends beyond 31st May 2021 get an extra merit point from the authors. The rationale here is that if lockdowns ‘flattern the curve’ but do not prevent deaths, then studies that are cut short may conclude that lockdowns are effective against death when in fact all they may be doing is slightly prolonging death.<br /><br />I also think this is reasonable.</p>
-  </li>
-  <li>
-    <p><strong>Studies that have an effect on mortality sooner than 14 days after the intervention</strong> <br />
-The idea here is that lockdowns presumably affect mortality by curbing transmission. Since it typically takes at least a few weeks between infection and death for those who die from COVID, any study that sees an early effect on mortality is likely to be flawed.<br /><br />I’m on board with this.</p>
-  </li>
-  <li>
-    <p><strong>Social sciences versus other sciences</strong> <br />
-Ok this is where it gets a bit sketchy. The authors’ rationale is that social scientists have greater expertise in evaluating policy interventions compared to those in the natural sciences. What this effectively means is that studies carried out by economists get a merit point, and studies carried out by e.g. epidemiologists don’t.<br /><br />I think this is questionable. While I recognise there certainly are biases in different fields, this just doesnt sit well with me.</p>
-  </li>
-</ul>
-
-<h3>  The results </h3>
-<p>These measures of quality were used to do stratified analyses. So, they carried out their analysis on papers that scored 4 out of 4 on the above criteria, then a separate analysis for the papers that scored at least 3, etc.<br /><br />The authors carry out an inverse-variance weighted meta-analysis, which is just a fancy type of weighted average of the results in the selected papers. It means that studies that were able to more precisely estimate the effect of lockdown on mortality get given more weight. Their main results are as follows:</p>
-
-<ul>
-  <li>
-    <p><strong>Stringency-based studies</strong> <br />
-These are studies that used the <a href="https://ourworldindata.org/" target="_blank">our world in data</a> <a href="https://ourworldindata.org/metrics-explained-covid19-stringency-index" target="_blank">stringency index</a> to measure how strict lockdown measures were. In their meta-analysis of these studies, the authors find that lockdowns resulted in a 0.2% reduction in mortality in Europe and the United States. There were only seven papers in this analysis, and one of them receives almost all the weighting.</p>
-  </li>
-  <li>
-    <p><strong>Shelter-in-place-order studies</strong> <br />
-The authors found that shelter-in-place orders reduced mortality by 2.9% in Europe and the United States. Again most of the weight goes to the result from one paper.</p>
-  </li>
-  <li>
-    <p><strong>Specific NPIs</strong> <br />
-Amongst papers that scored a perfect 4 on the quality criteria, the authors found a 34% reduction in mortality for the use of face masks, and 2.9% reduction for business closures. Once again, most of weight appears to come from single studies.</p>
-  </li>
-</ul>
-
-<h3>  The verdict </h3>
-
-<p>Once can find a selection of papers in the literature on lockdowns that support pretty much any inclusion one wishes to come to. Thus most criticism of this meta-analysis has rightly focused on whether the selection criteria employed by the authors are reasonable.</p>
-
-<p>I think they are mostly kosher. The one that I take greatest issue with is the exclusion of papers written by people from the natural sciences. It is a little difficult though, because I do think there is a prevailing orthodoxy amongst epidemiologists that errs strongly on the side of interventions that seek to prevent deaths whose proximate cause is COVID, while neglecting any other side effects those interventions may have, no matter how catastrophic. Economists, on the other hand, tend to orient themselves towards broader, utilitarian measures of societal welfare.</p>
-
-<p>At the intutitive level, I would not be surprised if lockdowns had minimal effect on COVID mortality. The mechanism through which they were meant to work was ‘flattening the curve’, thus preventing healthcare services from being overwhelmed. That didn’t happen, and looking at other countries that didn’t have as stringent lockdowns, it seems like we wouldn’t even have come particularly close.</p>
-
-<p>Another interesting point that the furore over this paper illustrates is the huge schism between economists and public health professionals. It’s quite amazing how two well-developed wings of the academy can be so deeply in disagreement over some rather fundamental items. It’s reminiscent of the chasm that exists between biologists and the humanities on ideas like the <a href="https://en.wikipedia.org/wiki/Tabula_rasa#Science" target="_blank">tabula rasa</a> theory of human nature.</p>
-
-<p>One thing is for sure; if the economists were in charge of the governmental response to the pandemic, things would have looked <em>a lot</em> different.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[09 Feb 2022]]></summary></entry><entry><title type="html">What is vaccine effectiveness?</title><link href="/2022/01/17/What-is-vaccine-effectiveness.html" rel="alternate" type="text/html" title="What is vaccine effectiveness?" /><published>2022-01-17T00:00:00+00:00</published><updated>2022-01-17T00:00:00+00:00</updated><id>/2022/01/17/What%20is%20vaccine%20effectiveness</id><content type="html" xml:base="/2022/01/17/What-is-vaccine-effectiveness.html"><![CDATA[<p>17 Jan 2022</p>
-
-<p>There have been interesting reports from Public Health Scotland that COVID infection rates amongst the unvaccinated have been consistently lower compared to those who have had one or two doses of vaccine since early December 2021, though higher compared to those with a booster dose. See a news story <a href="https://www.heraldscotland.com/news/19843315.covid-scotland-case-rates-lowest-unvaccinated-double-jabbed-elderly-drive-rise-hospital-admissions/" target="_blank">here</a>, based on the original report <a href="https://publichealthscotland.scot/media/11089/22-01-12-covid19-winter_publication_report.pdf" target="_blank">here</a>. I believe this has led many people to question vaccine effectiveness.</p>
-
-<h3>  What is vaccine effectiveness? </h3>
-
-<p>If you’re maths averse, you might want to scroll straight down to the “What does it mean?” section. It’s not that bad though, I promise.</p>
-
-<p>There are many quantities that get called “vaccine effectiveness” that are mathematically and conceptually distinct. This is a little bit unfortunate, because it makes it diffucult to compare them. Throughout this article, I will assume we are talking about vaccine effectiveness against infection, but we may also be interested in effectiveness against hospitalistion, death and other outcomes.</p>
-
-<h4>  Risk ratio </h4>
-
-<p>Risk ratios are perhaps the most intuitive way  of defining vaccine effectiveness. It really is just the probability of a vaccinated person being infected with COVID, divided by the probability of an unvaccinated person being infected with COVID. A risk ratio less than one indicates some vaccine effectiveness against infection. This motivates our first definition of vaccine effectiveness,</p>
-
-\[\mathrm{VE} = 1-  \mathrm{Risk \; ratio}.\]
-
-<h4>  Rate ratio </h4>
-
-<p>The rate at which vaccinated/unvaccinated people get infected can be estimated using <a href="https://en.wikipedia.org/wiki/Poisson_regression" target="_blank">Poisson regression</a>. Dividing the rate for vaccinated people by the rate for unvaccinated people gives the rate ratio, which leads to our second definition of vaccine effectiveness,</p>
-
-\[\mathrm{VE} = 1-  \mathrm{Rate \; ratio}.\]
-
-<p>Rate ratios and risk ratios should be approximately equivalent over the same time horizon.</p>
-
-<h4>  Hazard ratio </h4>
-
-<p>The hazard ratio is similar to the rate ratio, except that it takes into account the number of people who are susceptible to an event at any given time. So the rate ratio just compares the event rate in all the vaccinated and unvaccinated, whereas the hazard ratio compares the event rate amongst only those who are susceptible to an event in the vaccinated and unvaccinated. A key difference is that, for example, people who die during the observation period are removed from the calculation of hazard ratios, but not rate ratios. Hazard ratios can be estimated using <a href="https://en.wikipedia.org/wiki/Proportional_hazards_model" target="_blank">proportional hazards models</a>. This gives our third definition of vaccine effectiveness,</p>
-
-\[\mathrm{VE} = 1-  \mathrm{Hazard \; ratio}.\]
-
-<p>Hazard ratios and risk ratios should be aproximately equivalent if there aren’t many people who cease being susceptible to an event in the observation period.</p>
-
-<h4>  Odds ratio </h4>
-
-<p>The odds of an event is the probability of it occurring \( p \), divided by the probability of it not occurring \(1- p \),</p>
-
-\[\mathrm{Odds} = \frac{p}{1-p}.\]
-
-<p>An odds ratio is dividing the odds of one event, by the odds of a second event,</p>
-
-\[\mathrm{OR} = \frac{ \mathrm{Odds}_1 }{ \mathrm{Odds}_2 }.\]
-
-<p>So, we might divide the odds of being infected with COVID if you have recived the vaccine, by the odds of being infected with COVID if you haven’t received the vaccine. If this quantity is less than one, it indicates that those who received the vaccine are less likely to be infected than those who didn’t. Odds ratios can be calculated using <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank">logistic regression</a>. This gives our fourth definition of vaccine effectiveness,</p>
-
-\[\mathrm{VE} = 1- \mathrm{OR}.\]
-
-<p>Odds ratios are approximately equal to risk ratios for low probability events. This follows from the first order Taylor expansion of the odds,</p>
-
-\[\mathrm{Odds} = \frac{p}{1-p} \simeq p.\]
-
-<h3>  Why so many different measures of vaccine effectiveness? </h3>
-
-<p>At first glance, it might seem odd that we use so many different measures of vaccine effectivenss, especially given that under many circumstances they are approximately equal. Why not just one? The answer that there are a number of statistical models/techniques that can be used to try and estimate vaccine effectiveness, and they each have various merits depending on the assumptions one thinks are reasonable to make, and the data that one has available.</p>
-
-<h3>  What does it mean? </h3>
-
-<p>That’s a fine question. I believe that many people, when reading a headline of e.g. 90% effectiveness, will take that to mean something like “there is a 90% chance the vaccine will prevent me from getting COVID”. Which is of course, not at all what it means.</p>
-
-<p>A more sophisticated take would be “The vaccine will reduce my chances of catching COVID by a factor of 20”. This is better, but still not quite right. The main issue is that it lacks a time horizon. What period of time does this statement apply to?</p>
-
-<p>News reports on studies have vaccine effectiveness have tended to report peak effectiveness over a certain unit of time. For example, in our <a href="https://doi.org/10.1016/S0140-6736(21)00677-2 " target="_blank">study of vaccine effectiveness</a>, we calculated vaccine effectiveness by week, and the media widely reported the maximum value. This can cause confusion.</p>
-
-<h3>  An example </h3>
-
-<p>Let’s assume that the probability of an unvaccinated person being infected with COVID in a given week is 0.1 and constant. Let’s assume vaccine effectiveness stays at roughly the peak level that we found in our paper of 90%.  What is the probability of being infected with COVID relative to an unvaccinated person over, say, a 12 week period?</p>
-
-<p>This is like flipping a biased coin each week, and calculating the probability of flipping 12 “not infected” in a row. Doing this calculation (I’ll spare you the details), you get a reduction in risk of \( 84 \% \).</p>
-
-<p>Pretty good. However, we know that COVID vaccines wane in effectiveness relatively quickly. What happens if we take that into account?</p>
-
-<p>Let’s assume that vaccine effectiveness starts out at 90% and decreases by 5% each week (this is a decent approximation to what we actually see with COVID vaccines). Then you get a reduction in risk of \(49 \% \). Doing the same calculation over 16 weeks, you get a reduction in risk of \(33 \% \).</p>
-
-<p>This is very much a ‘back of the envelope’ calculation, and does not take account of the fact that background infection rates are dynamic and dependent upon levels of immunity amongst the population. Nonetheless I do think it hints at some interesting questions about what the proper aim of vaccination is in the midst of a pandemic.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[17 Jan 2022]]></summary></entry><entry><title type="html">The efficient market hypothesis</title><link href="/2022/01/06/The-efficient-market-hypothesis.html" rel="alternate" type="text/html" title="The efficient market hypothesis" /><published>2022-01-06T00:00:00+00:00</published><updated>2022-01-06T00:00:00+00:00</updated><id>/2022/01/06/The%20efficient%20market%20hypothesis</id><content type="html" xml:base="/2022/01/06/The-efficient-market-hypothesis.html"><![CDATA[<p>06 Jan 2022</p>
-
-<h3>  What is the efficient market hypothesis? </h3>
-
-<p>The efficient market hypothesis is, roughly speaking, the idea that asset prices ‘reflect all available information’. This means that the only way to consistently outperform the market is to have access to information that isn’t widely known, or to get lucky.</p>
-
-<p>In particular, it implies that even the fanciest of funds, managed by very smart people with fancy degrees from even fancier universities, will on average fare no better than a monkey throwing darts at a list of stocks.</p>
-
-<h3>  Is it true? </h3>
-
-<p>There’s definitely some interesting evidence in its favour. Burton Makiel’s 1973 book <em>A random walk down Wall street</em> gives a very nice, readable account of the theory and supporting evidence. It appears that a lot of professionally managed funds would have been about as well off as if they had gone for the dart-throwing-monkey strategy.</p>
-
-<p>On the other hand, there does seem to be some interesting counterpoints. Warren Buffet, for example, is a legendary investor who subscribes to <a href="https://en.wikipedia.org/wiki/Value_investing" target="_blank">value investing</a>, which probably should not consistently result in returns greater than the market average if the efficient market hypothesis is true. So, maybe he got lucky? Or maybe he was reliably producing information that was not widely known?</p>
-
-<h3>  Is it falsifiable? </h3>
-
-<p>That brings us to the next question. Isn’t it the case that any set of returns to any set of strategies can be viewed as consistent with the efficient market hypothesis, if we just say the unusually high returns were either due to luck, or we take a suitable definition of ‘all available information’?</p>
-
-<p>On the former point, in principle it should be possible to test the theory by figuring out the pattern of overwhelming success stories/unmitigated failures that is likely to be seen assuming some form of the efficient market hypothesis is true, and compare that to what actually happens. On the latter point, I do believe there are limits on how much one can bend the definition of ‘all available information’ before it starts to look like a nonsense.</p>
-
-<p>If we really wanted to, we could do a controlled experiment with the dart-throwing-monkies in one group, and the maths PhDs/professional fund managers in the other, give them access to only publicly available information, and observe over time so see how they get along. That might be very impractical, but it’s definitely within the realm of possibility.</p>
-
-<h3>  Is it tautologous? </h3>
-
-<p>It’s kind of amusing that there is a theory which a large contingent of people consider unfalsifiable, while simultaneously another large contingent of people consider it tautologous. Like, what’s it going to be guys? Is it \(1 + 1 = 2\), or is it the existence of god?</p>
-
-<p>Anyway, I get ahead of myself. There are people who consider the efficient market hypothesis to be tautologous because they believe it amounts to the statement that “on average, the returns that investors get is equal to the average of investor returns”.</p>
-
-<p>I definitely get what they’re saying. I just don’t think that’s all the efficient market hypothesis amounts to. It is not just a statement about the mean of returns; it is a statement about the whole distribution of returns. For example, if it really was possible to consistently beat the market using publicly availalable information, then you would expect certain individuals who have figured out how to do this to <em> consistently</em> outperform the market, in a way that is unlikely to be a fluke, instead of having their performance randomly drawn from the same hat as everyone else and fluctuating completely unpredictably. This is not a trivial statement.</p>
-
-<h3>  Is it hilarious? </h3>
-
-<p>Definitely. Some people have set up comedy investment strategies to illustrate the point. For example, <a href="https://www.bbc.co.uk/news/technology-58707641" target="_blank">Mr Goxx, the crypto trading hamster</a>, who beats human investors by using his hamster wheel as a wheel of fortune. Or the <a href="https://www.dailymail.co.uk/sciencetech/article-7922601/Cows-match-performance-human-stock-analysts-Norwegian-experiment.html" target="_blank">cows who chose investments by crapping on a grid of stocks</a>, and in doing so matched the performance of the professional stock analysts they were pitted against.</p>
-
-<h3>  My take </h3>
-
-<p>It is a striking fact that on average, the dart-throwing-monkies do about as well as professionally managed funds. I used to be fond of making the following analogy with boxing: Imagine if we randomly chose people off the street to fight the world heavyweight champion, and about half the time the champ lost. Amazingly, something like that seems to be going on in speculative markets.</p>
-
-<p>This seems to suggest that there isn’t really any skill in investing, but I don’t think that’s true. Clearly it is possible to discern information about an asset that can be used to reasonably update one’s beliefs about in a way that more accurately reflects reality. If a company is haemorrhaging cash and no one is interested in buying their product, it’s probably not wise to go long on it. Ok that’s an extreme example, but I definitely do think there are more subtle indicators that take some work/savvy to understand.</p>
-
-<p>Where the analogy fails is as follows: when I perform well at boxing, this does not make anyone else better at boxing. This is not true in the world of speculative investment. If the market participants use their information to buy underpriced assets and sell overpriced ones, they move the price closer to what it ‘should’ be, which in turn ensures that most of the time the dart-throwing-monkies aren’t going to be doing anything particularly egregious or particularly awesome compared to everyone else.</p>
-
-<p>In this sense, the dart-throwing-monkies are essentially free-riding on the genuine work of other people. It’s worth noting that we could get to the point where there are too many free-riders and too few people doing the actual work of acquiring real information. That’s something to bear in mind, especially as index funds and passive investing have had a large surge in popularity in recent years.</p>
-
-<p>On the other hand, I think there is a very hard limit on what it is possible to do. We can glean a little bit of information that can be used to predict prices better, but for the most part it’s just too complex for anyone really to get much of a handle on (except in the case where one has access to some very specific inside information).</p>
-
-<p>I used to find it hard to have much truck with the efficient market hypothesis. Can it really be the case that trillions of dollars of transactions and god knows how many millions of man hours are directed towards activities that are, approximately, a waste of time? When I was a young, bright-eyed lad I wouldn’t have been able to stomach that. A decade or two interlude with human nature has made me change my tune. I mean, imagine for a moment that you’re a high net worth individual, and you have to manage your wealth somehow. Are you going to choose the dart-throwing monkies, or are you going to choose the fancy investment firm that hires all the ivy league maths PhDs? And if you are a maths PhD getting a ridiculous pay check for tinkering with an algorithm all day, are you going to convince yourself that in fact you and your coworkers have the singular ability to beat the market despite all the evidence to the contrary, or are you going to see the world as it truly is?</p>
-
-<p>I more or less believe the efficient market hypothesis to be true. If you want to beat the market, you’re either going to need luck or insider information, and neither are easy to come by.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[06 Jan 2022]]></summary></entry><entry><title type="html">Counting COVID-19 deaths</title><link href="/2022/01/06/Counting-COVID-deaths.html" rel="alternate" type="text/html" title="Counting COVID-19 deaths" /><published>2022-01-06T00:00:00+00:00</published><updated>2022-01-06T00:00:00+00:00</updated><id>/2022/01/06/Counting%20COVID%20deaths</id><content type="html" xml:base="/2022/01/06/Counting-COVID-deaths.html"><![CDATA[<p>06 Jan 2022</p>
-
-<p>There has been a great deal of controversy over the way COVID-19 deaths are calculated. Initially in the UK, the count that was most widely reported consisted of all who died within 60 days of a positive PCR test, or who died more than 60 days after a positive test but had COVID-19 listed as a cause of death on their death certificate.</p>
-
-<p>The main objection to this is that, for example, someone could test positive for COVID-19, recover fully, then die in e.g. a car crash and still be counted as a COVID-19 death.</p>
-
-<h3> What are we trying to do when we count COVID-19 deaths anyway? </h3>
-
-<p>It’s important to be clear what we’re trying to achieve with the COVID-19 death count. I think most people agree that we should be aiming to count the number of deaths caused by COVID-19. But what does that mean exactly? In the Scottish data, the average number of comorbidities in people who died from COVID-19 is upwards of 3. How do we assign causation when there are multiple contributing factors?</p>
-
-<p>Ideally, what we would like to do is a controlled experiment. We would ‘run’ a parallel version of the world that is completely identical, except SARS-CoV-2 is non-existent. And when I say identical, I really mean it. Everyone believes just as much in the reality of SARS-CoV-2 as they do now, people are furloughed from work en masse, governments impose social distancing and lockdown measures etc. Everything the same, it’s just that there ain’t no such thing as SARS-CoV-2.</p>
-
-<p>The point is that we only changed one thing in our experiment. Therefore any difference in outcome can definitively be attributed to that one change.</p>
-
-<p>Of course this wouldn’t really be feasible (not to mention ethical), but at least now we know what we’re aiming for.</p>
-
-<h3> Hasn't someone spent a lot of time thinking about this problem before? </h3>
-
-<p>Yes. There is a large literature on, for example, how to define deaths due to influenza. The proximate cause of death in most people who die as a result of influenza is pneumonia. But they also often have several comorbidities. One might typically see a flu death defined as death after a hospital admission with flu recorded as the reason for admission. However, the question is far from being settled.</p>
-
-<h3> What should we do with COVID-19 then? </h3>
-
-<p>On August 12 2020, <a href="https://assets.publishing.service.gov.uk/government/uploads/system/uploads/attachment_data/file/916035/RA_Technical_Summary_-_PHE_Data_Series_COVID_19_Deaths_20200812.pdf" target="_blank">Public Health England changed their main definition of a COVID-19 death to be a death within 28 days of a PCR positive test.</a> This led to the primary COVID-19 death count dropping by about 13% overnight. Still, it remains possible for car crash victims to be counted as COVID-19 deaths, and there is the unfortunate fact that the rate of COVID-19 deaths increases as we do more testing, even if the rate of deaths actually caused by COVID-19 remains constant.</p>
-
-<p>This is also quite different from how a flu death is usually defined. Perhaps there’s a defensible rationale for that; COVID-19 and flu are different diseases, and there is a world of difference in how we have reacted to them. For example, it might be reasonable not to require a positive PCR test in the definition of a flu death because PCR testing is quite rare in a typical flu season, which would likely lead to a significant under-count. On the other hand, in the UK we have ramped up PCR testing for COVID extraordinarily rapidly, <a href="https://coronavirus.data.gov.uk/details/testing" target="_blank"> from 10s of thousands per day in April 2020, to well over half a million per day at the time of writing</a>. In my eyes, the more pertinent danger with our current definition of a COVID-19 death is over-counting. I think there is a reasonable case for further modifying the defintion of a COVID-19 death, to be death within 28 days of a postive PCR test <strong>and </strong> COVID-19 listed as the main cause of death on the death certificate, or something similar.</p>
-
-<p>I really wouldn’t want to be the PR person who deals with the reaction to that, though.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[06 Jan 2022]]></summary></entry><entry><title type="html">Do we already have the quantum theory of gravity?</title><link href="/2022/01/05/Quantum-gravity.html" rel="alternate" type="text/html" title="Do we already have the quantum theory of gravity?" /><published>2022-01-05T00:00:00+00:00</published><updated>2022-01-05T00:00:00+00:00</updated><id>/2022/01/05/Quantum%20gravity</id><content type="html" xml:base="/2022/01/05/Quantum-gravity.html"><![CDATA[<p>05 Jan 2022</p>
-
-<h3>  The holy grail of theoretical physics </h3>
-
-<p>For many decades now, physicists have been trying to ‘unify’ quantum mechanics and Einstein’s general relativity into a quantum theory of gravity. This has proven to be very difficult, and achieving such a unification is one of the major outstanding problems in theoretical physics. To understand why, let me first give you a whistlestop tour of some topics in physics.</p>
-
-<h3>  The principle of least action </h3>
-
-<p>Classically, modern physics theories tend to be defined in terms of the <a href="https://en.wikipedia.org/wiki/Stationary-action_principles" target="_blank"> principle of least action</a>. What this means is that the laws of nature are derived from the minimisation of a quantity we call the action. It turns out that a wide range of dynamical laws can be derived this way, including for example Newton’s laws.</p>
-
-<p>When various mathematicians/physicists worked all of this out in the 1700s, some were inclined to attach mystical significance to it. After all, if the workings of the entire universe are described by a minimisation principle, then there must be a <em>minimiser</em>, whom some identified as god.</p>
-
-<h3>  Symmetry </h3>
-
-<p>The action is in turn is an integral over spacetime of a quantity called the Lagrangian (or sometimes Lagrangian density),</p>
-
-\[S = \int \mathcal{L} \tag{1}\]
-
-<p>In principle, the Lagrangian can be just about anything we want, and there is a hell of a lot of choice to be had. So how do we pick a Lagrangian that desribes our universe?</p>
-
-<p>Well one thing that helps to narrow down the choice significantly is symmetry, which plays a very important role in modern physics. It turns out that once you know what symmetries the universe has, you are well on your way to having a theory that describes it.</p>
-
-<p>Symmetry is, roughly speaking, when you do something to something else, and the something else has some property that doesn’t change when you do this. As an example, think about coordinate systems. The behaviour of a physical system should not change depending on the system of coordinates we use to describe it. This is a symmetry that puts significant constraints on the space of theories. These sort of considerations were important in leading Einstein to develop special and general relativity, for example.</p>
-
-<h3> The length cutoff </h3>
-
-<p>Ok but we haven’t completely nailed down the Lagrangian yet. In fact, there are typically an infinite number of terms that could appears in the Lagrangian that are consistent with a given set of symmetries. How do we narrow it down further?</p>
-
-<p>If we reckon the Lagrangian is an analytic function of the fields (which I will just call \( \phi \) ), then we can approximate it as accurately as we want with a Taylor series,</p>
-
-\[\mathcal{L} = \alpha_0 + \alpha_1 f_1(\phi) + \alpha_2 f_2(\phi) + ...  \label{lagrangian} \tag{2}\]
-
-<p>The numbers \( \alpha_0, \; \alpha_1, … \) are constants that need to be determined by experiment, and \( f_n(\cdot) \) are some functions.</p>
-
-<p>We can also treat spacetime as if it is discrete. In fact, not only can we, but it seems like it <a href="https://en.wikipedia.org/wiki/Wightman_axioms#Existence_of_theories_which_satisfy_the_axioms" target="_blank">may be forced upon us in order for the theory to be mathematically well-defined</a>. Note that this is not to say that spacetime ‘really is’ discrete; rather treating it as if it is provides an approximation that is good enough for us to calculate whatever quantities we want.</p>
-
-<p>Discrete theories come with a length scale called a cutoff that defines the smallest length it is possible to sensibly ‘talk about’ within the theory. The point here is that we can arrange the above Taylor expansion so that the higher order terms are suppressed by powers of the cutoff. This means that at any desired degree of accuracy, we need only include a finite number of terms in the theory.</p>
-
-<h3>  Why don't quantum mechanics and general relativity play well together? </h3>
-
-<p>Now it seems like we’re all set. We believe the universe has symmetry under certain coordinate transformations, and for any desired degree of accuracy we can do a finite number of experiments to determine the parameters that fully specify the theory. So what’s the problem?</p>
-
-<p>Well, the way I have presented things here is quite contrary to the way things unfolded historically. In the 60s and 70s, there was a belief among many physicists that as the length cutoff goes to zero, it better be the case that only a finite number of terms have a non-zero coefficient in equation \(\ref{lagrangian}\). They were many good reasons to believe this at the time, and many still maintain the belief today. The main argument in favour is that if it weren’t true, then as the cutoff is taken to zero, and barring some ‘special’ circumstances, there would be an infinite number of parameters, each of which has to be determined by experiment. I don’t know about you, but I don’t really have time to do an infinite number of experiments.</p>
-
-<p>When this is the case, the theory is called ‘non-renormalisable’. It turns out that Einstein’s general relativity is non-renormalisable, and this the heart of the problem of ‘unifying’ quantum mechanics and general relativity into a quantum theory of gravity.</p>
-
-<h3>  What's wrong with a never-ending series of increasingly accurate approximations? </h3>
-
-<p>I am, however, not at all convinced that non-renormalisability is that big an issue. We already have a theory that in principle can be used to calculate any quantity we want, to any desired degree of accuracy we want. Am I missing something here?</p>
-
-<p>Fundamentally, I think the desire to have a theory that is determined by a finite set of parameters at all length scales is driven by what the physics community thinks an aesthetically-pleasing theory is. I don’t really think that’s the greatest guide to scientific truth. Physicists are quite fickle in their aesthetic tastes - there was a time when quantum mechanics was considered quite ugly, for example. For what it’s worth, I personally quite enjoy the idea that nature isn’t so simple that it can be described by a finite number of experimentally determinable quantities at all length scales. We have to work harder the more we want to know. There is no cosmic free lunch.</p>
-
-<h3>  Don't expect this point of view to catch on any time soon </h3>
-
-<p>The other problem with this view is that it would kind of leave a whole bunch of high energy theoretical physicists without much to do. If we already have the quantum theory of gravity, then they are out of a job. Thus they collectively have a very strong incentive to convince themselves that non-renormalisability is a big problem, and so of course that’s exactly what they do.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[05 Jan 2022]]></summary></entry><entry><title type="html">Imputation - the respectable face of p-hacking?</title><link href="/2022/01/04/Imputation.html" rel="alternate" type="text/html" title="Imputation - the respectable face of p-hacking?" /><published>2022-01-04T00:00:00+00:00</published><updated>2022-01-04T00:00:00+00:00</updated><id>/2022/01/04/Imputation</id><content type="html" xml:base="/2022/01/04/Imputation.html"><![CDATA[<p>04 Jan 2022</p>
-
-<h3>  What is imputation? </h3>
-
-<p>Imputation is ‘filling in’ missing values in a dataset. So, for example, say I have a dataset consisting of the name, age, sex and height of some individuals as follows:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"><u><strong>Name </strong></u></th>
-      <th style="text-align: center"><u><strong>Sex </strong></u></th>
-      <th style="text-align: center"><u><strong>Age </strong></u></th>
-      <th style="text-align: center"><u><strong>Height </strong></u></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Alice</td>
-      <td style="text-align: center">Female</td>
-      <td style="text-align: center">25</td>
-      <td style="text-align: center">165cm</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Bob</td>
-      <td style="text-align: center">Male</td>
-      <td style="text-align: center">_</td>
-      <td style="text-align: center">180cm</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Carol</td>
-      <td style="text-align: center">_</td>
-      <td style="text-align: center">55</td>
-      <td style="text-align: center">_</td>
-    </tr>
-  </tbody>
-</table>
-
-<p>Notice however that some of the entries are blanks - their values are not recorded. There are many reasons why this might be the case - maybe the person who collected the data forgot to fill it in, or some information was accidentally deleted, etc.</p>
-
-<p>Imputation consists of filling in the blank spaces, hopefully in a way that is sensible. The main reason to do this is that often when we train a model using data, we can only use rows in the data that are complete, i.e. no blank spaces. It can seem ‘wasteful’ to discard an entire row because it contains a missing value.</p>
-
-<p>Another important reason we may wish to impute is because the values that are missing could be statistically distinct from the values that are not missing. For example, imagine that for whatever reason, younger people are less likely to have their age recorded in the data than older people. Then the missing values are statistically distinct from the non-missing values, and if we do some statistical analysis using this data we risk introducing bias.</p>
-
-<p>This is all well and good as a motivation for imputation, but the waters can quickly get muddy.</p>
-
-<h3> How is imputation done? </h3>
-
-<p>There are a number of methods that are commonly used for imputation:</p>
-
-<ul>
-  <li>
-    <p><strong>Mean substitution</strong> <br />
-Replace missing values with the mean of the non-missing values in that column.</p>
-  </li>
-  <li>
-    <p><strong> Modal substition</strong> <br />
-Replace missing values with the mode (most commonly occurring) of the non-mising values in that column.</p>
-  </li>
-  <li>
-    <p><strong>Regression</strong> <br />
-Train a model that predicts the missing values from the non-missing values.</p>
-  </li>
-  <li>
-    <p><strong>Imputation by chained equations</strong> <br />
-This one is a little more complicated, and is something like applying a regression model iteratively. I won’t go into it in detail here, but <a href="https://stats.stackexchange.com/questions/421545/multiple-imputation-by-chained-equations-mice-explained" target="_blank"> this answer</a> on stack exchange gives a nice, simplified explanation of the procedure.</p>
-  </li>
-</ul>
-
-<h3> How much imputation is too much? </h3>
-
-<p>Let’s say that now instead of the above dataset, I have a larger dataset that has <em>a lot</em> of missing values. Let’s make it 1 million rows and 20 columns, and there is only one 
-non-missing value in each row. Would it be reasonable to impute all of the missing values?</p>
-
-<p>That idea understandably makes many people uneasy. Can we really be confident that our imputed values are sensible, especially since we started out with so little actual information? Surely this cannot always be ‘kosher’.</p>
-
-<p>Taking the rationale behind imputation to its conclusion, we might even impute an arbitrary number of rows for which we have no data at all - effectively magicking new data into existence! If the non-missing values are indeed statistically distinct from the missing values in a way that can be ‘accounted for’ by the non-missing values, then it might be argued that not only is this ‘OK’, it’s thoroughly commendable statistical practice.</p>
-
-<h3> Imputation by chained equations - an example </h3>
-<p>Imputation by chained equations has emerged as a sort of ‘best practice’ for imputation in many areas of academia. Here is the result of imputing age in this way on a dummy dataset that I created:</p>
-
-<p><img src="../../../images/age_imputation.jpg" width="600" height="500" class="center" /></p>
-
-<p>Original values are in blue, imputed values in red. This graph shows the distribution of age, so values where the graph is at a peak are more common, and values where the graph dips are less common.</p>
-
-<p>Your first reaction might be “Well there’s a pretty good match between observed values and imputed values. Seems sensible”. And that might be reasonable as a first reaction.</p>
-
-<p>But then if you work with imputation for a little while and start thinking about it a little more, maybe you start to have some doubts.</p>
-
-<h3> Reasons for pause </h3>
-
-<p>Graphs of the type above, showing the distribution of observed and imputed values, are often used as a post-imputation diagnostic tool. We do the imputation, and then use those plots to decide whether the imputation is ‘acceptable’. But how do we tell the difference between ‘acceptable’ and ‘unacceptable’ imputations?</p>
-
-<p>Well, things get a little vague here. My experience of the literature on imputation is that it is a bit cagey on this point. See, the problem is as follows: If the observed and imputed values are obviously statistically distinct, is that because the imputation is bad, or is it because the imputation is doing its job and correctly telling us that the missing values are indeed statistically distinct from the non-missing values?</p>
-
-<h3> How much do you trust the computer? </h3>
-
-<p>In practice, I don’t think statisticians place much trust in imputations that produce values that are clearly statistically distinct from non-missing values in the original dataset. They just don’t really think the computer is <em>that smart</em>, and I’m more or less in agreement. If they put their faith in their computer, they would also have the non-trivial problem of convincing a peer-reviewer why the odd looking imputation results are actually A-OK.</p>
-
-<p>If the imputed values and the observed values are in conflict, then so much the worse for the imputed values, it seems.</p>
-
-<h3> What is the real purpose that imputation serves? </h3>
-
-<p>The algorithm behind imputation by chained equations is sometimes described as containing a pinch of magic. It has a remarkable tendency to produce graphs like the one above, with excellent agreement between the maginal distributions of the observed and imputed values, thus conveniently avoiding the above issues. This is despite the fact that one of the main justifications for imputation is that it is supposed to be used when the non-missing values are statistically distinct from the missing values, and to fill in the missing values appropriately. I have to think that this is not an accident.</p>
-
-<p>Whenever I see humans behaving in ways that appear to contradict their stated principles, I am increasingly inclined to pay little attention to the rationalisations they offer, and instead look at what benefit they derive from the behaviour in question. In this case, the obvious useful purpose imputation by chained equations serves is allowing researchers to jack up their sample size, thus reducing their p-values, narrowing their confidence intervals and increasing their chances of getting a statistically significant, publishable result, without raising the hackles of the reviewers. Normally this sort of thing is called p-hacking.</p>
-
-<h3> What is p-hacking? </h3>
-
-<p>Researchers try to assess how confident they can be that their results are correct and not a ‘fluke’. The way this is typically done is by calculating a p-value, which is essentially the probability of seeing the result the researchers saw assuming their hypothesis is incorrect. We tend to take a low p-value as indicating a low probability that the hypothesis is incorrect. Low p-values are widely coveted by researchers the world over.</p>
-
-<p>p-hacking is a suite of dubious techniques that researchers can use to artifically lower their p-values. While there is a clear personal incentive for them to do this (advancing their career, getting tenured etc), it has the unfortunate effect of <a href="https://journals.plos.org/plosmedicine/article/file?type=printable&amp;id=10.1371/journal.pmed.0020124" target="_blank"> causing the scientific literature to be populated with findings that are false</a>. Then we have the embarrassment that is the <a href="https://en.wikipedia.org/wiki/Replication_crisis" target="_blank"> replication crisis</a> in medicine and the social sciences - a shamefully large fraction of results in the literature fail to be reproduced when someone else repeats the analysis.</p>
-
-<h3> The bottom line </h3>
-
-<p>If I simply took a real dataset and copy-pasted it to create an artifical dataset that was twice the size and with every entry duplicated, I would likely not get very far in publishing the results of any analysis. However, if I instead took a dataset where half the rows have missing values and do an imputation by chained equations, I doubt it would get much critical scrutiny, despite the fact that the end results are probably similar. Imputation by chained equations is complex enough that it is at least within the realm of possibility that it is doing something statistically sound, while not being <em>obviously</em> wrong. I find it hard to understand its primary purpose as anything except putting a respectable face on p-hacking.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[04 Jan 2022]]></summary></entry><entry><title type="html">Vaccine safety webinar with HDRUK</title><link href="/2021/12/13/Vaccine-safety-webinar-with-HDRUK.html" rel="alternate" type="text/html" title="Vaccine safety webinar with HDRUK" /><published>2021-12-13T00:00:00+00:00</published><updated>2021-12-13T00:00:00+00:00</updated><id>/2021/12/13/Vaccine%20safety%20webinar%20with%20HDRUK</id><content type="html" xml:base="/2021/12/13/Vaccine-safety-webinar-with-HDRUK.html"><![CDATA[<p>13 Dec 2021</p>
-
-<p>I was an invited speaker to the HDRUK COVID-19 vaccine safety research webinar that took place on 11th November, 2021. You can see a video of my talk below. In it, I briefly outline the main findings from studies of vaccine safety that I worked on using the <a href="https://www.ed.ac.uk/usher/eave-ii" target="_blank">EAVE II</a> platform, which consists of clinical and demographic information for the entire population of Scotland.</p>
-
-<p>Our main findings were that vaccination with Oxford-AstraZeneca was associated with an elevated risk of cerebral venous sinus thrombosis (a type of blood clot in the brain that can potentially be fatal), and idiopathic thrombocytopenic purpura (low platelet count in blood which can lead to bleeding - sometimes in the brain, which can be very serious).</p>
-
-<p>I also give a quick outline of the main costs and benefits of vaccination, and suggest that given it is likely that SARS-CoV-2 will become endemic, we may have to move away from mass-vaccination towards a strategy that is much smaller in scope and targeted at the elderly and the vulnerable.</p>
-
-<p><br /></p>
-
-<iframe width="560" height="315" src="https://www.youtube.com/embed/gyMNwFQrTOo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe>]]></content><author><name></name></author><summary type="html"><![CDATA[13 Dec 2021]]></summary></entry></feed>
+<p>I’m sure there are other good examples we could talk about. My point is that I think people often want so much for the maths to be pretty that they get led astray from reality.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[08 Mar 2022]]></summary></entry></feed>

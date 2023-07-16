@@ -7,7 +7,7 @@ title: Imputation - the respectable face of p-hacking?
 
 <h3>  What is imputation? </h3> 
 
-Imputation is 'filling in' missing values in a dataset. So, for example, say I have a dataset consisting of the name, age, sex and height of some individuals as follows:
+Imputation is 'filling in' missing values in a dataset. So, for example, say I have a dataset consisting of the name, sex, sex and height of some individuals as follows:
 
 
 | <u><strong>Name </strong></u> | <u><strong>Sex </strong></u> | <u><strong>Age </strong></u> | <u><strong>Height </strong></u> |
