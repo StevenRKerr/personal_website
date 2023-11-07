@@ -26,7 +26,7 @@ In principle, the Lagrangian can be just about anything we want, and there is a 
 
 Well one thing that helps to narrow down the choice significantly is symmetry, which plays a very important role in modern physics. It turns out that once you know what symmetries the universe has, you are well on your way to having a theory that describes it.
 
-Symmetry is, roughly speaking, when you do something to something else, and the something else has some property that doesn't change when you do this. As an example, think about coordinate systems. The behaviour of a physical system should not change depending on the system of coordinates we use to describe it. This is a symmetry that puts significant constraints on the space of theories. These sort of considerations were important in leading Einstein to develop special and general relativity, for example. 
+Symmetry is, roughly speaking, when you do something to something else, and the something else has some property that doesn't change when you do this (that was an excellent sentence). As an example, think about coordinate systems. The behaviour of a physical system should not change depending on the system of coordinates we use to describe it. This is a symmetry that puts significant constraints on the space of theories. These sort of considerations were important in leading Einstein to develop special and general relativity, for example. 
 
 
 <h3> The length cutoff </h3> 

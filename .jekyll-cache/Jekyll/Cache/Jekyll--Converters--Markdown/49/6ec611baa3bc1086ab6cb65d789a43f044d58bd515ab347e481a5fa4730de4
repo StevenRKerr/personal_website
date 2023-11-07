@@ -1,0 +1,34 @@
+I"<p>03 Oct 2023</p>
+
+<h3>  What is expected utility theory? </h3>
+
+<p>Expected utility theory was first influentially expounded upon by Swiss mathematician <a href="https://en.wikipedia.org/wiki/Daniel_Bernoulli" target="_blank"> Daniel Bernoulli</a> in the 1700s. It seeks to answer the question of how to weigh up alternatives that are uncertain. For example, say I gave you the option of \( £100 \), or a bet consisting of a \( 50-50 \) chance of receiving \( £250 \), how should you choose? While it may seem easy to answer a single question like this, it turns out that building a general framework for how to make such decisions is not so easy, and if you proceed naively you can come to some strange conclusions.</p>
+
+<p>Bernoulli’s basic idea is that you should assign a number to how good each possible state of the world is, multiply it by the probability that state of the world will actually happen, and sum it all up. The result is called the ‘expected utility’, and the theory instructs us to maximise it. In my example, let’s say the utility of a quanity of money is equal to the quantity of money itself. Then the expected utility of the certain \( £100 \) is</p>
+
+\[1 \times 100 = 100,\]
+
+<p>While the expected utility of the bet is</p>
+
+<p>\(0.5 \times 0 + 0.5 \times 250 = 125\).</p>
+
+<p>In this example, the bet comes out on top. However, there is no reason we need to assign utility to be equal to the quantity of money received. Maybe the benefit we derive from receiving \( £250 \) is less than twice the benefit we would get from receiving \( £100 \). In this case, expected utility theory would instruct us to go for the sure thing.</p>
+
+<h3>  The von-Neumann-Morgenstern utility theorem </h3>
+
+<p>How do we know that this way of evaluating uncertain prospects is sensible? Well, the theory got a major boost from a rather striking result proved by John von Neumann and Oskar Morgenstern in 1947. They showed that a decision-maker who behaves in accordance with four seemingly very reasonable axioms <i>must</i> be an expected utility maximiser. What are these four axioms?</p>
+
+<p>Let’s first define \( \succeq \) to mean `at least as good as’. We will call refer to an uncertain prospect as a <i>lottery</i>. We may also consider ‘compound lotteries’, which can involve some probability of receiving a lottery. For example, I might offer you a \(50-50\) chance of taking the bet. A compound lottery consisting of receiving lottery \( L \) with probability \( p \) will be denoted by \( pL \). The axioms are as follows:</p>
+
+<p><b>1. Completeness</b> For any two lotteries \( L \) and \( M \), we have either have \( L \succeq M \) or \( M \succeq L \)</p>
+
+<p>This is just saying that in any comparison between two lotteries, one is always at least as good as the other.</p>
+
+<p><b>2. Transitivty </b> For any three lotteries \( L \), \( M \) and \( N \), with \( L \succeq M \) and \( M \succeq N \), then \( L \succeq N \).</p>
+
+<p>This means that you can’t have rock-paper-scissor like preferences. It is often said that someone who has preferences like this could be used as a ‘money pump’, because they will presumably pay some non-zero amount of money to go around in a cycle that ends where they started. You can take them on that ride ad infinitum.</p>
+
+<p><b>3. Continuity </b> For any three lotteries \( L \succeq M \succeq N\) then there is some probability \( p \) such that \( pL + (1-p)N sim N \).</p>
+
+<p>Here, the symbol \( \sim \) means indifference - we prefer the two options equally. The continuity axioms says that we can always ‘trade in’ utility for odds. For example, I can always leave you just as well off sa you currently are by offering you a lottery between something better with probability \( p \), and something worse with probablity \( (1-p) \).</p>
+:ET

@@ -1,0 +1,34 @@
+I"�<p>29 Aug 2023</p>
+
+<h3>  What is linear regression? </h3>
+
+<p>It’s one of the first major topics you learn about when taking statistics class. In essence, it allows you to model the mean of a response variable \( y_i \)  as depending on some explanatory variables \( X_i \), where the subscript \( i = 1…n \) labels different observations. More concretely,</p>
+
+\[y = X \beta + \epsilon, \tag{1}\]
+
+<p>where \( y \) is an \( n \)-dimensional vector whose elements are \( y_i \), and \( X \) is an \( n \times k \) matrix whose rows are \( X_i \), and \( \beta \) is a \( k \)-dimensional vector of parameters to be estimated. If we assume that</p>
+
+\[\mathbb{E}[\epsilon \;|\; X] = 0, \tag{2}\]
+
+<p>then</p>
+
+\[\mathbb{E}[y \;|\; X] = X \beta, \tag{3}\]
+
+<p>Multiplying both sides by the <a href="https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse" target="_blank">Moore-Penrose pseudoinverse</a> of \( X \) gives</p>
+
+\[\beta = (X^T X)^{-1} X^T \; \mathbb{E}[y \;|\; X]. \tag{4}\]
+
+<table>
+  <tbody>
+    <tr>
+      <td>Finally, replacing \( \mathbb{E}[y</td>
+      <td>X] \) with the estimator \( X^T \; y \) gives the famous ordinary least squares formula</td>
+    </tr>
+  </tbody>
+</table>
+
+\[\beta = (X^T X)^{-1} X^T y. \tag{5}\]
+
+<p>If you wish to read more about this, including more mathematical detail than you probably want, you should check out my recent paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4469869" target="_blank">here</a>.</p>
+
+:ET

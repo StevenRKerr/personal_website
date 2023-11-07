@@ -22,7 +22,7 @@ $$ \mathrm{VE} = 1-  \mathrm{Risk \; ratio}.$$
 
 <h4>  Rate ratio </h4>
 
-The rate at which vaccinated/unvaccinated people get infected can be estimated using <a href="https://en.wikipedia.org/wiki/Poisson_regression" target="_blank">Poisson regression</a>. Dividing the rate for vaccinated people by the rate for unvaccinated people gives the rate ratio, which leads to our second definition of vaccine effectiveness,
+The rate at which vaccinated/unvaccinated people get infected can be modelled using <a href="https://en.wikipedia.org/wiki/Poisson_regression" target="_blank">Poisson regression</a>. Dividing the rate for vaccinated people by the rate for unvaccinated people gives the rate ratio, which leads to our second definition of vaccine effectiveness,
 
 $$ \mathrm{VE} = 1-  \mathrm{Rate \; ratio}.$$
 
@@ -31,12 +31,11 @@ Rate ratios and risk ratios should be approximately equivalent over the same tim
 
 <h4>  Hazard ratio </h4>
 
-The hazard ratio is similar to the rate ratio, except that it takes into account the number of people who are susceptible to an event at any given time. So the rate ratio just compares the event rate in all the vaccinated and unvaccinated, whereas the hazard ratio compares the event rate amongst only those who are susceptible to an event in the vaccinated and unvaccinated. A key difference is that, for example, people who die during the observation period are removed from the calculation of hazard ratios, but not rate ratios. Hazard ratios can be estimated using <a href="https://en.wikipedia.org/wiki/Proportional_hazards_model" target="_blank">proportional hazards models</a>. This gives our third definition of vaccine effectiveness,
+The hazard rate is the instantaneous value of the rate. So, for example, if a car spends one hour doing 50mph and one hour doing 100mph, its average speed would be \\( \frac{100 + 50}{2} = 75 \\), whereas its instantenous speed would initially be 50 and then 100. Hazard ratios can be estimated using <a href="https://en.wikipedia.org/wiki/Proportional_hazards_model" target="_blank">proportional hazards models</a>. This gives our third definition of vaccine effectiveness,
 
 $$ \mathrm{VE} = 1-  \mathrm{Hazard \; ratio}.$$
 
-Hazard ratios and risk ratios should be aproximately equivalent if there aren't many people who cease being susceptible to an event in the observation period.
-
+Hazard ratios and risk ratios should be aproximately equivalent if the hazard rate doesn't vary much over the study period.
 
 
 <h4>  Odds ratio </h4>
@@ -49,7 +48,7 @@ An odds ratio is dividing the odds of one event, by the odds of a second event,
 
 $$ \mathrm{OR} = \frac{ \mathrm{Odds}_1 }{ \mathrm{Odds}_2 }.$$
 
- So, we might divide the odds of being infected with COVID if you have recived the vaccine, by the odds of being infected with COVID if you haven't received the vaccine. If this quantity is less than one, it indicates that those who received the vaccine are less likely to be infected than those who didn't. Odds ratios can be calculated using <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank">logistic regression</a>. This gives our fourth definition of vaccine effectiveness,
+ So, we might divide the odds of being infected with COVID if you have recived the vaccine, by the odds of being infected with COVID if you haven't received the vaccine. If this quantity is less than one, it indicates that those who received the vaccine are less likely to be infected than those who didn't. Odds ratios can be modelled using <a href="https://en.wikipedia.org/wiki/Logistic_regression" target="_blank">logistic regression</a>. This gives our fourth definition of vaccine effectiveness,
 
  $$ \mathrm{VE} = 1- \mathrm{OR}.$$
 
@@ -60,11 +59,11 @@ $$ \mathrm{OR} = \frac{ \mathrm{Odds}_1 }{ \mathrm{Odds}_2 }.$$
 
 <h3>  Why so many different measures of vaccine effectiveness? </h3>
 
-At first glance, it might seem odd that we use so many different measures of vaccine effectivenss, especially given that under many circumstances they are approximately equal. Why not just one? The answer that there are a number of statistical models/techniques that can be used to try and estimate vaccine effectiveness, and they each have various merits depending on the assumptions one thinks are reasonable to make, and the data that one has available.  
+At first glance, it might seem odd that we use so many different measures of vaccine effectivenss, especially given that under many circumstances they are approximately equal. Why not just one? The answer is that there are a number of statistical models/techniques that can be used to try and estimate vaccine effectiveness, and they each have various merits depending on the assumptions one thinks are reasonable to make, and the data that one has available.  
 
 <h3>  What does it mean? </h3>
 
-That's a fine question. I believe that many people, when reading a headline of e.g. 90% effectiveness, will take that to mean something like "there is a 90% chance the vaccine will prevent me from getting COVID". Which is of course, not at all what it means.
+That's a fine question. I believe that many people, when reading a headline of e.g. \\( 90 \% \\) effectiveness, will take that to mean something like "there is a \\( 90 \% \\) chance the vaccine will prevent me from getting COVID". Which is of course, not at all what it means.
 
 A more sophisticated take would be "The vaccine will reduce my chances of catching COVID by a factor of 20". This is better, but still not quite right. The main issue is that it lacks a time horizon. What period of time does this statement apply to? 
 
@@ -72,13 +71,13 @@ News reports on studies have vaccine effectiveness have tended to report peak ef
 
 <h3>  An example </h3>
 
-Let's assume that the probability of an unvaccinated person being infected with COVID in a given week is 0.1 and constant. Let's assume vaccine effectiveness stays at roughly the peak level that we found in our paper of 90%.  What is the probability of being infected with COVID relative to an unvaccinated person over, say, a 12 week period?
+Let's assume that the probability of an unvaccinated person being infected with COVID in a given week is \\( 10 \% \\) and constant. Let's assume vaccine effectiveness stays at roughly the peak level that we found in our paper of \\( 90 \% \\).  What is the probability of being infected with COVID relative to an unvaccinated person over, say, a 12 week period?
 
 This is like flipping a biased coin each week, and calculating the probability of flipping 12 "not infected" in a row. Doing this calculation (I'll spare you the details), you get a reduction in risk of \\( 84 \% \\).
 
 Pretty good. However, we know that COVID vaccines wane in effectiveness relatively quickly. What happens if we take that into account?
 
-Let's assume that vaccine effectiveness starts out at 90% and decreases by 5% each week (this is a decent approximation to what we actually see with COVID vaccines). Then you get a reduction in risk of \\(49 \% \\). Doing the same calculation over 16 weeks, you get a reduction in risk of \\(33 \% \\). 
+Let's assume that vaccine effectiveness starts out at \\( 90 \% \\) and decreases by \\( 5 \% \\) each week (this is a decent approximation to what we actually see with COVID vaccines). Then you get a reduction in risk of \\(49 \% \\). Doing the same calculation over 16 weeks, you get a reduction in risk of \\(33 \% \\). 
 
  This is very much a 'back of the envelope' calculation, and does not take account of the fact that background infection rates are dynamic and dependent upon levels of immunity amongst the population. Nonetheless I do think it hints at some interesting questions about what the proper aim of vaccination is in the midst of a pandemic. 
 

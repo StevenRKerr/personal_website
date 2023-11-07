@@ -2,13 +2,16 @@
 @import url("fontawesome-all.min.css");
 
 /*
-Search for "Initial header background colour"
+Search for 
+"Initial header background colour"
 "Footer background colour"
 "Main colour"
 "Body colour"
 "Banner colour"
 "Text colour"
 "Heading colour"
+"Fonts"
+"Header boldness"
 to change them
 */
 
@@ -89,12 +92,13 @@ input, select, textarea {
 
 	body {
 		/* Body colour */
-		background: #cecece/*#f0f4f4*/;
+		background: #c2becf /*#cecece/*#f0f4f4*/;
 		/* Text colour */
 		color: rgb(14, 14, 14) ;
 		font-size: 15pt;
 		line-height: 1.85em;
-		font-family: 'Source Sans Pro', sans-serif;
+		# Fonts
+		font-family: 'Times new roman', sans-serif;
 		font-weight: 300;
 	}
 
@@ -117,7 +121,8 @@ input, select, textarea {
 	}
 
 	h1, h2, h3, h4, h5, h6 {
-		font-weight: 400;
+		/* Header boldness */
+		font-weight: 600;
 		/* Heading colour */
 		color: rgb(0, 0, 0);
 		line-height: 1.25em;
@@ -2169,7 +2174,7 @@ input, select, textarea {
 
 	.wrapper {
 		/* Main colour */
-		background: #cecece/*#fff*/;
+		background: #c2becf /*#cecece/*#fff*/;
 		margin: 0 0 2em 0;
 		padding: 6em 0 6em 0;
 	}
@@ -2416,7 +2421,7 @@ input, select, textarea {
 
 	#banner {
 		/* Banner colour */
-		background: #cecece/*#fff*/;
+		background: #c2becf /*#cecece/*#fff*/;
 		text-align: center;
 		padding: 4.5em 0 4.5em 0;
 		margin-bottom: 0;
