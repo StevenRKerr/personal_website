@@ -4,7 +4,8 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "deploy": "grunt deploy"
   },
   "repository": {
     "type": "git",
@@ -17,8 +18,9 @@
   },
   "homepage": "https://github.com/StevenRKerr/personal_website#readme",
   "devDependencies": {
-    "grunt": "^1.4.1",
+    "grunt": "^1.6.1",
     "grunt-aws": "^0.7.1",
+    "grunt-aws-s3": "^2.0.2",
     "grunt-cli": "^1.4.3",
     "grunt-contrib-connect": "^3.0.0"
   }
