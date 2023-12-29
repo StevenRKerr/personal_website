@@ -1,4 +1,40 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-12-15T16:18:38+00:00</updated><id>/feed.xml</id><entry><title type="html">Eric Weinstein is the Tenacious D of high energy physics</title><link href="/2023/10/29/Eric-Weinstein-is-the-Tenacious-D-of-high-energy-physics.html" rel="alternate" type="text/html" title="Eric Weinstein is the Tenacious D of high energy physics" /><published>2023-10-29T00:00:00+01:00</published><updated>2023-10-29T00:00:00+01:00</updated><id>/2023/10/29/Eric%20Weinstein%20is%20the%20Tenacious%20D%20of%20high%20energy%20physics</id><content type="html" xml:base="/2023/10/29/Eric-Weinstein-is-the-Tenacious-D-of-high-energy-physics.html"><![CDATA[<p>29 Oct 2023</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2023-12-28T12:31:50+00:00</updated><id>/feed.xml</id><entry><title type="html">Why do so many statisticians think variables or residuals must be normally distributed in linear regression?</title><link href="/2023/12/28/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html" rel="alternate" type="text/html" title="Why do so many statisticians think variables or residuals must be normally distributed in linear regression?" /><published>2023-12-28T00:00:00+00:00</published><updated>2023-12-28T00:00:00+00:00</updated><id>/2023/12/28/Why%20do%20so%20many%20statisticians%20think%20a%20normality%20assumption%20is%20required%20in%20linear%20regression</id><content type="html" xml:base="/2023/12/28/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html"><![CDATA[<p>28 Dec 2023</p>
+
+<p>In my time working in health science, I have been troubled by the number of times I have encountered statisticians and practitioners of statistics who are absolutely sure that the variables or the residuals in a linear regression should be at least approximately normally distributed, and the model is invalid otherwise.</p>
+
+<p>This idea is completely false. In this post I want to explore why so many working professionals nonetheless subscribe to it.</p>
+
+<h3>  Linear regression </h3>
+
+<p>When statisticians say a model is ‘valid’, they usually mean that there is a set of assumptions that are plausibly approximately satisfied, and that are sufficient to guarantee that our parameter estimates converge to their true population values, and that the distribution of the parameter estimates is approximately known (usually normal), as the sample size becomes large. The latter condition allows us to estimate standard errors on effects. There are several slightly different notions of <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables" target="_blank"> convergence for random variables</a>, but the most commonly used is convergence in probability. An estimator \( \hat{\beta} \) that converges in probability to true population value \( \beta \) is called <a href="https://en.wikipedia.org/wiki/Consistent_estimatorl" target="_blank"> consistent</a>.</p>
+
+<p>In the following, I will use the this notation: \( y \) is an \( n \)-dimensional vector whose elements are \( y_i \), \( X \) is an \( n \times k \) matrix whose rows are \( x_i \), \( \beta \) is a \( k\)-dimensional vector of parameters to be estimated, and \( \epsilon \) is an \( n \)-dimensional vector of residuals whose elements are \( \epsilon_i \).</p>
+
+<p>In the linear regression setting, there are standard sets of assumptions that are sufficient to guarantee consistency. Note the plural - there are several. The first version you often learn while studying statistics is the following:</p>
+
+<p><b>1. Linearity.</b> The data-generating process is of the form \( y = X \beta + \epsilon \).</p>
+
+<p><b>2. Strict exogeneity.</b> \( \mathbb{E}[\epsilon \; | \; X] = 0 \).</p>
+
+<p><b>3. No multicollinearity.</b> The rank of \( X \) is \( k \) with probability \( 1 \).</p>
+
+<p><b>4. Conditional normality of residuals.</b> \(  \epsilon \sim N(0, \sigma^2 I) \), where \( I \) is the \( n \times n \) identity matrix.</p>
+
+<p>Note that an explicity normality assumption appears in <b>4</b>.</p>
+
+<p>However, several of these conditions can be weakened. For example, the following set of conditions is also sufficient:</p>
+
+<p><b>1. Linearity.</b> The data-generating process is of the form \( y = X \beta + \epsilon \).</p>
+
+<p><b>2’. Ergodic stationarity.</b> The <a href="https://en.wikipedia.org/wiki/Stochastic_process" target="_blank"> stochastic pocess</a> \( (y_i, x_i) \) is <a href="https://en.wikipedia.org/wiki/Stationary_process" target="_blank"> stationary</a> and <a href="https://en.wikipedia.org/wiki/Ergodic_process" target="_blank"> ergodic</a>.</p>
+
+<p><b>3’. Weak exogeneity.</b> \( \mathbb{E}[\epsilon_i x_i] = 0 \; \forall i \).</p>
+
+<p><b>4’. Invertibility.</b> \( \mathbb{E}[x_i x_i^T ] \) is invertible.</p>
+
+<p><b>5’. Central limit theorem (CLT).</b> \(  \sqrt{n} \left( \frac{1}{n} \sum_{i} x_i \epsilon_i\right) \xrightarrow{d} N(0, \Sigma) \), where \( \xrightarrow{d} \) denotes <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_distribution" target="_blank"> convergence in distribution</a>.</p>
+
+<p>Note here that the explicit normality assumption <b>4</b> can be ‘replaced’ by <b>4’</b>, which is much weaker and only requires \( \frac{1}{n} \sum_{i} x_i \epsilon_i \) to obey a <a href="https://en.wikipedia.org/wiki/Central_limit_theorem" target="_blank"> central limit theorem</a>. The most basic version of the CLT applies to <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables" target="_blank"> iid</a> random variables, but there are many other versions that weaken those requirements.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[28 Dec 2023]]></summary></entry><entry><title type="html">Eric Weinstein is the Tenacious D of high energy physics</title><link href="/2023/10/29/Eric-Weinstein-is-the-Tenacious-D-of-high-energy-physics.html" rel="alternate" type="text/html" title="Eric Weinstein is the Tenacious D of high energy physics" /><published>2023-10-29T00:00:00+01:00</published><updated>2023-10-29T00:00:00+01:00</updated><id>/2023/10/29/Eric%20Weinstein%20is%20the%20Tenacious%20D%20of%20high%20energy%20physics</id><content type="html" xml:base="/2023/10/29/Eric-Weinstein-is-the-Tenacious-D-of-high-energy-physics.html"><![CDATA[<p>29 Oct 2023</p>
 
 <h3>  Who is Eric Weinstein? </h3>
 
@@ -676,42 +712,4 @@ Ok, but now let’s add more people whose lives are just marginally worth living
 
 <p>The other main utility offered by COVID-19 vaccines is ‘flattening the curve’. That is, spreading the caseload over time so that our healthcare services are not overwhelmed and can offer better treatment. This could be worthwhile, though again it would require forecasting ability that so far has proven elusive to us.</p>
 
-<p>The final question is whether all of this is worth it. Mass COVID-19 vaccinations are expensive, and it is not clear how beneficial it is. It seems quite possible that there are far more cost-effective ways to preserve human life. In particular, I think in our revolutionary fervour for vaccines, we may have neglected a cheaper and easier win in the form of anti-viral and monoclonal antibody treatments.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[20 Nov 2022]]></summary></entry><entry><title type="html">Modern monetary theory is the road to hell</title><link href="/2022/08/28/Modern-monetary-theory-is-the-road-to-hell.html" rel="alternate" type="text/html" title="Modern monetary theory is the road to hell" /><published>2022-08-28T00:00:00+01:00</published><updated>2022-08-28T00:00:00+01:00</updated><id>/2022/08/28/Modern%20monetary%20theory%20is%20the%20road%20to%20hell</id><content type="html" xml:base="/2022/08/28/Modern-monetary-theory-is-the-road-to-hell.html"><![CDATA[<p>28 Aug 2022</p>
-
-<h3> What is modern monetary theory (MMT)? </h3>
-
-<p>It’s an economic theory which, in a nutshell, says that full employment and funding of various other government programmes can be guaranteed by printing money, and the inflation that would normally ensue can be kept under control by taxation.</p>
-
-<h3> Woah. That sounds pretty wild. </h3>
-
-<p>Indeed.</p>
-
-<p>The first thing that should set off alarm bells is that MMT appears to advocate for governmental control over monetary policy. That’s a <i>really</i> bad idea. This is a lesson that we have historically learned the hard way. Governments simply cannot be trusted with the keys to the printing press. The temptation for them to print money in order to deliver on some promise, at least in the short term, is just too great. That’s how you get hyperinflation. There is a reason we insist on independence of central banks and government.</p>
-
-<p>Second is that, of course if you’re willing to fire up the printing press you can achieve full employment. You can pay people to twiddle their thumbs all day if you want. Much more difficult is ensuring that people are employed <i>usefully</i>. Forgive me if I don’t have a great deal of confidence in the ability of governments to do this. It would mean that they would have to step in and effectively deploy a significant and variable fraction of the country’s labour force across different sectors, depending on the prevailing economic conditions. Yeah, right.</p>
-
-<p>Finally, how exactly is it that taxation is supposed to control inflation? I mean, in principle it could be done if the government increased taxes and then threw the revenue thus collected into the sea. And I mean that literally, not figuratively, i.e. if they actually destroyed money, or at least removed it from circulation for an extended period of time. That would effectively make money more valuable which could reduce inflation. The problem is again, do we really think governments can be trusted to do this rather than spend that money? Especially a government that has already demonstrated itself to be quite fond of liberal use of the printing press to meet its obligations?</p>
-
-<p>The whole thing is a nonsense. And a very dangerous nonsense, at that.</p>
-
-<h3> What's really going on here? </h3>
-
-<p>When I see people advocating for ideologies that are so obviously lacking, instead of trying square their circle I ask what purpose does the ideology serve for them.</p>
-
-<p>As an example, think about Marxism. There are many ideas under that umbrella that fail to survive the gentlest scrutiny. Take the <a href="https://en.wikipedia.org/wiki/Labor_theory_of_value" target="_blank"> labour theory of value</a>, which underpins the whole edifice. It holds, roughly speaking, that the economic value of an object is determined by the amount of labour required to produce it. This has the immediate consequence that some extraordinarily useless objects have arbitarily high value. Like a <a href="https://www.youtube.com/watch?v=EZ73Q4DwrGM" target="_blank"> sarcasm detector</a> or <a href="https://youtu.be/dJNd_HtZH2g?t=30" target="_blank"> The Homer</a>. I bet it takes <i>a lot</i> of effort to make them. Ok, my examples may be taken from the Simpsons, but the Simpsons does have a stunning ability to reflect real life.</p>
-
-<p>Anyway, the point is that the entire foundation of Marxism is based on a nonsense. Why then did it become so popular? I would say that no small part of the explanation lies in the fact that it gave the working classes, who at the time genuinely were exploited and treated horrendously, intellectual justification for their revolutionary fervour. It was political discontent in search of an academic seal of approval.</p>
-
-<p>And so it is with MMT.</p>
-
-<p>What MMT advocates ultimately want is to radically increase government spending and have the rich pay for it via progressive taxation. That <i>may</i> be an admirable goal, but what if the process by which it is achieved is far more harmful than the end is good?</p>
-
-<p>The MMT crowd have figured out that increasing taxation is difficult and generally requires a long legislative process that tends to disfavour radical changes. On the other hand, if the government just got its hands on the printing press, it could spend as much as it wants.</p>
-
-<p>The only problem is that causes inflation, and inflation is effectively a tax levied on all those who hold the nation’s currency. As prices rise, the notes in your wallet have less and less purchasing power - you are losing real wealth. And it is a deeply regressive tax at that - poorer people who can’t put their money into assets will be hit harder than the rich.</p>
-
-<p>What the MMT advocates wish to do is to use that to put a gun to government’s head. They fire up the printing press and spend to their heart’s content, and that threatens to cause inflation with  truly terrible consequences. At this point they offer up their snake oil solution. There is only one way out: force rich people to bail us out.</p>
-
-<p>It’s a truly terrible ideology. And there are some indications that it’s becoming more mainstream. For example, here is Joe Biden <a href="https://twitter.com/joebiden/status/1525234935346483210?lang=en" target="_blank"> advocating for a core tenet of MMT</a>.</p>
-
-<p>This is very worrying.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[28 Aug 2022]]></summary></entry></feed>
+<p>The final question is whether all of this is worth it. Mass COVID-19 vaccinations are expensive, and it is not clear how beneficial it is. It seems quite possible that there are far more cost-effective ways to preserve human life. In particular, I think in our revolutionary fervour for vaccines, we may have neglected a cheaper and easier win in the form of anti-viral and monoclonal antibody treatments.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[20 Nov 2022]]></summary></entry></feed>
