@@ -1,0 +1,266 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Steven Kerr | Why do so many statisticians think a normality assumption is required in in linear regression?</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+        <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+        <meta name="twitter:creator" content="@stevenrosskerr">
+        <meta name="twitter:image" content="https://drstevenkerr.com/images/header.jpg">
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Why do so many statisticians think a normality assumption is required in in linear regression?</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Why do so many statisticians think a normality assumption is required in in linear regression?" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="03 Jan 2024" />
+<meta property="og:description" content="03 Jan 2024" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-01-03T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Why do so many statisticians think a normality assumption is required in in linear regression?" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-03T00:00:00+00:00","datePublished":"2024-01-03T00:00:00+00:00","description":"03 Jan 2024","headline":"Why do so many statisticians think a normality assumption is required in in linear regression?","mainEntityOfPage":{"@type":"WebPage","@id":"/2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html"},"url":"/2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+	</head>
+
+    <body class="left-sidebar is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+                <div id="header">
+
+                    <!-- Inner -->
+                        <div class="inner">
+                            <header>
+                                <h1>Blog - 2024</h1>
+                            </header>
+                        </div>
+
+                    <!-- Nav -->
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="../../../index.html">Home</a></li>
+                                <li><a href="../../../bio.html">Bio & CV</a></li>
+                                <li><a href="../../../epi.html">Publications</a></li>
+                                <li><a href="../../../blog.html">Blog</a></li>
+                            </ul>
+                        </nav>
+
+                </div>
+
+            <!-- Main -->
+                <div class="wrapper style1">
+
+                    <div class="container">
+                        <div class="row gtr-200">
+                            <div class="col-3 col-12-mobile" id="sidebar">
+                                <hr class="first" />
+                                
+                                
+                                
+                                
+                                
+                                <section>
+                                    <header>
+                                        <a href="../../../2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html"> Why do so many statisticians think a normality assumption is required in in linear regression? </a> 
+                                        <p style="margin:10px;"></p>
+                                    </header>
+                                </section>
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+            
+                            </div>
+
+                            <div class="col-8 col-12-mobile imp-mobile" id="content">
+                                <article id="main">
+                                    <header>
+                                        <h2> Why do so many statisticians think a normality assumption is required in in linear regression? </h2>
+                                    </header>   
+                                    <p>03 Jan 2024</p>
+
+<p>In my time working in health science, I have been troubled by the number of times I have encountered statisticians and practitioners of statistics who are absolutely sure that either the variables or residuals in a linear regression must be approximately normally distributed, and the model is invalid otherwise.</p>
+
+<p>This idea is completely false. In this post I want to explore why it is nonetheless so widely believed by professionals in the field.</p>
+
+<h3>  Linear regression </h3>
+
+<p>When statisticians say a model is ‘valid’, they usually mean that the model plausibly satisfies some conditions that guarantee ‘nice’ results. By ‘nice’, it is usually meant that parameter estimates converge to the true values from the data generating process, and that the distribution of the parameter estimates is known (usually normal), as the sample size becomes large. There are several slightly different notions of <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables" target="_blank"> convergence for random variables</a>, but the most commonly used is <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability" target="_blank"> convergence in probability</a>. An estimator \( \hat{\beta} \) that converges in probability to true value \( \beta \) is called <a href="https://en.wikipedia.org/wiki/Consistent_estimator" target="_blank"> consistent</a>.</p>
+
+<p>In this post I will use the following notation: \( y \) is an \( n \)-dimensional vector whose elements are \( y_i \), \( X \) is an \( n \times k \) matrix whose rows are \( x_i \), \( \beta \) is a \( k\)-dimensional vector of parameters to be estimated, and \( \epsilon \) is an \( n \)-dimensional vector of residuals whose elements are \( \epsilon_i \).</p>
+
+<p>In the linear regression setting, there are standard sets of assumptions that are sufficient to guarantee consistency. Note the plural - there are several. The first version you often learn while studying statistics is the following:</p>
+
+<p><span id="1.1"> <b>1.1. Linearity.</b> </span> The data-generating process is of the form \( y = X \beta + \epsilon \).</p>
+
+<p><span id="1.2"> <b>1.2. Strict exogeneity.</b> </span>\( \mathbb{E}[\epsilon \; | \; X] = 0 \).</p>
+
+<p><span id="1.3"> <b>1.3. No multicollinearity.</b> </span>The rank of \( X \) is \( k \) with probability \( 1 \).</p>
+
+<p><span id="1.4"> <b>1.4. Conditional normality of residuals.</b> </span> \(  \epsilon \lvert_X \sim N(0, \sigma^2 I) \), where \( I \) is the \( n \times n \) identity matrix.</p>
+
+<p>Note that an explicit normality assumption appears in <a href="#1.4"> 1.4</a>.</p>
+
+<p>However, several of these conditions can be weakened. For example, the following set of conditions is also sufficient:</p>
+
+<p><span id="2.1"> <b>2.1. Linearity.</b> The data-generating process is of the form \( y = X \beta + \epsilon \).</span></p>
+
+<p><span id="2.2"> <b>2.2. Ergodic stationarity.</b> The <a href="https://en.wikipedia.org/wiki/Stochastic_process" target="_blank"> stochastic pocess</a> \( (y_i, x_i) \) is <a href="https://en.wikipedia.org/wiki/Stationary_process" target="_blank"> stationary</a> and <a href="https://en.wikipedia.org/wiki/Ergodic_process" target="_blank"> ergodic</a>.</span></p>
+
+<p><span id="2.3"> <b>2.3. Weak exogeneity.</b> \( \mathbb{E}[\epsilon_i x_i] = 0 \; \forall i \).</span></p>
+
+<p><span id="2.4"> <b>2.4. Invertibility.</b> \( \mathbb{E}[x_i x_i^T ] \) is invertible.</span></p>
+
+<p><span id="2.5"> <b>2.5. Central limit theorem (CLT).</b> \(  \sqrt{n} \left( \frac{1}{n} \sum_{i} x_i \epsilon_i\right) \xrightarrow{d} N(0, \Sigma) \), where \( \xrightarrow{d} \) denotes <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_distribution" target="_blank"> convergence in distribution</a>.</span></p>
+
+<p>Note here that the explicit normality assumption <a href="#1.4"> 1.4</a> is replaced by <a href="#2.5"> 2.5</a>, which is much weaker and only requires \( \frac{1}{n} \sum_{i} x_i \epsilon_i \) to obey a <a href="https://en.wikipedia.org/wiki/Central_limit_theorem" target="_blank"> central limit theorem</a>. The most basic version of the CLT applies to <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables" target="_blank"> independent and identically distributed</a> random variables, but there are many other versions with weaker conditions.</p>
+
+<p>In other words, there is no need to assume that the dependent variable, the independent variables or the residuals are normally distributed in linear regression. Why, then, do so many statisticians believe it to be so?</p>
+
+<p>The first reason I can see is that it’s just easier. Conditions <a href="#1.1">1.1</a>-<a href="#1.5">1.5</a>  are simpler to understand and require less mathematical knowledge than <a href="#2.1">2.1</a>-<a href="#2.5">2.5</a>. In particular, you needn’t know anything about the central limit theorem, ergodic and stationary processes, and different notions of convergence for random variables.</p>
+
+<p>The other reason I can see is that if you assume the residuals are normally distributed, then linear regression falls into the <a href="https://en.wikipedia.org/wiki/Generalized_linear_model" target="_blank"> generalised linear class of models</a>. This is an extremely useful set of statistical models that includes workhorses such as logistic and Poisson regression. Non-linear models in this family are fitted using maximum likelihood methods - usually  the <a href="https://en.wikipedia.org/wiki/Newton%27s_method" target="_blank"> Newton-Raphson method</a>, which results in an <a href="https://en.wikipedia.org/wiki/Iteratively_reweighted_least_squares" target="_blank"> iteratively re-weighted least squares</a> algorithm. It is conceptually and pedagogically neat to include all of these models under the same banner, because they have a great deal of commonality. However, because they are maximum likelihood models, this does require explicit distributional assumptions to be made - normality in the case of linear regression. Bundling linear regression into the generalised linear class obscures the fact that there are alternate, weaker assumptions that are sufficient for the model to be valid.</p>
+
+
+
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+<div id="footer">
+    <div class="container">
+            <div class="col-12">
+
+                <!-- Contact -->
+                    <section class="contact">
+                        <header>
+                            <h3>Social media:</h3>
+                        </header>
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/stevenrosskerr" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/steven-kerr-014b19133/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                            <li><a href="https://github.com/StevenRKerr" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </section>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+        
+    <!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+    </body>
+</html>
