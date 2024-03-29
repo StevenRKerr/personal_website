@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Why do so many statisticians think a normality assumption is required in in linear regression?
+title: Why do so many statisticians think a normality assumption is required in linear regression?
 ---
 
 <p>{{ page.date | date_to_string }}</p>
@@ -44,7 +44,7 @@ Note here that the explicit normality assumption <a href="#1.4"> 1.4</a> is repl
 
 In other words, there is no need to assume that the dependent variable, the independent variables or the residuals are normally distributed in linear regression. Why, then, do so many statisticians believe it to be so?
 
-The first reason I can see is that it's just easier. Conditions <a href="#1.1">1.1</a>-<a href="#1.5">1.5</a>  are simpler to understand and require less mathematical knowledge than <a href="#2.1">2.1</a>-<a href="#2.5">2.5</a>. In particular, you needn't know anything about the central limit theorem, ergodic and stationary processes, and different notions of convergence for random variables.
+The first reason I can see is that it's just easier. Conditions <a href="#1.1">1.1</a>-<a href="#1.4">1.4</a>  are simpler to understand and require less mathematical knowledge than <a href="#2.1">2.1</a>-<a href="#2.5">2.5</a>. In particular, you needn't know anything about the central limit theorem, ergodic and stationary processes, and different notions of convergence for random variables.
 
 The other reason I can see is that if you assume the residuals are normally distributed, then linear regression falls into the <a href="https://en.wikipedia.org/wiki/Generalized_linear_model" target="_blank"> generalised linear class of models</a>. This is an extremely useful set of statistical models that includes workhorses such as logistic and Poisson regression. Non-linear models in this family are fitted using maximum likelihood methods - usually  the <a href="https://en.wikipedia.org/wiki/Newton%27s_method" target="_blank"> Newton-Raphson method</a>, which results in an <a href="https://en.wikipedia.org/wiki/Iteratively_reweighted_least_squares" target="_blank"> iteratively re-weighted least squares</a> algorithm. It is conceptually and pedagogically neat to include all of these models under the same banner, because they have a great deal of commonality. However, because they are maximum likelihood models, this does require explicit distributional assumptions to be made - normality in the case of linear regression. Bundling linear regression into the generalised linear class obscures the fact that there are alternate, weaker assumptions that are sufficient for the model to be valid. 
 

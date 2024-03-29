@@ -1,4 +1,181 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-01-03T18:57:59+00:00</updated><id>/feed.xml</id><entry><title type="html">Why do so many statisticians think a normality assumption is required in in linear regression?</title><link href="/2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html" rel="alternate" type="text/html" title="Why do so many statisticians think a normality assumption is required in in linear regression?" /><published>2024-01-03T00:00:00+00:00</published><updated>2024-01-03T00:00:00+00:00</updated><id>/2024/01/03/Why%20do%20so%20many%20statisticians%20think%20a%20normality%20assumption%20is%20required%20in%20linear%20regression</id><content type="html" xml:base="/2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html"><![CDATA[<p>03 Jan 2024</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-03-27T18:52:44+00:00</updated><id>/feed.xml</id><entry><title type="html">Loop quantum gravity, or lattice quantum gravity?</title><link href="/2024/03/26/Loops-quantum-gravity,-or-lattice-quantum-gravity.html" rel="alternate" type="text/html" title="Loop quantum gravity, or lattice quantum gravity?" /><published>2024-03-26T00:00:00+00:00</published><updated>2024-03-26T00:00:00+00:00</updated><id>/2024/03/26/Loops%20quantum%20gravity,%20or%20lattice%20quantum%20gravity</id><content type="html" xml:base="/2024/03/26/Loops-quantum-gravity,-or-lattice-quantum-gravity.html"><![CDATA[<p>26 Mar 2024</p>
+
+<p>In this post, I’m going to give a brief critical overview of loop quantum gravity, the field that I worked in during my time in physics. A fairly strong understanding of physics is assumed.</p>
+
+<h3> The ADM formalism </h3>
+
+<p>Loop quantum gravity is an attempt at canonical quantisation of Einstein’s general relativity. Thus the starting point is constructing a Hamiltonian. In a flat spacetime that’s easy, but on a general spacetime manifold it’s not so easy because it requires one to define a time coordinate. The <a href="https://en.wikipedia.org/wiki/ADM_formalism" target="_blank"> ADM formalism</a> addresses this by assuming that spacetime is <a href="https://en.wikipedia.org/wiki/Foliation" target="_blank"> foliated</a>. Roughly this means that our spacetime manifold \( M \) is decomposed into a family of spacelike hypersurfaces \( \Sigma_t \) labelled by a timelike coordinate \( t\). Spacelike means that any pair of points on \( \Sigma_t \) are spacelike separated - their spatial and temporal separation is such that light could not travel between them. There are in general many possible foliations of \( M \) that should all be ‘equally as good’ as each other.</p>
+
+<p>With a time coordinate in hand, we can now define the Hamiltonian in terms of the metric \( g_{ij} \) on the 3-dimensional spacelike hypersurfaces and its conjugate momentum \( \pi_{ij} \). The Hamiltonian thus constructed consists of two parts: the Hamiltonian constraint, and the (spatial) diffeomorphism constraint.</p>
+
+<h3> The Wheeler-DeWitt equation </h3>
+
+<p>The next step in canonical quantisation is to replace the canonical variables with operators acting on a suitable space of functionals. Because we are working with a field theory, \( \hat{\pi}_{ij} \) will be a <a href="https://en.wikipedia.org/wiki/Functional_derivative" target="_blank"> functional derivative</a>. If \( F \) is a functional with argument \( f \), the functional differential can be defined as follows</p>
+
+<p>\(\delta F[f][\phi] = \left[ \frac{d}{d \epsilon} F[f + \epsilon \phi]  \right]_{\epsilon = 0}\).</p>
+
+<p>This is the functional analysis equivalent of \( dx \) in vanilla calculus. From here we define the functional derivative as</p>
+
+<p>\(\frac{\delta F[f]}{f(y)} = \delta F[f][\delta_y]\),</p>
+
+<p>where \( \delta_y(x) = \delta(x-y) \) is the <a href="https://en.wikipedia.org/wiki/Dirac_delta_function" target="_blank"> Dirac delta function</a>.</p>
+
+<p>You will notice that every time we take a functional derivative, we get a factor of a delta function. This is a problem. The Hamiltonian is second order in the canonical momenta \( \hat{\pi}_{ij} \), which leads to singularities arising from the accumulated delta functions.</p>
+
+<p>Really what’s happening here is that we started off doing something that isn’t mathematically kosher. When we promote fields to operators, really they are operator-valued <a href="https://en.wikipedia.org/wiki/Distribution_(mathematics)" target="_blank"> distributions</a>. It turns out that it is <a href="https://en.wikipedia.org/wiki/Distribution_(mathematics)#Operations_on_distributions" target="_blank"> not at all clear how to sensibly define multiplication for such objects</a>. And yet our Hamiltonian multiplies them footloose and fancy-free.</p>
+
+<p>These are problems that are generically encountered when attempting to canonically quantise any non-trivial quantum field theory. It is the reason that <a href="https://en.wikipedia.org/wiki/Wightman_axioms#Existence_of_theories_that_satisfy_the_axioms" target="_blank"> there is no known example of a mathematically well-defined interacting quantum field theory in 4 dimensions</a>.</p>
+
+<p>If one is willing to work on a spacetime lattice, then this issue can be avoided. Lattice quantum field theory is in fact a completely consistent, mathematically well-defined, non-perturbative quantisation method. But we’ll come back to that later.</p>
+
+<h3> The Ashtekar variables </h3>
+
+<p>Ok so let’s say we are really determined to ignore the fact that we are not doing meaningful maths anymore. It turns out that you can do some manipulations on the Wheeler-DeWitt equation that maybe looks like progress.</p>
+
+<p>The <a href="https://en.wikipedia.org/wiki/Ashtekar_variables" target="_blank"> Ashtekar variables</a> consist of a complex-valued field that looks like an \( SU(2) \) connection. It turns out that in terms of these new variables, the Hamiltonian becomes (up to a factor we can ignore) polynomial in the canonical variables. Now, as per the previous section, polynomials involve multiplication which is still not generally well-defined for operator-valued distributions. However, at least the most egregiously non-polynomial factors like square roots of deteminants no longer make an appearance. This development sparked a wave of excitement which really marks the start of the entire loop quantum gravity research programme.</p>
+
+<h3> Thiemann's trick </h3>
+
+<p>Unfortunately, because the canonical variables are now complex-valued, the theory is a complex version of general relativity. Classically it is easy to impose reality conditions that recover real general relativity. However, in the quantum theory it’s not so easy and so far no one has been able to do it. This led to people giving up on the Ashtekar variables after a few years.</p>
+
+<p>Enter Thomas Thiemann. He figured out a way of writing the Hamiltonian in terms of Poisson brackets involving the connection and the volume. With this trick, he did not have to resort to the problematic complex-valued variables, and once again it looked like maybe progress could be made.</p>
+
+<h3> The loop representation </h3>
+
+<p>Normally the operators defined from the canonical variables are taken to act on a space of wavefunctions that are functionals of the fields. It turns out that no matter if you use the Ashtekar variables or Thiemann’s trick, sensibly defining the Hamiltonian constraint on this space remains difficult and perhaps impossible. That’s probably because we chose to ignore the fact that we’re not really doing maths some time ago and ploughed ahead anyway.</p>
+
+<p>In order to overcome this difficulty, the next ingredient in the loop quantum gravity recipe is the loop representation. Instead of working with connections, we work with <a href="https://en.wikipedia.org/wiki/Holonomy" target="_blank"> holonomies</a> associated with the connection, and their corresponding conjugate variable called ‘flux vectors’. Because the connection lives in \( SU(2) \), it turns out that the wavefunctions coincide with Penrose’s old idea of <a href="https://en.wikipedia.org/wiki/Spin_network" target="_blank"> spin networks</a>.</p>
+
+<p>Now we need to define an inner product to get a proper Hilbert space. Spin networks are defined by graphs, and it turns out that in order to preserve diffeomorphism invariance, the inner product more or less has to be defined so that its action on two spin networks is zero unless their underlying graphs coincide. The Hilbert space thus constructed does not have a countable basis, which is a big departure from standard quantum theory. It is relatively straightforward to define the actions of holonomy and flux vector operators on states in this space.</p>
+
+<h3> Imposing constraints </h3>
+
+<p>We have to impose the spatial diffeomorphism constraint and the Hamiltonian constraint to get to the physical Hilbert space. It turns out that in our candidate Hilbert space above, the diffeomorphism constraint operator can’t be defined, and even if it could, it wouldn’t contain any diffeomorphism invariant state aside from the trivial wavefunction. This is because a diffeomorphism is equivalent to moving the spin network around on the manifold \( M \).</p>
+
+<p>In order to get around this difficulty, the candidate Hilbert space has to be drastically enlarged to allow states to be constructed that are something like ‘averages’ of spin networks over states related by diffeomorphisms. If that sounds like it’s probably not well-defined, that’s because it probably isn’t. It appears that there is no real consensus on how to construct this space properly. It is also not known whether it will have a countable basis.</p>
+
+<p>Ok so that’s the diffeomorphism constraint, how about the Hamiltonian constraint? First you have to define a suitable quantum operator, and it turns out that is a complete nightmare. I won’t go into the details, partly because I don’t entirely know them, but mostly because I don’t think it’s that interesting. If you’re up for it, <a href="#1"> [1]</a> gets into more of the nitty gritty. The upshot is that a large number of contrived choices need to be made in order to even make symbolic process. And even then, a large number of ambiguities remain. In particular, it appears necessary to restrict the space that the Hamiltonian constraint acts on to a particular ‘habitat’, for which there may be an infinite number of candidate choices. It turns out too that the Hamiltonian and diffeomorphism constraints don’t play well together. If you proceed ‘naively’ the action of the Hamiltonian constraint can map a diffeomorphism invariant state onto one that isn’t.</p>
+
+<p>The whole thing ends in such a huge mess that not a single physical eigenstate of the Hamiltonian constraint is known. In addition, because of the extraordinary complexity of the Hamiltonian and diffeomorphism operators, it is not known whether the quantum constraint algebra closes. This is a basic requirement for any theory to be consistent.</p>
+
+<h3> Spin foams </h3>
+
+<p>As long ago as the early 2000’s, the situation on the canonical quantisation side seemed hopeless enough that many people in the loop quantum gravity community had instead turned to path integral approaches, hoping they might provide a way out. To this end, various attempts were made to define a partition function for quantum gravity, which all ultimately rest on introducing a discretisation of spacetime - usually a <a href="https://en.wikipedia.org/wiki/Triangulation_(geometry)" target="_blank"> triangulation</a>. If you start out with topological quantum field theory (TQFT), the partition function is naturally independent of the triangulation you choose, and people like that because it has diffeomorphism symmetry as required by general relativity. However, TQFTs inevitably do not have local degrees of freedom, because those degrees of freedom would certainly be sensitive to the local geometry of spacetime. On the other hand, general relativity does have local degrees of freedom. As soon as you allow for local degrees of freedom, the triangulation independence is lost, and you are left in a situation that is basically identical to lattice quantum field theory. That is, the theory depends on the particular spacetime discretisation you choose.</p>
+
+<h3> Conclusion </h3>
+
+<p>Let me try and sum up the history of loop quantum gravity. We started out with the Ashtekar variables, which seemed to make progress on making sense of the Wheeler-DeWitt equation. However, they were abandoned because reality conditions could not sensibly be imposed in the quantum theory. Our next attempt at making sense of the Wheeler-DeWitt equation was to use Thiemann’s trick. Seemingly the only way to make ‘progress’ in the resulting quantum theory is to switch to the loop representation. This leads to hideously complicated and perhaps ill-defined forms for the Hamiltonian and diffeomorphism constraints and the space that they are meant to act on. The theory is riddled with a large number of ambiguities and artifical choices, and thus far it has not yielded anything physically intelligible. From there, we moved on to the spin foam approach, which is functionally indistinguishable from lattice quantum field theory.</p>
+
+<p>In the process, the following issues remain unsolved</p>
+<ul>
+  <li>It is not known whether general relativity is recovered in the classical limit of loop quantum gravity.</li>
+  <li>It is not known whether a suitable quantum constraint algebra can be defined that is closed, and therefore whether the quantum theory will be independent of arbitrary choices of coordinates.</li>
+  <li>The candidate operators and Hilbert spaces that do exist may not be well-defined, and even if they are, their definition is plagued by a large number of ad-hoc choices and ambiguities.</li>
+  <li>It is not known whether there is any connection between loop quantum gravity and spin foam approaches.</li>
+</ul>
+
+<p>To me, loop quantum gravity looks like a long series of mashing square-shaped pegs into round holes and ignoring the wreckage that ensues. The entire thing is ugly, contrived and fails to make any tangible progress on the subject of quantum gravity. After 40 years of hammering away at this, it appears that the best the field has to offer is something that is really just a variant of lattice quantum field theory. But the whole motivation for doing any of this in the first place was to avoid perceived shortcomings of lattice quanum field theory!</p>
+
+<p>Ok, it’s easy for me to get on my historically retrospective high horse. I will say this about loop quantum gravity; I think it was worth a shot. But I do more or less consider it a failed research programme. It seems like most of its biggest proponents have quietly moved on to other things. I found that the field also has an unfortunate tendency to oversell itself. You would think the above laundry list of outstanding issues would call for a touch of humility and self-awareness. I didn’t see much of that when I worked in the field. I get that the people who dedicate their professional lives to a particular theory are inevitably going to be its biggest cheerleaders. But for young graduate students, the mind-boggling complexity of high energy theoretical physics means that it’s almost impossible to judge the merits of a field before having worked in it for several years. And by that time you’ve probably got intellectual Stockholm syndrome anyway. Maybe the self-aggrandisement of loop quantum gravity is a counter-reaction to the ideological hegemony of string theory and the revolutionary fervour of its adherents. But if that’s the case, I just wish everyone would get a grip. I guess that woudn’t leave them with much content to write papers about though.</p>
+
+<h3>  References </h3>
+
+<p><span id="1"> <b>1. </b> </span> Nicolai H, Peeters K, Zamalkar M. <a href="https://arxiv.org/abs/hep-th/0501114" target="_blank"> Loop quantum gravity: an outside view</a>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[26 Mar 2024]]></summary></entry><entry><title type="html">Robust standard errors</title><link href="/2024/01/17/Robust-standard-errors.html" rel="alternate" type="text/html" title="Robust standard errors" /><published>2024-01-17T00:00:00+00:00</published><updated>2024-01-17T00:00:00+00:00</updated><id>/2024/01/17/Robust%20standard%20errors</id><content type="html" xml:base="/2024/01/17/Robust-standard-errors.html"><![CDATA[<p>17 Jan 2024</p>
+
+<p>Robust standard errors are frequently used in statistics, often in an unthinking way. They are certainly valuable and useful in the context of linear regression; however, they do not serve a similar purpose in maximum likelihood estimation of non-linear models. The basic issue is that the kind of mis-specification that robust standard errors can address in linear regresion does not spoil consistency results for the parameter estimates. On the other hand, it does spoil those results in the context of maximum likelihood estimation of non-linear models. Thus at best you end up with a consistent estimator for the variance of a parameter estimate that is itself inconsistent, which isn’t really of interest except as a diagnostic tool for detectng bad models. I’ll explore this in more detail below.</p>
+
+<h3>  Linear regression </h3>
+
+<p>In my <a href="https://drstevenkerr.com/2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html" target="_blank"> last post</a>, I discussed some sufficient conditions for ‘model validity’ in linear regression. I will use the same notation defined there. Namely: \( y \) is an \( n \)-dimensional vector whose elements are \( y_i \), \( X \) is an \( n \times k \) matrix whose rows are \( x_i \), \( \beta \) is a \( k\)-dimensional vector of parameters to be estimated, and \( \epsilon \) is an \( n \)-dimensional vector of residuals whose elements are \( \epsilon_i \). One of the conditions was as follows:</p>
+
+<p><b>Central limit theorem (CLT).</b> \(  \sqrt{n} \left( \frac{1}{n} \sum_{i} x_i \epsilon_i\right) \xrightarrow{d} N(0, \Sigma) \), where \( \xrightarrow{d} \) denotes <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_distribution" target="_blank"> convergence in distribution</a>.</p>
+
+<p>If \( \Sigma \) is of the form \( \sigma^2 I \) where \( I \) is the \( n \times n \) identity matrix, then the errors are said to ‘spherical’. In this case, the conditional variance of  the ordinary least squares (OLS) estimator is</p>
+
+\[\mathrm{Var}(\hat{\beta} \; \lvert \; X) = \frac{\epsilon^T \epsilon}{n-k} (X^T X)^{-1},\]
+
+<p>where \( \hat{\epsilon} = y - X \hat{\beta} \).</p>
+
+<p>It turns out that the spherical error requirement can be significantly weakened. In particular, there are several ‘robust’ variance estimators that are consistent even in the presence of heteroskedasticity. For example, the following estimator</p>
+
+\[HC_0 :=  \frac{n}{n-k} (X^T X)^{-1} X^T \mathrm{diag}(\hat{\epsilon}) X (X^T X)^{-1},\]
+
+<p>where \( \mathrm{diag}(\hat{\epsilon}) \) is the diagonal matrix with non-zero elements given by \( \hat{\epsilon}\).</p>
+
+<p>Crucially, the spherical error assumption is <b>not needed</b> for the OLS estimator \( \hat{\beta} = (X^T X)^{-1} X^T y \) to be consistent. This means there is no conflict between consistency of \( \hat{\beta}\) and presence of heteroscedasticity. Heteroscedasticity robust standard errors are therefore very useful as a quantification of uncertainty of parameter estimates in many scenarios.</p>
+
+<p>As we shall see, the analogous statement is not so much the case in maximum likelihood estimation.</p>
+
+<h3>  Maximum likelihood estimation </h3>
+
+<p>In the following, I will use \( \theta_0 \) to denote the ‘true’ parameter values of a data-generating process, \( \theta \) for a set of parameter values, and \( w_i \) for a vector  that is a single sample from the data-generating process. I will consider the particular case of M-estimators, which are estimators that maximise an objective function that takes the form of a sample average,</p>
+
+\[Q_n(\theta) :=  \frac{1}{n} \sum_i m(w_i, \theta).\]
+
+<p>Here, \( m \) is just some function of the data and the parameters. The typical case in maximum likelihood estimation is \( m(w_i, \theta) = \mathrm{ln}(f(w_i, \theta)) \), where \( f(w_i, \theta) \) is a probability density parametrised by \( \theta \) and evaluated at \( w_i \). In constructing this expression, it is typically assumed that the \( w_i \) are <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables" target="_blank"> iid</a>.</p>
+
+<p>Let’s look at a typical set of sufficient conditions for consistency of maximum likelihood parameter estimates.</p>
+
+<p><span id="1.1"> <b>1.1.</b> The <a href="https://en.wikipedia.org/wiki/Stochastic_process" target="_blank"> stochastic pocess</a> \( w_i \) is <a href="https://en.wikipedia.org/wiki/Stationary_process" target="_blank"> stationary</a> and <a href="https://en.wikipedia.org/wiki/Ergodic_process" target="_blank"> ergodic</a>.</span></p>
+
+<p><span id="1.2"> <b>1.2.</b> \( \theta_0 \in \Theta \) where \( \Theta \) is a convex parameter space.</span></p>
+
+<p><span id="1.3"> <b>1.3.</b> \( m(w_i, \theta) \) is concave in \( \theta \; \forall \; w_i \).</span></p>
+
+<p><span id="1.4"> <b>1.4.</b> \( m(w_i, \theta) \) is a <a href="https://en.wikipedia.org/wiki/Measurable_function" target="_blank"> measurable function</a> of \( w_i \; \forall \theta \in \Theta \).</span></p>
+
+<p><span id="1.5"> <b>1.5.</b> \( \mathbb{E}[m(w_i, \theta)] \) is uniquely maximised on \( \Theta \) at \( \theta_0 \).</span></p>
+
+<p><span id="1.6"> <b>1.6.</b> \( \mathbb{E}[m(w_i, \theta)] \) is finite \(\forall \; \theta \in \Theta \).</span></p>
+
+<p>The logic behind these conditions is as follows. <a href="#1.1"> 1.1</a> and <a href="#1.6"> 1.6</a> guarantee that the objective function \( Q_n(\theta) \) converges in probability to \( \mathbb{E}[m(w_i, \theta)] \). The idea is that if we then maximise \( Q_n(\theta) \), the resulting estimator \( \hat{\theta} \) will converge in probability to the unique ‘true’ value \( \theta_0 \) that maximises \( \mathbb{E}[m(w_i, \theta)] \), assumed to exist courtesy of <a href="#1.5"> 1.5</a>. Conditions <a href="#1.2"> 1.2</a> and <a href="#1.3"> 1.3</a> simply ensure that \( Q_n(\theta) \) has a unique maximum, and <a href="#1.4"> 1.4</a> is a ‘mathematical housekeeping’ condition that just means that \( m(w_i, \theta) \) is in fact a random variable.</p>
+
+<p>Note that despite the fact that the iid assumption is typically used to derive the form of the likelihood function in the first place, it does not appear in <a href="#1.1">1.1</a>-<a href="#1.6">1.6</a>. We only need \( w_i \) to be ergodic stationary, and \( \mathbb{E}[m(w_i, \theta)] \) to be uniquely maximised at \( \theta_0 \). In other words, the objective function \( Q_n(\theta) \) needn’t be a correctly specified log-likelihood. This opens the doorway to <a href="https://en.wikipedia.org/wiki/Quasi-maximum_likelihood_estimate" target="_blank"> quasi-maximum likelihood estimation</a>, in which the likelihood function is mis-specified but still has the correct maximum.</p>
+
+<p>Conditions <a href="#1.2"> 1.2</a> and <a href="#1.3"> 1.3</a> also ensure that the global maximum of \( Q_n(\theta) \) can be found by taking the first derivative and setting equal to zero. We define the score and Hessian for observation \( i\) as follows</p>
+
+\[\begin{align}
+s(w_i, \theta) &amp;:=  \frac{\partial m(w_i, \theta)}{\partial \theta} \\
+H(w_i, \theta) &amp;:= \frac{\partial^2 m(w_i, \theta)}{\partial \theta \partial \theta'}.
+\end{align}\]
+
+<p>Assume the following,</p>
+
+\[\begin{align}
+\frac{1}{n} \sum_i  H(w_i, \theta) &amp;\xrightarrow{p} \mathbb{E}[H(w_i, \theta)] \\
+\frac{1}{n} \sum_i  s(w_i, \theta_0) &amp;\xrightarrow{d} N(0, \Sigma).
+\end{align}\]
+
+<p>We can then apply the <a href="https://en.wikipedia.org/wiki/Delta_method" target="_blank"> delta method</a> to \( \frac{ \partial Q_n(\hat{\theta})}{\partial \theta} =  \frac{1}{n} \sum_i s(w_i, \theta) = 0 \), obtaining</p>
+
+\[\sqrt{n} (\hat{\theta} - \theta_0) \xrightarrow{d} N(0, \Sigma'),\]
+
+<p>where</p>
+
+<p>\(\begin{align}
+\Sigma' = \big( \mathbb{E}[H(w_i, \theta_0)] \big)^{-1} \; \Sigma \; \big( \mathbb{E}[H(w_i, \theta_0)] \big)^{-1} \label{robust} \tag{1}
+\end{align}\).</p>
+
+<p>In the case where \( w_i \) are <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables" target="_blank"> iid</a> and some <a href="https://en.wikipedia.org/wiki/Fisher_information" target="_blank"> regularity conditions</a> are satisfied, this expression simplifies to</p>
+
+<p>\(\begin{align}
+\Sigma' = - \big( \mathbb{E}[H(w_i, \theta_0)] \big)^{-1} \label{non-robust} \tag{2}
+\end{align}\).</p>
+
+<p>These results can be found in Chapter 7, sections 7.2 and 7.3 of <a href="#1"> [1]</a>.</p>
+
+<h3> Mis-specification </h3>
+<p>Finally we get to the real subject of this post. As indicated above, we may still extract useful results from a model if the likelihood is mis-specified, so long as it has the correct maximum, or the mis-specification is ‘small’ in some appropriate sense. In this case, both \( \hat{\theta} \) and its variance will be consistent.</p>
+
+<p>However, what if there is a more serious mis-specification? This will certainly spoil consistency results for \( \hat{\theta} \). We may still be able to consistently estimate the variance of \( \hat{\theta} \) though, using equation \(\ref{robust}\). But that begs the question, why should we care? What value is there in having a consistent estimator of the variance of a parameter estimator that is itself inconsistent?</p>
+
+<p>This has been pointed out, for example, in <a href="#2"> [2]</a>. In essence, if there is a need to use robust standard errors, then it indicates a serious flaw in the model that demands a new and better model, not a tweak to fix the variance.</p>
+
+<h3>  References </h3>
+
+<p><span id="1"> <b>1. </b> </span> Hayashi, Fumio. Econometrics. Princeton :Princeton University Press, 2000.</p>
+
+<p><span id="2"> <b>2. </b> </span> King G, Roberts ME. <a href="https://gking.harvard.edu/files/gking/files/robust_0.pdf" target="_blank"> How robust standard errors expose methodological problems they do not fix, and what to do about it.</a> Political analysis, Vol. 23, No. 2, 2015.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[17 Jan 2024]]></summary></entry><entry><title type="html">Why do so many statisticians think a normality assumption is required in linear regression?</title><link href="/2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html" rel="alternate" type="text/html" title="Why do so many statisticians think a normality assumption is required in linear regression?" /><published>2024-01-03T00:00:00+00:00</published><updated>2024-01-03T00:00:00+00:00</updated><id>/2024/01/03/Why%20do%20so%20many%20statisticians%20think%20a%20normality%20assumption%20is%20required%20in%20linear%20regression</id><content type="html" xml:base="/2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html"><![CDATA[<p>03 Jan 2024</p>
 
 <p>In my time working in health science, I have been troubled by the number of times I have encountered statisticians and practitioners of statistics who are absolutely sure that either the variables or residuals in a linear regression must be approximately normally distributed, and the model is invalid otherwise.</p>
 
@@ -38,7 +215,7 @@
 
 <p>In other words, there is no need to assume that the dependent variable, the independent variables or the residuals are normally distributed in linear regression. Why, then, do so many statisticians believe it to be so?</p>
 
-<p>The first reason I can see is that it’s just easier. Conditions <a href="#1.1">1.1</a>-<a href="#1.5">1.5</a>  are simpler to understand and require less mathematical knowledge than <a href="#2.1">2.1</a>-<a href="#2.5">2.5</a>. In particular, you needn’t know anything about the central limit theorem, ergodic and stationary processes, and different notions of convergence for random variables.</p>
+<p>The first reason I can see is that it’s just easier. Conditions <a href="#1.1">1.1</a>-<a href="#1.4">1.4</a>  are simpler to understand and require less mathematical knowledge than <a href="#2.1">2.1</a>-<a href="#2.5">2.5</a>. In particular, you needn’t know anything about the central limit theorem, ergodic and stationary processes, and different notions of convergence for random variables.</p>
 
 <p>The other reason I can see is that if you assume the residuals are normally distributed, then linear regression falls into the <a href="https://en.wikipedia.org/wiki/Generalized_linear_model" target="_blank"> generalised linear class of models</a>. This is an extremely useful set of statistical models that includes workhorses such as logistic and Poisson regression. Non-linear models in this family are fitted using maximum likelihood methods - usually  the <a href="https://en.wikipedia.org/wiki/Newton%27s_method" target="_blank"> Newton-Raphson method</a>, which results in an <a href="https://en.wikipedia.org/wiki/Iteratively_reweighted_least_squares" target="_blank"> iteratively re-weighted least squares</a> algorithm. It is conceptually and pedagogically neat to include all of these models under the same banner, because they have a great deal of commonality. However, because they are maximum likelihood models, this does require explicit distributional assumptions to be made - normality in the case of linear regression. Bundling linear regression into the generalised linear class obscures the fact that there are alternate, weaker assumptions that are sufficient for the model to be valid.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[03 Jan 2024]]></summary></entry><entry><title type="html">Eric Weinstein is the Tenacious D of high energy physics</title><link href="/2023/10/29/Eric-Weinstein-is-the-Tenacious-D-of-high-energy-physics.html" rel="alternate" type="text/html" title="Eric Weinstein is the Tenacious D of high energy physics" /><published>2023-10-29T00:00:00+01:00</published><updated>2023-10-29T00:00:00+01:00</updated><id>/2023/10/29/Eric%20Weinstein%20is%20the%20Tenacious%20D%20of%20high%20energy%20physics</id><content type="html" xml:base="/2023/10/29/Eric-Weinstein-is-the-Tenacious-D-of-high-energy-physics.html"><![CDATA[<p>29 Oct 2023</p>
 
@@ -405,7 +582,7 @@ The subject matter strikes me as almost identical to Gloria’s monologue. Here 
 
 <p>Next, the barbies carry out their plan of emotionally manipulating the kens so they all end up fighting amongst each other, and signing in a new constitution that reinstates the barbies to power while the kens are distracted. However, in a moment of conscience and revelation, the barbies decides that things shouldn’t go back to exactly the way they were before. The kens, taking encouragement from this, ask if they can have just one supreme court justice in the new world. They are refused and instead offered a lower circuit court judgeship, which, being pitiful morons, they gleefully accept. So, no one has learned anything then.</p>
 
-<p>Gloria petitions the Mattel CEO to create an ‘ordinary barbie’, who isn’t remarkable in any way; just a normal woman with a ‘flattering top’ that wants to ‘get through the day feeling kind of good about herself’. This, of course, naturally raises the question of what the women actually want. On the one hand, if Gloria is to be believed, then there’s nothing wrong with the real world, presumably full of ordinary, non-aspirational women like herself. At the same time the whole movie is premised upon the idea that the real world is an oppressive patriarchy precisely because there aren’t aspirational women taking up the mantle of resonsibility and power. So, should women be aspirational or not? If they are, they inevitably open themselves up to impossible expectations, failure and criticism, which Gloria’s monologue indicates she is not a fan of. What’s it going to be, Barbie?</p>
+<p>Gloria petitions the Mattel CEO to create an ‘ordinary barbie’, who isn’t remarkable in any way; just a normal woman with a ‘flattering top’ that wants to ‘get through the day feeling kind of good about herself’. This, of course, naturally raises the question of what the women actually want. On the one hand, if Gloria is to be believed, then there’s nothing wrong with the real world, presumably full of ordinary, non-aspirational women like herself. At the same time the whole movie is premised upon the idea that the real world is an oppressive patriarchy precisely because there aren’t aspirational women taking up the mantle of responsibility and power. So, should women be aspirational or not? If they are, they inevitably open themselves up to impossible expectations, failure and criticism, which Gloria’s monologue indicates she is not a fan of. What’s it going to be, Barbie?</p>
 
 <p>In a final plot twist, and after much unintelligible navel-gazing about what her true identity is, Barbie decides that she wants to be a real woman in the real world. The final sequence of the movie shows her dressed in a business suit, being chauffeured to what appears to be a very important meeting, and steeling her courage with platitudes offered by Gloria and Sasha. What extraordinary trial is she about to go through? Perhaps she’s interviewing to be a CEO?</p>
 
@@ -469,6 +646,8 @@ I'm here to see my gynaecologist.
 
 <p>In fact, you might even consider the foregoing an asset - predicted values that are out of bounds is a clear diagnostic tool you can use to detect issues with model specification and/or sample size.</p>
 
+<p>Finally, if you do have out of bounds predictions, it is completely sensible to modify them to be the closest allowed value. This is what you get by conditioning predictions on the fact that they must lie in a limited range.</p>
+
 <h3>  Objection 2: Heteroscedasticity </h3>
 
 <p>So usually we not only want to estimate \( \beta \), but also its variance, in order to have an idea of what level of confidence we can reasonably have in \( \hat{\beta}\). The most straightforward way of doing this makes the following assumption:</p>
@@ -493,7 +672,7 @@ I'm here to see my gynaecologist.
 
 <p>It probably also has something to do with the vagaries of history. Maximum likelihood methods are newer than linear regression, and were all the rage at the time. Plus computers have gotten a lot more powerful in recent decades, and often there is very little difference to the end user in fitting maximum likelihood models despite the fact that they are generally more computationally demanding.</p>
 
-<p>One reason this may again become quite relevant, certainly in health data science, is if <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation" target="_blank">secure multi-party computation</a> methods are adopted and become commonplace. These techniques allow a function to be calculated across multiple private datasets, with zero information sharing. However, nothing is free, and in this case it comes with a significant additional burden in computational complexity. That might make linear regression start to look very attractive again compared to methds that require iterative optimisation methods.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[29 Aug 2023]]></summary></entry><entry><title type="html">Repugnant maths</title><link href="/2023/07/22/Repugnant-maths.html" rel="alternate" type="text/html" title="Repugnant maths" /><published>2023-07-22T00:00:00+01:00</published><updated>2023-07-22T00:00:00+01:00</updated><id>/2023/07/22/Repugnant%20maths</id><content type="html" xml:base="/2023/07/22/Repugnant-maths.html"><![CDATA[<p>22 Jul 2023</p>
+<p>One reason this may again become quite relevant, certainly in health data science, is if <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation" target="_blank">secure multi-party computation</a> methods are adopted and become commonplace. These techniques allow a function to be calculated across multiple private datasets, with zero information sharing. However, nothing is free, and in this case it comes with a significant additional burden in computational complexity. That might make linear regression start to look very attractive again compared to methods that require iterative optimisation methods.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[29 Aug 2023]]></summary></entry><entry><title type="html">Repugnant maths</title><link href="/2023/07/22/Repugnant-maths.html" rel="alternate" type="text/html" title="Repugnant maths" /><published>2023-07-22T00:00:00+01:00</published><updated>2023-07-22T00:00:00+01:00</updated><id>/2023/07/22/Repugnant%20maths</id><content type="html" xml:base="/2023/07/22/Repugnant-maths.html"><![CDATA[<p>22 Jul 2023</p>
 
 <p>In a <a href="file:///C:/Users/Steven/Desktop/Git/personal_website/_site/2023/03/21/Population-ethics.html" target="_blank">previous post</a>, I discussed population ethics and perhaps its foremost unsolved problem, the repugnant conclusion. To recap, the basic idea is that if you believe a small loss in quality of life for a population can be compensated by adding some number of people with lives worth living, then applying the same reasoning repeatedly leads to the conclusion that there is some enormous number of people all leading lives barely worth living that would be preferable to e.g. one billion people all living superlative lives. That seems rather unpalatable to most people.</p>
 
@@ -533,13 +712,13 @@ I'm here to see my gynaecologist.
 
 <p>Once you figure out that you need ordinal numbers, then Mr philosphy-man’s problem evaporates completely. We can now place \( B \) and \( A \) in a <b>transfinite sequence</b>, where they are separated by an infinite number of incremental improvements. And if, for example, we assign 1 to \( B \) and \( \omega \) to \( A \), then there are no two adjacent elements that are non-Archimedean equivalent, because \( \omega \) <b>does not have a predecessor!</b> That is because for any candidate natural number that might be its predecessor, there is always a larger natural number in between.</p>
 
-<p>If you wish to read more about this, including more mathematical detail than you probably want, you should check out my recent paper <a href="https://papers.ssrn.com/sol3/papers.cfm?abstract_id=4469869" target="_blank">here</a>.</p>
+<p>If you wish to read more about this, including more mathematical detail than you probably want, you should check out my recent paper <a href="https://philpapers.org/archive/KERTRC-3.pdf" target="_blank">here</a>.</p>
 
 <h3>  What to make of this? </h3>
 
-<p>Perhaps the first take away from all of this is to not put much truck in philosphers, no matter how many degrees and professorships they have from Oxbridge or the Ivy league. This simple problem has dumbfounded the entire field for several decades, and it all rests on some bad maths. A normal person would not even perceive what the problem is exactly. It turns out that a very fancy and expensive education is a precondition for wasting your time on esoteric matters such as these.</p>
+<p>Perhaps the first take away from all of this is to not put much truck in philosphers, no matter how many degrees and professorships they have from Oxbridge or the Ivy league. This problem has dumbfounded the entire field for several decades, and it all rests on some bad maths. A normal person would not even perceive what the problem is exactly. It turns out that a very fancy and expensive education is a precondition for wasting your time on esoteric matters such as these.</p>
 
-<p>More seriously, I am quite dismayed by all of this. In particular because there are philosphers who take such ideas seriously enough that they’re effectively willing to bet millions of dollars on them, directing funds towards causes that their moral calculus has led them to believe are the best uses of money. It ceases to be a laughing matter when there are serious real world consequences at stake.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[22 Jul 2023]]></summary></entry><entry><title type="html">What is vaccine misinformation?</title><link href="/2023/07/20/What-is-vaccine-misinformation.html" rel="alternate" type="text/html" title="What is vaccine misinformation?" /><published>2023-07-20T00:00:00+01:00</published><updated>2023-07-20T00:00:00+01:00</updated><id>/2023/07/20/What%20is%20vaccine%20misinformation</id><content type="html" xml:base="/2023/07/20/What-is-vaccine-misinformation.html"><![CDATA[<p>20 Jul 2023</p>
+<p>More seriously, I am quite dismayed by all of this. In particular because there are people who take such ideas seriously enough that they’re effectively willing to bet millions of dollars on them, directing funds towards causes that their moral calculus has led them to believe are the best uses of money. It ceases to be a laughing matter when there are serious real world consequences at stake.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[22 Jul 2023]]></summary></entry><entry><title type="html">What is vaccine misinformation?</title><link href="/2023/07/20/What-is-vaccine-misinformation.html" rel="alternate" type="text/html" title="What is vaccine misinformation?" /><published>2023-07-20T00:00:00+01:00</published><updated>2023-07-20T00:00:00+01:00</updated><id>/2023/07/20/What%20is%20vaccine%20misinformation</id><content type="html" xml:base="/2023/07/20/What-is-vaccine-misinformation.html"><![CDATA[<p>20 Jul 2023</p>
 
 <p>In November 2021, I was invited by Health Data Research UK (HDRUK) to give a talk as part of a public webinar on vaccine safety. One of the goals of this webinar was to allow members of the public to ask questions and interact with professionals carrying out research in this area.</p>
 
@@ -630,92 +809,6 @@ Ok, but now let’s add more people whose lives are just marginally worth living
 
 <p>Ok, so why can’t we have lexicographic preferences or similar when it comes to population ethics? I.e. there is no number of lives that are barely worth living that would be morally preferable to 100 people having wonderful lives. Seems easy enough. We don’t have to come to any of the utterly bizarre conclusions that philosophers think are forced upon us. We just can’t use numbers to represent our preferences - we’re not such simple creatures.</p>
 
-<p>It really is that easy. Nonetheless, you would be truly shocked by the sheer volume of commentary this completely trivial ‘problem’ has generated in academic philosophy circles. And if you’re anything like me, absolutely appalled by the moral positions that various esteemed thinkers take seriously and have adopted as a result of this thinking.</p>
+<p>It really is that easy. Nonetheless, you would be truly shocked by the sheer volume of commentary this problem has generated in academic philosophy circles. And if you’re anything like me, absolutely appalled by the moral positions that various esteemed thinkers take seriously and have adopted as a result of this thinking.</p>
 
-<p>Never do philosophy kids.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[21 Mar 2023]]></summary></entry><entry><title type="html">Effective altruism, longtermism and Pascal’s mugging</title><link href="/2023/01/04/Effective-altruism,-longtermism,-and-Pascal's-mugging.html" rel="alternate" type="text/html" title="Effective altruism, longtermism and Pascal’s mugging" /><published>2023-01-04T00:00:00+00:00</published><updated>2023-01-04T00:00:00+00:00</updated><id>/2023/01/04/Effective%20altruism,%20longtermism,%20and%20Pascal&apos;s%20mugging</id><content type="html" xml:base="/2023/01/04/Effective-altruism,-longtermism,-and-Pascal&apos;s-mugging.html"><![CDATA[<p>04 Jan 2023</p>
-
-<h3> What is effective altruism? </h3>
-
-<p>It is a social movement that broadly aims to do the ‘most good’ in the world with limited resources. They advocate for making career choices and charitable donations that maximise altruistic impact. Their activities include writing research papers on ethics, analysing effectiveness of charitable organisations, giving career advice, and promoting pledges to donate a proportion of one’s income to charity. The main individuals who are credited with starting the movement are Will MacAskill and Toby Ord, both at the University of Oxford, and Australian moral philospher Peter Singer, at Princeton university.</p>
-
-<h3> What is longtermism? </h3>
-
-<p>Longtermism has become a signature idea within the effective altruism community. It broadly argues for greater emphasis to be placed on the long-term future in ethical decisions. The basic gist is that future humans/sentient beings who have not yet come into existence should be given the same ‘moral weight’ as those alive now. This tends to be coupled with the idea that the number of beings alive right now could be completely dwarfed by the number of future humans, especially if humanity survives for millions/billions of years into the future and colonises other planets.</p>
-
-<h3> Sounds dandy. Ok, and what is the last thing you mentioned? </h3>
-
-<p>Pascal’s mugging.</p>
-
-<p>Let’s say you’re walking along the street one day and you’re accosted by a mugger. However, he is an extremely incompetent mugger who has forgotten his weapon. So, he instead makes the following proposal: give me all the money in your wallet, and tomorrow I will give you back twice that amount of money. You, being sensible, immediately dismiss his offer - what are the chances that he would actually follow through? The mugger, sensing he is losing you, continues to increase his offer. He says that if there is even the tiniest non-zero probability that he will honour the deal, then you should accept. Eventually he wins you over by offering a bajillion dollars on the morrow sharp if you agree, but otherwise he will kick a gazillion puppies right in the face.</p>
-
-<h3> Ok, you have a problem, don't you Steven. Why don't you tell me about it. </h3>
-
-<p>Yeah I do have a problem. Well-intuited, me.</p>
-
-<p>The notion that we are not giving sufficient ‘moral weight’ to future individuals compared to individuals alive now, comes from a little mish-mash of undergraduate economics and philosophy. In economics 101, you learn that the default setting for economic models is to discount future utility. That means that we prefer a bowl of ice cream now compared to a bowl of ice cream tomorrow, or a year from now. This is expressed mathematically as follows:</p>
-
-<p>\begin{align} U = \sum_{t=1}^{T} \beta^t u(x_t).\end{align}</p>
-
-<p>Here, \( x_t \) is some amount of a good received at time \( t \) (e.g. a bowl of ice cream), \( u \) is a utility function which measures the benefit that you get from said good at the moment of consumption, and \( \beta \) is a number between 0 and 1 that we call the utility discount factor. The utility discount factor captures how much we prefer benefits now compared to benefits at a later date. For example, let’s say units of time are measured in days and \( \beta = 0.5 \). That would mean that a bowl of ice cream tomorrow is ‘worth’ half as much as a bowl of ice cream today.</p>
-
-<p>Now, the fine upstanding philospher sees this and is frankly outraged. So outraged, he almost smashes his monocle. What does this presume to say - that the you of tomorrow has only half the moral worth of today’s you? What egregious claptrap is this!</p>
-
-<p>I jest, but only a little. But that’s basically the longtermists; they think that \( \beta \) should be equal to 1, for reasons.</p>
-
-<p>Of course what they completely ignore is that the utility discount factor is really just a parsimonious way of capturing the fact that everything is a lottery, without actually having to model everything as a lottery, because frankly that’s a pain in the arse. The choice is not between a bowl of ice cream now or tomorrow. It is a choice between a bowl of ice cream now, and an almost-certain bowl of ice cream tomorrow plus a small probability that you meet your tragic and untimely demise in an unforseeable bovine trebuchet incident before tomorrow, thus depriving you of said bowl of ice cream.</p>
-
-<p>Ok I jest again, maybe a little more this time.</p>
-
-<p>The point is there is a chance you may not be around to get that bowl of ice cream tomorrow, or you might lose your taste buds, or whatever else. Of course there’s also a chance that a magical fairy will wave her wand and make it so that tomorrow you get twice the enjoyment from that bowl of ice cream that you otherwise would have. But basically, there’s a lottery over events that could happen, and the end result of that lottery is that humans tend to prefer sure things today rather than near-sure things tomorrow, or not-so-sure things a year from now. As a quick fix to model this, we set \( \beta \) a little less than 1.</p>
-
-<p>It is not difficult to figure this out. Many people know it, and have pointed it out. This has not stopped the longtermists from building a utopian (read: probably dystopian) moral calculus though.</p>
-
-<p>So yeah, let’s say we take the longtermist idea seriously - there will be no utility discounting, no siree. On top of that, let’s presume that there is a non-zero chance that there will be an arbitrarily large number of human beings with wonderful lives in the future. Does this remind you of a certain unarmed robbery of a certain historical Frenchman yet?</p>
-
-<p>Armed with this ideology, you could come to some rather dubious conclusions, to say the least. For example, you could argue that instead of using our resources to provide food for millions of people on the brink of famine today, we should instead give that money to our well-to-do academics and intellectual superiors at Oxbridge and the Ivy league so they can do urgently-needed research on where to best expend further resources.</p>
-
-<p>Yeah, right.</p>
-
-<p>In fact, you could use this ideology to justify inflicting any amount of suffering on people who are alive today, in order to serve the interests of hypothetical future people. After all, what’s worse: the suffering of a few million people, or the suffering of <b>ONE ZILLION SQUILLION</b> future people, who let’s face it are, for all ethical intents and purposes, really alive today.</p>
-
-<p>This thinking is the product of ordinary academic minds furiously scurrying to justify their existence. They need some new, counterintuitive take that they can write papers about, use to position themselves as the thought-leaders of a burgeoning social movement and get tenured positions at universities.</p>
-
-<p>It’s easy not to take this too seriously. Surely they are on the fringe.</p>
-
-<p>Then you realise that that the effective altruism movement may have control over several billions of dollars.</p>
-
-<p>Then you find out that a prominent effective altruist, by the name of Sam Bankman-Fried, was (allegedly!) running a cryptocurrency Ponzi scheme, which basically amounted to stealing people’s life savings and donating it to his preferred political party.</p>
-
-<p>Very effective. Much altruism.</p>
-
-<p>Really what this is is some kids with a god complex and a utopian ideology that, like so many before it, would almost certainly lead to misery on the grandest scale imaginable if ever fully realised. The only thing they need to make it a reality is a little more power.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[04 Jan 2023]]></summary></entry><entry><title type="html">Negative vaccine effectiveness</title><link href="/2022/11/20/Negative-vaccine-effectiveness.html" rel="alternate" type="text/html" title="Negative vaccine effectiveness" /><published>2022-11-20T00:00:00+00:00</published><updated>2022-11-20T00:00:00+00:00</updated><id>/2022/11/20/Negative%20vaccine%20effectiveness</id><content type="html" xml:base="/2022/11/20/Negative-vaccine-effectiveness.html"><![CDATA[<p>20 Nov 2022</p>
-
-<p>Myself and a team of collaborators including Stuart Bedston at the University of Swansea, Declan Bradley at Queen’s University Belfast and Mark Joy at the University of Oxford recently published a <a href="https://doi.org/10.1093/ije/dyac199" target="_blank"> paper</a> in the International Journal of Epidemiology studying waning of COVID-19 vaccine effectiveness. One of the major findings of the paper is that for first and second dose of AstraZeneca and first dose of Pfizer, effectiveness of the vaccine against COVID-19 hospitalisation or death reached zero by approximately day 60-80 after receiving the vaccine, and then went negative.</p>
-
-<p>That is quite a striking result. This post is going to dig into possible explanations of this phenomenon and its implications.</p>
-
-<h3> First of all, what did you actually do? </h3>
-
-<p>We carried out a type of study called a ‘target trial emulation’. This attempts to find a ‘naturally occurring’ clinical trial, by matching people in a population who received a given treatment to similar people who didn’t receive the treatment. You can then compare the rate of adverse events in these retrospectively generated, artificial treatment and control groups.</p>
-
-<p>The data that we used to do this study are highly confidential, and stored securely on different servers in each nation of the UK. It is not permitted to have any statistically disclosive, individual-level information leave those servers. However, we introduced an interesting methodological novelty that allowed us to do a pooled study despite these restrictions. This means that the final result that we ended up with is identical to what we would have got if the data all started out in the same location. We were able to do this because of the target trial emulation study design that we used. So, amazingly, it is possible to do a pooled analysis across multiple separate datasets that controls very carefully for individual level characteristics, without actually having to share any individual-level information!</p>
-
-<h3> What could be causing negative vaccine effectiveness? </h3>
-
-<p>One possibilty is that it is behavioural. So people who get vaccinated might be more likely to behave in ways that put them at greater risk of infection. For example, at various points during the pandemic, vaccinated people have been subject to fewer restrictions on movement than unvaccinated people. On the other hand, it could just as well go the other way - unvaccinated people may be less risk averse when it comes to the possibility of being infected, and thus may have behaved in ways that put them at greater danger of contracting COVID-19.</p>
-
-<p>It is also possible that naturally-acquired immunity is more robust than vaccine-induced immunity. A <a href="https://doi.org/10.1093/ije/dyac199" target="_blank"> study</a> from Israel found that vaccinated individuals had a 13-fold increased risk of infection compared to previously infected individuals.</p>
-
-<p>A final possibility is that this is all just a consequence of the fact that the protection offered by the vaccine is relatively short-lasting. For example, imagine that I had two cohorts of similar individuals, and vaccination offered 100% protection against infection for a short period of time. The first cohort receives a dose of vaccine on day 0, while the second cohort receives a dose of vaccine on day 30. One would intuitively expect that the first cohort would initially have fewer severe COVID-19 outcomes, but then at some point the second cohort would do better. Now instead of vaccinating the second cohort, let’s have them contract COVID-19. And instead of it happening on day 30, let’s sprinkle it around randomly in time, but initially occurring at a higher rate than in the vaccinated group. Finally, let’s assume that the vaccine is effective but not perfect for a short period of time, and naturally-acquired innoculation is as immunologically effective (or better) than the vaccine. One would still expect something qualitatively similar; the first cohort would have fewer events intially, then subsequently the second cohort would do better because those people who contract and recover from COVID-19 are naturally innoculated.</p>
-
-<p>By the way I should say that our study is not the only one to find negative vaccine effectiveness - our result is unlikely to be an anomaly.</p>
-
-<h3> What are the implications? </h3>
-
-<p>If negative vaccine effectiveness is largely explained by behavioural factors, then it might be possible to curtail it with a public information campaign aimed at making sure vaccinated individuals continue to observe precautions against COVID-19. On the other hand, I do think that one of the major incentives to get the vaccine is so that one can return to normal behaviour. I personally am not convinced that the explanation for negative vaccine effectiveness is behavioural, and even if it was I am skeptical about our ability to do anything about it.</p>
-
-<p>If negative vaccine effectiveness cannot be significantly curtailed, then it raises some very interesting policy questions. Vaccines still have utility, but what is their proper role in world where COVID-19 is endemic? For example, if vaccine doses could be timed so that the period where negative vaccine effectiveness would kick in happens towards the end of a wave of infections, it may be be possible to provide significant long-term protection by offering a precisley-timed, recurring regimen of COVID-19 vaccines. However, I don’t really have much confidence in our ability to sufficiently accurately forecast future waves of infections in a way that would allow us to usefully implement such a scheme.</p>
-
-<p>The other main utility offered by COVID-19 vaccines is ‘flattening the curve’. That is, spreading the caseload over time so that our healthcare services are not overwhelmed and can offer better treatment. This could be worthwhile, though again it would require forecasting ability that so far has proven elusive to us.</p>
-
-<p>The final question is whether all of this is worth it. Mass COVID-19 vaccinations are expensive, and it is not clear how beneficial it is. It seems quite possible that there are far more cost-effective ways to preserve human life. In particular, I think in our revolutionary fervour for vaccines, we may have neglected a cheaper and easier win in the form of anti-viral and monoclonal antibody treatments.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[20 Nov 2022]]></summary></entry></feed>
+<p>Never do philosophy kids.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[21 Mar 2023]]></summary></entry></feed>

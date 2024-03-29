@@ -43,6 +43,8 @@ To which I respond: if your model predicts a mean that is impossible by definiti
 
 In fact, you might even consider the foregoing an asset - predicted values that are out of bounds is a clear diagnostic tool you can use to detect issues with model specification and/or sample size.
 
+Finally, if you do have out of bounds predictions, it is completely sensible to modify them to be the closest allowed value. This is what you get by conditioning predictions on the fact that they must lie in a limited range. 
+
 <h3>  Objection 2: Heteroscedasticity </h3>
 
 So usually we not only want to estimate \\( \beta \\), but also its variance, in order to have an idea of what level of confidence we can reasonably have in \\( \hat{\beta}\\). The most straightforward way of doing this makes the following assumption:
@@ -68,7 +70,7 @@ I think one reason is that it's a 'zero-thought' method. If you use linear regre
 
 It probably also has something to do with the vagaries of history. Maximum likelihood methods are newer than linear regression, and were all the rage at the time. Plus computers have gotten a lot more powerful in recent decades, and often there is very little difference to the end user in fitting maximum likelihood models despite the fact that they are generally more computationally demanding.
 
-One reason this may again become quite relevant, certainly in health data science, is if <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation" target="_blank">secure multi-party computation</a> methods are adopted and become commonplace. These techniques allow a function to be calculated across multiple private datasets, with zero information sharing. However, nothing is free, and in this case it comes with a significant additional burden in computational complexity. That might make linear regression start to look very attractive again compared to methds that require iterative optimisation methods.
+One reason this may again become quite relevant, certainly in health data science, is if <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation" target="_blank">secure multi-party computation</a> methods are adopted and become commonplace. These techniques allow a function to be calculated across multiple private datasets, with zero information sharing. However, nothing is free, and in this case it comes with a significant additional burden in computational complexity. That might make linear regression start to look very attractive again compared to methods that require iterative optimisation methods.
 
 
 

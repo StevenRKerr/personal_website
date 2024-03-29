@@ -56,6 +56,6 @@ Indeed, every decent economics graduate learns about the canonical example of an
 
 Ok, so why can't we have lexicographic preferences or similar when it comes to population ethics? I.e. there is no number of lives that are barely worth living that would be morally preferable to 100 people having wonderful lives. Seems easy enough. We don't have to come to any of the utterly bizarre conclusions that philosophers think are forced upon us. We just can't use numbers to represent our preferences - we're not such simple creatures.
 
-It really is that easy. Nonetheless, you would be truly shocked by the sheer volume of commentary this completely trivial 'problem' has generated in academic philosophy circles. And if you're anything like me, absolutely appalled by the moral positions that various esteemed thinkers take seriously and have adopted as a result of this thinking.
+It really is that easy. Nonetheless, you would be truly shocked by the sheer volume of commentary this problem has generated in academic philosophy circles. And if you're anything like me, absolutely appalled by the moral positions that various esteemed thinkers take seriously and have adopted as a result of this thinking.
 
 Never do philosophy kids.

@@ -1,0 +1,341 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Steven Kerr | Robust standard errors</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="../../../assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+        <link type="application/atom+xml" rel="alternate" href="/feed.xml" />
+        <meta name="twitter:creator" content="@stevenrosskerr">
+        <meta name="twitter:image" content="https://drstevenkerr.com/images/header.jpg">
+        <!-- Begin Jekyll SEO tag v2.8.0 -->
+<title>Robust standard errors</title>
+<meta name="generator" content="Jekyll v4.3.2" />
+<meta property="og:title" content="Robust standard errors" />
+<meta property="og:locale" content="en_US" />
+<meta name="description" content="17 Jan 2024" />
+<meta property="og:description" content="17 Jan 2024" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-01-17T00:00:00+00:00" />
+<meta name="twitter:card" content="summary" />
+<meta property="twitter:title" content="Robust standard errors" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-17T00:00:00+00:00","datePublished":"2024-01-17T00:00:00+00:00","description":"17 Jan 2024","headline":"Robust standard errors","mainEntityOfPage":{"@type":"WebPage","@id":"/2024/01/17/Robust-standard-errors.html"},"url":"/2024/01/17/Robust-standard-errors.html"}</script>
+<!-- End Jekyll SEO tag -->
+
+	</head>
+
+    <body class="left-sidebar is-preload">
+        <div id="page-wrapper">
+
+            <!-- Header -->
+                <div id="header">
+
+                    <!-- Inner -->
+                        <div class="inner">
+                            <header>
+                                <h1>Blog - 2024</h1>
+                            </header>
+                        </div>
+
+                    <!-- Nav -->
+                        <nav id="nav">
+                            <ul>
+                                <li><a href="../../../index.html">Home</a></li>
+                                <li><a href="../../../bio.html">Bio</a></li>
+                                <li><a href="../../../epi.html">Publications</a></li>
+                                <li><a href="../../../blog.html">Blog</a></li>
+                            </ul>
+                        </nav>
+
+                </div>
+
+            <!-- Main -->
+                <div class="wrapper style1">
+
+                    <div class="container">
+                        <div class="row gtr-200">
+                            <div class="col-3 col-12-mobile" id="sidebar">
+                                <hr class="first" />
+                                
+                                
+                                
+                                
+                                
+                                <section>
+                                    <header>
+                                        <a href="../../../2024/03/26/Loops-quantum-gravity,-or-lattice-quantum-gravity.html"> Loop quantum gravity, or lattice quantum gravity? </a> 
+                                        <p style="margin:10px;"></p>
+                                    </header>
+                                </section>
+                                
+                              
+                                
+                                
+                                
+                                <section>
+                                    <header>
+                                        <a href="../../../2024/01/17/Robust-standard-errors.html"> Robust standard errors </a> 
+                                        <p style="margin:10px;"></p>
+                                    </header>
+                                </section>
+                                
+                              
+                                
+                                
+                                
+                                <section>
+                                    <header>
+                                        <a href="../../../2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html"> Why do so many statisticians think a normality assumption is required in linear regression? </a> 
+                                        <p style="margin:10px;"></p>
+                                    </header>
+                                </section>
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+                                
+                                
+                                
+                              
+            
+                            </div>
+
+                            <div class="col-8 col-12-mobile imp-mobile" id="content">
+                                <article id="main">
+                                    <header>
+                                        <h2> Robust standard errors </h2>
+                                    </header>   
+                                    <p>17 Jan 2024</p>
+
+<p>Robust standard errors are frequently used in statistics, often in an unthinking way. They are certainly valuable and useful in the context of linear regression; however, they do not serve a similar purpose in maximum likelihood estimation of non-linear models. The basic issue is that the kind of mis-specification that robust standard errors can address in linear regresion does not spoil consistency results for the parameter estimates. On the other hand, it does spoil those results in the context of maximum likelihood estimation of non-linear models. Thus at best you end up with a consistent estimator for the variance of a parameter estimate that is itself inconsistent, which isn’t really of interest except as a diagnostic tool for detectng bad models. I’ll explore this in more detail below.</p>
+
+<h3>  Linear regression </h3>
+
+<p>In my <a href="https://drstevenkerr.com/2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html" target="_blank"> last post</a>, I discussed some sufficient conditions for ‘model validity’ in linear regression. I will use the same notation defined there. Namely: \( y \) is an \( n \)-dimensional vector whose elements are \( y_i \), \( X \) is an \( n \times k \) matrix whose rows are \( x_i \), \( \beta \) is a \( k\)-dimensional vector of parameters to be estimated, and \( \epsilon \) is an \( n \)-dimensional vector of residuals whose elements are \( \epsilon_i \). One of the conditions was as follows:</p>
+
+<p><b>Central limit theorem (CLT).</b> \(  \sqrt{n} \left( \frac{1}{n} \sum_{i} x_i \epsilon_i\right) \xrightarrow{d} N(0, \Sigma) \), where \( \xrightarrow{d} \) denotes <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_distribution" target="_blank"> convergence in distribution</a>.</p>
+
+<p>If \( \Sigma \) is of the form \( \sigma^2 I \) where \( I \) is the \( n \times n \) identity matrix, then the errors are said to ‘spherical’. In this case, the conditional variance of  the ordinary least squares (OLS) estimator is</p>
+
+\[\mathrm{Var}(\hat{\beta} \; \lvert \; X) = \frac{\epsilon^T \epsilon}{n-k} (X^T X)^{-1},\]
+
+<p>where \( \hat{\epsilon} = y - X \hat{\beta} \).</p>
+
+<p>It turns out that the spherical error requirement can be significantly weakened. In particular, there are several ‘robust’ variance estimators that are consistent even in the presence of heteroskedasticity. For example, the following estimator</p>
+
+\[HC_0 :=  \frac{n}{n-k} (X^T X)^{-1} X^T \mathrm{diag}(\hat{\epsilon}) X (X^T X)^{-1},\]
+
+<p>where \( \mathrm{diag}(\hat{\epsilon}) \) is the diagonal matrix with non-zero elements given by \( \hat{\epsilon}\).</p>
+
+<p>Crucially, the spherical error assumption is <b>not needed</b> for the OLS estimator \( \hat{\beta} = (X^T X)^{-1} X^T y \) to be consistent. This means there is no conflict between consistency of \( \hat{\beta}\) and presence of heteroscedasticity. Heteroscedasticity robust standard errors are therefore very useful as a quantification of uncertainty of parameter estimates in many scenarios.</p>
+
+<p>As we shall see, the analogous statement is not so much the case in maximum likelihood estimation.</p>
+
+<h3>  Maximum likelihood estimation </h3>
+
+<p>In the following, I will use \( \theta_0 \) to denote the ‘true’ parameter values of a data-generating process, \( \theta \) for a set of parameter values, and \( w_i \) for a vector  that is a single sample from the data-generating process. I will consider the particular case of M-estimators, which are estimators that maximise an objective function that takes the form of a sample average,</p>
+
+\[Q_n(\theta) :=  \frac{1}{n} \sum_i m(w_i, \theta).\]
+
+<p>Here, \( m \) is just some function of the data and the parameters. The typical case in maximum likelihood estimation is \( m(w_i, \theta) = \mathrm{ln}(f(w_i, \theta)) \), where \( f(w_i, \theta) \) is a probability density parametrised by \( \theta \) and evaluated at \( w_i \). In constructing this expression, it is typically assumed that the \( w_i \) are <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables" target="_blank"> iid</a>.</p>
+
+<p>Let’s look at a typical set of sufficient conditions for consistency of maximum likelihood parameter estimates.</p>
+
+<p><span id="1.1"> <b>1.1.</b> The <a href="https://en.wikipedia.org/wiki/Stochastic_process" target="_blank"> stochastic pocess</a> \( w_i \) is <a href="https://en.wikipedia.org/wiki/Stationary_process" target="_blank"> stationary</a> and <a href="https://en.wikipedia.org/wiki/Ergodic_process" target="_blank"> ergodic</a>.</span></p>
+
+<p><span id="1.2"> <b>1.2.</b> \( \theta_0 \in \Theta \) where \( \Theta \) is a convex parameter space.</span></p>
+
+<p><span id="1.3"> <b>1.3.</b> \( m(w_i, \theta) \) is concave in \( \theta \; \forall \; w_i \).</span></p>
+
+<p><span id="1.4"> <b>1.4.</b> \( m(w_i, \theta) \) is a <a href="https://en.wikipedia.org/wiki/Measurable_function" target="_blank"> measurable function</a> of \( w_i \; \forall \theta \in \Theta \).</span></p>
+
+<p><span id="1.5"> <b>1.5.</b> \( \mathbb{E}[m(w_i, \theta)] \) is uniquely maximised on \( \Theta \) at \( \theta_0 \).</span></p>
+
+<p><span id="1.6"> <b>1.6.</b> \( \mathbb{E}[m(w_i, \theta)] \) is finite \(\forall \; \theta \in \Theta \).</span></p>
+
+<p>The logic behind these conditions is as follows. <a href="#1.1"> 1.1</a> and <a href="#1.6"> 1.6</a> guarantee that the objective function \( Q_n(\theta) \) converges in probability to \( \mathbb{E}[m(w_i, \theta)] \). The idea is that if we then maximise \( Q_n(\theta) \), the resulting estimator \( \hat{\theta} \) will converge in probability to the unique ‘true’ value \( \theta_0 \) that maximises \( \mathbb{E}[m(w_i, \theta)] \), assumed to exist courtesy of <a href="#1.5"> 1.5</a>. Conditions <a href="#1.2"> 1.2</a> and <a href="#1.3"> 1.3</a> simply ensure that \( Q_n(\theta) \) has a unique maximum, and <a href="#1.4"> 1.4</a> is a ‘mathematical housekeeping’ condition that just means that \( m(w_i, \theta) \) is in fact a random variable.</p>
+
+<p>Note that despite the fact that the iid assumption is typically used to derive the form of the likelihood function in the first place, it does not appear in <a href="#1.1">1.1</a>-<a href="#1.6">1.6</a>. We only need \( w_i \) to be ergodic stationary, and \( \mathbb{E}[m(w_i, \theta)] \) to be uniquely maximised at \( \theta_0 \). In other words, the objective function \( Q_n(\theta) \) needn’t be a correctly specified log-likelihood. This opens the doorway to <a href="https://en.wikipedia.org/wiki/Quasi-maximum_likelihood_estimate" target="_blank"> quasi-maximum likelihood estimation</a>, in which the likelihood function is mis-specified but still has the correct maximum.</p>
+
+<p>Conditions <a href="#1.2"> 1.2</a> and <a href="#1.3"> 1.3</a> also ensure that the global maximum of \( Q_n(\theta) \) can be found by taking the first derivative and setting equal to zero. We define the score and Hessian for observation \( i\) as follows</p>
+
+\[\begin{align}
+s(w_i, \theta) &amp;:=  \frac{\partial m(w_i, \theta)}{\partial \theta} \\
+H(w_i, \theta) &amp;:= \frac{\partial^2 m(w_i, \theta)}{\partial \theta \partial \theta'}.
+\end{align}\]
+
+<p>Assume the following,</p>
+
+\[\begin{align}
+\frac{1}{n} \sum_i  H(w_i, \theta) &amp;\xrightarrow{p} \mathbb{E}[H(w_i, \theta)] \\
+\frac{1}{n} \sum_i  s(w_i, \theta_0) &amp;\xrightarrow{d} N(0, \Sigma).
+\end{align}\]
+
+<p>We can then apply the <a href="https://en.wikipedia.org/wiki/Delta_method" target="_blank"> delta method</a> to \( \frac{ \partial Q_n(\hat{\theta})}{\partial \theta} =  \frac{1}{n} \sum_i s(w_i, \theta) = 0 \), obtaining</p>
+
+\[\sqrt{n} (\hat{\theta} - \theta_0) \xrightarrow{d} N(0, \Sigma'),\]
+
+<p>where</p>
+
+<p>\(\begin{align}
+\Sigma' = \big( \mathbb{E}[H(w_i, \theta_0)] \big)^{-1} \; \Sigma \; \big( \mathbb{E}[H(w_i, \theta_0)] \big)^{-1} \label{robust} \tag{1}
+\end{align}\).</p>
+
+<p>In the case where \( w_i \) are <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables" target="_blank"> iid</a> and some <a href="https://en.wikipedia.org/wiki/Fisher_information" target="_blank"> regularity conditions</a> are satisfied, this expression simplifies to</p>
+
+<p>\(\begin{align}
+\Sigma' = - \big( \mathbb{E}[H(w_i, \theta_0)] \big)^{-1} \label{non-robust} \tag{2}
+\end{align}\).</p>
+
+<p>These results can be found in Chapter 7, sections 7.2 and 7.3 of <a href="#1"> [1]</a>.</p>
+
+<h3> Mis-specification </h3>
+<p>Finally we get to the real subject of this post. As indicated above, we may still extract useful results from a model if the likelihood is mis-specified, so long as it has the correct maximum, or the mis-specification is ‘small’ in some appropriate sense. In this case, both \( \hat{\theta} \) and its variance will be consistent.</p>
+
+<p>However, what if there is a more serious mis-specification? This will certainly spoil consistency results for \( \hat{\theta} \). We may still be able to consistently estimate the variance of \( \hat{\theta} \) though, using equation \(\ref{robust}\). But that begs the question, why should we care? What value is there in having a consistent estimator of the variance of a parameter estimator that is itself inconsistent?</p>
+
+<p>This has been pointed out, for example, in <a href="#2"> [2]</a>. In essence, if there is a need to use robust standard errors, then it indicates a serious flaw in the model that demands a new and better model, not a tweak to fix the variance.</p>
+
+<h3>  References </h3>
+
+<p><span id="1"> <b>1. </b> </span> Hayashi, Fumio. Econometrics. Princeton :Princeton University Press, 2000.</p>
+
+<p><span id="2"> <b>2. </b> </span> King G, Roberts ME. <a href="https://gking.harvard.edu/files/gking/files/robust_0.pdf" target="_blank"> How robust standard errors expose methodological problems they do not fix, and what to do about it.</a> Political analysis, Vol. 23, No. 2, 2015.</p>
+
+
+
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+                <!-- Footer -->
+<div id="footer">
+    <div class="container">
+            <div class="col-12">
+
+                <!-- Contact -->
+                    <section class="contact">
+                        <header>
+                            <h3>Social media:</h3>
+                        </header>
+                        <ul class="icons">
+                            <li><a href="https://twitter.com/stevenrosskerr" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+                            <li><a href="https://www.linkedin.com/in/steven-kerr-014b19133/" class="icon brands fa-linkedin-in"><span class="label">Linkedin</span></a></li>
+                            <li><a href="https://github.com/StevenRKerr" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
+                        </ul>
+                    </section>
+
+            </div>
+
+        </div>
+    </div>
+</div>
+
+    </div>
+        
+    <!-- Scripts -->
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/jquery.dropotron.min.js"></script>
+<script src="assets/js/jquery.scrolly.min.js"></script>
+<script src="assets/js/jquery.scrollex.min.js"></script>
+<script src="assets/js/browser.min.js"></script>
+<script src="assets/js/breakpoints.min.js"></script>
+<script src="assets/js/util.js"></script>
+<script src="assets/js/main.js"></script>
+<script src="https://polyfill.io/v3/polyfill.min.js?features=es6"></script>
+<script id="MathJax-script" async src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+        
+    </body>
+</html>
