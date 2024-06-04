@@ -1,4 +1,126 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-03-27T18:52:44+00:00</updated><id>/feed.xml</id><entry><title type="html">Loop quantum gravity, or lattice quantum gravity?</title><link href="/2024/03/26/Loops-quantum-gravity,-or-lattice-quantum-gravity.html" rel="alternate" type="text/html" title="Loop quantum gravity, or lattice quantum gravity?" /><published>2024-03-26T00:00:00+00:00</published><updated>2024-03-26T00:00:00+00:00</updated><id>/2024/03/26/Loops%20quantum%20gravity,%20or%20lattice%20quantum%20gravity</id><content type="html" xml:base="/2024/03/26/Loops-quantum-gravity,-or-lattice-quantum-gravity.html"><![CDATA[<p>26 Mar 2024</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-06-04T18:11:00+01:00</updated><id>/feed.xml</id><entry><title type="html">Understanding case control studies</title><link href="/2024/06/04/Understanding-case-control-studies.html" rel="alternate" type="text/html" title="Understanding case control studies" /><published>2024-06-04T00:00:00+01:00</published><updated>2024-06-04T00:00:00+01:00</updated><id>/2024/06/04/Understanding%20case%20control%20studies</id><content type="html" xml:base="/2024/06/04/Understanding-case-control-studies.html"><![CDATA[<p>04 Jun 2024</p>
+
+<p>Case control studies are a staple in the epidemiologist’s toolbox. The basic idea idea is that instead of carrying out an analysis on a random sample of a population, you instead sample from the population conditional on occurrence of an outcome of interest. Typically this will involve selecting all individuals who have the outcome (the cases), and only some people who don’t have the outcome (the controls). The motivation for doing this is that when the outcome is rare, most of the precision in estimates is driven by the cases, and adding a large number of controls often has little effect. Case control studies can thus be more efficient in terms of data collection/processing compared to e.g. a cohort study.</p>
+
+<p>Case control studies have been instrumental in establishing many useful research findings, such as the link between smoking tobacco and lung cancer. Despite this, the exact workings of case control studies are poorly understood by many professionals who use them routinely. I recently co-authored an article in the Journal of Global Health with world-leading statistician and epidemiologist <a href="https://en.wikipedia.org/wiki/Sander_Greenland" target="_blank"> Sander Greenland</a> that attempts to clear up the confusion that persists over this study design.<a href="#1">[1]</a></p>
+
+<h3> Outcome and exposure odds ratios </h3>
+
+<p>Consider the following table that is basically a stock character in epidemiology text books.</p>
+
+<table>
+  <thead>
+    <tr>
+      <th style="text-align: right"> </th>
+      <th style="text-align: center"><u><strong>Exposed </strong></u></th>
+      <th style="text-align: center"><u><strong> Unexposed </strong></u></th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td style="text-align: right"><u><strong>Outcome event </strong></u></td>
+      <td style="text-align: center">a</td>
+      <td style="text-align: center">b</td>
+    </tr>
+    <tr>
+      <td style="text-align: right"><u><strong>No outcome event </strong></u></td>
+      <td style="text-align: center">c</td>
+      <td style="text-align: center">d</td>
+    </tr>
+  </tbody>
+</table>
+
+<p>The entry in each cell denotes the number of people in each exposure/outcome category in a closed cohort. Using this table, we get</p>
+
+\[\begin{align}
+\mathrm{Odds}(O=1 | E=1) &amp;= \frac{ \left(\frac{a}{a+c} \right) }{ \left(\frac{c}{a+c} \right) } = \frac{a}{c} \label{odds_e} \tag{1}\\
+&amp; \\
+\mathrm{Odds}(O=1 | E=0) &amp;= \frac{ \left( \frac{b}{b+d} \right) }{ \left( \frac{d}{b+d}  \right) } = \frac{b}{d}, \label{odds_u} \tag{2}
+\end{align}\]
+
+<p>where \( O \) and \( E \) are binary outcome and exposure indicator variables respectively. This gives the outcome odds ratio as</p>
+
+\[\begin{align}
+OR  = \frac{\mathrm{Odds} (O=1 \| E=1)}{\mathrm{Odds} (O=1 \| E=0) } = \frac{ad}{bc} \tag{3}.
+\end{align}\]
+
+<p>A fact that is often made much of in epidemiology text books is that if you repeat this calculation but instead looking at the odds ratio of <em>exposure</em> in cases compared to controls, you get exactly the same answer, \( \frac{ad}{bc} \). In fact, I have sometimes seen a stronger claim that case control studies <em>cannot</em> directly estimate the outcome odds ratio, but only the exposure odds ratio.</p>
+
+<p>The idea behind this claim appears to be that in a case-control study, the dataset typically contains all the cases, but only some of the controls. Hence we do not know \( c \) or \( d \), and cannot estimate \( \ref{odds_e} \) or \( \ref{odds_u} \). On the other hand, when calculating the odds ratio of exposure, the probability of exposure among those who had the event and those who did not have the event can be estimated.</p>
+
+<p>This is, however, completely immaterial. The ratio \( \frac{d}{c} \) can be estimated by dividing the number of people who are unexposed by the number exposed among the controls. Therefore the quantity \( \frac{ad}{bc} \) can also be estimated from the case control sample even though we don’t know \( c \) or \( d \). It’s irrelevant whether you want to call it an outcome odds ratio or an exposure odds ratio.</p>
+
+<p>Unfortunately, this has generated some confusion. While the outcome and exposure odds ratios are theoretically equal, one would typically estimate them using logistic models for \(  P(O = o \; | \; E=e, X=x) \) and \(  P(E = e \; | \; O=o, X=x) \). These are related by Bayes theorem,</p>
+
+\[\begin{align}
+P(O = o \; | \; E=e, X=x) = \frac{  P(E = e \; | \; O=o, X=x) P(O=o, X=x) }{ P(E=e, X=x) }.  \label{bayes} \tag{4}
+\end{align}\]
+
+<p>It is extremely unlikely that logistic models will be consistent with this relationship because, as we all know, <a href="https://en.wikipedia.org/wiki/All_models_are_wrong" target="_blank"> all models are wrong</a>. Thus outcome and exposure odds ratios estimated in this way will in general not be the same. The choice of whether to take outcome or exposure to be the dependent variable in principle should be done on the basic of which model is better. In practice, there is an established tradition of the outcome being the dependent variable.</p>
+
+<h3> Odds ratios or rate ratios? </h3>
+
+<p>The second major source of confusion in case control studies is whether one should report an odds ratio or a rate ratio. On the face of it, you would think an odds ratio since case control studies typically use logistic regression. However, this odds ratio is an estimator for the parameter of a data generating process that includes the sampling we carried out for cases and controls. In other words, it is not an estimator for the odds ratio in the population.</p>
+
+<p>On the other hand, there are some circumstances under which the odds ratio in a case control study is equal to the rate ratio in the population. These conditions are laid out in our paper <a href="#1"> [1]</a>, and also in Sander’s paper from the early 80s <a href="#2"> [2]</a>. In particular, this conclusion holds if the analysis uses risk set sampling to match cases with controls, the model includes strata terms for matched cases and controls, and the instantaneous rate ratio is constant over the study period. Risk set sampling means controls are randomly sampled from everyone who has not had an event at the time the of outcome for the index case. Proof of this can be found in <a href="#2"> [2]</a>.</p>
+
+<p>Despite the fact that this has been known for over 50 years, there is still a great deal of confusion. In particular, there are a few papers out there that incorrectly claim that risk set sampling alone is sufficent for an odds ratio in the data generating process of a case control study to be equal to a rate ratio in the population.</p>
+
+<p>Ultimately, it is a matter of ‘taste’ whether to report an odds ratio or rate ratio. Typically the entire motivation for estimating an odds ratio in a case control study is because it is also an estimator of a population parameter of interest - the rate ratio. On the other hand, it is not incorrect to report an odds ratio. What must be understood is that the odds ratio applies to a data generating process that includes the case control sampling, whereas the rate ratio applies to a data generating process for the whole population.</p>
+
+<h3>  References </h3>
+
+<p><span id="1"> <b>1. </b> </span> Kerr S, Greenland S, Rudan I et al. Understanding and reporting odds ratios as rate ratio estimates in case-control studies. Hournal of global health, 2023.</p>
+
+<p><span id="2"> <b>2. </b> </span> Greenland S, Thomas DC. On the need for the rare disease assumption in case-control studies. Am J Epidemiol. 1982;116:547-53. Erratum in: Am J Epidemiol 1990 Jun;131(6): 1102.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[04 Jun 2024]]></summary></entry><entry><title type="html">The St Petersburg paradox</title><link href="/2024/04/24/The-St-Petersburg-paradox.html" rel="alternate" type="text/html" title="The St Petersburg paradox" /><published>2024-04-24T00:00:00+01:00</published><updated>2024-04-24T00:00:00+01:00</updated><id>/2024/04/24/The%20St%20Petersburg%20paradox</id><content type="html" xml:base="/2024/04/24/The-St-Petersburg-paradox.html"><![CDATA[<p>24 Apr 2024</p>
+
+<h3> The St Petersburg game </h3>
+<p>Imagine I offer you the chance to play the following game. The pot starts at \( $ 2\). I flip a coin repeatedly. Each time it comes up tails, the pot doubles. The first time a heads appears, the game ends and you leave with the pot. How much would you be willing to pay to play this game?</p>
+
+<p>If you’re anything like a reasonable person, or <a href="https://en.wikipedia.org/wiki/Daniel_Bernoulli" target="_blank"> Daniel Bernoulli</a>, you’d be unlikely to pay more than \( $ 20\). At that price, you’d need at least 4 consecutive tails to make a profit.</p>
+
+<p>According to some people, this would put you at odds with 300 years of conventional wisdom regarding uncertain outcomes. ‘Rational’ individuals are supposed to maximise expected value, and the expected value of this bet goes to infinity as the number of potential coin flips becomes large,</p>
+
+\[\sum_{i=1}^n = \frac{1}{2} 2 + \frac{1}{4} 4 + \frac{1}{8} 8 + ... \frac{1}{2^n} 2^n \label{st petersburg}\\
+= n.\]
+
+<p>You should therefore be willing to hand over all your earthly possessions for a single shot at this game.</p>
+
+<p>The tension between these two prescriptions is known as the <a href="https://en.wikipedia.org/wiki/ADM_formalism](https://en.wikipedia.org/wiki/St._Petersburg_paradox)" target="_blank"> St Petersburg paradox</a>.</p>
+
+<h3> What is rational, anyway? </h3>
+
+<p>Perhaps the main reason why it is nowadays believed that a ‘rational’ decision maker must maximise expected value or utility is the von Neumann Morgenstern (hereafter vNM) utility theorem, which I have written about <a href="https://drstevenkerr.com/2023/10/03/The-church-of-expected-utility-theory.html" target="_blank"> before</a>. To recap; the theorem says that anyone who behaves in accordance with four seemingly quite reasonable axioms must be an expected utility maximiser. They are as follows:</p>
+
+<p><b>1. Completeness.</b> For any two lotteries \( L \) and \( M \), we have either \( L \succeq M \) or \( M \succeq L \)</p>
+
+<p><b>2. Transitivity.</b> If there are three lotteries \( L \), \( M \) and \( N \), with \( L \succeq M \succeq N \), then \( L \succeq N \).</p>
+
+<p><b>3. Continuity.</b> For any three lotteries with \( L \succeq M \succeq N\), there is some probability \( p \) such that \( pL + (1-p)N \sim M \).</p>
+
+<p><b>4. Independence.</b> For any lottery \( M \) and any probability \( p \), \( L \succeq N \) if and only if \( pL + (1-p)M \succeq  pN + (1-p)M \).</p>
+
+<p>Inquiring minds might wonder what exactly a lottery is. In von Neumann and Morgenstern’s original formulation, it’s actually a little bit vague. Subsequent work however clarified that lotteries are elements of some set of probability measures over a measurable space.</p>
+
+<p>Another important but subtle point to note is that it is only proved that there exists a function over lotteries with the following property</p>
+
+\[U(pL + (1-p) M) = p U(L) + (1-p)U(M).\]
+
+<p>This implies that, for example, if you start off with an assignment of utilities to sure outcomes, then this can only be extended to lotteries where a finite number of outcomes have non-zero probability (density). These are sometimes called simple probability measures/lotteries. Later work extended the original vNM theorem to more general spaces of lotteries, although additional axioms need to be introduced.</p>
+
+<p>The final subtlety to notice is that the vNM theorem, as well as various extensions, only demonstrate that for any individual who behaves in accordance with the above axioms, there is a <em>bounded</em> utility function over sure outcomes such that the expected utility represents their preferences over lotteries. Notice my emphasis on the word bounded.</p>
+
+<h3> Resolving the paradox </h3>
+
+<p>Daniel Bernoulli resolved the original form of the paradox shortly after it was first posed by his brother Nicolaus in 1713, and long before anyone knew about the vNM theorem. He noticed that the unbounded quantities of money you might receive in the St Petersburg game do not give unbounded ‘happiness’, or utility. If you restrict to bounded utilities, the paradox evaporates.</p>
+
+<p>In the early 1900s, a newer form of the paradox appeared in which the payoffs are instead taken to be ‘utilities’ rather than money. The idea is that ‘pleasure’ can be measured in units in much the same way as physical quantities like distance can be measured in metres, and we can simply take a modified version of the original St Petersburg game in which the payoffs are units of pleasure that can become arbitrarily large. In some circles, this newer form of the paradox is still considered unsolved.</p>
+
+<h3> The St Petersburg paradox 2.0 </h3>
+
+<p>I have to say I’m fairly unimpressed with the modern incaration of the St Petersburg paradox. A careful reading of the vNM theorem and extensions indicates that there is absolutely no obligation for an individual who acts in accordance with its axioms to assign infinite utility to the St Petersburg game. The theorems simply guarantee that there is a <em>bounded</em> utility function that represents their preferences over sure outcomes. That utility function needn’t have an interpretation as measuring units of pleasure - it simply represents an ordering of outcomes. So, for example, if outcome \( A \) is assigned the value \( 1 \) and outcome \( B \) is assigned the value \( 2 \), it does not mean that \( B \) gives ‘twice as much pleasure’ as \( A \). It simply means that \( B \) is preferred to \( A \).</p>
+
+<p>If you insist on an unbounded utility function that has an interpretation in terms of ‘units of pleasure’, then you are outwith the scope of the vNM theorem. I would suggest you’re probably outwith the scope of reality too. If it is even possible to sensibly measure units of pleasure, I would hazard that it’s not possible for a person, or a finite collection of people, to experience an infinite number of them. In just the same way that it’s not possible for anyone to travel an infinite distance or live for an infinite time. Infinities like this don’t occur in nature. The revamped St Petersburg paradox is asking us to make sense of something that isn’t physically possible. At which point we are completely justified in ignoring it, for the same reason that I don’t spend much time working out how to consistently value fairy dust or unicorn horns.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[24 Apr 2024]]></summary></entry><entry><title type="html">Loop quantum gravity, or lattice quantum gravity?</title><link href="/2024/03/26/Loops-quantum-gravity,-or-lattice-quantum-gravity.html" rel="alternate" type="text/html" title="Loop quantum gravity, or lattice quantum gravity?" /><published>2024-03-26T00:00:00+00:00</published><updated>2024-03-26T00:00:00+00:00</updated><id>/2024/03/26/Loops%20quantum%20gravity,%20or%20lattice%20quantum%20gravity</id><content type="html" xml:base="/2024/03/26/Loops-quantum-gravity,-or-lattice-quantum-gravity.html"><![CDATA[<p>26 Mar 2024</p>
 
 <p>In this post, I’m going to give a brief critical overview of loop quantum gravity, the field that I worked in during my time in physics. A fairly strong understanding of physics is assumed.</p>
 
@@ -718,97 +840,4 @@ I'm here to see my gynaecologist.
 
 <p>Perhaps the first take away from all of this is to not put much truck in philosphers, no matter how many degrees and professorships they have from Oxbridge or the Ivy league. This problem has dumbfounded the entire field for several decades, and it all rests on some bad maths. A normal person would not even perceive what the problem is exactly. It turns out that a very fancy and expensive education is a precondition for wasting your time on esoteric matters such as these.</p>
 
-<p>More seriously, I am quite dismayed by all of this. In particular because there are people who take such ideas seriously enough that they’re effectively willing to bet millions of dollars on them, directing funds towards causes that their moral calculus has led them to believe are the best uses of money. It ceases to be a laughing matter when there are serious real world consequences at stake.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[22 Jul 2023]]></summary></entry><entry><title type="html">What is vaccine misinformation?</title><link href="/2023/07/20/What-is-vaccine-misinformation.html" rel="alternate" type="text/html" title="What is vaccine misinformation?" /><published>2023-07-20T00:00:00+01:00</published><updated>2023-07-20T00:00:00+01:00</updated><id>/2023/07/20/What%20is%20vaccine%20misinformation</id><content type="html" xml:base="/2023/07/20/What-is-vaccine-misinformation.html"><![CDATA[<p>20 Jul 2023</p>
-
-<p>In November 2021, I was invited by Health Data Research UK (HDRUK) to give a talk as part of a public webinar on vaccine safety. One of the goals of this webinar was to allow members of the public to ask questions and interact with professionals carrying out research in this area.</p>
-
-<p>The event seemed to me to be relatively successful. I presented results from a study I had recently carried out, the main finding of which was an association between vaccination with Oxford-AstraZeneca and elevated risk of cerebral venous sinus thrombosis (a type of blood clot in the brain). This was followed up by some thoughts and open questions about policy-making that were meant to prompt further discussion in the Q&amp;A section. Videos of the presentations were uploaded on to HDRUK’s Youtube channel. I was happy with how everything went and hadn’t given a great deal of thought to it after that.</p>
-
-<p>That changed recently when I learned that the video of my talk has been taken down from Youtube due to spreading medicial misinformation. That is rather a serious charge, which I intend to address here.</p>
-
-<h3>  What was in your talk? </h3>
-
-<p>I don’t have video of the talk, though I do still have the slides. You can see them <a href="https://docs.google.com/presentation/d/1FBP1l_gJxqZHgY-wngBw3MFEfcjVZemR/edit?usp=sharing&amp;ouid=101718537881581550754&amp;rtpof=true&amp;sd=true" target="_blank">here</a>.</p>
-
-<p>I don’t believe the part of the talk where I presented my research that has now been published in top peer-reviewed journals, could in any way be interpreted as medical misinformation. I therefore can only assume the offending content is on slides 13-15, where I discuss risks and benefits associated with vaccination, and possible policy-making implications. In particular my best guess at the culprit is the following slide:</p>
-
-<p><img src="../../../images/D&amp;C open door webinar.png" width="900" height="500" class="center" /></p>
-
-<p>Here again I consider more or less all of this content to be an uncontroversial precis of the state of our scientific knowledge; but perhaps it is the following bullet point that rankled:</p>
-
-<blockquote>
-Does being vaccinated reduce the chance you will transmit the infection to someone else?
-</blockquote>
-
-<p>Now this was, and still is, a perfectly valid question to ask. Vaccine effectiveness against transmission is an extraordinarily difficult topic to study, because transmission events are not well-recorded in the same way e.g. COVID-19 hospitalisations or deaths are - we do not have clinician-created records of when and why transmission events occur.</p>
-
-<p>There are some also other very serious issues to contend with in studying vaccine effectiveness against transmission. One huge confounder is the fact that being vaccinated may cause people to behave in ways that increase their risk of contracting COVID-19. This was particularly the case at the time I gave the talk, because there were vaccine mandates in place that, for example, prohibited people from attending various public places if they were not vaccinated. Freedom of movement and association was essentially being offered up as an incentive by governments to get vaccinated.</p>
-
-<p>Another big issue is the fact that vaccination may cause individuals to have much milder or even unnoticeable symptoms when they are infected, which in turn makes them less likely to engage in e.g. social-distancing practices.</p>
-
-<p>This all means that there is not what I would consider strong scientific evidence on this question. By contrast, as far as effectiveness goes the evidence is rather unequivocal; there are a multitude of clinical trials as well as observational epidemiolgical studies that point to high levels of effectiveness against severe COVID-19 outcomes. This is simply not the case for transmission. And it was even more true at the time that the talk was given, when there were even fewer studies on effectiveness again transmision than there are now.</p>
-
-<p>For these reasons, I considered this question to be completely fair-game, and one that had not been definitively answered in the scientific literature. I also considered it to be significant from the public health point of view to not encourage complacence on the part of people who were vaccinated, who might be less inclined to use masks, wash hands, observe social-distancing practices etc, as a result of a misplaced level of confidence in effectiveness against transmission not justified by the available evidence.</p>
-
-<h3> If that is medical misinformation, what else is? </h3>
-
-<p>If YouTube believes my talk constitutes medical misinformation, it is indicative of some very deep problems with their policies. They either believe that statements in accordance with a scientific consensus, or that honest raising of questions that have not definitively been answered in the scientific literature, constitute medical misinformation. Neither is a particularly good look.</p>
-
-<h3> Has our zeal to suppress conspiracy theories fuelled the fire of conspiracy theories? </h3>
-
-<p>Presumably part of YouTube’s motivation here is to suppres the spread of ‘conspiracy theories’. I have to say that I find the record of large social media companies on this front to be dismal and extremely worrying. As Joe Rogan has pointed out, there was a time when people were being suspended or banned from social media sites for spreading the ‘misinformation’ that you can still be infected with COVID-19 after receiving the vaccine. The idea that this is misinformation is now absolutely laughable, considering the huge proportion of people that have been vaccinated and subsequently contracted COVID-19.</p>
-
-<p>The concern I have is that by vigorously suppressing discussion of completely legitimate questions the public had about vaccines, rather than quelling conspiracy theorists, social media companies may have emboldened and galvanised them. After all, if there is nothing to hide, then why did various authorities so fastidiously preoccupy themselves with curating what information the public can access and what questions they are allowed to discuss?</p>]]></content><author><name></name></author><summary type="html"><![CDATA[20 Jul 2023]]></summary></entry><entry><title type="html">Population ethics</title><link href="/2023/03/21/Population-ethics.html" rel="alternate" type="text/html" title="Population ethics" /><published>2023-03-21T00:00:00+00:00</published><updated>2023-03-21T00:00:00+00:00</updated><id>/2023/03/21/Population%20ethics</id><content type="html" xml:base="/2023/03/21/Population-ethics.html"><![CDATA[<p>21 Mar 2023</p>
-
-<p>Population ethics is a subfield of philosophy that attempts to sensibly compare two populations that may differ in size and material circumstances, and decide which state of the world is better. That is, if we had the choice between one of these states being a reality, which should we choose?</p>
-
-<p>The way in which one answers these questions can have profound consequences. For example, if life is sacrosanct, then is there a moral obligation to have children? Is not having children when you could ethically tantamount to murder? Or, given the various risks that humanity faces, e.g. climate change, would it in fact be deeply immoral to bring more children into the world?</p>
-
-<p>It also turns out that if you approach this topic in a naive way, you can get very confused very fast. People can end up accepting a series of reasonable-sounding logical steps that lead to conculsions that are, to say the least, extremely dubious.</p>
-
-<h3> Exhibit A: The repugnant conclusion </h3>
-
-<p>Let’s start in a simple-minded way. We’re given two states of the world, and we want to be able to decide which is better. We like numbers, so why don’t we try to assign a number to how ‘good’ each state is, where high numbers means better.</p>
-
-<p>Presumably different people have different ideas about how good each state is, and will each assign their own number. We might imagine that the numbers represent some common unit of goodness - let’s call it utility. So for example, just as we all agree to measure distances in metres so that we can readily compare without having to worry about unit conversions, perhaps we can in principle do the same thing with utility.</p>
-
-<p>So far, so simple.</p>
-
-<p>Ok since we have a common unit of utility, maybe the natural way to aggregate is to add together. Let’s say in a given state of the world, person \( i \) has utility \( u_i \). Then the total utility is</p>
-
-\[U = \sum_{i=1}^{N} u_i. \label{utility} \tag{1}\]
-
-<p>Great, now we can begin to think about how we might use this utility function to make decisions about which states are better than others. This is where the fun starts.</p>
-
-<p>Let’s imagine we have states of the world \( A \) and \( B \). State \( A \) has 100 people who have wonderful lives. State \( B \) has 100 people who have lives that are just a tiny bit better than if they had never come into existence at all.</p>
-
-<p>We don’t need to do any moral calculus to think that \( A \) is clearly better than \( B \).
-Ok, but now let’s add more people whose lives are just marginally worth living to state \( B \). If there were \( 10,000 \) such people, would \( B \) be better than \( A \)? How about \( 1,000,000 \)?</p>
-
-<p>Most people’s intuition will tell them there is no number of additional people in state \( B \) that will make it better than \( A \). But that clashes with our equation \(\ref{utility}\). If we multiply any small, positive quantity up by a sufficiently large number, we can get a result that is as big as we want. That is to say, there is some number of people living lives that are just barely worth living, that is preferable to a smaller number of people living wonderful lives.</p>
-
-<p>This is called the repugnant conclusion, and a lot of people don’t like it.</p>
-
-<h3> Ok, so what did we do wrong? </h3>
-
-<p>Maybe we shouldn’t be adding together everyone’s utility. Does it really make sense to do that?</p>
-
-<p>The issue you have if you want to get rid of additive utilities is that you end up in situations where adding another perfectly happy person to the world isn’t any better than if you didn’t. Or adding a completely miserable person to the world isn’t any worse than if you didn’t. That seems like a non-starter.</p>
-
-<p>How about this: maybe some states are not comparable to others. There is just no sensible way of doing it.</p>
-
-<p>The issue with this is that it isn’t so much a solution to our problem as it is giving up. Remember we want to be able to decide which course of action is the best. There is no way of doing this if there are possibilities that are simply not comparable to others.</p>
-
-<p>Ok then what’s left. Accept the repugnant conclusion? But now you can be led down some very strange roads. For example, you could justify inflicting extraordinary, undeserved suffering on people now in order to bring about a future that has trillions of people living lives that are marginally worth living. Maybe you’re willing to bite that bullet. I’m not.</p>
-
-<h3> Hidden option C: We are idiots who don't know how to do maths </h3>
-
-<p>Or, maybe the real place we went wrong was when we allowed philosophers to do maths. Ok, I jest. But more seriously, why should we use <i>numbers</i> to represent how good a state of the world is. Who says it should have anything to do with numbers?</p>
-
-<p>Indeed, every decent economics graduate learns about the canonical example of an ordering that cannot be represented using real numbers: <a href="https://en.wikipedia.org/wiki/Lexicographic_preferences" target="_blank">lexicographic preferences</a>. In short, imagine I like both tea and spending time with my partner. However, there is no amount of tea in the world (or China) that would convince me to spend any less time with her. Those preferences simply cannot be represented using numbers. Turns out there just aren’t enough real numbers to accommodate/fathom my depths.</p>
-
-<p>Ok, so why can’t we have lexicographic preferences or similar when it comes to population ethics? I.e. there is no number of lives that are barely worth living that would be morally preferable to 100 people having wonderful lives. Seems easy enough. We don’t have to come to any of the utterly bizarre conclusions that philosophers think are forced upon us. We just can’t use numbers to represent our preferences - we’re not such simple creatures.</p>
-
-<p>It really is that easy. Nonetheless, you would be truly shocked by the sheer volume of commentary this problem has generated in academic philosophy circles. And if you’re anything like me, absolutely appalled by the moral positions that various esteemed thinkers take seriously and have adopted as a result of this thinking.</p>
-
-<p>Never do philosophy kids.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[21 Mar 2023]]></summary></entry></feed>
+<p>More seriously, I am quite dismayed by all of this. In particular because there are people who take such ideas seriously enough that they’re effectively willing to bet millions of dollars on them, directing funds towards causes that their moral calculus has led them to believe are the best uses of money. It ceases to be a laughing matter when there are serious real world consequences at stake.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[22 Jul 2023]]></summary></entry></feed>

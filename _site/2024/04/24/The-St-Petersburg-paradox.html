@@ -2,7 +2,7 @@
 
 <html>
 	<head>
-		<title>Steven Kerr | Why do so many statisticians think a normality assumption is required in linear regression?</title>
+		<title>Steven Kerr | The St Petersburg paradox</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="../../../assets/css/main.css" />
@@ -11,18 +11,18 @@
         <meta name="twitter:creator" content="@stevenrosskerr">
         <meta name="twitter:image" content="https://drstevenkerr.com/images/header.jpg">
         <!-- Begin Jekyll SEO tag v2.8.0 -->
-<title>Why do so many statisticians think a normality assumption is required in linear regression?</title>
+<title>The St Petersburg paradox</title>
 <meta name="generator" content="Jekyll v4.3.2" />
-<meta property="og:title" content="Why do so many statisticians think a normality assumption is required in linear regression?" />
+<meta property="og:title" content="The St Petersburg paradox" />
 <meta property="og:locale" content="en_US" />
-<meta name="description" content="03 Jan 2024" />
-<meta property="og:description" content="03 Jan 2024" />
+<meta name="description" content="24 Apr 2024" />
+<meta property="og:description" content="24 Apr 2024" />
 <meta property="og:type" content="article" />
-<meta property="article:published_time" content="2024-01-03T00:00:00+00:00" />
+<meta property="article:published_time" content="2024-04-24T00:00:00+01:00" />
 <meta name="twitter:card" content="summary" />
-<meta property="twitter:title" content="Why do so many statisticians think a normality assumption is required in linear regression?" />
+<meta property="twitter:title" content="The St Petersburg paradox" />
 <script type="application/ld+json">
-{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-01-03T00:00:00+00:00","datePublished":"2024-01-03T00:00:00+00:00","description":"03 Jan 2024","headline":"Why do so many statisticians think a normality assumption is required in linear regression?","mainEntityOfPage":{"@type":"WebPage","@id":"/2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html"},"url":"/2024/01/03/Why-do-so-many-statisticians-think-a-normality-assumption-is-required-in-linear-regression.html"}</script>
+{"@context":"https://schema.org","@type":"BlogPosting","dateModified":"2024-04-24T00:00:00+01:00","datePublished":"2024-04-24T00:00:00+01:00","description":"24 Apr 2024","headline":"The St Petersburg paradox","mainEntityOfPage":{"@type":"WebPage","@id":"/2024/04/24/The-St-Petersburg-paradox.html"},"url":"/2024/04/24/The-St-Petersburg-paradox.html"}</script>
 <!-- End Jekyll SEO tag -->
 
 	</head>
@@ -214,51 +214,57 @@
                             <div class="col-8 col-12-mobile imp-mobile" id="content">
                                 <article id="main">
                                     <header>
-                                        <h2> Why do so many statisticians think a normality assumption is required in linear regression? </h2>
+                                        <h2> The St Petersburg paradox </h2>
                                     </header>   
-                                    <p>03 Jan 2024</p>
+                                    <p>24 Apr 2024</p>
 
-<p>In my time working in health science, I have been troubled by the number of times I have encountered statisticians and practitioners of statistics who are absolutely sure that either the variables or residuals in a linear regression must be approximately normally distributed, and the model is invalid otherwise.</p>
+<h3> The St Petersburg game </h3>
+<p>Imagine I offer you the chance to play the following game. The pot starts at \( $ 2\). I flip a coin repeatedly. Each time it comes up tails, the pot doubles. The first time a heads appears, the game ends and you leave with the pot. How much would you be willing to pay to play this game?</p>
 
-<p>This idea is completely false. In this post I want to explore why it is nonetheless so widely believed by professionals in the field.</p>
+<p>If you’re anything like a reasonable person, or <a href="https://en.wikipedia.org/wiki/Daniel_Bernoulli" target="_blank"> Daniel Bernoulli</a>, you’d be unlikely to pay more than \( $ 20\). At that price, you’d need at least 4 consecutive tails to make a profit.</p>
 
-<h3>  Linear regression </h3>
+<p>According to some people, this would put you at odds with 300 years of conventional wisdom regarding uncertain outcomes. ‘Rational’ individuals are supposed to maximise expected value, and the expected value of this bet goes to infinity as the number of potential coin flips becomes large,</p>
 
-<p>When statisticians say a model is ‘valid’, they usually mean that the model plausibly satisfies some conditions that guarantee ‘nice’ results. By ‘nice’, it is usually meant that parameter estimates converge to the true values from the data generating process, and that the distribution of the parameter estimates is known (usually normal), as the sample size becomes large. There are several slightly different notions of <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables" target="_blank"> convergence for random variables</a>, but the most commonly used is <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_probability" target="_blank"> convergence in probability</a>. An estimator \( \hat{\beta} \) that converges in probability to true value \( \beta \) is called <a href="https://en.wikipedia.org/wiki/Consistent_estimator" target="_blank"> consistent</a>.</p>
+\[\sum_{i=1}^n = \frac{1}{2} 2 + \frac{1}{4} 4 + \frac{1}{8} 8 + ... \frac{1}{2^n} 2^n \label{st petersburg}\\
+= n.\]
 
-<p>In this post I will use the following notation: \( y \) is an \( n \)-dimensional vector whose elements are \( y_i \), \( X \) is an \( n \times k \) matrix whose rows are \( x_i \), \( \beta \) is a \( k\)-dimensional vector of parameters to be estimated, and \( \epsilon \) is an \( n \)-dimensional vector of residuals whose elements are \( \epsilon_i \).</p>
+<p>You should therefore be willing to hand over all your earthly possessions for a single shot at this game.</p>
 
-<p>In the linear regression setting, there are standard sets of assumptions that are sufficient to guarantee consistency. Note the plural - there are several. The first version you often learn while studying statistics is the following:</p>
+<p>The tension between these two prescriptions is known as the <a href="https://en.wikipedia.org/wiki/ADM_formalism](https://en.wikipedia.org/wiki/St._Petersburg_paradox)" target="_blank"> St Petersburg paradox</a>.</p>
 
-<p><span id="1.1"> <b>1.1. Linearity.</b> </span> The data-generating process is of the form \( y = X \beta + \epsilon \).</p>
+<h3> What is rational, anyway? </h3>
 
-<p><span id="1.2"> <b>1.2. Strict exogeneity.</b> </span>\( \mathbb{E}[\epsilon \; | \; X] = 0 \).</p>
+<p>Perhaps the main reason why it is nowadays believed that a ‘rational’ decision maker must maximise expected value or utility is the von Neumann Morgenstern (hereafter vNM) utility theorem, which I have written about <a href="https://drstevenkerr.com/2023/10/03/The-church-of-expected-utility-theory.html" target="_blank"> before</a>. To recap; the theorem says that anyone who behaves in accordance with four seemingly quite reasonable axioms must be an expected utility maximiser. They are as follows:</p>
 
-<p><span id="1.3"> <b>1.3. No multicollinearity.</b> </span>The rank of \( X \) is \( k \) with probability \( 1 \).</p>
+<p><b>1. Completeness.</b> For any two lotteries \( L \) and \( M \), we have either \( L \succeq M \) or \( M \succeq L \)</p>
 
-<p><span id="1.4"> <b>1.4. Conditional normality of residuals.</b> </span> \(  \epsilon \lvert_X \sim N(0, \sigma^2 I) \), where \( I \) is the \( n \times n \) identity matrix.</p>
+<p><b>2. Transitivity.</b> If there are three lotteries \( L \), \( M \) and \( N \), with \( L \succeq M \succeq N \), then \( L \succeq N \).</p>
 
-<p>Note that an explicit normality assumption appears in <a href="#1.4"> 1.4</a>.</p>
+<p><b>3. Continuity.</b> For any three lotteries with \( L \succeq M \succeq N\), there is some probability \( p \) such that \( pL + (1-p)N \sim M \).</p>
 
-<p>However, several of these conditions can be weakened. For example, the following set of conditions is also sufficient:</p>
+<p><b>4. Independence.</b> For any lottery \( M \) and any probability \( p \), \( L \succeq N \) if and only if \( pL + (1-p)M \succeq  pN + (1-p)M \).</p>
 
-<p><span id="2.1"> <b>2.1. Linearity.</b> The data-generating process is of the form \( y = X \beta + \epsilon \).</span></p>
+<p>Inquiring minds might wonder what exactly a lottery is. In von Neumann and Morgenstern’s original formulation, it’s actually a little bit vague. Subsequent work however clarified that lotteries are elements of some set of probability measures over a measurable space.</p>
 
-<p><span id="2.2"> <b>2.2. Ergodic stationarity.</b> The <a href="https://en.wikipedia.org/wiki/Stochastic_process" target="_blank"> stochastic pocess</a> \( (y_i, x_i) \) is <a href="https://en.wikipedia.org/wiki/Stationary_process" target="_blank"> stationary</a> and <a href="https://en.wikipedia.org/wiki/Ergodic_process" target="_blank"> ergodic</a>.</span></p>
+<p>Another important but subtle point to note is that it is only proved that there exists a function over lotteries with the following property</p>
 
-<p><span id="2.3"> <b>2.3. Weak exogeneity.</b> \( \mathbb{E}[\epsilon_i x_i] = 0 \; \forall i \).</span></p>
+\[U(pL + (1-p) M) = p U(L) + (1-p)U(M).\]
 
-<p><span id="2.4"> <b>2.4. Invertibility.</b> \( \mathbb{E}[x_i x_i^T ] \) is invertible.</span></p>
+<p>This implies that, for example, if you start off with an assignment of utilities to sure outcomes, then this can only be extended to lotteries where a finite number of outcomes have non-zero probability (density). These are sometimes called simple probability measures/lotteries. Later work extended the original vNM theorem to more general spaces of lotteries, although additional axioms need to be introduced.</p>
 
-<p><span id="2.5"> <b>2.5. Central limit theorem (CLT).</b> \(  \sqrt{n} \left( \frac{1}{n} \sum_{i} x_i \epsilon_i\right) \xrightarrow{d} N(0, \Sigma) \), where \( \xrightarrow{d} \) denotes <a href="https://en.wikipedia.org/wiki/Convergence_of_random_variables#Convergence_in_distribution" target="_blank"> convergence in distribution</a>.</span></p>
+<p>The final subtlety to notice is that the vNM theorem, as well as various extensions, only demonstrate that for any individual who behaves in accordance with the above axioms, there is a <em>bounded</em> utility function over sure outcomes such that the expected utility represents their preferences over lotteries. Notice my emphasis on the word bounded.</p>
 
-<p>Note here that the explicit normality assumption <a href="#1.4"> 1.4</a> is replaced by <a href="#2.5"> 2.5</a>, which is much weaker and only requires \( \frac{1}{n} \sum_{i} x_i \epsilon_i \) to obey a <a href="https://en.wikipedia.org/wiki/Central_limit_theorem" target="_blank"> central limit theorem</a>. The most basic version of the CLT applies to <a href="https://en.wikipedia.org/wiki/Independent_and_identically_distributed_random_variables" target="_blank"> independent and identically distributed</a> random variables, but there are many other versions with weaker conditions.</p>
+<h3> Resolving the paradox </h3>
 
-<p>In other words, there is no need to assume that the dependent variable, the independent variables or the residuals are normally distributed in linear regression. Why, then, do so many statisticians believe it to be so?</p>
+<p>Daniel Bernoulli resolved the original form of the paradox shortly after it was first posed by his brother Nicolaus in 1713, and long before anyone knew about the vNM theorem. He noticed that the unbounded quantities of money you might receive in the St Petersburg game do not give unbounded ‘happiness’, or utility. If you restrict to bounded utilities, the paradox evaporates.</p>
 
-<p>The first reason I can see is that it’s just easier. Conditions <a href="#1.1">1.1</a>-<a href="#1.4">1.4</a>  are simpler to understand and require less mathematical knowledge than <a href="#2.1">2.1</a>-<a href="#2.5">2.5</a>. In particular, you needn’t know anything about the central limit theorem, ergodic and stationary processes, and different notions of convergence for random variables.</p>
+<p>In the early 1900s, a newer form of the paradox appeared in which the payoffs are instead taken to be ‘utilities’ rather than money. The idea is that ‘pleasure’ can be measured in units in much the same way as physical quantities like distance can be measured in metres, and we can simply take a modified version of the original St Petersburg game in which the payoffs are units of pleasure that can become arbitrarily large. In some circles, this newer form of the paradox is still considered unsolved.</p>
 
-<p>The other reason I can see is that if you assume the residuals are normally distributed, then linear regression falls into the <a href="https://en.wikipedia.org/wiki/Generalized_linear_model" target="_blank"> generalised linear class of models</a>. This is an extremely useful set of statistical models that includes workhorses such as logistic and Poisson regression. Non-linear models in this family are fitted using maximum likelihood methods - usually  the <a href="https://en.wikipedia.org/wiki/Newton%27s_method" target="_blank"> Newton-Raphson method</a>, which results in an <a href="https://en.wikipedia.org/wiki/Iteratively_reweighted_least_squares" target="_blank"> iteratively re-weighted least squares</a> algorithm. It is conceptually and pedagogically neat to include all of these models under the same banner, because they have a great deal of commonality. However, because they are maximum likelihood models, this does require explicit distributional assumptions to be made - normality in the case of linear regression. Bundling linear regression into the generalised linear class obscures the fact that there are alternate, weaker assumptions that are sufficient for the model to be valid.</p>
+<h3> The St Petersburg paradox 2.0 </h3>
+
+<p>I have to say I’m fairly unimpressed with the modern incaration of the St Petersburg paradox. A careful reading of the vNM theorem and extensions indicates that there is absolutely no obligation for an individual who acts in accordance with its axioms to assign infinite utility to the St Petersburg game. The theorems simply guarantee that there is a <em>bounded</em> utility function that represents their preferences over sure outcomes. That utility function needn’t have an interpretation as measuring units of pleasure - it simply represents an ordering of outcomes. So, for example, if outcome \( A \) is assigned the value \( 1 \) and outcome \( B \) is assigned the value \( 2 \), it does not mean that \( B \) gives ‘twice as much pleasure’ as \( A \). It simply means that \( B \) is preferred to \( A \).</p>
+
+<p>If you insist on an unbounded utility function that has an interpretation in terms of ‘units of pleasure’, then you are outwith the scope of the vNM theorem. I would suggest you’re probably outwith the scope of reality too. If it is even possible to sensibly measure units of pleasure, I would hazard that it’s not possible for a person, or a finite collection of people, to experience an infinite number of them. In just the same way that it’s not possible for anyone to travel an infinite distance or live for an infinite time. Infinities like this don’t occur in nature. The revamped St Petersburg paradox is asking us to make sense of something that isn’t physically possible. At which point we are completely justified in ignoring it, for the same reason that I don’t spend much time working out how to consistently value fairy dust or unicorn horns.</p>
 
 
 
