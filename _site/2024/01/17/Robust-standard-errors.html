@@ -66,6 +66,28 @@
                                 
                                 <section>
                                     <header>
+                                        <a href="../../../2024/10/02/The-trouble-with-economics.html"> The trouble with economics </a> 
+                                        <p style="margin:10px;"></p>
+                                    </header>
+                                </section>
+                                
+                              
+                                
+                                
+                                
+                                <section>
+                                    <header>
+                                        <a href="../../../2024/07/11/I-for-one-welcome-our-AI-overboard.html"> I for one welcome our AI overboard </a> 
+                                        <p style="margin:10px;"></p>
+                                    </header>
+                                </section>
+                                
+                              
+                                
+                                
+                                
+                                <section>
+                                    <header>
                                         <a href="../../../2024/06/04/Understanding-case-control-studies.html"> Understanding case control studies </a> 
                                         <p style="margin:10px;"></p>
                                     </header>
@@ -218,7 +240,7 @@
                                     </header>   
                                     <p>17 Jan 2024</p>
 
-<p>Robust standard errors are frequently used in statistics, often in an unthinking way. They are certainly valuable and useful in the context of linear regression; however, they do not serve a similar purpose in maximum likelihood estimation of non-linear models. The basic issue is that the kind of mis-specification that robust standard errors can address in linear regresion does not spoil consistency results for the parameter estimates. On the other hand, it does spoil those results in the context of maximum likelihood estimation of non-linear models. Thus at best you end up with a consistent estimator for the variance of a parameter estimate that is itself inconsistent, which isn’t really of interest except as a diagnostic tool for detectng bad models. I’ll explore this in more detail below.</p>
+<p>Robust standard errors are frequently used in statistics, often in an unthinking way. They are certainly valuable and useful in the context of linear regression; however, they do not serve a similar purpose in maximum likelihood estimation of non-linear models. The basic issue is that the kind of mis-specification that robust standard errors can address in linear regresion does not spoil consistency results for the parameter estimates. On the other hand, it does spoil those results in the context of maximum likelihood estimation of non-linear models. Thus at best you end up with a consistent estimator for the variance of a parameter estimate that is itself inconsistent, which isn’t really of interest except as a diagnostic tool for detecting bad models. I’ll explore this in more detail below.</p>
 
 <h3>  Linear regression </h3>
 
@@ -266,7 +288,7 @@
 
 <p>The logic behind these conditions is as follows. <a href="#1.1"> 1.1</a> and <a href="#1.6"> 1.6</a> guarantee that the objective function \( Q_n(\theta) \) converges in probability to \( \mathbb{E}[m(w_i, \theta)] \). The idea is that if we then maximise \( Q_n(\theta) \), the resulting estimator \( \hat{\theta} \) will converge in probability to the unique ‘true’ value \( \theta_0 \) that maximises \( \mathbb{E}[m(w_i, \theta)] \), assumed to exist courtesy of <a href="#1.5"> 1.5</a>. Conditions <a href="#1.2"> 1.2</a> and <a href="#1.3"> 1.3</a> simply ensure that \( Q_n(\theta) \) has a unique maximum, and <a href="#1.4"> 1.4</a> is a ‘mathematical housekeeping’ condition that just means that \( m(w_i, \theta) \) is in fact a random variable.</p>
 
-<p>Note that despite the fact that the iid assumption is typically used to derive the form of the likelihood function in the first place, it does not appear in <a href="#1.1">1.1</a>-<a href="#1.6">1.6</a>. We only need \( w_i \) to be ergodic stationary, and \( \mathbb{E}[m(w_i, \theta)] \) to be uniquely maximised at \( \theta_0 \). In other words, the objective function \( Q_n(\theta) \) needn’t be a correctly specified log-likelihood. This opens the doorway to <a href="https://en.wikipedia.org/wiki/Quasi-maximum_likelihood_estimate" target="_blank"> quasi-maximum likelihood estimation</a>, in which the likelihood function is mis-specified but still has the correct maximum.</p>
+<p>Note that despite the fact that the iid assumption is typically used to derive the form of the likelihood function in the first place, it does not appear in <a href="#1.1">1.1</a>-<a href="#1.6">1.6</a>. We only need \( w_i \) to be ergodic and stationary, and \( \mathbb{E}[m(w_i, \theta)] \) to be uniquely maximised at \( \theta_0 \). In other words, the objective function \( Q_n(\theta) \) needn’t be a correctly specified log-likelihood. This opens the doorway to <a href="https://en.wikipedia.org/wiki/Quasi-maximum_likelihood_estimate" target="_blank"> quasi-maximum likelihood estimation</a>, in which the likelihood function is mis-specified but still has the correct maximum.</p>
 
 <p>Conditions <a href="#1.2"> 1.2</a> and <a href="#1.3"> 1.3</a> also ensure that the global maximum of \( Q_n(\theta) \) can be found by taking the first derivative and setting equal to zero. We define the score and Hessian for observation \( i\) as follows</p>
 

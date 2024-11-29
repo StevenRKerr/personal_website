@@ -63,6 +63,13 @@ Despite the fact that this has been known for over 50 years, there is still a gr
 Ultimately, it is a matter of 'taste' whether to report an odds ratio or rate ratio. Typically the entire motivation for estimating an odds ratio in a case control study is because it is also an estimator of a population parameter of interest - the rate ratio. On the other hand, it is not incorrect to report an odds ratio. What must be understood is that the odds ratio applies to a data generating process that includes the case control sampling, whereas the rate ratio applies to a data generating process for the whole population.
 
 
+<h3> Re-using data points? </h3> 
+
+A final confusion that arises is that in risk set sampling, you can end up having the same individual as both a case and a control. This can happen if they are matched to another case at a time before they have had the event themselves. Surely that's not allowed?
+
+This can be resolved by understanding that the unit of observation in a case-control study is not an indivdual, but an individual <em>at a particular instant in time</em>. In other words, it's as if each individual has a row in the data for every instant of follow-up time. That will generally result in an infinite number of observations, but the case control study only ever uses a finite subset of them. If an individual ends up having several of their observations included in the case control study, these should be understood as independent data points - or at least data points that are 'sufficiently independent' to satisfy the modelling assumptions that are made.
+
+
 <h3>  References </h3> 
 
 <span id="1"> <b>1. </b> </span> Kerr S, Greenland S, Rudan I et al. Understanding and reporting odds ratios as rate ratio estimates in case-control studies. Hournal of global health, 2023.

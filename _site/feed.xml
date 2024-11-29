@@ -1,4 +1,129 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-06-04T18:11:00+01:00</updated><id>/feed.xml</id><entry><title type="html">Understanding case control studies</title><link href="/2024/06/04/Understanding-case-control-studies.html" rel="alternate" type="text/html" title="Understanding case control studies" /><published>2024-06-04T00:00:00+01:00</published><updated>2024-06-04T00:00:00+01:00</updated><id>/2024/06/04/Understanding%20case%20control%20studies</id><content type="html" xml:base="/2024/06/04/Understanding-case-control-studies.html"><![CDATA[<p>04 Jun 2024</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-11-29T15:23:36+00:00</updated><id>/feed.xml</id><entry><title type="html">The trouble with economics</title><link href="/2024/10/02/The-trouble-with-economics.html" rel="alternate" type="text/html" title="The trouble with economics" /><published>2024-10-02T00:00:00+01:00</published><updated>2024-10-02T00:00:00+01:00</updated><id>/2024/10/02/The%20trouble%20with%20economics</id><content type="html" xml:base="/2024/10/02/The-trouble-with-economics.html"><![CDATA[<p>02 Oct 2024</p>
+
+<p>In this post, I’m going to give an overview of some major theoretical issues in modern economics.</p>
+
+<h3> Supply and demand </h3>
+<p>In a typical undergraduate economics degree, you spend a lot of time drawing pictures like this:</p>
+
+<div style="text-align: center;">
+    <img src="../../../images/supply_demand.png" width="500" height="500" class="center" />
+</div>
+
+<p>I don’t think its an exaggeration to say that a major chunk of the syllabus is pretending these diagrams are deeper and have far more explanatory power than they really do. It is, after all, just a graph with two lines.</p>
+
+<p>The basic idea is that when prices go up, demand goes down and supply goes up. The two lines have to meet somewhere, and this is the price that clears the market. Under ‘normal’ circumstances, this is the price that actually prevails (or so the story goes).</p>
+
+<h3> General equilibrium theory </h3>
+
+<p>By the time you get round to doing a masters in economics, you learn the grown up version of supply and demand diagrams - it goes by the name general equilibrium theory. Here there are many goods that are traded concurrently. Each person has preferences and a budget. A major theoretical result in economics is the proof, under fairly general assumptions, that there is always at least one set of prices that clears the market.</p>
+
+<p>General equilibrium theory is the theoretical foundation for modern macroeconomic modelling. Pretty much every mainstream macroeconomic model is either an example of a general equilibrium model, or it is derived from one. This includes models that are routinely used by major financial institutions like central and commercial banks, government treasuries etc for economic forecasting. For example, the ubiquitous <a href="https://en.wikipedia.org/wiki/Dynamic_stochastic_general_equilibrium" target="_blank"> ‘dynamic stochastic general equilibrium’</a> models.</p>
+
+<p>The trouble with general equilibrium theory is that it has features baked in that are in spectacular disagreement with reality.</p>
+
+<h4> No money </h4>
+
+<p>In general equilibrium theory, there is no money. You might be puzzled by this - how can it be that the foundational macroeconomic modelling strategy of major financial institutions throughout the world does not have money? Is money not a central focus of the entire subject of economics?</p>
+
+<p>Well yes, it is, but turns out it’s a lot easier to make models without it. First consider the useful role that money serves</p>
+
+<ul>
+  <li> <b>Medium of exchange </b>
+    <p>This is perhaps the primary and most important function of money - facilitating the exchange of goods. Without money, we would have a bartering economy in which a great deal of time and effort would be spent engaging in chains of trades that have the desired outcome. For example, if I have a cow and I would like to get a sack of potatoes, I would either have to find someone who has potatoes and wants a cow, or find a series of similar trades that eventually ends with my desired result. </p>
+  </li>
+  <li> <b>Store of value </b>
+    <p>Money provides a means through which you can e.g. provide labour now in exchange for consumption later. For example, you can go to work tilling the fields, get paid into your bank account, then later use that money to buy a four-slice toaster. </p>
+  </li>
+  <li> <b>Standard of deferred payment </b>
+    <p>This is closely related to the function of money as a store of value, but in reverse. That is, you can get consumption now in exchange for work later. This is achieved by borrowing money to fuel today's consumption, and paying back at a future date.</p>
+  </li>
+  <li> <b>Unit of account </b>
+   <p>Finally, money provides a measuring stick for value. If a good can be sold for £1, we have a numerical measure of its value relative to other goods.
+</p>
+  </li>
+</ul>
+
+<p>Any model that includes money must capture all of these functions.</p>
+
+<p>In general equilibrium theory, there is a set of market-clearing prices that certainly serve as a unit of account. But none of the other much more important functions of money are captured at all.</p>
+
+<p>In particular, money does not serve as a medium of exchange. Prices that clear the market are found, then all the goods are magically redistributed in such a way that the value of the bundle each person receives is exactly equal to the value of the bundle they give up. In the real world, this would obviously be accomplished by carrying out all transactions with bits of paper we call money, where the number of pieces of paper required to buy a good is  equal to its equilibrium price. This can happen because we have a society-wide agreement to treat the bits of paper as if they are valuable. This can never happen in general equilibrium theory - there is no room in the model for social constructs or government fiat. And in their absence, why would anyone accept useless bits of paper in exchange for real, intrinsically useful goods? This also implies the equilibrium price of money is zero, rendering it useless as a store of value or a standard of deferred payment.
+The result is that general equilibrium theory is really a theory of frictionless, money-free bartering. Which, you may have noticed, is somewhat lacking in realism.</p>
+
+<h4> No unemployment </h4>
+
+<p>In general equilibrium theory, market-clearing prices always prevail. Excess supply or demand is assumed away - it simply cannot happen. That is rather unfortunate because unemployment, perhaps the central quantity of interest in macroeconomic forecasting and policymaking, is a failure of labour markets to clear. In general equilibrium theory, unemployment simply does not exist.</p>
+
+<h4> No price-setting </h4>
+<p>In general equilibrium theory, no one sets prices. They are simply sent down as manna from heaven. Everyone calculates what bundle they would buy at every possible set of prices, and divine intervention selects a set of prices that clears the market. At no point does it occur to anyone that they might be able to influence prices.</p>
+
+<h4> No strategy</h4>
+<p>General equilibrium theory is not a game. Agents in the model behave as if choosing from a menu of options in complete isolation from everyone else. There is no notion that anyone else’s behaviour might affect your payoff. This is obviously completely at odds with the real world, where firms ruthlessly strategise against each other to maximise their profits.</p>
+
+<p>These are just the failings of general equilibrium theory. However, standard macroeconomic models are in many ways even worse, because they make simplifying assumptions that even more thoroughly divorce the model from reality. In particular, they typically model the economy of an entire country as if it contains exactly one person, one firm, and a handful of goods that are traded. In case that didn’t strike you as obviously doomed to failure, there are theorems indicating you just can’t do this (see the <a href="https://en.wikipedia.org/wiki/Gorman_polar_form" target="_blank"> Gorman aggregation theorem</a>, the <a href="https://en.wikipedia.org/wiki/Cambridge_capital_controversy" target="_blank"> Cambridge capital controversy</a>).</p>
+
+<h3> To summarise</h3>
+<p>Standard macroeconomic models that are routinely used by major financial institutions to model entire nations are typically based on frameworks that do not have money and operate through frictionless bartering, where there is no unemployment, sellers cannot choose what price they offer to sell at, there is no strategic considerations, there is precisely one consumer and one firm, and only a handful of goods are traded. And many economists seem to be pretty satisfied with this state of affairs.</p>
+
+<p>Yes, I find it hard to believe too.</p>
+
+<p>When I worked in economics, I was most certainly not happy with this state of affairs. I came up with an alternative framework that in principle fixes many or all of these problems. What I quickly discovered, though, is that for various reasons my work was virtually unpublishable in mainstream economics journals. That is, however, a story for another day.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[02 Oct 2024]]></summary></entry><entry><title type="html">I for one welcome our AI overboard</title><link href="/2024/07/11/I-for-one-welcome-our-AI-overboard.html" rel="alternate" type="text/html" title="I for one welcome our AI overboard" /><published>2024-07-11T00:00:00+01:00</published><updated>2024-07-11T00:00:00+01:00</updated><id>/2024/07/11/I%20for%20one%20welcome%20our%20AI%20overboard</id><content type="html" xml:base="/2024/07/11/I-for-one-welcome-our-AI-overboard.html"><![CDATA[<p>11 Jul 2024</p>
+
+<p>I’ve been very reticent to comment on the current AI hype train, mostly because it’s very easy to be wrong in a bull market. But you will be relieved to know I am now ready to put my hat in the ring.</p>
+
+<p>First I would like to say that, like everyone else, I’m deeply impressed by recent advances in AI, particularly large language models (LLMs). They can give you flawless explanations of topological quantum field theory in one breath, then seamlesly switch to a nuanced discussion of the history of cartography. Tailor-made answers to your burning questions on heraldry, hermeneutics, object-oriented programming, epistemology, and just about any other domain of expert human knowledge your heart desires. They’re really quite amazing. I would be extraordinarily proud if I had been part of the teams that brought LLMs to the world.</p>
+
+<p>But in the wake of the current wave of exuberance, I feel compelled to point out the manifold ways in which LLMs are extremely dumb. Here is but a partial list of tasks that state-of-the-art LLMs have failed at spectacularly:</p>
+
+<ul>
+  <li>Basic arithmetic, e.g. multiplying together two 3-digit numbers.</li>
+  <li>Understanding relations, e.g. if X is Y, then Y is X. If you ask ‘Who is Olaf Shhulz?’, you can correctly be told that he is the 9th Chancellor of Germany, and then immediately be given a different answer to the question ‘Who is the 9th Chancellor of Germany?’.</li>
+  <li>Creating a 3x3 word search containing specified 3-letter words.</li>
+  <li>Name three famous people who all share the exact same birth date and year.</li>
+  <li>Counting e.g. the numbers of letters in a string, number of paragraphs in a document, etc.</li>
+  <li>Simple logical problems, with uncommon variations. For example, <a href="https://en.wikipedia.org/wiki/River_crossing_puzzle" target="_blank"> river-crossing problems</a>, but with no restrictions on which which items can be taken or left together.</li>
+  <li>Spatial reasoning. For example, ‘Four children - Alex, Bella, Charlie, and Dana - are sitting around a picnic table. Alex is facing Bella. Charlie is sitting to the right of Bella. Who is sitting to the left of Alex?’.</li>
+</ul>
+
+<p>You can find a more in depth exploration of various LLM fails in the appendix of <a href="https://arxiv.org/pdf/2405.19616" target="_blank"> this paper</a>.</p>
+
+<p>What these examples indicate is that LLMs don’t have any understanding of the world that is in any way similar to what you or I have. For example, if you give me the word ‘chair’, it brings to my mind a lifetime’s worth of relevant physical, sensory information. I know what they look and feel like. I know the precise purpose they serve, having experienced the discomfort of having to stand for prolonged periods of time. I know that chairs can be used in all sorts of ways that have little or nothing to do with their intended purpose, because I have actually done it before (wink wink). LLMs have none of this. What they have is, loosely speaking, a bunch of words that they associate with chairs from being exposed to internet text in which the word chair appears.</p>
+
+<p>What this means is that I understand the concept of a chair and its manifestation in the real world in a way that guarantees I’m not going to make obvious, stupid errors that LLMs sometimes make. I can also exhibit chair-related creativity, like finding novel uses that you won’t find written about anywhere on the internet (nudge nudge), because I have an understanding of the physical reality of a chair that is more than just a cloud of associated words.</p>
+
+<p>In short, LLMs may very well be <a href="https://en.wikipedia.org/wiki/Stochastic_parrot" target="_blank"> stochastic parrots</a>. To the extent they give good answers, it is only because human experts have provided good answers to a similar question somewhere on the internet that the LLMs have cobbled together. In a very real sense, you might think of LLMs as souped-up versions of search engines that actually construct a tailor-made, friendly prose answer to your particular query instead of making you spend hours piecing it all together from a collection of top hits from stack exchange, academic papers and obscure blog posts. Or, as Noam Chomsky bluntly put it, ‘high-tech plagiarism’.</p>
+
+<p>Another way to think of an LLM is a smart 10 year old that has read and memorised a textbook on quantum mechanics. If you ask them typical questions about the subject, they may be able to give you impressive-sounding answers. Hell, they might even be able to convince you they are a child prodigy. But they have zero understanding of the subject, a fact which will manifest itself as soon as you venture even a little bit outside of what can be constructed by placing roughly the right words in roughly the right order in a superficial act of mimicry.</p>
+
+<p>In light of this, I find it very difficult to take seriously any notion that we are blindly speeding into an AI-driven apocalypse. I recall seeing an online exchange where one person was taking as a sure harbringer of our impending doom the idea that LLMs were on the brink of being able to consistently perform arithmetic. To which they received the rather acerbic reply <em>‘So can my fu**ing calculator’</em>. Well, quite. And the calculator doesn’t need billions of parameters, hundreds of talented young minds, the entire text of the internet and the power supply of a small country to create.</p>
+
+<p>The most popular version of the AI apocalypse scenario goes something like: we will soon create <a href="https://en.wikipedia.org/wiki/Artificial_general_intelligence" target="_blank"> artificial general intelligence (AGI)</a> that exceeds human capabilities across a wide range of cognitive tasks. This will kick-off a chain of recursively improving AIs, ultimately leading to a superintelligence that will be able to outwit and outperform all of humanity across the board, leaving us utterly at its mercy. If this superintelligence happens to have an objective that is not carefully aligned with the interests of humans, it could all go seriously tits up. Take the so-called paperclip maximiser, dreamt up by philosopher Nick Bostrom,</p>
+
+<blockquote>
+Suppose we have an AI whose only goal is to make as many paper clips as possible. The AI will realize quickly that it would be much better if there were no humans because humans might decide to switch it off. Because if humans do so, there would be fewer paper clips. Also, human bodies contain a lot of atoms that could be made into paper clips. The future that the AI would be trying to gear towards would be one in which there were a lot of paper clips but no humans.
+</blockquote>
+
+<p><br />
+Are you scared yet folks?</p>
+
+<p>Well no, not really. To me, this stuff just sounds like the fevered, masturbatory fantasies of sex-starved sci-fi fanboi man-children. In fact, that description might be eerily close to the truth. Exhibit A: Bostrom himself. Exhibit B: Elizier Yudkowsky, leading AI-doomer, and a man who thinks it’s a positively spiffing idea for superpowers to <a href="https://time.com/6266923/ai-eliezer-yudkowsky-open-letter-not-enough/" target="_blank"> conduct pre-emptive military strikes on each others’ AI labs, running the risk of precipitating a nuclear holocaust, in order to prevent the development of AGI</a>. I suppose the hundreds of millions of lives that would be lost is a small sacrifice at the altar of his very serious sci-fi fantasies. Incidentally, he’s the author of <a href="https://en.wikipedia.org/wiki/Harry_Potter_and_the_Methods_of_Rationality" target="_blank"> Harry Potter and the Methods of Rationality</a>, which is basically a sci-fi reimagining of Harry Potter. These people are clearly drawing heavily on a literary tradition that has enthralled us for many decades to weave their apocalyptic tales.</p>
+
+<p>Given that cutting edge LLMs are recommending people <a href="https://news.sky.com/story/glue-cheese-to-pizza-and-eat-rocks-says-googles-new-ai-feature-as-mistakes-flood-social-media-13142528" target="_blank"> eat rocks as part of a healthy diet and glue cheese to pizzas to prevent slippage</a>, the latter based purely on the shitposting of a presumed teenage internet edgelord, I think we can confidently say we are safe for the time being. More generally though, the AI technology singularity scenario requires a long chain of reasoning, each step of which is, to put it gently, <em>extremely</em> speculative. Maybe it will take 50 more quantum leaps, each of a similar magnitude to that which brought us LLMs, to get to AGI. And there is nothing inevitable about each step of the putative self-improving AI explosion. Who knows if any of this is even possible, or if it is, whether it will happen. Maybe there are hard limits to what can be done, not least of which are the tremendous amount of energy and data that appear to be required to train these AIs.</p>
+
+<p>The whole thing sounds like a big <a href="https://en.wikipedia.org/wiki/Conjunction_fallacy" target="_blank"> conjunction fallacy</a> to me. That’s when a specific proposition is thought to be more likely than a more general proposition of which it is a special case. For example, consider the following experiment carried out by Amos Tversky and Daniel Kahnemann where they asked a group of policy experts to rate the probability of the following events:</p>
+
+<ol>
+  <li>Russia invades Poland</li>
+  <li>Russia invades Poland and the US breaks diplomatic relations with them the following year.</li>
+</ol>
+
+<p>They collectively assigned a 1% chance to option 1, and a 4% chance to option 2. This, of course, cannot be the case since 2 is a special case of 1. What might be going on here is that the participants find it difficult to imagine a scenario in which Russia invades Poland and thus assign it lower probability than a more detailed scenario that is more representative of what a real scenario would look like.</p>
+
+<p>And so it is with AI-doomer fantasies. Most people didn’t spend the requisite amount of time in their parents basement during adolescence to be able to magick up the paperclip maximiser from the depths of their imagination. But given a fantastical sci-fi inspired story explaining one way it <em>could</em> happen they start to wildly overestimate its probability.</p>
+
+<p>I find this fixation all particularly hard to swallow given that at this particular moment in history, we may well be on the brink of global nuclear war. Nuclear weapons pose a far bigger and proven threat to humanity that we have basically been ignoring for decades. Anyone who thinks otherwise should read the story of <a href="https://en.wikipedia.org/wiki/Vasily_Arkhipov" target="_blank"> Vasily Arkhipov</a>, the razor-thin, one-man margin that stood between us and nuclear annihilation back in 1962. There have been several more close calls since then too. Let’s be clear about this: <strong>The only reason the nuclear armageddon hasn’t happened yet is pure luck</strong>. The USA may be about to lose its position as global hegemon, and shows no indication of going quietly or peacefully. Countries around the world are increasing military spending and reintroducing the draft. Sorry folks, but I have bigger fish to fry than a damn paperclip maximiser.</p>
+
+<p>My prediction for AI is that it will lead to disruption in some industries, and some handsome payoffs in increased efficiency. The AI doomers will continue their fearmongering, and for them AGI will be like fruit above Tantalus - always within reach, never in our hands.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[11 Jul 2024]]></summary></entry><entry><title type="html">Understanding case control studies</title><link href="/2024/06/04/Understanding-case-control-studies.html" rel="alternate" type="text/html" title="Understanding case control studies" /><published>2024-06-04T00:00:00+01:00</published><updated>2024-06-04T00:00:00+01:00</updated><id>/2024/06/04/Understanding%20case%20control%20studies</id><content type="html" xml:base="/2024/06/04/Understanding-case-control-studies.html"><![CDATA[<p>04 Jun 2024</p>
 
 <p>Case control studies are a staple in the epidemiologist’s toolbox. The basic idea idea is that instead of carrying out an analysis on a random sample of a population, you instead sample from the population conditional on occurrence of an outcome of interest. Typically this will involve selecting all individuals who have the outcome (the cases), and only some people who don’t have the outcome (the controls). The motivation for doing this is that when the outcome is rare, most of the precision in estimates is driven by the cases, and adding a large number of controls often has little effect. Case control studies can thus be more efficient in terms of data collection/processing compared to e.g. a cohort study.</p>
 
@@ -67,6 +192,12 @@ P(O = o \; | \; E=e, X=x) = \frac{  P(E = e \; | \; O=o, X=x) P(O=o, X=x) }{ P(E
 <p>Despite the fact that this has been known for over 50 years, there is still a great deal of confusion. In particular, there are a few papers out there that incorrectly claim that risk set sampling alone is sufficent for an odds ratio in the data generating process of a case control study to be equal to a rate ratio in the population.</p>
 
 <p>Ultimately, it is a matter of ‘taste’ whether to report an odds ratio or rate ratio. Typically the entire motivation for estimating an odds ratio in a case control study is because it is also an estimator of a population parameter of interest - the rate ratio. On the other hand, it is not incorrect to report an odds ratio. What must be understood is that the odds ratio applies to a data generating process that includes the case control sampling, whereas the rate ratio applies to a data generating process for the whole population.</p>
+
+<h3> Re-using data points? </h3>
+
+<p>A final confusion that arises is that in risk set sampling, you can end up having the same individual as both a case and a control. This can happen if they are matched to another case at a time before they have had the event themselves. Surely that’s not allowed?</p>
+
+<p>This can be resolved by understanding that the unit of observation in a case-control study is not an indivdual, but an individual <em>at a particular instant in time</em>. In other words, it’s as if each individual has a row in the data for every instant of follow-up time. That will generally result in an infinite number of observations, but the case control study only ever uses a finite subset of them. If an individual ends up having several of their observations included in the case control study, these should be understood as independent data points - or at least data points that are ‘sufficiently independent’ to satisfy the modelling assumptions that are made.</p>
 
 <h3>  References </h3>
 
@@ -204,7 +335,7 @@ P(O = o \; | \; E=e, X=x) = \frac{  P(E = e \; | \; O=o, X=x) P(O=o, X=x) }{ P(E
 
 <p><span id="1"> <b>1. </b> </span> Nicolai H, Peeters K, Zamalkar M. <a href="https://arxiv.org/abs/hep-th/0501114" target="_blank"> Loop quantum gravity: an outside view</a>.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[26 Mar 2024]]></summary></entry><entry><title type="html">Robust standard errors</title><link href="/2024/01/17/Robust-standard-errors.html" rel="alternate" type="text/html" title="Robust standard errors" /><published>2024-01-17T00:00:00+00:00</published><updated>2024-01-17T00:00:00+00:00</updated><id>/2024/01/17/Robust%20standard%20errors</id><content type="html" xml:base="/2024/01/17/Robust-standard-errors.html"><![CDATA[<p>17 Jan 2024</p>
 
-<p>Robust standard errors are frequently used in statistics, often in an unthinking way. They are certainly valuable and useful in the context of linear regression; however, they do not serve a similar purpose in maximum likelihood estimation of non-linear models. The basic issue is that the kind of mis-specification that robust standard errors can address in linear regresion does not spoil consistency results for the parameter estimates. On the other hand, it does spoil those results in the context of maximum likelihood estimation of non-linear models. Thus at best you end up with a consistent estimator for the variance of a parameter estimate that is itself inconsistent, which isn’t really of interest except as a diagnostic tool for detectng bad models. I’ll explore this in more detail below.</p>
+<p>Robust standard errors are frequently used in statistics, often in an unthinking way. They are certainly valuable and useful in the context of linear regression; however, they do not serve a similar purpose in maximum likelihood estimation of non-linear models. The basic issue is that the kind of mis-specification that robust standard errors can address in linear regresion does not spoil consistency results for the parameter estimates. On the other hand, it does spoil those results in the context of maximum likelihood estimation of non-linear models. Thus at best you end up with a consistent estimator for the variance of a parameter estimate that is itself inconsistent, which isn’t really of interest except as a diagnostic tool for detecting bad models. I’ll explore this in more detail below.</p>
 
 <h3>  Linear regression </h3>
 
@@ -252,7 +383,7 @@ P(O = o \; | \; E=e, X=x) = \frac{  P(E = e \; | \; O=o, X=x) P(O=o, X=x) }{ P(E
 
 <p>The logic behind these conditions is as follows. <a href="#1.1"> 1.1</a> and <a href="#1.6"> 1.6</a> guarantee that the objective function \( Q_n(\theta) \) converges in probability to \( \mathbb{E}[m(w_i, \theta)] \). The idea is that if we then maximise \( Q_n(\theta) \), the resulting estimator \( \hat{\theta} \) will converge in probability to the unique ‘true’ value \( \theta_0 \) that maximises \( \mathbb{E}[m(w_i, \theta)] \), assumed to exist courtesy of <a href="#1.5"> 1.5</a>. Conditions <a href="#1.2"> 1.2</a> and <a href="#1.3"> 1.3</a> simply ensure that \( Q_n(\theta) \) has a unique maximum, and <a href="#1.4"> 1.4</a> is a ‘mathematical housekeeping’ condition that just means that \( m(w_i, \theta) \) is in fact a random variable.</p>
 
-<p>Note that despite the fact that the iid assumption is typically used to derive the form of the likelihood function in the first place, it does not appear in <a href="#1.1">1.1</a>-<a href="#1.6">1.6</a>. We only need \( w_i \) to be ergodic stationary, and \( \mathbb{E}[m(w_i, \theta)] \) to be uniquely maximised at \( \theta_0 \). In other words, the objective function \( Q_n(\theta) \) needn’t be a correctly specified log-likelihood. This opens the doorway to <a href="https://en.wikipedia.org/wiki/Quasi-maximum_likelihood_estimate" target="_blank"> quasi-maximum likelihood estimation</a>, in which the likelihood function is mis-specified but still has the correct maximum.</p>
+<p>Note that despite the fact that the iid assumption is typically used to derive the form of the likelihood function in the first place, it does not appear in <a href="#1.1">1.1</a>-<a href="#1.6">1.6</a>. We only need \( w_i \) to be ergodic and stationary, and \( \mathbb{E}[m(w_i, \theta)] \) to be uniquely maximised at \( \theta_0 \). In other words, the objective function \( Q_n(\theta) \) needn’t be a correctly specified log-likelihood. This opens the doorway to <a href="https://en.wikipedia.org/wiki/Quasi-maximum_likelihood_estimate" target="_blank"> quasi-maximum likelihood estimation</a>, in which the likelihood function is mis-specified but still has the correct maximum.</p>
 
 <p>Conditions <a href="#1.2"> 1.2</a> and <a href="#1.3"> 1.3</a> also ensure that the global maximum of \( Q_n(\theta) \) can be found by taking the first derivative and setting equal to zero. We define the score and Hessian for observation \( i\) as follows</p>
 
@@ -728,116 +859,4 @@ I'm here to see my gynaecologist.
 
 <p>I would also be remiss to not say something about the male archetypes of the movie. Barbie falls rather predictably into the ‘trap’ that every recent movie with a feminist agenda has. Namely, every single male character is either despicable or pathetic. Sometimes both. The only difference is power - men who have it are despicable, and men who don’t are pathetic. These are the only two options that are dreamt of in their conceptual universe. The idea of an honest, wise, self-sacrificing man in a position of power, who wields that power responsibly and whom is fundamentally motivated by the benefit of others - for the writers, this is a fantasy. And that is a profoundly sad commentary on our current cultural moment.</p>
 
-<p>This brings me neatly to my final point. Even if you ignore the stupid messaging and politics of the movie, it completely fails to deliver the number one thing that a movie is supposed to do: entertain. The characters are all vapid, they don’t learn or achieve anything, the story is uninteresting, the jokes are crap. What else is there? Usually when a movie grosses astronomical amounts of money as Barbie has (more then a billion dollars!), I can at least understand why other people find it appealing, even if I don’t myself. In this instance, I will forever remain completely baffled.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[01 Oct 2023]]></summary></entry><entry><title type="html">In defence of linear regression</title><link href="/2023/08/29/In-defence-of-linear-regression.html" rel="alternate" type="text/html" title="In defence of linear regression" /><published>2023-08-29T00:00:00+01:00</published><updated>2023-08-29T00:00:00+01:00</updated><id>/2023/08/29/In%20defence%20of%20linear%20regression</id><content type="html" xml:base="/2023/08/29/In-defence-of-linear-regression.html"><![CDATA[<p>29 Aug 2023</p>
-
-<h3>  What is linear regression? </h3>
-
-<p>It’s one of the first major topics you learn about when taking statistics class. In essence, it allows you to model the mean of a response variable \( y_i \) as depending on some explanatory variables \( x_i \), where the subscript \( i = 1…n \) labels different observations. More concretely,</p>
-
-\[y = X \beta + \epsilon, \tag{1}\]
-
-<p>where \( y \) is an \( n \)-dimensional vector whose elements are \( y_i \), \( X \) is an \( n \times k \) matrix whose rows are \( x_i \), and \( \beta \) is a \( k\)-dimensional vector of parameters to be estimated. If we assume that</p>
-
-\[\mathbb{E}[\epsilon \;|\; X] = 0, \tag{2}\]
-
-<p>then</p>
-
-\[\mathbb{E}[y \;|\; X] = \mathbb{E}[X \beta \; | \; X], \tag{3} \label{ols}\]
-
-<p>Multiplying both sides by the <a href="https://en.wikipedia.org/wiki/Moore%E2%80%93Penrose_inverse" target="_blank">Moore-Penrose pseudoinverse</a> of \( X \) gives</p>
-
-\[\beta = \mathbb{E}[ (X^T X)^{-1} X^T y \;|\; X]. \tag{4}\]
-
-<p>Finally, replacing the expected value with its sample counterpart gives the famous ordinary least squares formula</p>
-
-\[\hat{\beta} = (X^T X)^{-1} X^T y. \tag{5}\]
-
-<p>This is the most simple and instructive derivation of this equation you’ll ever see, if I do say so myself. And I do, in fact, say so myself.</p>
-
-<h3>  What if you have a limited dependant variable?</h3>
-
-<p>So, armed with the above formula, you can go about modelling all sorts of stuff. The technical assumptions being made are fairly unrestrictive. There is, inter alia, no assumption that \( \epsilon \) is normally distributed, as I have discovered is depressingly commonly believed even amongst professional statisticians (but that’s a topic for another day).</p>
-
-<p>Ah but what if you want to model a process where, for example, the dependent variable \( y_i \) is binary, taking only values \( 0 \) or \( 1\), you say? The conventional wisdom is that you should not use linear regression, but a different model such as logistic regression. But a conditional probability is an expected value, which is exactly the sort of thing linear regression is meant to model. So why not use linear regression?</p>
-
-<h3>  Objection 1: Out of bounds values</h3>
-
-<p>You may have noticed that in equation \( \ref{ols} \), there is nothing stopping the modelled mean from being less than \( 0 \) or greater than \( 1 \). \( X \) and \( \beta \) might just conspire to make it so. Clearly that cannot actually be, given that \( y_i \in \{ 0, 1 \}\). This problem cannot occur in logistic regression, because the functional dependence of \( \mathbb{E}[y \; | \; X] \) on \( X \) and \( \beta \) ensures that the predicted values are always in  \( [0, 1] \).</p>
-
-<p>To which I respond: if your model predicts a mean that is impossible by definition, then either your model specification is bad, or your sample size is too small. If you didn’t have either of those issues, then linear regression would be just dandy. It’s not the estimation method, it’s you.</p>
-
-<p>In fact, you might even consider the foregoing an asset - predicted values that are out of bounds is a clear diagnostic tool you can use to detect issues with model specification and/or sample size.</p>
-
-<p>Finally, if you do have out of bounds predictions, it is completely sensible to modify them to be the closest allowed value. This is what you get by conditioning predictions on the fact that they must lie in a limited range.</p>
-
-<h3>  Objection 2: Heteroscedasticity </h3>
-
-<p>So usually we not only want to estimate \( \beta \), but also its variance, in order to have an idea of what level of confidence we can reasonably have in \( \hat{\beta}\). The most straightforward way of doing this makes the following assumption:</p>
-
-\[\mathrm{Var}[\epsilon_i \; | \; X] = \sigma^2 \;\; \forall i. \tag{6}\]
-
-<p>This goes under the name ‘homoscedasticity’, and means the variance of the residuals is independent of \( X \). It turns out that if you fit the model using linear regression, this assumption cannot possible be satisifed. The reason is that you are modelling a Bernoulli variable where the probability of a \( 1 \) is given by</p>
-
-\[p_i := \mathbb{E}[y_i \; | \; X_i]. \tag{7}\]
-
-<p>The variance of the Bernoulli variable is \( p_i(1-p_i) \), which in general will depend on \( X \), thus violating the homoscedasticity assumption.</p>
-
-<p>Fortunately, there is a simple <a href="https://en.wikipedia.org/wiki/Heteroskedasticity-consistent_standard_errors" target="_blank">estimator</a> for the variance of \( \beta \) that is ‘robust’ to heteroscedasticity, that handles this issue more than adequately.</p>
-
-<h3>  What's the real reason you're not using linear regression? </h3>
-
-<p>I am of course, not the first person to point any of this out. Otter Hellevik put forward the case nicely in this <a href="https://link.springer.com/article/10.1007/s11135-007-9077-3" target="_blank">paper</a> from 2009, and others even before him. There are also other advantages that linear regression has over e.g. logistic regression. Interpretability for one - the coefficient in a linear regression will tell you the number of percentage points your risk for the outcome goes up as the associated independent variable increases by \(1\), whereas the coefficient in logistic regression will tell you an odds ratio, which is a lot less intuituive. I should also mention that similar arguments work for Poisson regression. There you are just modelling a rate, which is the expectation of a discrete random variable divided by time - something that ordinary least squares is also perfectly suited for.</p>
-
-<p>Given all this, why does it remain more or less unthinkable in many fields for researchers to use linear regression in cases of a limited dependant variable?</p>
-
-<p>I think one reason is that it’s a ‘zero-thought’ method. If you use linear regression when e.g. the dependant variable is binary, it just gives one more way that your modelling can definitively be said to have failed. No such thing will happen if you fit a logistic regression.</p>
-
-<p>It probably also has something to do with the vagaries of history. Maximum likelihood methods are newer than linear regression, and were all the rage at the time. Plus computers have gotten a lot more powerful in recent decades, and often there is very little difference to the end user in fitting maximum likelihood models despite the fact that they are generally more computationally demanding.</p>
-
-<p>One reason this may again become quite relevant, certainly in health data science, is if <a href="https://en.wikipedia.org/wiki/Secure_multi-party_computation" target="_blank">secure multi-party computation</a> methods are adopted and become commonplace. These techniques allow a function to be calculated across multiple private datasets, with zero information sharing. However, nothing is free, and in this case it comes with a significant additional burden in computational complexity. That might make linear regression start to look very attractive again compared to methods that require iterative optimisation methods.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[29 Aug 2023]]></summary></entry><entry><title type="html">Repugnant maths</title><link href="/2023/07/22/Repugnant-maths.html" rel="alternate" type="text/html" title="Repugnant maths" /><published>2023-07-22T00:00:00+01:00</published><updated>2023-07-22T00:00:00+01:00</updated><id>/2023/07/22/Repugnant%20maths</id><content type="html" xml:base="/2023/07/22/Repugnant-maths.html"><![CDATA[<p>22 Jul 2023</p>
-
-<p>In a <a href="file:///C:/Users/Steven/Desktop/Git/personal_website/_site/2023/03/21/Population-ethics.html" target="_blank">previous post</a>, I discussed population ethics and perhaps its foremost unsolved problem, the repugnant conclusion. To recap, the basic idea is that if you believe a small loss in quality of life for a population can be compensated by adding some number of people with lives worth living, then applying the same reasoning repeatedly leads to the conclusion that there is some enormous number of people all leading lives barely worth living that would be preferable to e.g. one billion people all living superlative lives. That seems rather unpalatable to most people.</p>
-
-<p>This problem has bamboozled philosphers for almost four decades, and single-handedly stymied any real progress in the field. Which is a rather puzzling state of affairs to me, since my initial reaction was that the solution is trivially easy. What, exactly, is stopping us from holding that there is no number of lives that are marginally worth living that would be better than the billion people in blissful content?</p>
-
-<h3>  Not so fast, Mr non-philosphy-man </h3>
-
-<p>So it turns out philosphers have thought about that already, and raised objections that in many quarters have been perceived as ‘fatal’. You can find a summary of the problem, and issues with various proposed solutions <a href="https://plato.stanford.edu/entries/repugnant-conclusion/" target="_blank">here</a>. Of particular relevance is <a href="https://plato.stanford.edu/entries/repugnant-conclusion/#QueWayWeComMeaWel" target="_blank">section 2.2</a>, which explains, with references, why apparently my proposed solution cannot work.</p>
-
-<p>In particular, let’s suppose we have goods \( A \) and \( B \) such that no amount of \( B \) is better than a single unit of \( A \). In the literature, it is sometimes said that \( A \) and \( B \) are not ‘Archimedean equivalent’. Now imagine a sequence of goods starting at \( B \) and ending with \( A \), such that each good is marginally better than its predecessor. The claim is that there must be a pair of goods that are adjacent in the sequence, such that no amount of the slightly worse good is better than a single unit of the slightly better one. This is used as an argument against the existence of non-Achimedean equivalent goods because it would imply, for example, that one chocolate sundae with the perfect amount of sprinkles is superior to a gazillion (yes you heard right, a gazillion!) chocolate sundaes with a slightly suboptimal amount of sprinkles.</p>
-
-<p>What pish-tosh is that! Clearly it cannot be!</p>
-
-<h3>  Not so fast, Mr non-maths-man </h3>
-
-<p>To the mathematically-inclined (i.e., me), it seems fairly clear this objection is nonsense. It would appear to imply that it is not possible to sensibly order an infinite set of objects. And yet clearly we can. What’s going on here?</p>
-
-<p>Mr philosphy-man has made an elementary mathematical error, that I will attempt to illustrate by way of metaphor.</p>
-
-<p>Imagine a child that can only count to 10. We ask the child to rank a set of 20 different toys, from least preferred to most preferred, using counting numbers. Once they reach the 11th toy, they become confused; clearly it is better than the 10th toy, but there are no longer any numbers left. The child trusting its maths ability more than the evidence of its own eyes, grudgingly concludes that there cannot be be a toy better than the 10th  toy.</p>
-
-<p>Now fast forward a decade or two; the child has grown up and is a young adult. They long ago learnt about the number 11 and the folly of their previous reasoning. In fact they have become much more sophisticated; they have attended university where they encountered the idea of a sequence - a collection of set elements indexed by the natural numbers. Equipped with this new knowledge, we ask them to construct a sequence of every possible real quantity of money they might be the recipient of in order of desirability, starting with least desirable. They try map every real number onto a distinct natural number, and quickly discover that they run out of natural numbers before they have even covered all quantities of money between 0 and 1 pounds. Cheerfully, they proclaim there is no quantity of money that would be better than any quantity not yet assigned to the sequence.</p>
-
-<p>This is analogous to reasoning presented by our esteemed colleague, Mr philosophy-man. Turns out that all that has happened is that he has run out of numbers. But that doesn’t mean the tectonic plates of reality must shift around him; it just means that he needs to take a few more maths classes!</p>
-
-<h3>  Ordinal numbers</h3>
-
-<p>This particular problem was solved more than a century ago by <a href="https://en.wikipedia.org/wiki/Georg_Cantor" target="_blank">Georg Cantor</a>, and developed further by e.g.
-<a href="https://en.wikipedia.org/wiki/John_von_Neumann" target="_blank">John von Neumann</a>. The upshot is that if you want to order infinite sets, then you’re going to need 
-<a href="https://en.wikipedia.org/wiki/Ordinal_number" target="_blank">ordinal numbers</a>. These include numbers that are larger than any integer. Again, allow me to illustate with an example.</p>
-
-<p>Alice likes apples and oranges. She always prefers a larger number of apples/oranges to a smaller number. However, she likes apples more than oranges, to the extent that there is no number of oranges that she would prefer to even a single apple. We might try represent her preferences using numbers, by assigning 1 to the bundle consisting of 1 orange, the number 2 to 2 oranges, etc.</p>
-
-<p>However, if we limit ourselves to the natural numbers, we immediately run into a problem. The bundle consisting of a single apple cannot be assigned a natural number in a way that respects Alice’s preferences. Whichever number it is assigned, there is always a larger natural number available, which would incorrectly imply that there is some number of oranges Alice would prefer to one apple.</p>
-
-<p>The correct way to resolve this is simply to define an abstract number, called \( \omega \), that is larger than any natural number. Then we assign \( \omega \) to the bundle consisting of 1 apple. For 1 apple and 1 orange, we assign \( \omega + 1\), and so on. \( \omega \) is called the first infinite ordinal number. This construction can be made rigorous, and is foundational in set theory, which underpins all of mathematics.</p>
-
-<p>Once you figure out that you need ordinal numbers, then Mr philosphy-man’s problem evaporates completely. We can now place \( B \) and \( A \) in a <b>transfinite sequence</b>, where they are separated by an infinite number of incremental improvements. And if, for example, we assign 1 to \( B \) and \( \omega \) to \( A \), then there are no two adjacent elements that are non-Archimedean equivalent, because \( \omega \) <b>does not have a predecessor!</b> That is because for any candidate natural number that might be its predecessor, there is always a larger natural number in between.</p>
-
-<p>If you wish to read more about this, including more mathematical detail than you probably want, you should check out my recent paper <a href="https://philpapers.org/archive/KERTRC-3.pdf" target="_blank">here</a>.</p>
-
-<h3>  What to make of this? </h3>
-
-<p>Perhaps the first take away from all of this is to not put much truck in philosphers, no matter how many degrees and professorships they have from Oxbridge or the Ivy league. This problem has dumbfounded the entire field for several decades, and it all rests on some bad maths. A normal person would not even perceive what the problem is exactly. It turns out that a very fancy and expensive education is a precondition for wasting your time on esoteric matters such as these.</p>
-
-<p>More seriously, I am quite dismayed by all of this. In particular because there are people who take such ideas seriously enough that they’re effectively willing to bet millions of dollars on them, directing funds towards causes that their moral calculus has led them to believe are the best uses of money. It ceases to be a laughing matter when there are serious real world consequences at stake.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[22 Jul 2023]]></summary></entry></feed>
+<p>This brings me neatly to my final point. Even if you ignore the stupid messaging and politics of the movie, it completely fails to deliver the number one thing that a movie is supposed to do: entertain. The characters are all vapid, they don’t learn or achieve anything, the story is uninteresting, the jokes are crap. What else is there? Usually when a movie grosses astronomical amounts of money as Barbie has (more then a billion dollars!), I can at least understand why other people find it appealing, even if I don’t myself. In this instance, I will forever remain completely baffled.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[01 Oct 2023]]></summary></entry></feed>
