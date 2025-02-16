@@ -1,4 +1,105 @@
-<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2024-11-29T15:23:36+00:00</updated><id>/feed.xml</id><entry><title type="html">The trouble with economics</title><link href="/2024/10/02/The-trouble-with-economics.html" rel="alternate" type="text/html" title="The trouble with economics" /><published>2024-10-02T00:00:00+01:00</published><updated>2024-10-02T00:00:00+01:00</updated><id>/2024/10/02/The%20trouble%20with%20economics</id><content type="html" xml:base="/2024/10/02/The-trouble-with-economics.html"><![CDATA[<p>02 Oct 2024</p>
+<?xml version="1.0" encoding="utf-8"?><feed xmlns="http://www.w3.org/2005/Atom" ><generator uri="https://jekyllrb.com/" version="4.3.2">Jekyll</generator><link href="/feed.xml" rel="self" type="application/atom+xml" /><link href="/" rel="alternate" type="text/html" /><updated>2025-02-16T23:00:58+00:00</updated><id>/feed.xml</id><entry><title type="html">Does citation count measure how many friends you have?</title><link href="/2025/02/16/Does-citation-count-measure-how-many-friends-you-have.html" rel="alternate" type="text/html" title="Does citation count measure how many friends you have?" /><published>2025-02-16T00:00:00+00:00</published><updated>2025-02-16T00:00:00+00:00</updated><id>/2025/02/16/Does%20citation%20count%20measure%20how%20many%20friends%20you%20have</id><content type="html" xml:base="/2025/02/16/Does-citation-count-measure-how-many-friends-you-have.html"><![CDATA[<p>16 Feb 2025</p>
+
+<p>Alright folks, I’ll fess up right off the bat; I may have fallen face first into <a href="https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines" target="_blank"> Betteridge’s law</a></p>
+
+<blockquote>
+Any headline that ends in a question mark can be answered by the word no.
+</blockquote>
+<p><br />
+Leaving aside the empirical support for this adage, it is true that the answer to the eponymous question is ‘no’. But, I’m trying to provoke discussion here alright. Gimme a break.</p>
+
+<p>The lackadaisicalness of paper authorship policies varies quite a bit across different fields of academia. I’ve worked in several, and I will at least say this. Disciplines that are 
+ a little further along the spectrum tend to be much more solitary affairs. The number of authors on your typical physics paper is pretty low; on your typical life sciences
+ paper, much higher. There’s a clear positive relationship between the number of authors on a paper and how long they will spend making eye contact with you in a 
+ conversation.</p>
+
+<p>It is, however, not uncommon across academia for authorship standards to be pretty much non-existent. For example, a small number of people will do all the work, and then
+  send the paper to dozens of others for ‘comments and feedback’. It’s possible to get your name on a paper with just a few mins of light exertion. That’s less than your average 
+  <a href="https://www.youtube.com/watch?v=o-50GjySwew" target="_blank"> prancercise workout</a>.</p>
+
+<p>Closely related is the `reciprocal co-authorship’ arrangement: Person A lets person B be a co-author on their paper with minimal contributions, with an unspoken
+understanding that the favour will be returned at some date in the future.</p>
+
+<p>One consequence of this is that there are a non-trivial number of researchers whose paper and citation count is, at first sight, utterly baffling. In the field 
+I currently work in - health data science - it typically takes at least a year and often several to write a paper. This includes going through the extremely tedious process of 
+acquiring permissions to access data, writing protocols, obtaining ethics approvals, etc. Then you have to do the analysis, get feedback, tweak it, etc for multiple rounds. 
+After that comes actually writing the paper, followed by more rounds of tweaking. Submit it, get rejected a few times before it finally gets accepted somewhere, but not before at least 
+one round of peer review where you often have to basically write another paper defending the first paper.</p>
+
+<p>To put it straightforwardly, there is simply no way one person can make really signficant contributions to this workload for a large number of papers. And yet, there are researchers 
+whose yearly paper count is in the high 10s or even 100s.</p>
+
+<p>There is only really one way that this can happen, excepting outright academic fraud. These are people who have lots of friends, and lots of mutual back-scratching arrangements.</p>
+
+<p>It only makes sense. Academics live and die by their publications. If it is possible to get your name on a paper with a tiny fraction of the effort it would require to actually do 
+the bulk of the work yourself, then people are going to take advantage of that, some in a really quite cynical way. Practices like those above are so commonplace, I would say that 
+in some fields it is pretty much the norm for everyone except the first and last authors on a paper to be ignored. It is fairly widely accepted that anyone in the middle is a tag-along.</p>
+
+<p>This brings me to my next adage, known as <a href="https://en.wikipedia.org/wiki/Goodhart%27s_law" target="_blank"> Goodhart’s law</a>,</p>
+
+<blockquote>
+When a measure becomes a target, it ceases to be a good measure.
+</blockquote>
+<p><br />
+This one will be all too familiar to many people in academia. Individuals whose citation count, in the 10s of thousands, or even in excess of 100,000, that massively exceeds their talent. The 
+kind of people who are experts at ‘playing the game’. The ones who talk a lot during meetings without actually saying anything, who have a penchant for inserting themselves into other people’s projects. Hierarchy inversions that border on comical, where the lowly but honest stats/code monkeys have pitiful citation counts, and yet their knowledge and skill 
+absolutely dwarfs a hot air bag with a monumental citation count.</p>
+
+<p>It’s a little depressing, but I don’t have a good solution. Just a word of caution to be wary of citation count as a metric of academic contribution. Often it is measuring something
+else entirely.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[16 Feb 2025]]></summary></entry><entry><title type="html">Academia fails the smell test</title><link href="/2025/01/07/Academia-fails-the-smell-test.html" rel="alternate" type="text/html" title="Academia fails the smell test" /><published>2025-01-07T00:00:00+00:00</published><updated>2025-01-07T00:00:00+00:00</updated><id>/2025/01/07/Academia%20fails%20the%20smell%20test</id><content type="html" xml:base="/2025/01/07/Academia-fails-the-smell-test.html"><![CDATA[<p>07 Jan 2025</p>
+
+<p>I’m a bit behind the outrage news cycle here, but In November last year, a student at the University of Cambridge by the name of Amelia (Ally) Louks unintentionally created quite the stink over her PhD thesis entitled “The Politics of Smell in Modern and Contemporary Prose”. It all started with a seemingly innocuous  <a href="https://x.com/DrAllyLouks/status/1861872149373297078" target="_blank"> twitter post</a> celebrating successful completion of her degree, and quickly spiralled into a furore that “broke the internet”.</p>
+
+<p>Why? To put it gently, her thesis looks like garbage. For example, the second sentence of the abstract lays out her aim to</p>
+
+<blockquote>
+...offer an intersectional and wide-ranging study of olfactory oppression by establishing the underlying logics that facilitate smell's application in creating and subverting gender, class, sexual, racial and species power structures.
+</blockquote>
+<p><br /></p>
+
+<p>For most people that fails the sniff test. The stench of pseudointellectual equine fecal matter is frankly overpowering. Surely only a particularly niche brand of masochist would be interested in subjecting themselves to what is no doubt the ordeal of hundreds of pages of this.</p>
+
+<p>Which leaves many people wondering; how on Earth can someone get a PhD from one of the pre-eminent higher education institutes in the world by producing what appears to be an elaborately curated, heaping monument to obscurity and the unmistakable scent of pasture?</p>
+
+<h3> Fashionable nonsense </h3>
+
+<p>I share the disheartenment of the internet. In a sane world, this document would have been ignored by everyone as the esoteric and pointless ramblings of someone who has the comfort and privilege of being able to waste their time on such trivialities. It should not result in a doctoral degree from one of the most prestigious institutions on the planet.</p>
+
+<p>Unfortunately, Louks’ thesis is not some isolated incident. It is just the tip of the iceberg. There are mountains of garbage just like it in academia. Entire industries are dedicated to producing this garbage.</p>
+
+<p>How did this happen? Part of it is an insistence in many quarters on treating humanities subjects e.g. English literature, anthropology, gender studies, art etc as if they are on a par with the natural sciences - physics, chemistry, biology etc. The problem is that they are fundamentally different. In the natural sciences, there are real discoveries to be made, and real research to be done. There is knowledge that require serious time and effort to master, and it can take the better part of a lifetime to make a notable contribution to these fields. And no one can argue about the results; the achievements of science are absolutely extraordinary.</p>
+
+<p>In the humanities, there is not much of any of that. Nonetheless there is a hierarchy to be constructed - somebody must, after all, be the leading gender studies scholar in the world. In the absence of the potential for real scientific competence or truth-seeking, that hierarchy becomes predicated on something else entirely - one’s ability to dress up mundane or silly ideas in a way that superficially makes them sound just as impressive as actual science. Noam Chomsky nails it in <a href="https://youtu.be/OzrHwDOlTt8?t=343" target="_blank"> this clip</a>,</p>
+
+<blockquote>
+Suppose you're a literary scholar at some elite university, or anthropologist or whatever. If you do your work seriously, that's fine. But you don't get any prizes for it. On the other hand, you take a look at the rest of the university, and you've got these guys in the physics department, and the math department, and they have all kind of complicated theories, which of course we can't understand, but they seem to understand them, and they have principles and they deduce complicated things from the principles, and they do experiments and find either they work or they don't work. Thats really impressive stuff, so I want to be like that too. I want to have a theory. 
+<br />
+<br />
+In the humanities, literary criticism, anthropology and so on, theres a field called theory. We're just like the physicists. They talk incomprehensively, we can talk incomprehensively. They have big words, we'll have big words. They draw far-reaching conclusions, we'll draw far-reaching conclusions. We're just as prestigious as they are. Now if they say look well look we're doing real science and you guys aren't, that's white, male, sexist, bourgeois, whatever the answer is, how are we any different from them? Ok that's appealing.
+</blockquote>
+<p><br /></p>
+
+<p>It really is that simple. And depressing.</p>
+
+<p>All of this was exposed quite brilliantly by Alan Sokal in 1996, who has been a professor of physics at New York University and University College London. He submitted a fake article to the journal Social Text entitled “Transgressing the Boundaries: Towards a Transformative Hermeneutics of Quantum Gravity”, arguing that quantum gravity is a social construct. Needless to say, the paper was filled with nonsense. It nonetheless got published. In 1998, he wrote the book 
+<a href="https://en.wikipedia.org/wiki/Fashionable_Nonsense" target="_blank"> Fashionable nonsense</a> criticising the postmodern academic tradition that resulted in the unfortunate institutional circumstances that allow this sort of thing to happen.</p>
+
+<p>This was followed up by the <a href="https://en.wikipedia.org/wiki/Grievance_studies_affair" target="_blank"> Grievance studies affair</a> in 2017 and 2018, by Peter Boghossian, James Lindsay and Helen Pluckrose. They wrote 20 articles filled with patently absurd nonsense and submitted them to various peer-reviewed journals. By the time the hoax was revealed in October 2018, 4 papers had been published, 3 were accepted but not published, 6 were rejected and 7 were under review. The published papers included claims that dogs participate in rape culture and that men can reduce their transphobia by using anal sex toys on themselves.</p>
+
+<p>Further evidence of the rot comes from <a href="https://en.wikipedia.org/wiki/Judith_Butler" target="_blank"> Judith Butler</a>, who is the Maxine Elliot professor in the department of comparative literature and the program of critical theory at the University of California, Berkeley. That is a named professorship at one of the most elite universities in the world. In her most famous work, <a href="https://en.wikipedia.org/wiki/Gender_Trouble" target="_blank"> Gender trouble</a> she argues that gender is not innate, but a performance. Which, depending on how you define gender, is either a truism or an absurdity. Butler is famous for her crimes against the English language, illustrated nicely with this literal award-winningly awful sentence</p>
+
+<blockquote>
+The move from a structuralist account in which capital is understood to structure social relations in relatively homologous ways to a view of hegemony in which power relations are subject to repetition, convergence, and rearticulation brought the question of temporality into the thinking of structure, and marked a shift from a form of Althusserian theory that takes structural totalities as theoretical objects to one in which the insights into the contingent possibility of structure inaugurate a renewed conception of hegemony as bound up with the contingent sites and strategies of the rearticulation of power.
+</blockquote>
+<p><br /></p>
+
+<p>This leads me to what I call <strong>The Butler Challenge</strong>™: Choose <strong>any</strong> book by Judith Butler, flip to <strong>any</strong> page, choose <strong>any</strong> paragraph, and find me a sentence that isn’t complete gibberish. I offer a handsome bounty to anyone who succeeds in this daring endeavour.</p>
+
+<h3> State-sponsored ideological nonsense </h3>
+
+<p>If this was all just blather done in the name of light entertainment that would be one thing. It is altogether another thing when the humanities departments at universities are mass indoctrinating students with a particular ideology and sending them out in the world with revolutionary intentions. And on taxpayers’ dime to boot. Tens of millions of pounds are spent funding anti-scientific “research” in univerities. This is stuff that is on a par with flat earth theory, except far more socially destructive. That is unacceptable.</p>
+
+<p>Unfortunately this shows no signs of abating anytime soon.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[07 Jan 2025]]></summary></entry><entry><title type="html">The trouble with economics</title><link href="/2024/10/02/The-trouble-with-economics.html" rel="alternate" type="text/html" title="The trouble with economics" /><published>2024-10-02T00:00:00+01:00</published><updated>2024-10-02T00:00:00+01:00</updated><id>/2024/10/02/The%20trouble%20with%20economics</id><content type="html" xml:base="/2024/10/02/The-trouble-with-economics.html"><![CDATA[<p>02 Oct 2024</p>
 
 <p>In this post, I’m going to give an overview of some major theoretical issues in modern economics.</p>
 
@@ -618,245 +719,4 @@ Eric is doing everything he can here to let the listener come to the conclusion 
 
 <p>Geometric unity has been summarily ignored by more or less the entirety of the high energy physics community. That’s because it’s a whole lot of hot air. I nonetheless can’t help but think that Eric would prefer if the theory was being attacked by mainstream physicists rather than being ignored. At least that would imply he is a threat, which is more aligned with his self-styling as a heretic and renegade. He’d rather be hated than be irrelevant.</p>
 
-<p>I actually have a real soft spot for unorthodox outsiders who come out of nowhere and prove everyone wrong. A big part of me wants an Eric Weinstein style story to be true. Unfortunately the ultimate truth is that Eric Weinstein is a very sophisticated social illusionist who appears to have bought into his own bullshit. And to an extent, I get it; I don’t think there is a person who has gone into physics research without privately harbouring the small glimmer of hope that they one day might discover something incredible and be declared the next Einstein. Every one of us had a crazy idea or two at some point that we thought might just turn out to be mad genius. Then we all figured out we were really, really wrong and had to eat a sizeable portion of humble pie. Most of us learnt the lesson that needed to be learnt from that. Eric Weinstein didn’t. He doubled, then tripled down. He is a man whose real talent is projecting an image of an unheralded, iconoclastic genius to people who have no way of knowing better. Unfortunately it’s much easier to create that illusion than to be the real thing.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[29 Oct 2023]]></summary></entry><entry><title type="html">The church of expected utility theory</title><link href="/2023/10/03/The-church-of-expected-utility-theory.html" rel="alternate" type="text/html" title="The church of expected utility theory" /><published>2023-10-03T00:00:00+01:00</published><updated>2023-10-03T00:00:00+01:00</updated><id>/2023/10/03/The%20church%20of%20expected%20utility%20theory</id><content type="html" xml:base="/2023/10/03/The-church-of-expected-utility-theory.html"><![CDATA[<p>03 Oct 2023</p>
-
-<h3>  What is expected utility theory? </h3>
-
-<p>Expected utility theory was first influentially expounded by Swiss mathematician <a href="https://en.wikipedia.org/wiki/Daniel_Bernoulli" target="_blank"> Daniel Bernoulli</a> in the 1700s. It seeks to answer the question of how to weigh up alternatives that are uncertain. For example, say I gave you the option of \( £100 \), or a bet consisting of a \( 50-50 \) chance of receiving \( £250 \), how should you choose? While it may seem easy to answer a single question like this, it turns out that building a general framework for how to make such decisions is not so easy, and if you proceed naively you can easily come a cropper.</p>
-
-<p>Bernoulli’s basic idea is that you should assign a number to how good each possible alternative is, multiply it by the probability that alternative will actually happen, and sum it all up. The result is called ‘expected utility’, and the theory instructs us to maximise it. In my example, let’s say the utility of a quanity of money is equal to the quantity of money itself. Then the expected utility of the certain \( £100 \) is \(  1 \times 100 = 100\), while the expected utility of the bet is</p>
-
-\[0.5 \times 0 + 0.5 \times 250 = 125,\]
-
-<p>In this example, the bet comes out on top. However, there is no reason we have to assign utility to be equal to the quantity of money received. Maybe the benefit we derive from receiving \( £250 \) is less than twice the benefit we would get from receiving \( £100 \). In this case, expected utility theory would instruct us to go for the sure \( £100 \).</p>
-
-<h3>  The von Neumann-Morgenstern utility theorem </h3>
-
-<p>How do we know that this way of evaluating uncertain prospects is sensible? Well, the theory got a major boost from a rather striking result proved by John von Neumann and Oskar Morgenstern in 1947. They showed that a decision-maker who behaves in accordance with four seemingly very reasonable axioms <i>must</i> be an expected utility maximiser. What are these axioms?</p>
-
-<p>Let’s first define \( \succeq \) to mean ‘at least as good as’. We will call an uncertain prospect a <i>lottery</i>. We may also consider ‘compound lotteries’, which can involve some probability of receiving a good which is itself a lottery. For example, I might offer you a \(50-50\) chance of taking the bet above. A compound lottery consisting of receiving lottery \( L \) with probability \( p \) will be denoted by \( pL \).</p>
-
-<p>The axioms are as follows:</p>
-
-<p><b>1. Completeness.</b> For any two lotteries \( L \) and \( M \), we have either \( L \succeq M \) or \( M \succeq L \)</p>
-
-<p>This is just saying that in any comparison between two lotteries, one is always at least as good as the other - there are no lotteries that are ‘incomparable’.</p>
-
-<p><b>2. Transitivity.</b> If there are three lotteries \( L \), \( M \) and \( N \), with \( L \succeq M \succeq N \), then \( L \succeq N \).</p>
-
-<p>This means that you can’t have rock-paper-scissor-like preferences. It is often said that someone who has preferences like this could be used as a ‘money pump’, because they will presumably pay some non-zero amount of money to go around in a cycle that ends where they started. They can be taken on that ride ad infinitum.</p>
-
-<p><b>3. Continuity.</b> For any three lotteries with \( L \succeq M \succeq N\), there is some probability \( p \) such that \( pL + (1-p)N \sim M \).</p>
-
-<p>Here, the symbol \( \sim \) means indifference, or preferring two options equally. The continuity axioms says that we can always ‘trade in’ utility for probability. For example, you can always be left just as well off as you are now by taking a lottery where you get something better with probability \( p \) and something worse with probablity \((1-p)\).</p>
-
-<p><b>4. Independence.</b> For any lottery \( M \) and any probability \( p \), \( L \succeq N \) if and only if \( pL + (1-p)M \succeq  pN + (1-p)M \).</p>
-
-<p>Notice that the \( (1-p)M \) appears on both sides of the equation. This says that tacking on some other lottery that you receive no matter what does not affect your preferences.</p>
-
-<p>There you have it. If you think those four axioms are reasonable, then you sir (or madam) must be an expected utilty maximiser.</p>
-
-<h3>  Evangelical economics </h3>
-
-<p>It’s hard to overstate how profoundly this theorem has shaped academic economics. There is nary a subfield which does not employ expected utility maximisation as its theoretical workhorse. It has completely dominated economic thinking for almost 80 years, and no doubt will continue to for some time to come.</p>
-
-<p>There have been inevitably been some challenges to its reign, but mostly on the grounds of its limitations as a description of human behaviour. It turns out that humans are quite fickle creatures, and you can get them to behave in ways that violate these axioms. Most prominent among the would-be usurpers is <a href="https://en.wikipedia.org/wiki/Prospect_theory" target="_blank"> prospect theory</a>, but it has failed to really make a dent in the hegemony that expected utility theory has in the field.</p>
-
-<p>However, even ignoring that, almost no one nowadays questions the idea that expected utility theory is an appropriate framework for a ‘rational’ decision-maker. That is, maybe us lowly humans fail to live up to its lofty mandates, but it is still the correct ideal we should be shooting for, even if we are too flawed to hit the target.</p>
-
-<p>I beg to differ.</p>
-
-<h3>  What's your problem, Steven?</h3>
-
-<p>My problems are two-fold, my simple-minded interlocutor.</p>
-
-<p>I find it hard to take issues with axioms <b>1.</b> and <b>4.</b>, so I will leave them unbesmirched. It’s the other two that stick in my craw.</p>
-
-<h4> Transitivity </h4>
-<p>I know what you’re thinking. How can I possibly take issue with transitivity. Am I some sort of masochist who likes being used as a money pump?</p>
-
-<p>No, I am not.</p>
-
-<p>Let me give you a simple example of a hapless protagonist, let’s call him Dave, who is an unwitting money pump. Imagine Dave is hiring for a job, and he ranks candidates on three separate criteria: Intelligence, experience, and hotness (Dave may be getting a call from HR soon). Each candidate has a numerical score along each dimension. However, Dave, being the pitiable stooge that he is, cannot distinguish between differences of less than 4 units along any dimension. He is presented with the following three candidates:</p>
-
-<table>
-  <thead>
-    <tr>
-      <th style="text-align: center"><u><strong>Name </strong></u></th>
-      <th style="text-align: center"><u><strong>Intelligence </strong></u></th>
-      <th style="text-align: center"><u><strong>Experience </strong></u></th>
-      <th style="text-align: center"><u><strong>Hotness </strong></u></th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td style="text-align: center">Alice</td>
-      <td style="text-align: center">6</td>
-      <td style="text-align: center">0</td>
-      <td style="text-align: center">0</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Bob</td>
-      <td style="text-align: center">0</td>
-      <td style="text-align: center">3</td>
-      <td style="text-align: center">3</td>
-    </tr>
-    <tr>
-      <td style="text-align: center">Carol</td>
-      <td style="text-align: center">3</td>
-      <td style="text-align: center">6</td>
-      <td style="text-align: center">-3</td>
-    </tr>
-  </tbody>
-</table>
-
-<p><b>Alice beats Bob</b>  via the intellgence dimension (they do not differ by more than 4 along the other two dimensions). <br />
-Similarly, <b>Bob beats Carol</b> via the hotness dimension. <br />
-And <b>Carol beats Alice</b> along the experience dimension. <br /></p>
-
-<p>There you have it. Dave is doomed to embark upon an ill-fated, infinite loop of increasing salary offers until he finds himself in the mother of all debt holes. And all because of his failure to notice differences of less than 4. What a twonk!</p>
-
-<p>Of course Dave hasn’t really behaved in any way that should be considered irrational. We can imagine that a difference of 4 lies beyond the limits of human, or even machine-aided perception - it can be as tiny a difference as you want. We can also imagine that Dave is not a complete moron and notices he is being money-pumped before handing over his life-savings.</p>
-
-<p>So much for transitivity. Next up:</p>
-
-<h4> Continuity </h4>
-
-<p>I will take this one down by way of the following hypothetical.</p>
-
-<p>Imagine I offer you a lottery consisting of a marginal improvement to your current well-being (perhaps a gentle pat on the head) with probability \( p \), but otherwise you will be crucified. Expected utility theory dictates that there must be some non-zero chance of crucifixion such that you would be indifferent between taking this bet and continuing on your merry way. That’s right - anything less would be ‘irrational’.</p>
-
-<p>I don’t know about you, but I completely reject that. Ain’t no head pat in the universe good enough that I’m willing to risk crucifixion for.</p>
-
-<p>More broadly speaking, there is an issue for expected utiltity theory whenever there are more distinctly ranked alternatives than there are real numbers. From axiom  <b>3.</b> above, imagine that there are more incremental improvements between \( L \) and \( N \) than there are numbers between 0 and 1. Then it must be possible to map every single one of these alternatives \( M \) onto a distinct number \( p \) between 0 and 1 such that \( pL + (1-p)N \sim M\). But it’s not at all difficult to come up with examples where you run out of numbers. For example, imagine my preferences are such that there is no amount of tea that I would prefer over a minute of experiencing the euphoria of being deeply in love. Such a preference would run afoul of Mr von Neumann and Mr Morgenstern.</p>
-
-<h4> Whence expected utility theory? </h4>
-
-<p>If its flaws are so obvious, why does expected utility theory continue to have such a strangehold over the academy?</p>
-
-<p>The main reason is that it’s simple, and it allows economists to feel all fancy because they get to use elementary calculus. If there is an expected utility function, then you can differentiate it to find stationary points. Put a few layers of makeup on that, and BAM, you have got yourself a paper sunshine.</p>
-
-<p>Unforunately the reality of life is a little harder to grapple with than that.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[03 Oct 2023]]></summary></entry><entry><title type="html">My review of Barbie</title><link href="/2023/10/01/My-review-of-Barbie.html" rel="alternate" type="text/html" title="My review of Barbie" /><published>2023-10-01T00:00:00+01:00</published><updated>2023-10-01T00:00:00+01:00</updated><id>/2023/10/01/My%20review%20of%20Barbie</id><content type="html" xml:base="/2023/10/01/My-review-of-Barbie.html"><![CDATA[<p>01 Oct 2023</p>
-
-<p>I’ve decided to try my hand as a culture critic. There’s no way I was going to pay to see the new Barbie movie in the cinemas, so this is a somewhat belated review. There are spoilers ahead.</p>
-
-<h3>  Barbie world </h3>
-
-<p>The movie starts in the world of Barbie, which is plucked from the imagination of a young girl. In this world, the barbies are all amazing, do everything of importance, and live in perpetual bliss. The kens are a collection of irredeemable idiots who are consigned to hanging out aimlessly on the beach all day doing nothing. This is the matriarchal utopia.</p>
-
-<p>After some singing/dancing about how great Barbie world is, it becomes clear that in fact there is something rotten in the state of Denmark. The happiness is too forced, the world too boringly perfect. There’s nothing to achieve - the barbies are effortlessly amazing all the time. Nothing to learn, no real adventures to be had, and nothing for the human spirit to contend with. Everything is shallow and devoid of meaning.</p>
-
-<p>There is also the hint that maybe, just maybe, the kens are being mistreated. They’re in love with the barbies and it’s clear that their existence revolves around them, and they desperately want to do something to get noticed. The barbies, evidently not in need of no man, coldly reject and exclude the kens.</p>
-
-<p>Ok so clearly the naive view of a matriarchal utopia is being critiqued here. That’s a sensible idea that anyone can get on board with. So far, so so-so (that’s right, a triple (or is it quadruple?) so (and that’s to say nothing of the now triple parentheses. BAM!)).</p>
-
-<h3> Real world </h3>
-
-<p>Through a series of fairly uninteresting story developments, both Barbie and Ken find themselves transported to the real world. Venice beach, California, to be exact. Both of them immediately start being ogled by strangers. For Ken this is a welcome development - he feels admired, like he is living in the reverse of Barbie world. For Barbie, not so much. She  receives a litany of unwanted sexual comments from various men, and is then groped.</p>
-
-<p>A bit more of uninteresting story development later, and they end up parting ways. Ken, thinking that he is in a glorious patriarchy, walks into a fancy corporate building and demands a high-powered, high-paying job. He’s told that he will at the very least need some basic qualifications. Puzzled, he asks ‘Isn’t being a man enough?’ to which his interlocutor replies ‘Actually right now it’s kind of the opposite’. Here we have an interesting, tacit acknowledgement of affirmative action policies, now ubiquitous in the work place, that outright discriminate in favour of women and against men. Ken continues his search down the job hierarchy, trying to become a doctor and then a lifeguard, both of which he is summarily rejected for due his lack of any relevant skills or qualifications. Clearly then, the real world is not just a gender-flipped version of Barbie world, where women can and do walk into any job they want with no discernible talent. And we also have the first hint of the complete incoherence of whatever political/cultural message the movie is meant to have. But more on that later.</p>
-
-<p>In the meantime, Barbie finds what she thinks is the girl from whose imagination Barbie world is drawn - Sasha. She expects a warm welcome, but instead receives a nasty tirade about how Barbie represents everything wrong with the world, including ‘sexualised capitalism’ and presenting unrealistic beauty standards for young girls.</p>
-
-<p>At Mattel headquarters we join the board of directors, which is entirely populated by buffoonishly inept men. Apparently this is the only place in the real world where incompetent men can walk into jobs far above their station. They are informed that Barbie is on the loose by one of an army of male interns, who is treated like crap by everyone and seems to have a thoroughly terrible life. We’re again left with ideological whiplash - is the real world a patriarchy in which men are the oppressor class and women the oppressed class, or not?</p>
-
-<h3>  Ken world </h3>
-
-<p>After some more uninteresting story development, Barbie, Sasha, and Sasha’s mother (Gloria) find themselves transported to Barbie world. Except it’s not Barbie world anymore, it’s Ken world. Ken got back before them and has taken over. The once amazing barbies that ran the world are reduced to maids and mindless sex objects. Barbie is shocked and dismayed at what has happened. She confronts Ken, and for approximately half a second he actually shows a glimpse of depth to his character, yelling “You failed me!” in a way that sticks out as jarringly real in an otherwise painfully superficial movie. It doesn’t last long though, as he promptly goes back to acting like the awful, entitled oppressor he inherently is.</p>
-
-<p>The barbies hatch an inane scheme to take Barbie world back from the kens. It is during this segment that Gloria delivers an impassioned monologue, which is so important that I’m going to reproduce it here in full.</p>
-
-<h3> The monologue </h3>
-<blockquote> It is literally impossible to be a woman. You are so beautiful, and so smart, and it kills me that you don't think you're good enough. Like, we have to always be extraordinary, but somehow we're always doing it wrong. <br />
-<br />
-You have to be thin, but not too thin. And you can never say you want to be thin. You have to say you want to be healthy, but also you have to be thin. You have to have money, but you can't ask for money because that's crass. You have to be a boss, but you can't be mean. You have to lead, but you can't squash other people's ideas. You're supposed to love being a mother, but don't talk about your kids all the damn time. You have to be a career woman but also always be looking out for other people. <br />
-<br />
-You have to answer for men's bad behavior, which is insane, but if you point that out, you're accused of complaining. You're supposed to stay pretty for men, but not so pretty that you tempt them too much or that you threaten other women because you're supposed to be a part of the sisterhood. <br />
-<br />
-But always stand out and always be grateful. But never forget that the system is rigged. So find a way to acknowledge that but also always be grateful. <br />
-<br />
-You have to never get old, never be rude, never show off, never be selfish, never fall down, never fail, never show fear, never get out of line. It's too hard! It's too contradictory and nobody gives you a medal or says thank you! And it turns out in fact that not only are you doing everything wrong, but also everything is your fault. <br />
-<br />
-I'm just so tired of watching myself and every single other woman tie herself into knots so that people will like us. And if all of that is also true for a doll just representing women, then I don't even know.
-</blockquote>
-
-<p><br />
-This monologue has apparently moved grown women the world over to tears.</p>
-
-<p>I admit that it almost moved me to tears also. Just not quite in the same way.</p>
-
-<p>My first reaction was ‘Welcome to being an adult’. It turns out that people expect things of you. It is not unreasonable for people to expect things of you. There is absolutely nothing about this which is unique to women.</p>
-
-<p>It turns out also that people have different opinions about stuff. No matter what you do, someone will think you’re doing it too little, or too much, or just completely wrong. Again, welcome to being an adult.</p>
-
-<p>I’m also immediately reminded of Rudyard Kipling’s wonderful poem ‘If’, also reprinted in full below.</p>
-
-<blockquote> If you can keep your head when all about you  <br /> 
-    Are losing theirs and blaming it on you,  <br /> 
-If you can trust yourself when all men doubt you, <br />
-    But make allowance for their doubting too; <br />  
-If you can wait and not be tired by waiting,<br />
-    Or being lied about, don’t deal in lies,<br />
-Or being hated, don’t give way to hating,<br />
-    And yet don’t look too good, nor talk too wise:<br />
-<br />
-If you can dream—and not make dreams your master; <br />  
-    If you can think—and not make thoughts your aim; <br />  
-If you can meet with Triumph and Disaster<br />
-    And treat those two impostors just the same;  <br /> 
-If you can bear to hear the truth you’ve spoken<br />
-    Twisted by knaves to make a trap for fools,<br />
-Or watch the things you gave your life to, broken,<br />
-    And stoop and build ’em up with worn-out tools:<br />
-<br />
-If you can make one heap of all your winnings<br />
-    And risk it on one turn of pitch-and-toss,<br />
-And lose, and start again at your beginnings<br />
-    And never breathe a word about your loss;<br />
-If you can force your heart and nerve and sinew<br />
-    To serve your turn long after they are gone, <br />  
-And so hold on when there is nothing in you<br />
-    Except the Will which says to them: ‘Hold on!’<br />
-<br />
-If you can talk with crowds and keep your virtue, <br />  
-    Or walk with Kings—nor lose the common touch,<br />
-If neither foes nor loving friends can hurt you,<br />
-    If all men count with you, but none too much;<br />
-If you can fill the unforgiving minute<br />
-    With sixty seconds’ worth of distance run,  <br /> 
-Yours is the Earth and everything that’s in it, <br />  
-    And—which is more—you’ll be a Man, my son!<br />
-</blockquote>
-
-<p><br />
-The subject matter strikes me as almost identical to Gloria’s monologue. Here we have an inspirational rallying cry for men to take on the weight of the world, with all it’s ugliness and unfairness and messiness, to tread impossibly thin lines showing nothing but courage and fortitude. Meanwhile, anything of that sort directed at women results in lots of bellyaching. Hmm.</p>
-
-<h3> The revolution </h3>
-
-<p>Next, the barbies carry out their plan of emotionally manipulating the kens so they all end up fighting amongst each other, and signing in a new constitution that reinstates the barbies to power while the kens are distracted. However, in a moment of conscience and revelation, the barbies decides that things shouldn’t go back to exactly the way they were before. The kens, taking encouragement from this, ask if they can have just one supreme court justice in the new world. They are refused and instead offered a lower circuit court judgeship, which, being pitiful morons, they gleefully accept. So, no one has learned anything then.</p>
-
-<p>Gloria petitions the Mattel CEO to create an ‘ordinary barbie’, who isn’t remarkable in any way; just a normal woman with a ‘flattering top’ that wants to ‘get through the day feeling kind of good about herself’. This, of course, naturally raises the question of what the women actually want. On the one hand, if Gloria is to be believed, then there’s nothing wrong with the real world, presumably full of ordinary, non-aspirational women like herself. At the same time the whole movie is premised upon the idea that the real world is an oppressive patriarchy precisely because there aren’t aspirational women taking up the mantle of responsibility and power. So, should women be aspirational or not? If they are, they inevitably open themselves up to impossible expectations, failure and criticism, which Gloria’s monologue indicates she is not a fan of. What’s it going to be, Barbie?</p>
-
-<p>In a final plot twist, and after much unintelligible navel-gazing about what her true identity is, Barbie decides that she wants to be a real woman in the real world. The final sequence of the movie shows her dressed in a business suit, being chauffeured to what appears to be a very important meeting, and steeling her courage with platitudes offered by Gloria and Sasha. What extraordinary trial is she about to go through? Perhaps she’s interviewing to be a CEO?</p>
-
-<p>She walks up to a receptionst’s desk and proudly announces:</p>
-
-<blockquote>
-I'm here to see my gynaecologist.
-</blockquote>
-
-<p>Wow. End film. Roll credits.</p>
-
-<h3> Final thoughts </h3>
-
-<p>So the ending of the movie was terrible. But it also seemed like there was an obvious missed opportunity. Instead of the kens becoming slightly less second-class citizens than they were before, why didn’t the kens and barbies realise and become the team that they were always meant to be? Why didn’t they land somewhere between matriarchy and patriarchy, in a world where men and women are treated with fairness and dignity? Why didn’t everyone coalesce around the campfire singing the kumbayas of the thing we all agree on - a sensible notion of gender equality - in a poignant, heart-warming moment of gender-based unity?</p>
-
-<p>Well, there is a large team of smart, savvy, professional, highly-paid, profit-driven individuals who brought the wonder of Barbie to our screens, and this ending is so obvious there is no way they didn’t consider it. Therefore I have to believe the reason they didn’t go for it is the same reason the broader messaging of the movie was muddled to the point of stupidity. They’re speaking out of both sides of their mouth in order to placate a capricious, irrational audience.</p>
-
-<p>See, if we had the kumbaya ending, we might be forced to conclude that the real world is not a patriarchy at all. As Ken found out, it’s a place where qualifications matter. Presumably this is the arrangement that the kens and barbies working together would have converged upon - assignments should be based not on gender, but merit. Maybe in a meritocracy we could have by chance ended up with more kens as supreme court justices than barbies, and more barbies as doctors. Maybe the kens and barbies are intrinsically interested in doing different things with their lives and voluntarily make different choices when given the freedom to do so. But clearly such sexist claptrap cannot be allowed to stand, and clearly the real world is an oppressive patriarchy - that doctrine cannot be questioned. So instead of the happy ending we should have got, we end up with a crummy joke about vaginas.</p>
-
-<p>In this movie, you will find just about every idea or theory about gender, feminism, men and women expressed to some degree or another. Radical feminists, moderates, anti-feminists, men’s rights activists, will all find something to sympathise with. Almost no one can be universally pissed off with the messaging. I can only conclude that this was intentional - the film-makers were pandering and looking to avoid controversy. If an idea is expressed that you don’t like or disagree with, you can simply ignore it, write it off as tongue-in-cheek, or put it down to the ‘complexity’ of feminism. However, the inevitable result is a movie whose message is utterly incoherent. Decades from now, PhD students in the humanities will write many theses about how this movie exemplifies how utterly confused the feminist movement of the current era is. I can just hear them furiously tapping away at their keyboards while they should instead be spending their time acquiring skills that are actually useful in the real world.</p>
-
-<p>I would also be remiss to not say something about the male archetypes of the movie. Barbie falls rather predictably into the ‘trap’ that every recent movie with a feminist agenda has. Namely, every single male character is either despicable or pathetic. Sometimes both. The only difference is power - men who have it are despicable, and men who don’t are pathetic. These are the only two options that are dreamt of in their conceptual universe. The idea of an honest, wise, self-sacrificing man in a position of power, who wields that power responsibly and whom is fundamentally motivated by the benefit of others - for the writers, this is a fantasy. And that is a profoundly sad commentary on our current cultural moment.</p>
-
-<p>This brings me neatly to my final point. Even if you ignore the stupid messaging and politics of the movie, it completely fails to deliver the number one thing that a movie is supposed to do: entertain. The characters are all vapid, they don’t learn or achieve anything, the story is uninteresting, the jokes are crap. What else is there? Usually when a movie grosses astronomical amounts of money as Barbie has (more then a billion dollars!), I can at least understand why other people find it appealing, even if I don’t myself. In this instance, I will forever remain completely baffled.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[01 Oct 2023]]></summary></entry></feed>
+<p>I actually have a real soft spot for unorthodox outsiders who come out of nowhere and prove everyone wrong. A big part of me wants an Eric Weinstein style story to be true. Unfortunately the ultimate truth is that Eric Weinstein is a very sophisticated social illusionist who appears to have bought into his own bullshit. And to an extent, I get it; I don’t think there is a person who has gone into physics research without privately harbouring the small glimmer of hope that they one day might discover something incredible and be declared the next Einstein. Every one of us had a crazy idea or two at some point that we thought might just turn out to be mad genius. Then we all figured out we were really, really wrong and had to eat a sizeable portion of humble pie. Most of us learnt the lesson that needed to be learnt from that. Eric Weinstein didn’t. He doubled, then tripled down. He is a man whose real talent is projecting an image of an unheralded, iconoclastic genius to people who have no way of knowing better. Unfortunately it’s much easier to create that illusion than to be the real thing.</p>]]></content><author><name></name></author><summary type="html"><![CDATA[29 Oct 2023]]></summary></entry></feed>
