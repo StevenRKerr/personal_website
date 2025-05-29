@@ -47,9 +47,7 @@ This brings me to my next adage, known as <a href="https://en.wikipedia.org/wiki
 When a measure becomes a target, it ceases to be a good measure.
 </blockquote> 
 <br>
-This one will be all too familiar to many people in academia. Individuals whose citation count, in the 10s of thousands, or even in excess of 100,000, that massively exceeds their talent. The 
-kind of people who are experts at 'playing the game'. The ones who talk a lot during meetings without actually saying anything, who have a penchant for inserting themselves into other people's projects. Hierarchy inversions that border on comical, where the lowly but honest stats/code monkeys have pitiful citation counts, and yet their knowledge and skill 
-absolutely dwarfs a hot air bag with a monumental citation count.
+This one will be familiar to many people in academia. People whose citation count, in the 10s of thousands, or even in excess of 100,000, whose main expertise seems to be 'playing the game'. The ones who talk a lot during meetings without actually saying anything, who have a penchant for inserting themselves into other people's projects. Hierarchy inversions that border on comical, where the lowly code monkeys and technical staff have pitiful citation counts, but their competence seems to eclipse someone else with a monumental citation count.
 
 It's a little depressing, but I don't have a good solution. Just a word of caution to be wary of citation count as a metric of academic contribution. Often it is measuring something
 else entirely.
