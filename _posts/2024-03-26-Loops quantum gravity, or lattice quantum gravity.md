@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Loop quantum gravity, or lattice quantum gravity?
+tag:
+  - Physics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 In this post, I'm going to give a brief critical overview of loop quantum gravity, the field that I worked in during my time in physics. A fairly strong understanding of physics is assumed.
 
@@ -12,6 +12,7 @@ In this post, I'm going to give a brief critical overview of loop quantum gravit
 
 Loop quantum gravity is an attempt at canonical quantisation of Einstein's general relativity. Thus the starting point is constructing a Hamiltonian. In a flat spacetime that's easy, but on a general spacetime manifold it's not so easy because it requires one to define a time coordinate. The <a href="https://en.wikipedia.org/wiki/ADM_formalism" target="_blank"> ADM formalism</a> addresses this by assuming that spacetime is <a href="https://en.wikipedia.org/wiki/Foliation" target="_blank"> foliated</a>. Roughly this means that our spacetime manifold \\( M \\) is decomposed into a family of spacelike hypersurfaces \\( \\Sigma_t \\) labelled by a timelike coordinate \\( t\\). Spacelike means that any pair of points on \\( \Sigma_t \\) are spacelike separated - their spatial and temporal separation is such that light could not travel between them. There are in general many possible foliations of \\( M \\) that should all be 'equally as good' as each other. 
 
+<!--more-->
 With a time coordinate in hand, we can now define the Hamiltonian in terms of the metric \\( g_{ij} \\) on the 3-dimensional spacelike hypersurfaces and its conjugate momentum \\( \pi_{ij} \\). The Hamiltonian thus constructed consists of two parts: the Hamiltonian constraint, and the (spatial) diffeomorphism constraint. 
 
 

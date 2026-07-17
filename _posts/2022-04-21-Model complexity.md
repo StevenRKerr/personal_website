@@ -1,10 +1,11 @@
 ---
 layout: post
+tag:
+    - Statistics
 ---
 
-<p>{{ page.date | date_to_string }}</p>
-
 There are models for just about anything you can think of. Fundamental physics, economic markets, epidemics, brain function, climate, click-through rates, animal behavior, election outcomes, to name a few. There's a universe of possibilities for ways to model any given phenomenon, and only a few small hidden oases in an otherwise barren desert. What's a model-builder to do?
+<!--more-->
 
 <h3> How complex should my model be? </h3> 
 

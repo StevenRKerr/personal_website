@@ -1,12 +1,13 @@
 ---
 layout: post
 title: The trouble with economics part 2
+tag: 
+  - Economics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 In a <a href="https://www.drstevenkerr.com/2024/10/02/The-trouble-with-economics.html" target="_blank"> previous post</a>, I had a look at some major problems in the theoretical foundations of pretty much all macroeconomic models. To recap, they were as follows:
 
+<!--more-->
 
 <ul>
   <li> <b>No money </b>

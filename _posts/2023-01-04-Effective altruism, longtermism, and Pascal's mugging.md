@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Effective altruism, longtermism and Pascal's mugging
+tag:
+  - Philosophy
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 <h3> What is effective altruism? </h3>
 
 It is a social movement that broadly aims to do the 'most good' in the world with limited resources. They advocate for making career choices and charitable donations that maximise altruistic impact. Their activities include writing research papers on ethics, analysing effectiveness of charitable organisations, giving career advice, and promoting pledges to donate a proportion of one's income to charity. The main individuals who are credited with starting the movement are Will MacAskill and Toby Ord, both at the University of Oxford, and Australian moral philospher Peter Singer, at Princeton university.
+<!--more-->
 
 <h3> What is longtermism? </h3>
 

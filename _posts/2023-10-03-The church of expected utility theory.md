@@ -1,15 +1,15 @@
 ---
 layout: post
 title: The church of expected utility theory
+tag:
+  - Economics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
-
 
 
 <h3>  What is expected utility theory? </h3> 
 
 Expected utility theory was first influentially expounded by Swiss mathematician <a href="https://en.wikipedia.org/wiki/Daniel_Bernoulli" target="_blank"> Daniel Bernoulli</a> in the 1700s. It seeks to answer the question of how to weigh up alternatives that are uncertain. For example, say I gave you the option of \\( £100 \\), or a bet consisting of a \\( 50-50 \\) chance of receiving \\( £250 \\), how should you choose? While it may seem easy to answer a single question like this, it turns out that building a general framework for how to make such decisions is not so easy, and if you proceed naively you can easily come a cropper.
+<!--more-->
 
 Bernoulli's basic idea is that you should assign a number to how good each possible alternative is, multiply it by the probability that alternative will actually happen, and sum it all up. The result is called 'expected utility', and the theory instructs us to maximise it. In my example, let's say the utility of a quanity of money is equal to the quantity of money itself. Then the expected utility of the certain \\( £100 \\) is \\(  1 \times 100 = 100\\), while the expected utility of the bet is 
 

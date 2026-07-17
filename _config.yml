@@ -6,7 +6,30 @@ exclude:
     - Gemfile
     - Gemfile.lock
 
+excerpt_separator: "<!--more-->"
+
 plugins:
   - jekyll-feed
   - jekyll-sitemap
   - jekyll-seo-tag
+  - jekyll-paginate-v2
+  - jekyll-archives
+  - jekyll-redirect-from
+
+pagination:
+  enabled: true
+  per_page: 5
+  permalink: "/page/:num/"
+  title: ":title"
+  sort_field: "date"
+  sort_reverse: true
+
+jekyll-archives:
+  enabled:
+    - tags
+  layouts:
+    tag: tag
+  permalinks:
+    tag: /tags/:name/
+
+permalink: /blog/:title.html

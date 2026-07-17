@@ -1,10 +1,12 @@
 ---
 layout: post
+tag:
+    - Epidemiology
 ---
 
-<p>{{ page.date | date_to_string }}</p>
 
 On February 22nd, PLOS medicine published a <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003927" target="_blank">paper</a> on cerebral venous sinus thrombosis (CVST) following vaccination on which I was the lead author. CVST is a type of blood clot in the brain that can lead to stroke and death. In this paper, we carried out a pooled analyis of 11.6 million people in England, Scotland and Wales, comparing the rate of CVST events in individuals before and after receiving the vaccine. We found that in the 4 weeks following vaccination with Oxford-AstraZeneca, the risk of CVST events approximately doubled. We did not see any increase in risk of CVST events following Pfizer.
+<!--more-->
 
 This paper was released at the same time as a <a href="https://journals.plos.org/plosmedicine/article?id=10.1371/journal.pmed.1003926" target="_blank">second paper</a> headed by William Whiteley, also at the University of Edinburgh, that studied 46 million people in England and had strikingly similar findings. It is reassuring when independent research efforts come to similar conclusions.
 

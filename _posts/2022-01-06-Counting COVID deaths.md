@@ -1,14 +1,15 @@
 ---
 layout: post
 title: Counting COVID-19 deaths
+tag:
+    - Epidemiology
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 
 There has been a great deal of controversy over the way COVID-19 deaths are calculated. Initially in the UK, the count that was most widely reported consisted of all who died within 60 days of a positive PCR test, or who died more than 60 days after a positive test but had COVID-19 listed as a cause of death on their death certificate.
 
 The main objection to this is that, for example, someone could test positive for COVID-19, recover fully, then die in e.g. a car crash and still be counted as a COVID-19 death.
+<!--more-->
 
 
 <h3> What are we trying to do when we count COVID-19 deaths anyway? </h3> 

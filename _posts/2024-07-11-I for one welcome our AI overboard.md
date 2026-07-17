@@ -1,13 +1,14 @@
 ---
 layout: post
 title: I for one welcome our AI overboard
+tag:
+  - AI
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 I've been very reticent to comment on the current AI hype train, mostly because it's very easy to be wrong in a bull market. But you will be relieved to know I am now ready to put my hat in the ring.
 
 First I would like to say that, like everyone else, I'm deeply impressed by recent advances in AI, particularly large language models (LLMs). They can give you flawless explanations of topological quantum field theory in one breath, then seamlesly switch to a nuanced discussion of the history of cartography. Tailor-made answers to your burning questions on heraldry, hermeneutics, object-oriented programming, epistemology, and just about any other domain of expert human knowledge your heart desires. They're really quite amazing. I would be extraordinarily proud if I had been part of the teams that brought LLMs to the world. 
+<!--more-->
 
 But in the wake of the current wave of exuberance, I feel compelled to point out the manifold ways in which LLMs are extremely dumb. Here is but a partial list of tasks that state-of-the-art LLMs have failed at spectacularly:
 

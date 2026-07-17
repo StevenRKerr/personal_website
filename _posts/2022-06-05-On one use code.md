@@ -1,11 +1,13 @@
 ---
 layout: post
 title: On one-use code
+tag:
+    - Academia
+    - Coding
 ---
 
-<p>{{ page.date | date_to_string }}</p>
-
 Academics who code are, I think, somewhat known for their less than stellar creations. I have certainly written code that I would prefer didn't see the light of day. A recent example that attracted a great deal of attention is <a href="https://en.wikipedia.org/wiki/Neil_Ferguson_(epidemiologist)" target="_blank"> Professor Neil Ferguson's</a> <a href="https://en.wikipedia.org/wiki/CovidSim" target="_blank"> CovidSim</a>. As the name suggests, it is a simulator of COVID-19 transmission that works by creating artificial agents representing people and environments that they interact with, in much the same way as the SimCity series of games but without the funky graphics. It was the basis of a <a href="https://www.imperial.ac.uk/media/imperial-college/medicine/sph/ide/gida-fellowships/Imperial-College-COVID19-NPI-modelling-16-03-2020.pdf" target="_blank"> paper</a> that is credited with fundamentally altering the course of the UK's COVID-19 policy. The paper predicted that even under the optimal 'mitigation' strategy that was considered, the peak surge capacity of ICU beds in the UK would be exceeded 8-times over due to the pandemic. As of the date of writing, it has 3,910 citations.
+<!--more-->
 
 In May 2020, The code behind the simulation was released to GitHub, which is a ubiquitously-used online tool for software development. Before it was released to the public, it apparently consisted of a single 15,000 line file written in C. Having one file of source code that long is already a cardinal sin in coding, and there were many other failures to live up to standard software development practices. 
 

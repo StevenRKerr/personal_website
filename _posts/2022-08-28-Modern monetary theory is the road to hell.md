@@ -1,8 +1,9 @@
 ---
 layout: post
+title: Modern monetary theory is the road to hell
+tag:
+    - Economics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 <h3> What is modern monetary theory (MMT)? </h3>
 
@@ -11,6 +12,7 @@ It's an economic theory which, in a nutshell, says that full employment and fund
 <h3> Woah. That sounds pretty wild. </h3>
 
 Indeed.
+<!--more-->
 
 The first thing that should set off alarm bells is that MMT appears to advocate for governmental control over monetary policy. That's a <i>really</i> bad idea. This is a lesson that we have historically learned the hard way. Governments simply cannot be trusted with the keys to the printing press. The temptation for them to print money in order to deliver on some promise, at least in the short term, is just too great. That's how you get hyperinflation. There is a reason we insist on independence of central banks and government.
 

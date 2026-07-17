@@ -1,15 +1,16 @@
 ---
 layout: post
 title: In defence of linear regression
+tag:
+  - Statistics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 <h3>  What is linear regression? </h3> 
 
 It's one of the first major topics you learn about when taking statistics class. In essence, it allows you to model the mean of a response variable \\( y_i \\) as depending on some explanatory variables \\( x_i \\), where the subscript \\( i = 1...n \\) labels different observations. More concretely, 
 
 $$ y = X \beta + \epsilon, \tag{1} $$
+<!--more-->
 
 where \\( y \\) is an \\( n \\)-dimensional vector whose elements are \\( y_i \\), \\( X \\) is an \\( n \times k \\) matrix whose rows are \\( x_i \\), and \\( \beta \\) is a \\( k\\)-dimensional vector of parameters to be estimated. If we assume that
 

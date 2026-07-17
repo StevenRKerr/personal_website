@@ -1,11 +1,12 @@
 ---
 layout: post
 title: What is vaccine effectiveness?
+tag:
+    - Epidemiology
 ---
 
-<p>{{ page.date | date_to_string }}</p>
-
 There have been interesting reports from Public Health Scotland that COVID infection rates amongst the unvaccinated have been consistently lower compared to those who have had one or two doses of vaccine since early December 2021, though higher compared to those with a booster dose. See a news story <a href="https://www.heraldscotland.com/news/19843315.covid-scotland-case-rates-lowest-unvaccinated-double-jabbed-elderly-drive-rise-hospital-admissions/" target="_blank">here</a>, based on the original report <a href="https://publichealthscotland.scot/media/11089/22-01-12-covid19-winter_publication_report.pdf" target="_blank">here</a>. I believe this has led many people to question vaccine effectiveness.
+<!--more-->
 
 <h3>  What is vaccine effectiveness? </h3>
 

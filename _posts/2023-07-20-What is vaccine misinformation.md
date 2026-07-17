@@ -1,11 +1,11 @@
 ---
 layout: post
 title: What is vaccine misinformation?
+tag:
+  - Epidemiology
 ---
-
-<p>{{ page.date | date_to_string }}</p>
-
 In November 2021, I was invited by Health Data Research UK (HDRUK) to give a talk as part of a public webinar on vaccine safety. One of the goals of this webinar was to allow members of the public to ask questions and interact with professionals carrying out research in this area.
+<!--more-->
 
 The event seemed to me to be relatively successful. I presented results from a study I had recently carried out, the main finding of which was an association between vaccination with Oxford-AstraZeneca and elevated risk of cerebral venous sinus thrombosis (a type of blood clot in the brain). This was followed up by some thoughts and open questions about policy-making that were meant to prompt further discussion in the Q&A section. Videos of the presentations were uploaded on to HDRUK's Youtube channel. I was happy with how everything went and hadn't given a great deal of thought to it after that.
 

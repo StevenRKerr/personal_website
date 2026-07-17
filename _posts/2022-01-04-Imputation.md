@@ -1,9 +1,10 @@
 ---
 layout: post
 title: Imputation - the respectable face of p-hacking?
+tag:
+    - Statistics
 ---
 
-<p>{{ page.date | date_to_string }}</p>
 
 <h3>  What is imputation? </h3> 
 
@@ -15,7 +16,7 @@ Imputation is 'filling in' missing values in a dataset. So, for example, say I h
 | Alice   | Female   | 25    | 165cm   |
 | Bob     | Male     | _     | 180cm   |
 | Carol   | _        | 55    | _       | 
-
+<!--more-->
 
 Notice however that some of the entries are blanks - their values are not recorded. There are many reasons why this might be the case - maybe the person who collected the data forgot to fill it in, or some information was accidentally deleted, etc. 
 

@@ -1,12 +1,14 @@
 ---
 layout: post
+tag:
+    - Physics
+    - Maths
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 Ever since Newton/Leibniz invented the infinitesimal calculus in the latter half of the 1600s, it seems like the world has been enthralled by beauty and possibility of the continuum. This event marked the beginning of modern physics and mathematics, and there is virtually no topic in either of these fields that is not deeply interwoven with calculus. 
 
 Sometimes, though, I think they may have been a little too successful.
+<!--more-->
 
 <h3> Before we get started, kindly allow me to explain my super clever title pun </h3> 
 

@@ -1,13 +1,14 @@
 ---
 layout: post
 title: The solution to everything
+tag:
+    - Physics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 What if I told you there was a well-known, 100-year old theory of gravity that reproduces all empirical successes of Einstein's general relativity, and may solve a who's who of major oustanding problems in theoretical physics?
 
 Its called <a href="https://en.wikipedia.org/wiki/Einstein%E2%80%93Cartan_theory" target="_blank"> Einstein-Cartan theory</a>, or sometimes Einstein-Cartan-Sciama-Kibble (ECSK) theory. By the way, the eponymous Kibble is my "physics grandfather" - my PhD supervisor's PhD supervisor.
+<!--more-->
 
 ECSK theory is a minor generalisation of Einstein's general relativity that does not require the <a href="https://en.wikipedia.org/wiki/Torsion_tensor" target="_blank"> torsion </a> to be zero. It turns out that the torsion tensor does not have any propagating degrees of freedom, with the consequence that the only place that ECSK theory and general relavitity differ is at extremely high matter densities. 
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Adolescence is part of the problem
+tag:
+    - Culture
 ---
 
-<p>{{ page.date | date_to_string }}</p>
-
 Adolescence is a Netflix drama that premiered in March of this year and quickly went viral. It depicts events centring on a 13 year old school boy who stabs a female classmate to death. The main themes the shows deals with are toxic masculinity, incels, the manosphere and social media. Its rapid ascent into the cultural spotlight is perhaps best illustrated by the fact that UK prime minister Keir Starmer called for it to be shown in high schools all over the country, and the UK parliament’s women and equalities committee held a hearing with the show’s producers. It is the series that seemingly launched a million conversations about men, boys and masculinity. 
+<!--more-->
 
 Let me start with a quick episode-by-episode synopsis:
 

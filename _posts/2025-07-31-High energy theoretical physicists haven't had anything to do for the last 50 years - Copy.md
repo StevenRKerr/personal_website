@@ -1,11 +1,13 @@
 ---
 layout: post
 title: High energy theoretical physicists haven't had anything to do for the last 50 years
+tag:
+    - Physics
 ---
 
-<p>{{ page.date | date_to_string }}</p>
 
 Modern fundamental physics rests on two great pillars: <a href="https://en.wikipedia.org/wiki/General_relativity" target="_blank"> General relativity</a>, which describes gravity, and the <a href="https://en.wikipedia.org/wiki/Standard_Model" target="_blank"> Standard Model of particle physics</a>, which accounts for the other three known 'forces' of nature—electromagnetism, the weak nuclear force, and the strong nuclear force. These are, as far as we currently know, all that exists.
+<!--more-->
 
 The theory of General Relativity (GR), published by Einstein in 1915, begins as an attempt to revoke the special status given to <a href="https://en.wikipedia.org/wiki/Inertial_frame_of_reference" target="_blank"> inertial frames of reference</a> in Newtonian mechanics. In Newton's framework (and even in <a href="https://en.wikipedia.org/wiki/Special_relativity" target="_blank"> Special Relativity</a>), inertial frames (roughly speaking, coordinate systems that are not 'accelerating') play a privileged role. Einstein's great achievement (or at least one of them) was the observation that being in an accelerating frame of reference is indistinguishable from being in a gravitational field. Einstein had previously shown that acceleration causes time to slow down and lengths to contract. This leads to a remarkable conclusion: that gravity, too, must affect time and space. And in fact, gravity is **equivalent** to the curvature of space and time. 
 

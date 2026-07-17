@@ -1,11 +1,12 @@
 ---
 layout: post
 title: My review of Barbie
+tag:
+  - Culture
 ---
 
-<p>{{ page.date | date_to_string }}</p>
-
 I've decided to try my hand as a culture critic. There's no way I was going to pay to see the new Barbie movie in the cinemas, so this is a somewhat belated review. There are spoilers ahead.
+<!--more-->
 
 <h3>  Barbie world </h3> 
 

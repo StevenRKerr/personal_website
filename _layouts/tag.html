@@ -1,0 +1,107 @@
+---
+layout: default
+---
+
+<!-- Header -->
+<div id="header">
+
+    {% include navigation.html %}
+
+</div>
+
+
+<div class="wrapper style1">
+
+    <div class="container">
+
+        <div class="row gtr-200">
+
+
+            <!-- Sidebar -->
+            <div class="col-3 col-12-mobile" id="sidebar">
+
+                <hr class="first" />
+
+                <section>
+
+                    <header>
+                        <h3>Topics</h3>
+                    </header>
+
+
+                    {% assign tags = site.posts | map: "tags" | join: "," | split: "," | uniq | sort %}
+
+                    {% for tag in tags %}
+
+                        <section class="topic-link">
+                            <a href="/tags/{{ tag | slugify }}">
+                                {{ tag }}
+                            </a>
+                        </section>
+
+                    {% endfor %}
+
+
+                </section>
+
+            </div>
+
+
+
+            <!-- Main content -->
+            <div class="col-9 col-12-mobile">
+
+
+                <header>
+                    <h3>Posts tagged: {{ page.title }}</h3>
+
+                    <p class="back-to-blog">
+                        <a href="{{ '/blog/' | relative_url }}">
+                            ← Back to all posts
+                        </a>
+                    </p>
+                </header>
+
+                {% for post in page.posts %}
+
+                <section>
+
+                    <header>
+                        <h4 class="blog-post-title">
+                            <a href="{{ post.url }}">
+                                {{ post.title }}
+                            </a>
+                        </h4>
+                    </header>
+
+
+                    {% if post.excerpt %}
+                    <div class="post-excerpt">
+                        {{ post.excerpt }}
+                    </div>
+
+                    <p class="read-more">
+                        <a href="{{ post.url }}">
+                            Read more →
+                        </a>
+                    </p>
+                    {% endif %}
+
+
+                </section>
+
+
+                <div class="post-divider"></div>
+
+
+                {% endfor %}
+
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</div>

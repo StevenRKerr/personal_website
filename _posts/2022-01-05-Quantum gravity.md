@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Do we already have the quantum theory of gravity?
+tag:
+    - Physics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 <h3>  The holy grail of theoretical physics </h3> 
 
 For many decades now, physicists have been trying to 'unify' quantum mechanics and Einstein's general relativity into a quantum theory of gravity. This has proven to be very difficult, and achieving such a unification is one of the major outstanding problems in theoretical physics. To understand why, let me first give you a whistlestop tour of some topics in physics.
+<!--more-->
 
 <h3>  The principle of least action </h3> 
 

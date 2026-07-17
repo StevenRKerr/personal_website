@@ -1,12 +1,13 @@
 ---
 layout: post
 title: The St Petersburg paradox
+tag:
+  - Economics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 <h3> The St Petersburg game </h3> 
 Imagine I offer you the chance to play the following game. The pot starts at \\( \$ 2\\). I flip a coin repeatedly. Each time it comes up tails, the pot doubles. The first time a heads appears, the game ends and you leave with the pot. How much would you be willing to pay to play this game?
+<!--more-->
 
 If you're anything like a reasonable person, or <a href="https://en.wikipedia.org/wiki/Daniel_Bernoulli" target="_blank"> Daniel Bernoulli</a>, you'd be unlikely to pay more than \\( \$ 20\\). At that price, you'd need at least 4 consecutive tails to make a profit. 
 

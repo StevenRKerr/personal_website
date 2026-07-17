@@ -1,13 +1,15 @@
 ---
 layout: post
 title: Why do so many statisticians think a normality assumption is required in linear regression?
+tag:
+  - Statistics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 In my time working in health science, I have been troubled by the number of times I have encountered statisticians and practitioners of statistics who are absolutely sure that either the variables or residuals in a linear regression must be approximately normally distributed, and the model is invalid otherwise.
 
 This idea is completely false. In this post I want to explore why it is nonetheless so widely believed by professionals in the field.
+
+<!--more-->
 
 <h3>  Linear regression </h3> 
 

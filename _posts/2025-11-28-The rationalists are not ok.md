@@ -1,20 +1,21 @@
 ---
 layout: post
 title: The rationalists are not ok
+tags:
+    - AI
 ---
 
-<p>{{ page.date | date_to_string }}</p>
-
-<h4> Who, or what, are the rationalists? </h4>
+#### Who, or what, are the rationalists? 
 
 They are an internet-spawned sub-culture who 'practice the art of rationality'. This means they spend lots of time thinking about topics like cognitive biases, Bayesian reasoning, probability and statistics, computer science, AI, decision theory, game theory, transhumanism, etc. Demographically they skew heavily toward STEM students from elite universities and tech guys in the bay area. 
+<!--more-->
 
 The rationalist community was borne out of blogs and forums - most notably Slate star codex and LessWrong. Over time they have become preoccupied with sweeping concerns about the future of humanity, with a particular focus on existential risks from AI and superintelligence. They are among the most prominent of the AI doomers, and fancy themselves as the main protagonists at what they believe is a critical juncture in human history. Many seem convinced that their actions have cosmic consequences and that they alone carry the vanguard of humanity on their shoulders.
+
 
 While on the surface they welcome and value debate, the culture is in many ways quite insular. They have an extensive body of insider jargon that can seem impenetrable, even to people well-versed in their topics of interest. They frequently treat traditional cultural norms with disdain, viewing them as artefacts of our collective irrationality. This has led to more than once instance of rather bizarre behaviour within the community (we'll get to this soon). It has been suggested in many quarters that, ironically, they seem to have quite a few characteristics of a religion or a cult. 
 
 To the extent that this label applies, their prophet is certainly <a href="https://en.wikipedia.org/wiki/Eliezer_Yudkowsky" target="_blank"> Eleizer Yudkowsky</a>, the founder of LessWrong. Their holy scripture is the so-called "<a href="https://www.lesswrong.com/rationality" target="_blank">Sequences</a>", a sprawling set of essays by Yudkowsky on a range of topics that are in the wheelhouse of the rationalists. Their doomsday scenario is the coming of artifical general intelligence, which they believe is nigh.
-
 
 <h4> What do you think Steven? </h4>
 

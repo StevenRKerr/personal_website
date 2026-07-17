@@ -1,11 +1,13 @@
 ---
 layout: post
 title: Academia fails the smell test
+tag:
+    - Academia
 ---
 
-<p>{{ page.date | date_to_string }}</p>
 
 I'm a bit behind the outrage news cycle here, but In November last year, a student at the University of Cambridge by the name of Amelia (Ally) Louks unintentionally created quite the stink over her PhD thesis entitled "The Politics of Smell in Modern and Contemporary Prose". It all started with a seemingly innocuous  <a href="https://x.com/DrAllyLouks/status/1861872149373297078" target="_blank"> twitter post</a> celebrating successful completion of her degree, and quickly spiralled into a furore that "broke the internet".
+<!--more-->
 
 Why? To put it gently, her thesis looks like garbage. For example, the second sentence of the abstract lays out her aim to 
 

@@ -2346,6 +2346,8 @@ input, select, textarea {
 				-webkit-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				-ms-transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
 				transition: color 0.35s ease-in-out, border-color 0.35s ease-in-out;
+				/* Navigation bar font size */
+				font-size: 1.2em;
 			}
 
 				#nav > ul > li.active {
@@ -3150,3 +3152,79 @@ input, select, textarea {
 					}
 
 	}
+
+
+/*
+Below is additions by me
+*/
+
+.post-excerpt h1,
+.post-excerpt h2,
+.post-excerpt h3,
+.post-excerpt h4 {
+    font-size: 1.2em;
+    margin-bottom: 0.5em;
+}
+
+.post-excerpt {
+    margin-top: 20px;
+    margin-bottom: 0px;
+}
+
+
+.post-divider {
+    border-bottom: 3px solid #00000049;
+    margin: 5px 0 20px 0;
+}
+
+
+.blog-post-title a {
+    color: rgb(6,69,173) !important;
+    border-bottom: solid 1px rgb(6,69,173) !important;
+    text-decoration: none !important;
+}
+
+.blog-post-title a:hover {
+    color: rgb(6,69,173) !important;
+}
+
+.blog-post {
+    margin-bottom: 0;
+}
+
+.read-more {
+    margin-top: 5px;
+    margin-bottom: 0px;
+    font-size: 0.9em;
+}
+
+.pagination {
+    text-align: center;
+    margin-top: 40px;
+    font-size: 1.1em;
+}
+
+.pagination a,
+.pagination .current-page {
+    display: inline-block;
+    margin: 0 5px;
+    padding: 5px 10px;
+	font-weight: bold;
+}
+
+.back-to-blog {
+    font-size: 1.2em;
+}
+
+.topic-link {
+    margin-bottom: 2px;
+}
+
+.topic-link a {
+    font-size: 1em;
+}
+
+.back-to-blog {
+    font-size: 1.2em;
+    margin-top: 30px;
+}

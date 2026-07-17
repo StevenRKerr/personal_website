@@ -1,10 +1,12 @@
 ---
 layout: post
+tag:
+    - Epidemiology
 ---
 
-<p>{{ page.date | date_to_string }}</p>
-
 A <a href="https://sites.krieger.jhu.edu/iae/files/2022/01/A-Literature-Review-and-Meta-Analysis-of-the-Effects-of-Lockdowns-on-COVID-19-Mortality.pdf" target="_blank">paper</a> has recently come out claiming that lockdowns had minimal effects on COVID mortality, causing quite a stir. The headline figure is that in Europe and the USA, lockdowns reduced mortality by 0.2%. Fifty words in and the authors are already dropping bombs like this:
+
+<!--more-->
 
 <em>"While this meta-analysis concludes that lockdowns have had little to no public health effects,
 they have imposed enormous economic and social costs where they have been adopted. In

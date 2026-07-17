@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Population ethics
+tag:
+  - Philosophy
 ---
 
-<p>{{ page.date | date_to_string }}</p>
-
 Population ethics is a subfield of philosophy that attempts to sensibly compare two populations that may differ in size and material circumstances, and decide which state of the world is better. That is, if we had the choice between one of these states being a reality, which should we choose?
+<!--more-->
 
 The way in which one answers these questions can have profound consequences. For example, if life is sacrosanct, then is there a moral obligation to have children? Is not having children when you could ethically tantamount to murder? Or, given the various risks that humanity faces, e.g. climate change, would it in fact be deeply immoral to bring more children into the world? 
 

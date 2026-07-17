@@ -1,13 +1,14 @@
 ---
 layout: post
 title: Eric Weinstein is the Tenacious D of high energy physics
+tag:
+  - Physics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 <h3>  Who is Eric Weinstein? </h3> 
 
 Eric is a podcaster who has most notably made appearances on the Joe Rogan experience (JRE). He received a PhD in mathematical physics from Harvard in 1992, and between 2013 and 2022 he was a managing director of Thiel Capital - <a href="https://en.wikipedia.org/wiki/Peter_Thiel" target="_blank"> Peter Thiel</a>'s investment firm. 
+<!--more-->
 
 Eric came to some public prominence after his brother Bret Weinstein was involved in an incident at Evergeen State college. The college had a decades-old tradition called 'Day of absence', where ethnic minorities students would not attend campus to highlight their contributions. In 2017, a twist on this was put forward where white people would instead stay off campus for the day. Bret was a professor at the college at the time and refused to participate, circulating an email detailing his reasons. A group of students marched on one of his lectures in protest, angrily demanding he leave campus. The protestors later met with Evergreen staff and subjected them to what I can best describe as a struggle session. The whole incident was quite extraordinary, and I recommend watching raw footage, for example <a href="https://www.youtube.com/watch?v=a7s8IAOuumQ&list=PLq9jO8fmlPecnlR18OOm98bETOojth_NL&index=6" target="_blank"> here</a> and <a href="https://www.youtube.com/watch?v=3q_YIGrsODc&list=PLq9jO8fmlPecnlR18OOm98bETOojth_NL&index=31" target="_blank"> here</a>.
 

@@ -5,8 +5,8 @@
 		<title>Steven Kerr | {{ page.title }}</title>
 		<meta charset="utf-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-		<link rel="stylesheet" href="../../../assets/css/main.css" />
-		<noscript><link rel="stylesheet" href="../../../assets/css/noscript.css" /></noscript>
+        <link rel="stylesheet" href="/assets/css/main.css" />
+        <noscript><link rel="stylesheet" href="/assets/css/noscript.css" /></noscript>
         {% feed_meta %}
         <meta name="twitter:creator" content="@stevenrosskerr">
         <meta name="twitter:image" content="https://drstevenkerr.com/images/header.jpg">
@@ -19,21 +19,14 @@
             <!-- Header -->
                 <div id="header">
 
-                    <!-- Inner -->
-                        <div class="inner">
-                            <header>
-                                <h1>Blog - {{ page.date | date: "%Y" }}</h1>
-                            </header>
-                        </div>
-
                     <!-- Nav -->
-                        <nav id="nav">
-                            <ul>
-                                <li><a href="../../../index.html">Home</a></li>
-                                <li><a href="../../../bio.html">Bio</a></li>
-                                <li><a href="../../../blog.html">Blog</a></li>
-                            </ul>
-                        </nav>
+                    <nav id="nav">
+                        <ul>
+                            <li><a href="{{ '/' | relative_url }}">Home</a></li>
+                            <li><a href="{{ '/bio.html' | relative_url }}">Bio</a></li>
+                            <li><a href="{{ '/blog/' | relative_url }}">Blog</a></li>
+                        </ul>
+                    </nav>
 
                 </div>
 
@@ -42,30 +35,22 @@
 
                     <div class="container">
                         <div class="row gtr-200">
-                            <div class="col-3 col-12-mobile" id="sidebar">
-                                <hr class="first" />
-                                
-                                {% for post in site.posts %}
-                                {% capture post_year %}{{post.date | date: "%Y"}}{% endcapture %}
-                                {% capture section_year %}{{page.date | date: "%Y"}}{% endcapture %}
-                                {% if post_year == section_year %}
-                                <section>
-                                    <header>
-                                        <a href="../../..{{ post.url }}"> {{ post.title }} </a> 
-                                        <p style="margin:10px;"></p>
-                                    </header>
-                                </section>
-                                {% endif %}
-                              {% endfor %}
-            
-                            </div>
-
                             <div class="col-8 col-12-mobile imp-mobile" id="content">
                                 <article id="main">
                                     <header>
-                                        <h2> {{ page.title }} </h2>
-                                    </header>   
+                                        <h2>{{ page.title }}</h2>
+
+                                        <p class="post-date">
+                                            {{ page.date | date: "%d %B %Y" }}
+                                        </p>
+                                    </header>
                                     {{ content }}
+
+                                    <p class="back-to-blog">
+                                        <a href="{{ '/blog/' | relative_url }}">
+                                            ← Back to blog
+                                        </a>
+                                    </p>
 
                                 </article>
                             </div>

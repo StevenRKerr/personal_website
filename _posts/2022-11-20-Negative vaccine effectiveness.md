@@ -1,10 +1,13 @@
 ---
 layout: post
+title: Negative vaccine effectiveness
+tag:
+  - Epidemiology
 ---
 
-<p>{{ page.date | date_to_string }}</p>
 
 Myself and a team of collaborators including Stuart Bedston at the University of Swansea, Declan Bradley at Queen's University Belfast and Mark Joy at the University of Oxford recently published a <a href="https://doi.org/10.1093/ije/dyac199" target="_blank"> paper</a> in the International Journal of Epidemiology studying waning of COVID-19 vaccine effectiveness. One of the major findings of the paper is that for first and second dose of AstraZeneca and first dose of Pfizer, effectiveness of the vaccine against COVID-19 hospitalisation or death reached zero by approximately day 60-80 after receiving the vaccine, and then went negative. 
+<!--more-->
 
 That is quite a striking result. This post is going to dig into possible explanations of this phenomenon and its implications.
 

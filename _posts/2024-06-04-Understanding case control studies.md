@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Understanding case control studies
+tag:
+  - Epidemiology
 ---
 
-<p>{{ page.date | date_to_string }}</p>
-
 Case control studies are a staple in the epidemiologist's toolbox. The basic idea idea is that instead of carrying out an analysis on a random sample of a population, you instead sample from the population conditional on occurrence of an outcome of interest. Typically this will involve selecting all individuals who have the outcome (the cases), and only some people who don't have the outcome (the controls). The motivation for doing this is that when the outcome is rare, most of the precision in estimates is driven by the cases, and adding a large number of controls often has little effect. Case control studies can thus be more efficient in terms of data collection/processing compared to e.g. a cohort study.
+<!--more-->
 
 Case control studies have been instrumental in establishing many useful research findings, such as the link between smoking tobacco and lung cancer. Despite this, the exact workings of case control studies are poorly understood by many professionals who use them routinely. I recently co-authored an article in the Journal of Global Health with world-leading statistician and epidemiologist <a href="https://en.wikipedia.org/wiki/Sander_Greenland" target="_blank"> Sander Greenland</a> that attempts to clear up the confusion that persists over this study design.<a href="#1">[1]</a>
 

@@ -1,11 +1,12 @@
 ---
 layout: post
 title: Robust standard errors
+tag:
+  - Statistics
 ---
 
-<p>{{ page.date | date_to_string }}</p>
-
 Robust standard errors are frequently used in statistics, often in an unthinking way. They are certainly valuable and useful in the context of linear regression; however, they do not serve a similar purpose in maximum likelihood estimation of non-linear models. The basic issue is that the kind of mis-specification that robust standard errors can address in linear regresion does not spoil consistency results for the parameter estimates. On the other hand, it does spoil those results in the context of maximum likelihood estimation of non-linear models. Thus at best you end up with a consistent estimator for the variance of a parameter estimate that is itself inconsistent, which isn't really of interest except as a diagnostic tool for detecting bad models. I'll explore this in more detail below.
+<!--more-->
 
 <h3>  Linear regression </h3> 
 

@@ -1,9 +1,9 @@
 ---
 layout: post
 title: Does citation count measure how many friends you have?
+tag:
+  - Academia
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 Alright folks, I'll fess up right off the bat; I may have fallen face first into <a href="https://en.wikipedia.org/wiki/Betteridge%27s_law_of_headlines" target="_blank"> Betteridge's law</a> 
 
@@ -12,6 +12,7 @@ Any headline that ends in a question mark can be answered by the word no.
 </blockquote> 
 <br>
 Leaving aside the empirical support for this adage, it is true that the answer to the eponymous question is 'no'. But, I'm trying to provoke discussion here alright. Gimme a break. 
+<!--more-->
 
 The lackadaisicalness of paper authorship policies varies quite a bit across different fields of academia. I've worked in several, and I will at least say this. Disciplines that are 
  a little further along the spectrum tend to be much more solitary affairs. The number of authors on your typical physics paper is pretty low; on your typical life sciences

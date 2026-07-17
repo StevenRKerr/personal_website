@@ -1,14 +1,15 @@
 ---
 layout: post
 title: The trouble with economics
+tag:
+  - Economics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 In this post, I'm going to give an overview of some major theoretical issues in modern economics.
 
 <h3> Supply and demand </h3> 
 In a typical undergraduate economics degree, you spend a lot of time drawing pictures like this:
+<!--more-->
 
 <div style="text-align: center;">
     <img src="../../../images/supply_demand.png" width="500" height="500" class= "center">

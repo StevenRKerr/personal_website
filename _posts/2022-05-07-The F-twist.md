@@ -1,9 +1,9 @@
 ---
 layout: post
 title: The F-twist
+tag:
+    - Economics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 <h3> What is the F-twist? </h3>
 
@@ -15,6 +15,7 @@ and legalisation of drugs and prostitution. He was an advisor to Ronald Reagan
 and Margaret Thatcher, and he is widely thought of as the intellectual father of the ideology of 
 <a href="https://en.wikipedia.org/wiki/Neoliberalism" target="_blank"> neoliberalism</a>.
 
+<!--more-->
 In his 1953 book Essays in positive economics, he introduced a principle that has later become known as the "F-twist", famously 
 embodied in the following sentence:
 

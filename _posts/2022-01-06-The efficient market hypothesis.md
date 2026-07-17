@@ -1,8 +1,8 @@
 ---
 layout: post
+tag:
+    - Economics
 ---
-
-<p>{{ page.date | date_to_string }}</p>
 
 <h3>  What is the efficient market hypothesis? </h3> 
 
@@ -10,6 +10,7 @@ The efficient market hypothesis is, roughly speaking, the idea that asset prices
 
 In particular, it implies that even the fanciest of funds, managed by very smart people with fancy degrees from even fancier universities, will on average fare no better than a monkey throwing darts at a list of stocks.
 
+<!--more-->
 
 <h3>  Is it true? </h3> 
 
